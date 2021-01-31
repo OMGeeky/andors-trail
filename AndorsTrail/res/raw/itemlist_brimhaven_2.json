@@ -71,6 +71,7 @@
                 "max":3
             },
             "increaseAttackCost":6,
+            "increaseAttackChance":8,
             "increaseBlockChance":4,
             "setNonWeaponDamageModifier":150
         }
@@ -84,9 +85,10 @@
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":2,
-                "max":5
+                "max":7
             },
             "increaseAttackCost":6,
+            "increaseAttackChance":14,
             "increaseBlockChance":5,
             "setNonWeaponDamageModifier":155
         }
@@ -103,7 +105,8 @@
                 "max":9
             },
             "increaseAttackCost":8,
-            "increaseBlockChance":7,
+            "increaseAttackChance":9,
+            "increaseBlockChance":8,
             "setNonWeaponDamageModifier":205
         }
     },
@@ -116,9 +119,10 @@
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":3,
-                "max":4
+                "max":6
             },
             "increaseAttackCost":5,
+            "increaseAttackChance":14,
             "increaseCriticalSkill":2,
             "increaseBlockChance":4,
             "setCriticalMultiplier":1.2,
@@ -137,7 +141,8 @@
                 "max":7
             },
             "increaseAttackCost":7,
-            "increaseBlockChance":5,
+            "increaseAttackChance":10,
+            "increaseBlockChance":8,
             "setNonWeaponDamageModifier":160
         }
     },
@@ -153,6 +158,7 @@
                 "max":7
             },
             "increaseAttackCost":7,
+            "increaseAttackChance":19,
             "increaseBlockChance":6,
             "setNonWeaponDamageModifier":165
         }
@@ -169,8 +175,9 @@
                 "max":8
             },
             "increaseAttackCost":5,
+            "increaseAttackChance":25,
             "increaseCriticalSkill":5,
-            "increaseBlockChance":6,
+            "increaseBlockChance":7,
             "setCriticalMultiplier":1.5,
             "setNonWeaponDamageModifier":120
         }
@@ -192,14 +199,14 @@
         "id":"large_bottle",
         "iconID":"items_consumables:58",
         "name":"Large empty bottle",
-        "displaytype":"ordinary",
+        "displaytype":"quest",
         "category":"other"
     },
     {
         "id":"trapped_mouse",
         "iconID":"items_rijackson_1:15",
         "name":"Trapped mouse",
-        "displaytype":"ordinary",
+        "displaytype":"quest",
         "category":"other"
     },
     {
@@ -214,6 +221,7 @@
                 "max":2
             },
             "increaseAttackCost":6,
+            "increaseAttackChance":9,
             "increaseBlockChance":4,
             "setNonWeaponDamageModifier":130
         }

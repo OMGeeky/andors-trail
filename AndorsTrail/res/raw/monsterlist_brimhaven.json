@@ -687,6 +687,7 @@
             "max":4
         },
         "spawnGroup":"cave_serpent_1",
+        "droplistID":"cave_serpent",
         "attackCost":5,
         "attackChance":100,
         "criticalSkill":5,
@@ -714,6 +715,7 @@
             "max":5
         },
         "spawnGroup":"cave_serpent_1",
+        "droplistID":"cave_serpent",
         "attackCost":5,
         "attackChance":100,
         "criticalSkill":7,
@@ -741,6 +743,7 @@
             "max":7
         },
         "spawnGroup":"cave_serpent_2",
+        "droplistID":"cave_serpent",
         "attackCost":5,
         "attackChance":100,
         "criticalSkill":14,
@@ -768,6 +771,7 @@
             "max":9
         },
         "spawnGroup":"cave_serpent_2",
+        "droplistID":"cave_serpent",
         "attackCost":5,
         "attackChance":100,
         "criticalSkill":10,

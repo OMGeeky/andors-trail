@@ -94,7 +94,26 @@
     },
     {
         "id":"lookout_up_5",
-        "message":"The falcon soars back into the sky. It has something in its talons, but you can't make out what it is. What an amazing thing to witness!"
+        "message":"The falcon soars back into the sky. It has something in its talons, but you can't make out what it is. What an amazing thing to witness!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"lookout_up_6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"lookout_north_2",
@@ -347,31 +366,24 @@
     },
     {
         "id":"lookout_bed_0",
-		"rewards": [
-			{
-				"rewardType": "alignmentSet",
-				"rewardID": "lookout_bed",
-				"value": 1
-			}
-		]
-	},
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"lookout_bed",
+                "value":1
+            }
+        ]
+    },
     {
         "id":"lookout_bed",
-		"rewards": [
-			{
-				"rewardType": "alignmentChange",
-				"rewardID": "lookout_bed",
-				"value": 1
-			}
-		],
         "replies":[
             {
                 "nextPhraseID":"X",
                 "requires":[
                     {
-						"requireType": "factionScore",
-						"requireID": "lookout_bed",
-						"value": 16
+                        "requireType":"factionScore",
+                        "requireID":"lookout_bed",
+                        "value":16
                     }
                 ]
             },
@@ -379,20 +391,19 @@
                 "nextPhraseID":"lookout_bed_20",
                 "requires":[
                     {
-						"requireType": "factionScore",
-						"requireID": "lookout_bed",
-						"value": 15
+                        "requireType":"factionScore",
+                        "requireID":"lookout_bed",
+                        "value":15
                     }
-
                 ]
             },
             {
                 "nextPhraseID":"X",
                 "requires":[
                     {
-						"requireType": "factionScore",
-						"requireID": "lookout_bed",
-						"value": 6
+                        "requireType":"factionScore",
+                        "requireID":"lookout_bed",
+                        "value":6
                     }
                 ]
             },
@@ -400,11 +411,18 @@
                 "nextPhraseID":"lookout_bed_10",
                 "requires":[
                     {
-						"requireType": "factionScore",
-						"requireID": "lookout_bed",
-						"value": 5
+                        "requireType":"factionScore",
+                        "requireID":"lookout_bed",
+                        "value":5
                     }
                 ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"lookout_bed",
+                "value":1
             }
         ]
     },
@@ -414,13 +432,24 @@
     },
     {
         "id":"lookout_bed_20",
+        "message":"Now you have got a headache. You really should give up trying to sleep.",
         "rewards":[
             {
                 "rewardType":"actorCondition",
                 "rewardID":"stunned",
                 "value":7
             }
-        ],
-        "message":"Now you have got a headache. You really should give up trying to sleep."
+        ]
+    },
+    {
+        "id":"lookout_up_6",
+        "message":"You decide to write about this wondrous sight in your father's book of achievements.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"achievements",
+                "value":40
+            }
+        ]
     }
 ]

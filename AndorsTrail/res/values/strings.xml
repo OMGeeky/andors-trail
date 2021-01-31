@@ -91,6 +91,8 @@
 	<string name="combat_condition_monster_apply">%1$s is affected by %2$s.</string>
 	<string name="combat_condition_monster_clear">%1$s is cleared of %2$s.</string>
 	<string name="combat_condition_monster_immune">%1$s is now immunized against %2$s.</string>
+	<string name="combat_log_item_single">You found an item: </string>
+	<string name="combat_log_item_plural">You found %1$d items: </string>
 	
 	
 	<string name="inventory_info">Info</string>
@@ -649,11 +651,11 @@
 	<string name="skill_longdescription_armor_prof_heavy">For every skill level, increases the block chance of every piece of heavy armor being worn by %1$d %% of their original block chances. Pieces of heavy armor have their movement penalties reduced by %2$d %% per skill level, and their attack speed penalties reduced by %3$d %% per skill level. Heavy armors include metal armors, chain mail and plate mail.</string>
 	<string name="skill_longdescription_fightstyle_dualwield">"Gives benefits when fighting with two weapons at the same time, one in the main hand and one in the off-hand.
 
-Without this skill, only %1$d %% of a weapon\'s qualities may be used when equipped in the off-hand. This includes attack chance, critical skill, damage potential and block chance. Without this skill, attack cost (AP cost) of making an attack is the sum of the attack cost of the main weapon and that of the weapon used in the off-hand.
+Without this skill, only %1$d %% of a weapon\'s qualities may be used when equipped in the off-hand. This includes attack chance, critical skill, damage potential and block chance. Without this skill, attack cost (AP cost) of making an attack is the sum of the attack cost of the main weapon and that of the weapon used in the off-hand. The lower of both damage modifiers will be used.
 
-With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost is the highest attack cost of both weapons plus %3$d %% of the lowest attack cost of both weapons.
+With one level of this skill, %2$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost is the highest attack cost of both weapons plus %3$d %% of the lowest attack cost of both weapons. The average of both damage modifiers will be used.
 
-With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost equals the highest of the attack costs of the two equipped weapons."</string>
+With two levels of this skill, %4$d %% of the off-hand\'s weapon\'s qualities may be used, and the attack cost equals the highest of the attack costs of the two equipped weapons. The highest damage modifier will be used."</string>
 	<string name="skill_longdescription_fightstyle_2hand">"Gives benefits when using weapons that require both hands to wield, such as two-handed swords, greataxes or giant hammers.
 
 Every skill level increases damage potential of two-handed weapons with %1$d %% of the original damage potential."</string>
@@ -708,7 +710,9 @@ Items made of cloth are not considered as being armor." </string>
 	<string name="inventory_category_favorites">Favorites</string>
 	<string name="inventory_category_weapons">Weapon</string>
 	<string name="inventory_category_armor">Armor</string>
-	<string name="inventory_category_usable">Consumable</string>
+	<string name="inventory_category_jewelry">Jewelry</string>
+	<string name="inventory_category_potion">Potion</string>
+	<string name="inventory_category_food">Food</string>
 	<string name="inventory_category_quest">Quest Item</string>
 	<string name="inventory_category_other">Other</string>
 
@@ -748,6 +752,21 @@ Items made of cloth are not considered as being armor." </string>
 	<string name="change_theme_requires_restart">Changing UI theme requires restart. Andor\'s Trail has been closed.</string>
 	
 	<string name="storage_permissions_mandatory">Access to storage is mandatory for Andor\'s Trail to handle saved games and worldmap. Closing Andor\'s Trail.</string>
+
+	<!-- =========================================== -->
+	<!-- Added in v0.7.13 -->
+
+	<string name="skill_title_spore_immunity">Spore poison immunity</string>
+	<string name="skill_shortdescription_spore_immunity">Full immunity to spore poison</string>
+	<string name="skill_longdescription_spore_immunity">Permanently prevents monster attacks from inflicting the "Spore poisoning" status effect.</string>
 	
-	
+	<string name="preferences_movement_dpad_transparency_title">D-pad transparency</string>
+	<string name="preferences_movement_dpad_transparency">If the virtual d-pad is enabled, this setting determines how transparent it should be.</string>
+
+	<string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+	<string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+	<string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+	<string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+	<string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+
 </resources>

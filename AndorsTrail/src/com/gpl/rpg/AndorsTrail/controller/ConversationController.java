@@ -393,18 +393,24 @@ public final class ConversationController {
 		}
 
 		public void proceedToPhrase(final Resources res, String phraseID, boolean applyScriptEffects, boolean displayPhraseMessage) {
+			while (phraseID != null) {
+				phraseID = proceedToPhraseInternal(res, phraseID, applyScriptEffects, displayPhraseMessage);
+			}
+		}
+
+		private String proceedToPhraseInternal(final Resources res, String phraseID, boolean applyScriptEffects, boolean displayPhraseMessage) {
 			if (phraseID.equalsIgnoreCase(ConversationCollection.PHRASE_CLOSE)) {
 				listener.onConversationEnded();
-				return;
+				return null;
 			} else if (phraseID.equalsIgnoreCase(ConversationCollection.PHRASE_SHOP)) {
 				listener.onConversationEndedWithShop(npc);
-				return;
+				return null;
 			} else if (phraseID.equalsIgnoreCase(ConversationCollection.PHRASE_ATTACK)) {
 				endConversationWithCombat();
-				return;
+				return null;
 			} else if (phraseID.equalsIgnoreCase(ConversationCollection.PHRASE_REMOVE)) {
 				endConversationWithRemovingNPC();
-				return;
+				return null;
 			}
 
 			setCurrentPhrase(res, phraseID);
@@ -420,8 +426,7 @@ public final class ConversationController {
 				for (Reply r : currentPhrase.replies) {
 					if (!canSelectReply(world, r)) continue;
 					applyReplyEffect(world, r, controllers);
-					proceedToPhrase(res, r.nextPhrase, applyScriptEffects, displayPhraseMessage);
-					return;
+					return r.nextPhrase;
 				}
 			} else if (displayPhraseMessage) {
 				String message = getDisplayMessage(currentPhrase, player);
@@ -430,13 +435,14 @@ public final class ConversationController {
 
 			if (hasOnlyOneNextReply()) {
 				listener.onConversationCanProceedWithNext();
-				return;
+				return null;
 			}
 
 			for (Reply r : currentPhrase.replies) {
 				if (!canSelectReply(world, r)) continue;
 				listener.onConversationHasReply(r, getDisplayMessage(r, player));
 			}
+			return null;
 		}
 
 		private void endConversationWithRemovingNPC() {

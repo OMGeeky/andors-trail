@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="23" tilewidth="32" tileheight="32" nextobjectid="18">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="23" tilewidth="32" tileheight="32" infinite="0" nextobjectid="21">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -222,6 +222,7 @@
     <property name="place" value="west"/>
    </properties>
   </object>
+  <object id="18" name="chk_wild_berry" type="script" x="832" y="160" width="96" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn">
   <object id="4" name="vscale3" type="spawn" x="608" y="64" width="192" height="64">
@@ -303,6 +304,20 @@
   <object id="17" name="brtender2" type="spawn" x="64" y="352" width="128" height="224">
    <properties>
     <property name="spawngroup" value="brtender2"/>
+   </properties>
+  </object>
+  <object id="19" name="wild_berry" type="spawn" x="416" y="448" width="416" height="160">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wild_berry3"/>
+   </properties>
+  </object>
+  <object id="20" name="wild_berry2" type="spawn" x="32" y="480" width="192" height="96">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry3"/>
    </properties>
   </object>
  </objectgroup>

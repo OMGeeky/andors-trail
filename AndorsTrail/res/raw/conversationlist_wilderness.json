@@ -97,11 +97,50 @@
     },
     {
         "id":"fct_bandit1",
+        "replies":[
+            {
+                "nextPhraseID":"fct_bandit1_10",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"highwayman",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"alignmentSet",
                 "rewardID":"fct_bandit1",
                 "value":0
+            }
+        ]
+    },
+    {
+        "id":"fct_bandit1_10",
+        "message":"Now the area is clean of these nasty highwaymen at last.",
+        "rewards":[
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"bandit1",
+                "mapName":"wild9"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"achievements",
+                "value":20
             }
         ]
     }

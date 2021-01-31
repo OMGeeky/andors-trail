@@ -4375,11 +4375,30 @@
     },
     {
         "id":"brv_richman_20",
-        "message":"[Breaks down]\n\nI was bribed by the people of Loneford to sabotage the dam. Here are some letters I exchanged with them, that prove what I did.",
+        "message":"[Breaks down]\n\nI was bribed by the people of Loneford to sabotage the dam. Here are some letters I exchanged with them, that prove what I did.\n\n[The handwriting looks like that of my brother.]",
         "replies":[
             {
                 "text":"You were honest to me so I will not kill you, but I will tell the guard captain. (And you can't escape from Brimhaven without me seeing you.)",
-                "nextPhraseID":"brv_richman_25"
+                "nextPhraseID":"brv_richman_25",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_flood",
+                        "value":80,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I stopped the two brothers from destroying the dam. Who else could have done it?",
+                "nextPhraseID":"brv_richman_21",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_flood",
+                        "value":80
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -4392,6 +4411,11 @@
                 "rewardType":"giveItem",
                 "rewardID":"alkapoans_letters",
                 "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"andor",
+                "value":65
             }
         ]
     },
@@ -4593,11 +4617,11 @@
     },
     {
         "id":"brv_guard_captain_and_rich_man_10",
-        "message":"[Laughs] You again",
+        "message":"[Laughs] You again. Welcome back, foolish child.",
         "switchToNPC":"brv_richman",
         "replies":[
             {
-                "text":"Your laughter will die away. The captain is here and now you will get your deserved punishment!",
+                "text":"Laugh while you can. The captain is here and now you will get your deserved punishment!",
                 "nextPhraseID":"brv_guard_captain_and_rich_man_20"
             }
         ]
@@ -4633,7 +4657,7 @@
     },
     {
         "id":"brv_guard_captain_and_rich_man_40",
-        "message":"Alkapoan's letters accidently fell into a fire and I am sure some unknown evil spies from Loneford destroyed the dam. Better you disapear soon or I might find some evidence that you are the evil spy from Loneford.",
+        "message":"It seems Alkapoan's letters accidentally fell into a fire and I am sure some unknown evil spies from Loneford destroyed the dam. You better disappear soon, or I might find some evidence that you are the evil spy from Loneford.",
         "switchToNPC":"brv_guard_captain",
         "rewards":[
             {
@@ -4645,7 +4669,7 @@
     },
     {
         "id":"brv_guard_captain_and_rich_man_50",
-        "message":"Better you disapear soon or I might find some evidence that you are the evil spy from Loneford.",
+        "message":"You better disappear soon, or I might find some evidence that you are the evil spy from Loneford.",
         "switchToNPC":"brv_guard_captain"
     },
     {
@@ -8577,6 +8601,142 @@
             },
             {
                 "nextPhraseID":"basiliskcave2_blocked_50"
+            }
+        ]
+    },
+    {
+        "id":"brv_flood_key_set3",
+        "replies":[
+            {
+                "nextPhraseID":"brv_flood_key_set3_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_nondisplay",
+                        "value":83
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"brv_nondisplay",
+                "value":70
+            }
+        ]
+    },
+    {
+        "id":"brv_flood_key_set3_10",
+        "replies":[
+            {
+                "nextPhraseID":"brv_flood_key_set3_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":1
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"drowning",
+                "value":990
+            }
+        ]
+    },
+    {
+        "id":"brv_flood_key_set3_20",
+        "message":"You have made it!",
+        "replies":[
+            {
+                "text":"Phew, I thought that would be my end!",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"achievements",
+                "value":100
+            }
+        ]
+    },
+    {
+        "id":"brv_brothers_another_axe",
+        "replies":[
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_flood",
+                        "value":52,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_flood",
+                        "value":53
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_flood",
+                        "value":56
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"hand_axe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"wear",
+                        "requireID":"hand_axe",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_brothers_another_axe_10"
+            }
+        ]
+    },
+    {
+        "id":"brv_brothers_another_axe_10",
+        "message":"So lucky! Another small hand axe lies here.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brv_flood",
+                "value":53
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"hand_axe",
+                "value":1
             }
         ]
     }

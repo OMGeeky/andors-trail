@@ -256,7 +256,7 @@
     <property name="place" value="up"/>
    </properties>
   </object>
-  <object name="brv_flood_key_set1" type="script" x="128" y="608" width="96" height="32"/>
+  <object name="brv_flood_key_set3" type="script" x="128" y="608" width="96" height="32"/>
   <object name="brv_flood_key_set1a" type="script" x="128" y="544" width="64" height="32"/>
   <object name="brv_flood_key_set2" type="script" x="704" y="864" width="64" height="32"/>
   <object name="brv_flood_key_set2a" type="script" x="736" y="800" width="64" height="32"/>

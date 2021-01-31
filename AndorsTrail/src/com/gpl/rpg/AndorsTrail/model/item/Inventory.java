@@ -89,14 +89,34 @@ public final class Inventory extends ItemContainer {
 		return questItems;
 	}
 	// Move to item container?
-	public Inventory buildUsableItems() {
-		Inventory usableItems = new Inventory();
+	public Inventory buildJewelryItems() {
+		Inventory jewelryItems = new Inventory();
 		for (ItemEntry i : this.items) {
 			if (i == null) break;
-			if (i.itemType.isUsable())
-				usableItems.items.add(i);
+			if (i.itemType.isEquippable() && !i.itemType.isWeapon() && !i.itemType.isArmor() && !i.itemType.isShield())
+				jewelryItems.items.add(i);
 		}
-		return usableItems;
+		return jewelryItems;
+	}
+	// Move to item container?
+	public Inventory buildPotionItems() {
+		Inventory potionItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isUsable() && ("pot".equals(i.itemType.category.id) || "healing".equals(i.itemType.category.id)))
+				potionItems.items.add(i);
+		}
+		return potionItems;
+	}
+	// Move to item container?
+	public Inventory buildFoodItems() {
+		Inventory foodItems = new Inventory();
+		for (ItemEntry i : this.items) {
+			if (i == null) break;
+			if (i.itemType.isUsable() && !("pot".equals(i.itemType.category.id) || "healing".equals(i.itemType.category.id)))
+				foodItems.items.add(i);
+		}
+		return foodItems;
 	}
 	// Move to item container?
 	public Inventory buildWeaponItems() {
@@ -113,7 +133,7 @@ public final class Inventory extends ItemContainer {
 		Inventory armorItems = new Inventory();
 		for (ItemEntry i : this.items) {
 			if (i == null) break;
-			if (i.itemType.isEquippable() && !i.itemType.isWeapon())
+			if (i.itemType.isArmor() || i.itemType.isShield())
 				armorItems.items.add(i);
 		}
 		return armorItems;

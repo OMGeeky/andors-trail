@@ -273,6 +273,11 @@
     <property name="when" value="step"/>
    </properties>
   </object>
+  <object name="release_mouse0" type="script" x="800" y="832" width="128" height="96">
+   <properties>
+    <property name="when" value="step"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn">
   <object name="erumen_2" type="spawn" x="64" y="256" width="288" height="352">

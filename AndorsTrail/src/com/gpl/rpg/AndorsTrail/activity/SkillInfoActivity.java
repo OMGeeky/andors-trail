@@ -153,6 +153,7 @@ public final class SkillInfoActivity extends AndorsTrailBaseActivity {
 		case specialization2hand: return R.string.skill_title_specialization_2hand;
 		case specializationWeaponShield: return R.string.skill_title_specialization_weapon_shield;
 		case weaponProficiencyPole: return R.string.skill_title_weapon_prof_pole;
+		case sporeImmunity: return R.string.skill_title_spore_immunity;
 		default:
 			return -1;
 		}
@@ -181,6 +182,7 @@ public final class SkillInfoActivity extends AndorsTrailBaseActivity {
 		case resistancePhysical: return res.getString(R.string.skill_longdescription_resistance_physical_capacity, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_CHANCE_PERCENT, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_CHANCE_PERCENT * SkillCollection.MAX_LEVEL_RESISTANCE);
 		case resistanceBlood: return res.getString(R.string.skill_longdescription_resistance_blood_disorder, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_CHANCE_PERCENT, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_CHANCE_PERCENT * SkillCollection.MAX_LEVEL_RESISTANCE);
 		case shadowBless: return res.getString(R.string.skill_longdescription_shadow_bless, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_SHADOW_BLESS);
+		case sporeImmunity: return res.getString(R.string.skill_longdescription_spore_immunity);
 		case crit1: return res.getString(R.string.skill_longdescription_crit1, SkillCollection.PER_SKILLPOINT_INCREASE_CRIT1_CHANCE);
 		case crit2: return res.getString(R.string.skill_longdescription_crit2, SkillCollection.PER_SKILLPOINT_INCREASE_CRIT2_CHANCE);
 		case rejuvenation: return res.getString(R.string.skill_longdescription_rejuvenation, SkillCollection.PER_SKILLPOINT_INCREASE_REJUVENATION_CHANCE);

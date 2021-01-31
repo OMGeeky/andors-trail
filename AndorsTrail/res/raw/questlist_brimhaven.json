@@ -25,6 +25,10 @@
                 "logText":"The brothers gave me a hand axe that could weaken the dam in a vulnerable place."
             },
             {
+                "progress":53,
+                "logText":"I took another hand axe. This time I shouldn't lose it."
+            },
+            {
                 "progress":54,
                 "logText":"I found the weak spot in the dam and started hacking at the wood.",
                 "rewardExperience":500
@@ -113,6 +117,7 @@
             {
                 "progress":90,
                 "logText":"Finally - that was the last boulder! Gnossath was very pleased with my work.",
+                "rewardExperience":1000,
                 "finishesQuest":1
             }
         ]
@@ -446,12 +451,12 @@
             },
             {
                 "progress":45,
-                "logText":"They trust me and now and are playing for higher amounts",
+                "logText":"They trust me and now and are playing for higher amounts.",
                 "rewardExperience":500
             },
             {
                 "progress":50,
-                "logText":"After I accused the dealer of cheating a tavern brawl started."
+                "logText":"After I accused the dealer of cheating, a tavern brawl started."
             },
             {
                 "progress":60,
@@ -460,13 +465,13 @@
             {
                 "progress":70,
                 "logText":"I told Zimsko that I believe the gamblers are cheating.",
-                "rewardExperience":1000,
+                "rewardExperience":500,
                 "finishesQuest":1
             },
             {
                 "progress":80,
                 "logText":"I told Zimsko that I believe the gamblers are not cheating.",
-                "rewardExperience":800,
+                "rewardExperience":1150,
                 "finishesQuest":1
             }
         ]
@@ -583,7 +588,7 @@
             },
             {
                 "progress":140,
-                "logText":"In Brimhaven's western tavern, I met a man named Forlin who recommended that I speak to Kizzo in the Loneford tavern."
+                "logText":"In Brimhaven's eastern tavern, I met a man named Forlin who recommended that I speak to Kizzo in the Loneford tavern."
             },
             {
                 "progress":150,

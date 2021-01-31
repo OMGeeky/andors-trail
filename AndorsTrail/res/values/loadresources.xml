@@ -31,6 +31,9 @@
         <item>@raw/actorconditions_arulir_mountain</item>
         <!--Added by ATCS v0.6.16 for project Brimhaven-->
         <item>@raw/actorconditions_brimhaven</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/actorconditions_fungi_panic</item>
+        <item>@raw/actorconditions_gison</item>
     </array>
         
     <array name="loadresource_items">
@@ -78,6 +81,9 @@
         <!--Added by ATCS v0.6.16 for project brimhaven_2-->
         <item>@raw/itemlist_brimhaven_2</item>
         <item>@raw/itemlist_brimhaven_2b</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/itemlist_fungi_panic</item>
+        <item>@raw/itemlist_gison</item>
     </array>
         
     <array name="loadresource_droplists">
@@ -119,6 +125,9 @@
         <!--Added by ATCS v0.6.16 for project brimhaven_2-->
         <item>@raw/droplists_brimhaven_2</item>
         <item>@raw/droplists_brimhaven_2b</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/droplists_fungi_panic</item>
+        <item>@raw/droplists_gison</item>
     </array>
         
     <array name="loadresource_quests">
@@ -137,7 +146,8 @@
         <item>@raw/questlist_shortcut_lodar</item>
         <item>@raw/questlist_pathway_fallhaven</item>
         <item>@raw/questlist_halvor_surprise</item>
-                                                -		
+                                                        -		
+        
         
         
         
@@ -160,6 +170,9 @@
         <!--Added by ATCS v0.6.16 for project brimhaven_2-->
         <item>@raw/questlist_brimhaven_2</item>
         <item>@raw/questlist_brimhaven_2b</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/questlist_fungi_panic</item>
+        <item>@raw/questlist_gison</item>
     </array>
         
     <array name="loadresource_conversationlists">
@@ -345,6 +358,11 @@
         <!--Added by ATCS v0.6.16 for project brimhaven_2-->
         <item>@raw/conversationlist_brimhaven_2</item>
         <item>@raw/conversationlist_brimhaven_2b</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/conversationlist_achievements</item>
+        <item>@raw/conversationlist_fungi_panic</item>
+        <item>@raw/conversationlist_gison</item>
+        <item>@raw/conversationlist_thoronir_faction_check</item>
     </array>
         
     <array name="loadresource_monsters">
@@ -393,6 +411,9 @@
         <!--Added by ATCS v0.6.16 for project brimhaven_2-->
         <item>@raw/monsterlist_brimhaven_2</item>
         <item>@raw/monsterlist_brimhaven_2b</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@raw/monsterlist_fungi_panic</item>
+        <item>@raw/monsterlist_gison</item>
     </array>
         
     <array name="loadresource_maps">
@@ -966,6 +987,36 @@
         <item>@xml/brimhaven_church_basement</item>
         <item>@xml/brimhaven_church_upstairs</item>
         <item>@xml/brimhaven_exit</item>
+        <!--Added by ATCS v0.6.16 for project fungi_panic-->
+        <item>@xml/bogsten0</item>
+        <item>@xml/bogsten1</item>
+        <item>@xml/bogsten2</item>
+        <item>@xml/bogsten3</item>
+        <item>@xml/bogsten4</item>
+        <item>@xml/bogsten5</item>
+        <item>@xml/mushroom_m2_1</item>
+        <item>@xml/mushroom_m2_10</item>
+        <item>@xml/mushroom_m2_2</item>
+        <item>@xml/mushroom_m2_3</item>
+        <item>@xml/mushroom_m2_4</item>
+        <item>@xml/mushroom_m2_4b</item>
+        <item>@xml/mushroom_m2_5</item>
+        <item>@xml/mushroom_m2_6</item>
+        <item>@xml/mushroom_m2_7</item>
+        <item>@xml/mushroom_m2_8</item>
+        <item>@xml/mushroom_m2_9</item>
+        <item>@xml/mushroom_m3_1</item>
+        <item>@xml/mushroom_m3_2</item>
+        <item>@xml/mywild18</item>
+        <item>@xml/mywild19</item>
+        <item>@xml/mywild20</item>
+        <item>@xml/mywild20_houseleft</item>
+        <item>@xml/mywild20_houseright</item>
+        <item>@xml/mywildcave</item>
+        <item>@xml/mywildcave1</item>
+        <item>@xml/mywildcave2</item>
+        <item>@xml/mywildcave3</item>
+        <item>@xml/mywildcave4</item>
     </array>
         
 </resources>

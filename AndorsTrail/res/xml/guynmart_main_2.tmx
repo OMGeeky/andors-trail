@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="21" height="20" tilewidth="32" tileheight="32" infinite="0" nextobjectid="25">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="21" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="21">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,114 +180,107 @@
  <tileset firstgid="7449" name="map_guynmart" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_guynmart.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="21" height="20">
+ <layer id="1" name="Ground" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJy9kj0OwjAMRjNVagfGDN353YCBzky9GnAC4Cw9SS+DI/QpbmSnCVEZntJa9ktke6iNGRaga/1ZCpx9689S8LZV8/12JzhV8/D8vTXmYP3bJOe1mofnA+7Be8FYe250/5142Glcc8LbR5xPcr2Id6YzhNceXX+Jc5Pu5F78jwlotXz26GuOU6rls0dfuTPWF61W6qeLbWkeOys71xTfWL1Wiod7pSHlac5wrzSkvNgu/co/nSX3hPuVOyNtblKfU2ekze2yAB/064/p
   </data>
  </layer>
- <layer name="Objects" width="21" height="20">
+ <layer id="2" name="Objects" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYKAvSJDBT5MCUjghdIEMfhqmDgQkxRgYpMQwzdrBB6FLoGrj2fDTJUhm4gInkMzcBmUfZ2dgqATaXwXE1UB8gh0iDpJHN9NJELfZILXHkMwEgWgWqL1Q/jEsZuIDyGphZsL9wo5dHSlmXkcz8waZZlIDbGZFsD+y4lZHCjiMZA4jNJ0kQf3VhOa/Rir496AAfj4uwIem7rAo5W4ZKuARPwTjAkYsxNHI4DnQvFc4zOwCqu8G4i5ZBI0N9GAxFwaSqJQ+qQH24Ak7agAA0HEpwg==
   </data>
  </layer>
- <layer name="Above" width="21" height="20">
+ <layer id="3" name="Above" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYKANuCyGSlMDHBZDpellpjULYXOMBBHsS0SY6U2EmdgANf0Oi5tLNAhPagNK0hE2vSAxXG4t5GRgSELCRZzE6QWJoYclSAxkxkYBVHEQH2Y+Lr0wcWxi2ziwu307B6o6bACXmcQAUswkNl3hUkeLtAQy8zI/drkqYJ6sBuIqWfx0DQummZ/RzMSXXruB+rtkUWls7sQnZsxCHI0MsIUzNfM+NQAAyjw17w==
   </data>
  </layer>
- <layer name="Walkable" width="21" height="20" visible="0">
+ <layer id="4" name="Walkable" width="21" height="20">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsHEEYRhA5mNjk2IWuj5CZuLShy4Hk8fFRjYfF43LTHS1+NiE5AjZRamZ2PxNSZwPlJm4/IZPL67wxGcmKeGJSy02QG68U8tMSgChfEZNM4lJW9jMQWdjk6fEndjEKTWT2hgAcRCtWg==
+   eJzbKMbAsHEEYRhA5mNjk2IWuj5CZuLSh0sOmY/L/bhodDNx6cXHJiRHyC5KzcTmb0rifKDMxOU3fHpxhSeh9EJseOJSiw2QG+/UMpMSgC8uqG0mMWkLmznobGzylLgTmzilZlIbAwBK4q4h
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
-  <object id="7" name="bridge" type="mapchange" x="0" y="160" width="32" height="32">
+ <objectgroup id="5" name="Mapevents">
+  <object id="1" name="bridge" type="mapchange" x="0" y="160" width="32" height="32">
    <properties>
     <property name="map" value="guynmart"/>
     <property name="place" value="bridge_right"/>
    </properties>
   </object>
-  <object id="8" name="down_left" type="mapchange" x="192" y="352" width="32" height="32">
+  <object id="2" name="down_left" type="mapchange" x="192" y="352" width="32" height="32">
    <properties>
     <property name="map" value="guynmart_main_1"/>
     <property name="place" value="up_left"/>
    </properties>
   </object>
-  <object id="9" name="down_right" type="mapchange" x="448" y="352" width="32" height="32">
+  <object id="3" name="down_right" type="mapchange" x="448" y="352" width="32" height="32">
    <properties>
     <property name="map" value="guynmart_main_1"/>
     <property name="place" value="up_right"/>
    </properties>
   </object>
-  <object id="10" name="up" type="mapchange" x="608" y="64" width="32" height="32">
+  <object id="4" name="up" type="mapchange" x="608" y="64" width="32" height="32">
    <properties>
     <property name="map" value="guynmart_main_3"/>
     <property name="place" value="down"/>
    </properties>
   </object>
-  <object id="14" name="guynmart_sign_steward" type="script" x="512" y="192" width="128" height="32"/>
-  <object id="32" name="guynmart_drp_main2_kitchen" type="container" x="32" y="544" width="32" height="32"/>
-  <object id="20" name="guynmart_seat1" type="script" x="416" y="480" width="32" height="96"/>
-  <object id="21" name="guynmart_seat2" type="script" x="448" y="480" width="32" height="96"/>
-  <object id="22" name="guynmart_seat3" type="script" x="480" y="480" width="32" height="96"/>
-  <object id="23" name="guynmart_seat4" type="script" x="512" y="480" width="32" height="96"/>
-  <object id="24" name="guynmart_seat5" type="script" x="544" y="480" width="32" height="96"/>
+  <object id="5" name="guynmart_sign_steward" type="script" x="512" y="192" width="128" height="32"/>
+  <object id="6" name="guynmart_drp_main2_kitchen" type="container" x="32" y="544" width="32" height="32"/>
+  <object id="7" name="guynmart_seat1" type="script" x="416" y="480" width="32" height="96"/>
+  <object id="8" name="guynmart_seat2" type="script" x="448" y="480" width="32" height="96"/>
+  <object id="9" name="guynmart_seat3" type="script" x="480" y="480" width="32" height="96"/>
+  <object id="10" name="guynmart_seat4" type="script" x="512" y="480" width="32" height="96"/>
+  <object id="11" name="guynmart_seat5" type="script" x="544" y="480" width="32" height="96"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
-  <object id="6" name="guynmart_steward2" type="spawn" x="256" y="160" width="160" height="128">
+ <objectgroup id="6" name="Spawn" visible="0">
+  <object id="12" name="guynmart_steward2" type="spawn" x="256" y="160" width="160" height="128">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_steward2"/>
    </properties>
   </object>
-  <object id="11" name="guynmart_cook" type="spawn" x="32" y="352" width="128" height="256">
+  <object id="13" name="guynmart_cook" type="spawn" x="32" y="352" width="128" height="256">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_cook"/>
    </properties>
   </object>
-  <object id="15" name="guynmart_drunkard1" type="spawn" x="480" y="480" width="32" height="32">
+  <object id="14" name="guynmart_drunkard1" type="spawn" x="480" y="480" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_drunkard1"/>
    </properties>
   </object>
-  <object id="16" name="guynmart_drunkard5" type="spawn" x="448" y="512" width="96" height="32">
+  <object id="15" name="guynmart_drunkard5" type="spawn" x="448" y="512" width="96" height="32">
    <properties>
     <property name="quantity" value="5"/>
     <property name="spawngroup" value="guynmart_drunkard5"/>
    </properties>
   </object>
-  <object id="13" name="guynmart_mguard" type="spawn" x="32" y="96" width="32" height="128">
+  <object id="16" name="guynmart_mguard" type="spawn" x="32" y="96" width="32" height="128">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_mguard"/>
    </properties>
   </object>
   <object id="17" name="guynmart_wguard9a" type="spawn" x="64" y="224" width="32" height="64">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_wguard9a"/>
    </properties>
   </object>
   <object id="18" name="guynmart_hannah2" type="spawn" x="288" y="192" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_hannah2"/>
    </properties>
   </object>
   <object id="19" name="guynmart_lovis2" type="spawn" x="352" y="192" width="32" height="32">
    <properties>
     <property name="active" value="false"/>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_lovis2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0">
-  <object id="12" name="guynmart:64" type="key" x="64" y="320" width="64" height="32">
+ <objectgroup id="7" name="Keys" visible="0">
+  <object id="20" name="guynmart:64" type="key" x="64" y="320" width="64" height="32">
    <properties>
     <property name="phrase" value="guynmart_key_cook"/>
     <property name="requireId" value="guynmart_quest_cook_lunch"/>
@@ -296,5 +289,5 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Replace" visible="0"/>
+ <objectgroup id="8" name="Replace" visible="0"/>
 </map>

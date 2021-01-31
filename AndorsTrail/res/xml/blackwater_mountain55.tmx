@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextobjectid="21">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="13">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,93 +183,93 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="23" height="19">
+ <layer id="1" name="Ground" width="23" height="19">
   <data encoding="base64" compression="zlib">
    eJy9ktENQDAQhoU3E5jSCtjDCmoEjIAVDEIfLv78OdVK6+FL2l7uu/+SmjzLDDEDXHOxwHmA/hnqGzApjp6wb+PFTm7pF6etH8BK3ol22sBtyC394tR2xewr7GSgR3NrZ4azH/lzjpT0yp3fYqD9gxCq8hnfPxbidLm/5vRxh/S7iO1jdwrvH9RFGm9b3P4UMxpPp8yPmcG6WqJ78dv6W+ZG8fq6T1nTu/I=
   </data>
  </layer>
- <layer name="Objects" width="23" height="19">
+ <layer id="2" name="Objects" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJyNVEtOw0AMHRGpi7KiqRo1LLgAN8oZWtZwAz43QByhQgXRHRIIqQdou6mUTUl7g65gw1iMlRfPxBNLo0li+9nv2Yoxte0GJmoPaTwmZB8n4e8bqPkoYkrru2/J62Izm7s9879/Osy1uw+RGuQ/QJ+Vi7+2WtyAHpuej8n1L9JmPvlXit63Nv4urWvte36fq9H/LXXTjPBmEF9CD+txM7YUs3l2HJ4C9TiWsb8VbvvInoXwmeOlyC0SY6bKkdpUHXacMeeZ5aEczVgr1lRiVlk9/8U4jIFcNZ6ISfZj8X4d5hKwsU4RyA8dwsS8fm7Mad7sk/xL4DmHXiQ3en+zvBYDv7/c4p4LbPQzLteYwt12rhJfV9w//v8USV2DamqYXeuwxsiD8Fnv2H7xeVE4fmVNbdpsIvqjfnlPdi01J2KWOAvaXXo/Ov2GYt9De0K+V+iResdZID7P5Qh+fsY9eYf/O2P/AYtNlAQ=
+   eJyNVEtuwkAMHTUSi3YFqRoRFr0AN8oZoOv2Bv3cAPUIqKIIdkhUlXoAYFMpGxq4Aat2U1uMFccz44kla2Dsec9+tmJMbfueidpLGs/x2frCf79jnBORU0LsOfCujU3h7XfXvf+wmFt7HiMcGD+yOiubfw9aPDA9dh0Xk/hv0+Z7jG8UvR8h/ymtuQ4dt87NzfmUummGeFOWX7Iatv1mbilm82Z7ePXwUS5h/yi9HSJ75sOnHofibZEYM1ZcalO12HHCnGXQh+KakVakqcSsMn3+sletT44p7avv3kk8rU+JeZkbc5WHeQqL56uFbAF9LXtufTngDgQ2jxMucYzZGfK7xOXn+0ffnyKpOZBTw2zLQxrzPhCf9I7tF/m70uNn1tQmZCNRH9b7CzX9ge8DnCMxSz4L3F38f7L6XYt99+0JxuasRqydz4Lj01xOLE6/+Z6s2PedsP8B6YmNAw==
   </data>
  </layer>
- <layer name="Above" width="23" height="19">
+ <layer id="3" name="Above" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYGBguCzJQDVwWIx8+YviDAyXoPiyOKrcZTHcemHiIHoPml8yhRkYsoD4IdC8R1D8WByhB2buJQJmg+TPSGKaT0gPPv+i23mGCLOR9cxlIqyeGPeSC4hxL6XgMZXsoEYap2Y+GaxgqPjxihCirNgmiWAj420k+gWmPpqZMrdhs5cUM0l1Nz69lJiVi8XNyOZhk4eBywTqAUoAoToGAMcyMuo=
+   eJxjYGBguCzJQDVwWIx8+YviDAyXoPiyOKrcZTHcemHiIHoPml8yhRkYsoD4IdC8R1D8WByhB2buJQJmg+TPSGKaT0gPPv+i23mGCLOR9cxlIqyeGPeSC4hxL6XgMZXsoEYap2Y+QQbbqGzuL6B5v7GYSYw92PxISB8+eXQ5avn1ihCirACZeUkcE5NqF0x9NDNlbsNmLylmUhJG1AzvXCxuRjYPmzwMXCZQD1ACCNUxAGj2Oes=
   </data>
  </layer>
- <layer name="Walkable" width="23" height="19" visible="0">
+ <layer id="4" name="Walkable" width="23" height="19">
   <data encoding="base64" compression="zlib">
-   eJytk8sNACAIQ53C/VdgQ714IaW0KokXlUf5xRwj9jkWsz+VIU5+ZywWz9WY/V7ZCkthZ39UP4WF/ivG/jo1RnqqO0VTpU+p2a85QEyWm5Ir09/tktsP1Zh/x6ri3cxijtfV3N0/pU7dzjl5/OyRE/dWn8t25lHt5Qu/0rgAv0WjPw==
+   eJytU7kRwDAI8xTefwU2TJo0nNATmzsaG4QQUHutev2z2tonQzj9n2GxeinHnneK7WA52D0f6edgoXjHWGyiMeIzvTmcJn6OZrf2AGGy3pxeGX91S+k8WH2EnXJCvHpesou9ntI8vT9HJ3VzSR9/Z3Ri6d0nfNQs0p7VnqX4E8cHCwikBg==
   </data>
  </layer>
- <objectgroup name="Mapevents">
-  <object id="5" name="south1" type="mapchange" x="32" y="576" width="224" height="32">
+ <objectgroup id="5" name="Mapevents">
+  <object id="1" name="south1" type="mapchange" x="32" y="576" width="224" height="32">
    <properties>
     <property name="map" value="blackwater_mountain32"/>
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="6" name="south2" type="mapchange" x="544" y="576" width="160" height="32">
+  <object id="2" name="south2" type="mapchange" x="544" y="576" width="160" height="32">
    <properties>
     <property name="map" value="blackwater_mountain32"/>
     <property name="place" value="north2"/>
    </properties>
   </object>
-  <object id="11" name="north" type="mapchange" x="416" y="0" width="288" height="32">
+  <object id="3" name="north" type="mapchange" x="416" y="0" width="288" height="32">
    <properties>
     <property name="map" value="blackwater_mountain56"/>
     <property name="place" value="south"/>
    </properties>
   </object>
-  <object id="14" name="hettar_bones" type="script" x="672" y="96" width="32" height="32"/>
+  <object id="4" name="hettar_bones" type="script" x="672" y="96" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn">
-  <object id="7" name="wyrm_2" type="spawn" x="32" y="448" width="512" height="96">
+ <objectgroup id="6" name="Spawn">
+  <object id="5" name="wyrm_2" type="spawn" x="32" y="448" width="512" height="96">
    <properties>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="8" name="wyrm_2_1" type="spawn" x="352" y="288" width="384" height="128">
+  <object id="6" name="wyrm_2_1" type="spawn" x="352" y="288" width="384" height="128">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="9" name="wyrm_3" type="spawn" x="32" y="448" width="512" height="96">
+  <object id="7" name="wyrm_3" type="spawn" x="32" y="448" width="512" height="96">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="10" name="wyrm_3_1" type="spawn" x="32" y="352" width="608" height="64">
+  <object id="8" name="wyrm_3_1" type="spawn" x="32" y="352" width="608" height="64">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="13" name="hettar" type="spawn" x="576" y="480" width="96" height="32">
+  <object id="9" name="hettar" type="spawn" x="576" y="480" width="96" height="32">
    <properties>
     <property name="spawngroup" value="hettar"/>
    </properties>
   </object>
-  <object id="12" name="hettar_dog" type="spawn" x="640" y="64" width="64" height="96">
+  <object id="10" name="hettar_dog" type="spawn" x="640" y="64" width="64" height="96">
    <properties>
     <property name="spawngroup" value="hettar_dog"/>
    </properties>
   </object>
-  <object id="15" name="hettar_dog2" type="spawn" x="576" y="480" width="96" height="32">
+  <object id="11" name="hettar_dog2" type="spawn" x="576" y="480" width="96" height="32">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="hettar_dog2"/>
    </properties>
   </object>
-  <object id="16" name="hettar_dog3" type="spawn" x="640" y="64" width="64" height="96">
+  <object id="12" name="hettar_dog3" type="spawn" x="640" y="64" width="64" height="96">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="hettar_dog3"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
+ <objectgroup id="7" name="Keys" visible="0"/>
 </map>

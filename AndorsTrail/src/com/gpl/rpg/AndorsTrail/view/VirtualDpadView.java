@@ -19,6 +19,7 @@ import com.gpl.rpg.AndorsTrail.controller.InputController;
 public final class VirtualDpadView extends ImageView implements OnClickListener {
 	private final WorldContext world;
 	private final InputController inputController;
+	private final int marginSize = 8;
 
 	private int one_third_width;
 	private int two_thirds_width;
@@ -42,7 +43,6 @@ public final class VirtualDpadView extends ImageView implements OnClickListener 
 		setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
 		setFocusable(false);
 		setOnClickListener(this);
-
 		setAdjustViewBounds(true);
 	}
 
@@ -102,6 +102,7 @@ public final class VirtualDpadView extends ImageView implements OnClickListener 
 			return;
 		}
 
+		this.setAlpha(preferences.dpadTransparency);
 		setVisibility(View.VISIBLE);
 		this.inputController.setDpadActive(!isMinimized);
 		isMinimizeable = preferences.dpadMinimizeable;
@@ -141,7 +142,7 @@ public final class VirtualDpadView extends ImageView implements OnClickListener 
 				params.addRule(RelativeLayout.CENTER_VERTICAL);
 				break;
 		}
-
+		params.setMargins(marginSize, marginSize, marginSize, marginSize);
 		setLayoutParams(params);
 	}
 

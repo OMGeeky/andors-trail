@@ -27,6 +27,7 @@ public final class Constants {
 	public static final int MAX_MAP_HEIGHT = 33;
 
 	public static final int MONSTER_MOVEMENT_TURN_DURATION_MS = 1200;
+	public static final int MONSTER_IMMOBILE_MOVE_COST = 999;
 
 	public static final int TICK_DELAY = 500;
 	private static final int ROUND_DURATION = 6000;
@@ -48,10 +49,11 @@ public final class Constants {
 	public static final String FILENAME_SAVEGAME_FILENAME_PREFIX = "savegame";
 	public static final String PLACEHOLDER_PLAYERNAME = "$playername";
 	public static final String CHEAT_DETECTION_FOLDER = "dEAGyGE3YojqXjI3x4x7";
+	public static final String PASSIVE_ACHIEVEMENT_CHECK_PHRASE = "passive_achievement_check";
 
 	public static final Random rnd = new Random();
 	public static int rollValue(final ConstRange r) { return rollValue(r.max, r.current); }
-	public static int rollValue(final ConstRange r, int bias) { return rollValue(r.max, r.current + bias); }
+	public static int rollValue(final ConstRange r, int bias) { return rollValue((r.max + 1) * 100 -1, r.current * 100 + bias)/100; }
 	public static int rollValue(final Range r) { return rollValue(r.max, r.current); }
 	private static int rollValue(final int max, final int min) {
 		if (max <= min) return max;
@@ -59,7 +61,7 @@ public final class Constants {
 	}
 	public static boolean roll100(final int chance) { return rollResult(100, chance); }
 	public static boolean rollResult(final ConstRange r) { return rollResult(r.max, r.current); }
-	public static boolean rollResult(final ConstRange r, int bias) { return rollResult(r.max, r.current + bias); }
+	public static boolean rollResult(final ConstRange r, int bias) { return rollResult(r.max * 100, r.current * 100 + bias); }
 	public static boolean rollResult(final Range r) { return rollResult(r.max, r.current); }
 	private static boolean rollResult(final int probabilityMax, final int probabilityValue) { return rnd.nextInt(probabilityMax) < probabilityValue; }
 }

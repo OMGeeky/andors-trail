@@ -70,7 +70,7 @@
     },
     {
         "id":"brv_zimsko_5",
-        "message":"You again",
+        "message":"You again?",
         "replies":[
             {
                 "text":"N",
@@ -184,11 +184,11 @@
         "message":"I lost all my money gambling and can't afford a beer.",
         "replies":[
             {
-                "text":"Bad luck",
+                "text":"Bad luck.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"I am out of money",
+                "text":"I am out of money.",
                 "nextPhraseID":"X",
                 "requires":[
                     {
@@ -250,7 +250,7 @@
                 ]
             },
             {
-                "text":"I am out of money",
+                "text":"I am out of money.",
                 "nextPhraseID":"brv_zimsko_20_1",
                 "requires":[
                     {
@@ -262,11 +262,11 @@
                 ]
             },
             {
-                "text":"[Lie] I am out of money",
+                "text":"[Lie] I am out of money.",
                 "nextPhraseID":"brv_zimsko_20_1",
                 "requires":[
                     {
-                        "requireType":"inventoryRemove",
+                        "requireType":"inventoryKeep",
                         "requireID":"gold",
                         "value":2
                     }
@@ -395,7 +395,7 @@
         "message":"I lost all my money gambling in the backroom. I think they are cheating.",
         "replies":[
             {
-                "text":"Oh, bad luck",
+                "text":"Oh, bad luck.",
                 "nextPhraseID":"brv_zimsko_20_1"
             },
             {
@@ -479,7 +479,7 @@
         "message":"Did you already find out if they are cheating?\n\nYou have to win and lose a few times until they trust you and play for higher amounts. Then they start cheating.",
         "replies":[
             {
-                "text":"I did not find anything out yet",
+                "text":"I did not find anything out yet.",
                 "nextPhraseID":"brv_zimsko_20_1"
             },
             {

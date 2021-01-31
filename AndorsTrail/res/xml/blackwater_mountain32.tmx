@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="18">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="21">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -198,7 +198,7 @@
    eJytV0mOwkAMbCk8gEVC4pXzAvgVXBCniDwg4TbXechgiVYcq7w1qctMEndXuexeKGXG7VRMbA7Lv/3Rjve+VwyM19Mg55Xx0/vbeFy+j8wZwch4uebK+S2uW/xc/ebIcnIP/vY5Xa/97PloeJ+Fli+H10Nr1Zbw+/FlrXpKWPlyTpmTluMU1Pjc6s/RNcqRGTMp/RKZ47GL80qPUGymrly3xUv7AOdG81v7FeG+w/o8rYPT+5FcJWe0p1DsuSvl0s35RDkJmsfILy0Wve+Bn1ofenuJ5qfHi/DTzf97ddSAtHs1p7hMjRG49gwy61dDi3bEW/ks788sT+mrdb+oz4jXq3UdU9cSge+DfLycazi1n10t5wCh1qN1fOs5i+4jCGveDyRf67rlsPRltEdi1/aCQB68xH1S7v+aT/J8186NyJr/dk9D81i9NTn9h/Twd/J7hIvQ8purT4z/B5V3fpw=
   </data>
  </layer>
- <layer name="Walkable" width="30" height="30" visible="0">
+ <layer name="Walkable" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJztlMENhTAMQ5mC/VdgQ65QYueZlhuRKvHV2E6c9B/79ohjv393Z8RQ3BV7/U3wVZA7xVHVovJV7UkPrj7licp1QbWVF5SD6BKc4nD1dprVXCo+kl/tO93ztM8qL+nX+af2zemt1CWRekx11f1brdl+Z2en+JSXzhfHTXVdv+p90Rklc+p66u7GvLe6Iyedc+JD9+3wKpdgO70KS7RIzSk27Xu1brL36i04v8n+03dCT6pL6p7RHXkrPeVf53XXL+FZEWQnZ+6dX2qHHZ763/1f/ef7cwIF+oAS
   </data>
@@ -229,6 +229,7 @@
     <property name="place" value="south2"/>
    </properties>
   </object>
+  <object id="18" name="chk_wild_berry" type="script" x="352" y="96" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="4" name="wyrm_2" type="spawn" x="832" y="672" width="32" height="32">
@@ -296,6 +297,20 @@
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_2"/>
+   </properties>
+  </object>
+  <object id="19" name="wild_berry" type="spawn" x="32" y="480" width="192" height="384">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wild_berry2"/>
+   </properties>
+  </object>
+  <object id="20" name="wild_berry2" type="spawn" x="64" y="32" width="608" height="96">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry2"/>
    </properties>
   </object>
  </objectgroup>

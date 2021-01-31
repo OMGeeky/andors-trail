@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldmap>
+  <segment id="fungi_panic" x="186" y="403">
+    <map id="mywildcave1" x="185" y="518"/>
+    <map id="mywildcave2" x="190" y="492"/>
+    <map id="mywildcave3" x="189" y="471"/>
+    <map id="mywildcave4" x="198" y="454"/>
+    <map id="bogsten2" x="298" y="452"/>
+    <map id="bogsten3" x="307" y="474"/>
+    <map id="bogsten4" x="333" y="477"/>
+    <map id="mushroom_m2_1" x="333" y="463"/>
+    <map id="mushroom_m2_2" x="323" y="442"/>
+    <map id="mushroom_m2_3" x="306" y="420"/>
+    <map id="mushroom_m2_4" x="329" y="420"/>
+    <map id="mushroom_m2_5" x="325" y="403"/>
+    <map id="mushroom_m2_6" x="306" y="403"/>
+    <map id="mushroom_m2_7" x="298" y="403"/>
+    <map id="mushroom_m2_8" x="287" y="403"/>
+    <map id="mushroom_m2_9" x="256" y="423"/>
+    <map id="mushroom_m2_10" x="245" y="423"/>
+    <map id="mushroom_m3_1" x="223" y="426"/>
+    <map id="mushroom_m3_2" x="217" y="443"/>
+  </segment>
   <segment id="basiliskcave" x="-6" y="-42">
     <map id="basiliskcave1_1_1" x="-6" y="-12"/>
     <map id="basiliskcave1_1_2" x="11" y="-5"/>
@@ -238,7 +259,7 @@
     <map id="roadbeforecrossroads3" x="262" y="366"/>
     <map id="roadbeforecrossroads4" x="272" y="382"/>
     <map id="roadbeforecrossroads5" x="272" y="403"/>
-    <map id="roadbeforecrossroads6" x="293" y="405"/>
+    <map id="roadbeforecrossroads6" x="293" y="404"/>
     <map id="roadbeforecrossroads7" x="314" y="420"/>
     <map id="roadbeforecrossroads8" x="335" y="420"/>
     <map id="roadbeforecrossroads9" x="356" y="420"/>
@@ -279,9 +300,9 @@
     <map area="charwoodh" id="waytolostmine2" x="426" y="301"/>
     <map area="charwoodh" id="waytolostmine3" x="426" y="330"/>
     <map id="waytominingtown0" x="314" y="404"/>
-    <map id="waytominingtown1" x="344" y="389"/>
-    <map id="waytominingtown1a" x="375" y="407"/>
-    <map id="waytominingtown2" x="375" y="386"/>
+    <map id="waytominingtown1" x="343" y="389"/>
+    <map id="waytominingtown1a" x="374" y="407"/>
+    <map id="waytominingtown2" x="374" y="386"/>
     <map id="waytominingtown3" x="395" y="378"/>
     <map id="waytomountaincave0" x="627" y="255"/>
     <map id="waytomountaincave1" x="621" y="285"/>
@@ -290,11 +311,11 @@
     <map id="wild1" x="179" y="353"/>
     <map id="wild10" x="217" y="434"/>
     <map id="wild11" x="238" y="434"/>
-    <map id="wild11_clearing" x="241" y="455"/>
+    <map id="wild11_clearing" x="238" y="455"/>
     <map id="wild12" x="272" y="426"/>
     <map id="wild13" x="293" y="436"/>
     <map id="wild14" x="314" y="441"/>
-    <map id="wild14_clearing" x="316" y="458"/>
+    <map id="wild14_clearing" x="314" y="458"/>
     <map id="wild15" x="335" y="448"/>
     <map id="wild16" x="74" y="469"/>
     <map id="wild17" x="32" y="469"/>
@@ -372,6 +393,12 @@
     <map id="brimhaven7" x="457" y="259"/>
     <map id="brimhaven8" x="426" y="290"/>
     <map id="brimhaven_exit" x="457" y="296"/>
+    <map id="bogsten0" x="293" y="452"/>
+    <map id="bogsten5" x="282" y="447"/>
+    <map id="mywild18" x="168" y="459"/>
+    <map id="mywild19" x="192" y="459"/>
+    <map id="mywild20" x="217" y="455"/>
+    <map id="mywildcave" x="192" y="480"/>
     <namedarea id="crossglen" name="Crossglen" type="settlement"/>
     <namedarea id="crossroads" name="Crossroads Guardhouse" type="other"/>
     <namedarea id="charwoodh" name="Charwood" type="settlement"/>

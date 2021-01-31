@@ -5,48 +5,26 @@
     },
     {
         "id":"thoronir_default",
-        "message":"Bask in the Shadow, my child.",
         "replies":[
             {
-                "text":"What can you tell me about the Shadow?",
-                "nextPhraseID":"thoronir_shadow_1"
-            },
-            {
-                "text":"Can you tell me more about the church?",
-                "nextPhraseID":"thoronir_church_1"
-            },
-            {
-                "text":"Are the Bonemeal potions ready yet?",
-                "nextPhraseID":"thoronir_trade_bonemeal",
+                "nextPhraseID":"thoronir_factions_vacor_61_reward",
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"bonemeal",
-                        "value":100
+                        "requireID":"vacor",
+                        "value":61
                     }
                 ]
             },
             {
-                "text":"I really need your help!",
-                "nextPhraseID":"thoronir_guild_1",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"Thieves01",
-                        "value":45
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"bonemeal",
-                        "value":100
-                    },
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"Thieves01",
-                        "value":50,
-                        "negate":true
-                    }
-                ]
+                "nextPhraseID":"thoronir_factions_vacor_60_check"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"factionCountShadow",
+                "value":0
             }
         ]
     },

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailPreferences;
+import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.listeners.QuickSlotListeners;
@@ -98,14 +99,12 @@ public final class ItemController {
 
 		if (!player.inventory.removeItem(type.id, 1)) return;
 
+		world.model.combatLog.append(controllers.getResources().getString(R.string.inventory_item_used, type.getName(player)));
 		controllers.actorStatsController.applyUseEffect(player, null, type.effects_use);
 		world.model.statistics.addItemUsage(type);
-
 		if (world.model.uiSelections.isInCombat && !controllers.combatController.playerHasApLeft()) {
 			controllers.combatController.endPlayerTurn();
 		}
-		//TODO: provide feedback that the item has been used.
-		//context.mainActivity.message(androidContext.getResources().getString(R.string.inventory_item_used, type.name));
 	}
 
 	public void playerSteppedOnLootBag(Loot loot) {
@@ -424,7 +423,16 @@ public final class ItemController {
 		if (itemType != null && itemType.isWeapon()) modifier2 = itemType.effects_equip.stats.setNonWeaponDamageModifier;
 
 		int modifier = 100;
-		if (modifier1 >= 0 && modifier2 >= 0) modifier = Math.min(modifier1, modifier2);
+		if (modifier1 >= 0 && modifier2 >= 0) {
+			int skillLevelFightStyle = player.getSkillLevel(SkillCollection.SkillID.fightstyleDualWield);
+			if (skillLevelFightStyle == 2) {
+				modifier = Math.max(modifier1, modifier2);
+			} else if (skillLevelFightStyle == 1) {
+				modifier = (modifier1 + modifier2) / 2;
+			} else {
+				modifier = Math.min(modifier1, modifier2);
+			}
+		}
 		else if (modifier1 <= 0 && modifier2 >= 0) modifier = modifier2;
 		else if (modifier2 <= 0 && modifier1 >= 0) modifier = modifier1;
 

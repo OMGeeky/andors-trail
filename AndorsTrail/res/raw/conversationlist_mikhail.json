@@ -258,6 +258,34 @@
             {
                 "text":"I was searching for Andor.",
                 "nextPhraseID":"mikhail_news_10"
+            },
+            {
+                "text":"What kind of book is it that you have in your hand?",
+                "nextPhraseID":"mikhail_achievements_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"nondisplay",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"achievements",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"mikhail_bread",
+                        "value":100
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"mikhail_rats",
+                        "value":100
+                    }
+                ]
             }
         ]
     },
@@ -560,6 +588,62 @@
             {
                 "text":"N",
                 "nextPhraseID":"mikhail_default"
+            }
+        ]
+    },
+    {
+        "id":"mikhail_achievements_10",
+        "message":"Just like my father once did, I want to give you a book to take with you on your way.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"mikhail_achievements_20"
+            }
+        ]
+    },
+    {
+        "id":"mikhail_achievements_20",
+        "message":"This book is some kind of diary, in which you can record unusual experiences and achievements that you may have on your way.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"mikhail_achievements_30"
+            }
+        ]
+    },
+    {
+        "id":"mikhail_achievements_30",
+        "message":"Would you like to have it?",
+        "replies":[
+            {
+                "text":"Yes, sounds great.",
+                "nextPhraseID":"mikhail_achievements_50"
+            },
+            {
+                "text":"No, thanks.",
+                "nextPhraseID":"mikhail_achievements_40"
+            }
+        ]
+    },
+    {
+        "id":"mikhail_achievements_40",
+        "message":"No problem. I won't bother you with it again.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"nondisplay",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"mikhail_achievements_50",
+        "message":"Here you are.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"achievements",
+                "value":1
             }
         ]
     }

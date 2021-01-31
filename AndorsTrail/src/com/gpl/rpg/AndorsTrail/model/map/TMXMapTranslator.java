@@ -373,7 +373,7 @@ public final class TMXMapTranslator {
 		if (layerName.length() == 0) return null;
 		TMXLayer result = layersPerLayerName.get(layerName.toLowerCase());
 		if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-			if (result == null) {
+			if (result == null && !"top".equals(layerName)) {
 				L.log("WARNING: Cannot find maplayer \"" + layerName + "\" requested by map \"" + mapName + "\".");
 			}
 		}

@@ -236,7 +236,7 @@
                 "nextPhraseID":"blackjack_draw_at_2"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -250,7 +250,7 @@
                 "nextPhraseID":"blackjack_draw_at_3"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -264,7 +264,7 @@
                 "nextPhraseID":"blackjack_draw_at_4"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -278,7 +278,7 @@
                 "nextPhraseID":"blackjack_draw_at_5"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -292,7 +292,7 @@
                 "nextPhraseID":"blackjack_draw_at_6"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -306,7 +306,7 @@
                 "nextPhraseID":"blackjack_draw_at_7"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -320,7 +320,7 @@
                 "nextPhraseID":"blackjack_draw_at_8"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -334,7 +334,7 @@
                 "nextPhraseID":"blackjack_draw_at_9"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -348,7 +348,7 @@
                 "nextPhraseID":"blackjack_draw_at_10"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -362,7 +362,7 @@
                 "nextPhraseID":"blackjack_draw_at_11"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -376,7 +376,7 @@
                 "nextPhraseID":"blackjack_draw_at_12"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -390,7 +390,7 @@
                 "nextPhraseID":"blackjack_draw_at_13"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -404,7 +404,7 @@
                 "nextPhraseID":"blackjack_draw_at_14"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -418,7 +418,7 @@
                 "nextPhraseID":"blackjack_draw_at_15"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_below_16"
             }
         ]
@@ -432,7 +432,7 @@
                 "nextPhraseID":"blackjack_draw_at_16"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_16"
             }
         ]
@@ -446,7 +446,7 @@
                 "nextPhraseID":"blackjack_draw_at_17"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_17"
             }
         ]
@@ -460,7 +460,7 @@
                 "nextPhraseID":"blackjack_draw_at_18"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_18"
             }
         ]
@@ -474,7 +474,7 @@
                 "nextPhraseID":"blackjack_draw_at_19"
             },
             {
-                "text":"I am finished",
+                "text":"I am finished.",
                 "nextPhraseID":"blackjack_finish_19"
             }
         ]
@@ -488,7 +488,7 @@
                 "nextPhraseID":"blackjack_draw_at_20"
             },
             {
-                "text":"Of course I am finished",
+                "text":"Of course I am finished.",
                 "nextPhraseID":"blackjack_finish_20"
             }
         ]
@@ -502,7 +502,7 @@
                 "nextPhraseID":"blackjack_draw_at_21"
             },
             {
-                "text":"Of course I am finished",
+                "text":"Of course I am finished.",
                 "nextPhraseID":"blackjack_finish_21"
             }
         ]

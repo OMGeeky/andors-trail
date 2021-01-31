@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="26">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="28">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -316,6 +316,20 @@
   <object id="17" name="guynmart_wise" type="spawn" x="608" y="864" width="32" height="32">
    <properties>
     <property name="spawngroup" value="guynmart_wise"/>
+   </properties>
+  </object>
+  <object id="26" name="wild_berry" type="spawn" x="576" y="480" width="320" height="224">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry"/>
+   </properties>
+  </object>
+  <object id="27" name="wild_berry2" type="spawn" x="32" y="736" width="256" height="192">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry"/>
    </properties>
   </object>
  </objectgroup>

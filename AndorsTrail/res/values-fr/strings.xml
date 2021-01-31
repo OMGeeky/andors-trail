@@ -17,7 +17,8 @@
     <string name="dialog_loading_failed_incorrectversion">Impossible de charger la sauvegarde. Cette sauvegarde a été créée avec une version plus récente du jeu.</string>
     <string name="dialog_close">Fermer</string>
     <string name="dialog_monsterencounter_title">Rencontre</string>
-    <string name="dialog_monsterencounter_message">Voulez-vous attaquer ?\nDifficulté : %1$s</string>
+    <string name="dialog_monsterencounter_message">Veux-tu attaquer \?
+\nDifficulté : %1$s</string>
     <string name="dialog_monsterencounter_info">Info</string>
     <string name="status_hp">PV :</string>
     <string name="status_ap">PA :</string>
@@ -39,38 +40,38 @@
     <string name="combat_endturn">Fin du tour</string>
     <!-- <string name="combat_endcombat">End combat</string>-->
     <string name="combat_flee">Fuir</string>
-    <string name="combat_begin_flee">Vous pouvez maintenant fuir le combat en cliquant dans la direction vers laquelle vous souhaitez vous déplacer.</string>
-    <string name="combat_flee_failed">Vous n\'avez pas réussi à fuir !</string>
+    <string name="combat_begin_flee">Tu peux maintenant fuir le combat en cliquant dans la direction vers laquelle tu souhaites te déplacer.</string>
+    <string name="combat_flee_failed">Tu n\'as pas réussi à fuir !</string>
     <string name="combat_status_ap">PA : %1$d</string>
     <string name="combat_monsterhealth">PV :</string>
     <string name="combat_monsteraction">%1$s attaque.</string>
     <!-- <string name="combat_cannotexitcombat">You cannot exit combat since there are adjacent monsters. You first have to move by longclicking a place with no adjacent monster, before you may end the combat.</string> -->
     <string name="combat_result_monstermiss">%1$s rate son attaque !</string>
-    <string name="combat_result_monsterhit">%1$s vous frappe pour %2$d PV !</string>
-    <string name="combat_result_monsterhitcritical">%1$s vous frappe avec un coup critique pour %2$d PV !</string>
-    <string name="combat_result_heromiss">Vous ratez votre attaque.</string>
-    <string name="combat_result_herohit">Vous frappez %1$s pour %2$d PV !</string>
-    <string name="combat_result_herohitcritical">Vous frappez %1$s avec un coup critique pour %2$d PV !</string>
-    <string name="combat_result_herokillsmonster">Vous avez tué %1$s !</string>
-    <string name="combat_not_enough_ap">Vous n\'avez plus assez de PA ce tour-ci.</string>
-    <string name="combat_hero_dies">Vous perdez connaissance... Heureusement, vous vous réveillez en vie, étourdi et fatigué. Vous perdez %1$d points d\'expérience.</string>
+    <string name="combat_result_monsterhit">%1$s te frappe pour %2$d PV !</string>
+    <string name="combat_result_monsterhitcritical">%1$s te frappe avec un coup critique pour %2$d PV !</string>
+    <string name="combat_result_heromiss">Tu rates ton attaque.</string>
+    <string name="combat_result_herohit">Tu frappes %1$s pour %2$d PV !</string>
+    <string name="combat_result_herohitcritical">Tu frappes %1$s avec un coup critique pour %2$d PV !</string>
+    <string name="combat_result_herokillsmonster">Tu as tué %1$s !</string>
+    <string name="combat_not_enough_ap">Tu n\'as plus assez de PA ce tour-ci.</string>
+    <string name="combat_hero_dies">Tu perds connaissance... Heureusement, tu te réveilles en vie, étourdi et fatigué. Tu perds %1$d points d\'expérience.</string>
     <string name="inventory_info">Info</string>
     <string name="inventory_equip">Équiper</string>
     <string name="inventory_unequip">Déséquiper</string>
     <string name="inventory_use">Utiliser</string>
     <string name="inventory_drop">Lâcher</string>
-    <string name="inventory_item_used">Vous avez utilisé %1$s.</string>
-    <string name="inventory_item_dropped">Vous avez lâché %1$s.</string>
-    <string name="inventory_item_equipped">Vous vous êtes équipé de %1$s.</string>
+    <string name="inventory_item_used">Tu as utilisé %1$s.</string>
+    <string name="inventory_item_dropped">Tu as lâché %1$s.</string>
+    <string name="inventory_item_equipped">Tu t\'es équipé de %1$s.</string>
     <string name="dialog_loot_pickall">Ramasser tout</string>
-    <string name="dialog_loot_foundgold">Vous avez trouvé %1$d pièces d\'or.</string>
-    <string name="dialog_loot_pickedupitem">Vous avez ramassé un objet. </string>
-    <string name="dialog_loot_pickedupitems">Vous avez ramassé %1$d objets. </string>
+    <string name="dialog_loot_foundgold">Tu as trouvé %1$d pièces d\'or.</string>
+    <string name="dialog_loot_pickedupitem">Tu as ramassé un objet.</string>
+    <string name="dialog_loot_pickedupitems">Tu as ramassé %1$d objets.</string>
     <string name="dialog_groundloot_title">Objets</string>
-    <string name="dialog_groundloot_message">Vous avez trouvé quelques objets. </string>
+    <string name="dialog_groundloot_message">Tu as trouvé quelques objets.</string>
     <string name="dialog_monsterloot_title">Victoire</string>
-    <string name="dialog_monsterloot_message">Vous avez survécu à la rencontre. </string>
-    <string name="dialog_monsterloot_gainedexp">Vous avez acquis %1$d points d\'expérience. </string>
+    <string name="dialog_monsterloot_message">Tu as survécu à la rencontre.</string>
+    <string name="dialog_monsterloot_gainedexp">Tu as acquis %1$d points d\'expérience.</string>
     <string name="monster_difficulty_veryeasy">Très facile</string>
     <string name="monster_difficulty_easy">Facile</string>
     <string name="monster_difficulty_normal">Normal</string>
@@ -102,16 +103,16 @@
     <string name="iteminfo_action_unequip_ap">Déséquiper (%1$d PA)</string>
     <string name="startscreen_continue">Continuer la partie en cours</string>
     <string name="startscreen_newgame">Nouvelle partie</string>
-    <string name="startscreen_newgame_confirm">Vous perdrez votre partie en cours et votre personnage, êtes-vous sûr de vouloir démarrer une nouvelle partie ?</string>
+    <string name="startscreen_newgame_confirm">Tu perdras ta partie en cours et ton personnage, es-tu sûr de vouloir démarrer une nouvelle partie \?</string>
     <string name="startscreen_about">À propos/aide</string>
     <string name="startscreen_enterheroname">Entrer le nom du personnage</string>
     <string name="startscreen_load">Charger</string>
     <!-- <string name="conversation_title">%1$s Dit</string> -->
-    <string name="conversation_rewardexp"> [Vous avez acquis %1$d points d\'expérience]</string>
-    <string name="conversation_rewardgold"> [Vous avez gagné %1$d pièces d\'or]</string>
-    <string name="conversation_lostgold"> [Vous avez perdu %1$d pièces d\'or]</string>
-    <string name="conversation_rewarditem"> [Vous avez gagné un objet]</string>
-    <string name="conversation_rewarditems"> [Vous avez gagné %1$d objets]</string>
+    <string name="conversation_rewardexp">[Tu as acquis %1$d points d\'expérience]</string>
+    <string name="conversation_rewardgold">[Tu as gagné %1$d pièces d\'or]</string>
+    <string name="conversation_lostgold">[Tu as perdu %1$d pièces d\'or]</string>
+    <string name="conversation_rewarditem">[Tu as gagné un objet]</string>
+    <string name="conversation_rewarditems">[Tu as gagné %1$d objets]</string>
     <string name="conversation_next">Suivant</string>
     <string name="conversation_leave">Partir</string>
     <string name="shop_buy">Acheter</string>
@@ -134,12 +135,12 @@
     <string name="levelup_add_blockchance">Augmenter la probabilité de bloquer (+%1$d)</string>
     <string name="levelup_add_blockchance_description">Ajoute %1$d à votre probabilité de bloquer de base.</string>
     <string name="dialog_rest_title">Se reposer</string>
-    <string name="dialog_rest_confirm_message">Voulez-vous vous reposer ici ?</string>
-    <string name="dialog_rest_message">Vous vous êtes bien reposé et êtes prêt à repartir à l\'aventure.</string>
+    <string name="dialog_rest_confirm_message">Veux-tu te reposer ici \?</string>
+    <string name="dialog_rest_message">Tu t\'es bien reposé et tu es prêt à repartir à l\'aventure.</string>
     <string name="about_button1">Aide</string>
     <string name="about_button2">Auteurs</string>
     <string name="about_button3">Licence</string>
-    <string name="about_contents1">Merci d\'utiliser Sur les traces d\'Andor, un jeu de rôle libre pour Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum du jeu andorstrail.com pour les questions et les discussions sur la façon de jouer.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Wiki du jeu pour plus d\'information sur le monde de Sur les traces d\'Andor.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Code source du projet sur github.com pour les développeurs.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Vous pouvez visiter les forums pour discuter du jeu avec d\'autres joueurs.&lt;br /&gt;</string>
+    <string name="about_contents1">Merci d\'utiliser Sur les traces d\'Andor, un jeu de rôle libre pour Android.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum du jeu andorstrail.com pour les questions et les discussions sur la façon de jouer.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/wiki&gt;Wiki du jeu pour plus d\'information sur le monde de Sur les traces d\'Andor.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Code source du projet sur github.com pour les développeurs.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Tu peux visiter les forums pour discuter du jeu avec d\'autres joueurs.&lt;br /&gt;</string>
     <string name="about_contents3">
 		Ce programme est un logiciel libre ; vous pouvez le redistribuer ou le modifier suivant les termes de la « GNU General Public License » telle que publiée par la Free Software Foundation ; soit la version 2 de cette licence, soit (à votre discrétion) une version ultérieure quelconque.&lt;br /&gt;
 		&lt;br /&gt;
@@ -201,7 +202,7 @@
     <string name="iteminfo_effect_works_when_hitting_target">Quand la cible est frappée</string>
     <string name="iteminfo_effect_works_when_killing_target">À chaque mort</string>
     <string name="iteminfo_effect_works_when_used">Lorsqu\'utilisé</string>
-    <string name="iteminfo_effect_works_when_equipped">Lorsqu\'équipé</string>
+    <string name="iteminfo_effect_works_when_equipped">Lorsque équipé</string>
     <string name="iteminfo_effect_decrease_current_hp">Draine %1$s HP</string>
     <string name="iteminfo_effect_increase_current_hp">Restaure %1$s HP</string>
     <string name="iteminfo_effect_decrease_current_ap">Draine %1$s AP</string>
@@ -244,8 +245,8 @@
     <string name="bulkselection_totalcost_buy">Prix total : %1$d or</string>
     <string name="bulkselection_totalcost_sell">Prix total : %1$d or</string>
     <string name="bulkselection_select_all">Tout</string>
-    <string name="bulkselection_sell_confirmation_title">Êtes-vous sûr ?</string>
-    <string name="bulkselection_sell_confirmation">Êtes-vous sûr de vouloir vendre %1$s ? Cet objet est %2$s et vous pourriez ne plus être à même de le retrouver.</string>
+    <string name="bulkselection_sell_confirmation_title">Es-tu sûr \?</string>
+    <string name="bulkselection_sell_confirmation">Es-tu sûr de vouloir vendre %1$s \? Cet objet est %2$s et tu pourrais ne plus être à même de le retrouver.</string>
     <string name="skill_title_weapon_chance">Précision</string>
     <string name="skill_title_weapon_dmg">Gros bras</string>
     <string name="skill_title_barter">Marchandage</string>
@@ -309,15 +310,15 @@
     <string name="skillinfo_action_levelup">Changement de niveau</string>
     <string name="skill_current_level">Niveau courant : %1$d</string>
     <string name="skill_current_level_with_maximum">Niveau courant : %1$d / %2$d</string>
-    <string name="skill_prerequisite_other_skill">Pour améliorer cette compétence, vous devez atteindre au moins le niveau %1$d de la compétence %2$s.</string>
-    <string name="skill_prerequisite_level">Pour améliorer cette compétence, vous devez atteindre au moins le niveau %1$d.</string>
-    <string name="skill_prerequisite_stat">Pour améliorer cette compétence, vous devez avoir au moins %1$d à la statistique de base \"%2$s\".</string>
-    <string name="skill_number_of_increases_one">Vous pouvez sélectionner une compétence à améliorer.</string>
-    <string name="skill_number_of_increases_several">Vous pouvez sélectionner %1$d compétences à améliorer.</string>
-    <string name="levelup_adds_new_skillpoint">Ce niveau vous donne également un nouveau point de compétence à utiliser !</string>
+    <string name="skill_prerequisite_other_skill">Pour améliorer cette compétence, tu dois atteindre au moins le niveau %1$d de la compétence %2$s.</string>
+    <string name="skill_prerequisite_level">Pour améliorer cette compétence, tu dois atteindre au moins le niveau %1$d.</string>
+    <string name="skill_prerequisite_stat">Pour améliorer cette compétence, tu dois avoir au moins %1$d à la statistique de base \"%2$s\".</string>
+    <string name="skill_number_of_increases_one">Tu peux sélectionner une compétence à améliorer.</string>
+    <string name="skill_number_of_increases_several">Tu peux sélectionner %1$d compétences à améliorer.</string>
+    <string name="levelup_adds_new_skillpoint">Ce niveau te donne également un nouveau point de compétence à utiliser !</string>
     <string name="loadsave_save_to_new_slot">Créer un nouvel emplacement de sauvegarde</string>
     <string name="loadsave_save_overwrite_confirmation_title">Écraser la sauvegarde ?</string>
-    <string name="loadsave_save_overwrite_confirmation">Cette sauvegarde contient un nom de personnage différent (%1$s) de votre nom actuel (%2$s). Êtes-vous sûr de vouloir écraser cette sauvegarde ?</string>
+    <string name="loadsave_save_overwrite_confirmation">Cette sauvegarde contient un nom de personnage différent (%1$s) de ton nom actuel (%2$s). Es-tu sûr de vouloir écraser cette sauvegarde \?</string>
     <string name="iteminfo_displaytypes_ordinary">Ordinaire</string>
     <string name="iteminfo_displaytypes_quest">Objet de quête</string>
     <string name="iteminfo_displaytypes_legendary">Légendaire</string>
@@ -373,15 +374,15 @@
     <string name="iteminfo_effect_decrease_damage_resistance">Diminue la résistance aux dégâts de %1$d</string>
     <string name="iteminfo_effect_increase_use_cost">Augmente le coût d’utilisation des objets en combat de %1$d PA</string>
     <string name="iteminfo_effect_decrease_use_cost">Diminue le coût d’utilisation des objets en combat de %1$d PA</string>
-    <string name="iteminfo_effect_increase_reequip_cost">Augmente le coût d’équipemment d’objets en combat de %1$d PA</string>
+    <string name="iteminfo_effect_increase_reequip_cost">Augmente le coût d’équipement d’objets en combat de %1$d PA</string>
     <string name="iteminfo_effect_decrease_reequip_cost">Diminue le coût d’équipement d’objets en combat de %1$d PA</string>
-    <string name="loadsave_save_overwrite_confirmation_all">Êtes-vous sûr de vouloir écraser cette sauvegarde ?</string>
+    <string name="loadsave_save_overwrite_confirmation_all">Es-tu sûr de vouloir écraser cette sauvegarde \?</string>
     <string name="loadsave_save_overwrite_confirmation_slot">(slot %1$d)</string>
     <string name="preferences_display_overwrite_savegame_entries_always_confirm">Toujours afficher la boîte de dialogue de confirmation</string>
     <string name="preferences_display_overwrite_savegame_entries_confirm_overwrite">Afficher seulement lors de l’écrasement d’un nom de joueur différent</string>
     <string name="preferences_display_overwrite_savegame_entries_never_confirm">Ne jamais afficher la boîte de dialogue de confirmation</string>
     <string name="preferences_dialog_overwrite_savegame_title">Ecrasement des sauvegardes</string>
-    <string name="preferences_dialog_overwrite_savegame">Demande confirmation lorsque vous tentez de sauvegarder dans un emplacement occupé.</string>
+    <string name="preferences_dialog_overwrite_savegame">Demande confirmation lorsque tu tentes de sauvegarder dans un emplacement occupé.</string>
     <!-- =========================================== -->
     <!-- Added in v0.7.0 -->
     <string name="heroinfo_reequip_cost">Coût de rééquipement (PA) :</string>
@@ -434,7 +435,7 @@
     <string name="skill_longdescription_armor_prof_heavy">Pour chaque niveau de compétence, augmente les chances de parade de chaque pièce d’armure lourde portée de %1$d %% de leurs chances de parade de base. Les pièces d’armures lourdes ont leurs pénalités de mouvement réduites de %2$d %% par niveau de compétence et leurs pénalités de vitesse d’attaque réduites de %3$d %% par niveau de compétence. Les armures lourdes incluent les armures métalliques, les cottes de mailles et les armures de plates.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Donne des avantages en combattant avec deux armes en même temps, une dans la main dominante et une dans la main non dominante.
 \n
-\nSans cette compétence, seulement %1$d %% des qualités d’une arme pourront être utilisées quand elle équipée dans la main non dominante. Cela inclut les chances d’attaque, la compétence cruciale, les dégâts potentiels et les chances de parade. Sans cette compétence, le coût d’attaque (coût de PA) est la somme du coût d’attaque de l’arme principale et de celui de l’arme utilisée dans la main non dominante.
+\nSans cette compétence, seulement %1$d %% des qualités d’une arme pourront être utilisées quand elle est équipée dans la main non dominante. Cela inclut les chances d’attaque, la compétence cruciale, les dégâts potentiels et les chances de parade. Sans cette compétence, le coût d’attaque (coût de PA) est la somme du coût d’attaque de l’arme principale et de celui de l’arme utilisée dans la main non dominante.
 \n
 \nAvec 1 niveau dans cette compétence, %2$d %% des qualités de l’arme de la main non dominante peuvent être utilisées, et le coût d’attaque est le coût d’attaque de l’arme dans la main dominante plus %3$d %% du coût d’attaque de l’arme dans la main non dominante.
 \n
@@ -493,7 +494,7 @@
     <string name="skill_longdescription_rejuvenation">À chaque tour (6 secondes), il y a %1$d %% de chances que l’une des conditions négatives actives soit diminuée d’1 cran. Cela s’applique à tous les types d’effets temporaires affectant le corps : états mentaux comme Abasourdi, états physiques comme Fatigue et aussi maladies du sang comme Poison.</string>
     <string name="skill_title_taunt">Provocation</string>
     <string name="skill_shortdescription_taunt">L’attaquant perd des PA s’il échoue</string>
-    <string name="skill_longdescription_taunt">Lorsqu’un attaquant manque une attaque, il y a %1$d %% de chances que l’attaquant perde %2$d de points d’action (PA). Cela s’applique à tous les types d’attaques de mêlée contre vous.</string>
+    <string name="skill_longdescription_taunt">Lorsqu’un attaquant manque une attaque, il y a %1$d %% de chances que l’attaquant perde %2$d points d’action (PA). Cela s’applique à tous les types d’attaques de mêlée contre toi.</string>
     <string name="skill_title_concussion">Commotion cérébrale</string>
     <string name="skill_shortdescription_concussion">Risques de commotion cérébrale</string>
     <string name="skill_longdescription_concussion">Lors d’une attaque contre une cible dont les chances de parade (CP) sont au moins de %1$d unités moins élevées que vos chances d’attaque (CA), il y a %2$d %% chances que le coup causera une commotion cérébrale à la cible. Une commotion cérébrale diminue sévèrement les capacités offensives de combat, réduisant l’aptitude de la cible à réussir ses attaques.</string>
@@ -507,7 +508,7 @@
     <string name="heroinfo_healthpoints">Points de vie (PV) :</string>
     <string name="heroinfo_experiencepoints">Points d\'expérience (PE) :</string>
     <string name="combat_taunt_monster">Tu te moques de %1$s !</string>
-    <string name="combat_condition_player_apply">Vous êtes impacté par %1$s.</string>
+    <string name="combat_condition_player_apply">Tu es impacté par %1$s.</string>
     <string name="combat_condition_player_clear">L\'effet de %1$s s\'estompe.</string>
     <string name="combat_condition_player_immune">Tu es immunisé contre %1$s.</string>
     <string name="combat_condition_monster_apply">%2$s nuit à %1$s.</string>
@@ -565,7 +566,7 @@
     <string name="startscreen_attention_slot_gets_delete_on_load">Attention</string>
     <string name="startscreen_error_loading_empty_slot">Impossible de charger une partie à partir d\'un emplacement vide.</string>
     <string name="startscreen_error_loading_game">Erreur pendant le chargement du jeu</string>
-    <string name="startscreen_load_game_confirm">La partie en cours n\'est pas sauvegardée, vous allez perdre votre personnage.</string>
+    <string name="startscreen_load_game_confirm">La partie en cours n\'est pas sauvegardée, tu vas perdre ton personnage.</string>
     <string name="startscreen_load_game">Charger le jeu</string>
     <string name="startscreen_game_mode">Mode</string>
     <string name="heroinfo_one_life">Mort définitive (une seule vie)</string>
@@ -574,12 +575,12 @@
 \n(Vies et sauvegardes illimitées)</string>
     <string name="heroinfo_mode">Mode</string>
     <string name="rip_startscreen">(Repose en paix)</string>
-    <string name="dialog_game_over_text">Vous rendez votre dernier souffle.</string>
-    <string name="dialog_game_over_title">Vous avez perdu</string>
+    <string name="dialog_game_over_text">Tu rends ton dernier souffle.</string>
+    <string name="dialog_game_over_title">Tu as perdu</string>
     <string name="heroinfo_unlimited_lives">Vies illimitées, une seule sauvegarde</string>
     <string name="dialog_loading_failed_cheat">Impossible de charger la sauvegarde. Cette partie a déjà été continuée.</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">Classique (Vies et sauvegardes illimitées)</string>
-    <string name="startscreen_attention_message_slot_gets_delete_on_load">Charger cette partie supprimera son emplacement de sauvegarde. Vous devrez à nouveau sauvegarder avant de changer de partie.</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">Charger cette partie supprimera son emplacement de sauvegarde. Tu devras à nouveau sauvegarder avant de changer de partie.</string>
     <string name="startscreen_mode_1_life">Mort définitive (1 vie, 1 sauvegarde)</string>
     <string name="startscreen_mode_3_lives">Extrême (3 vies, 1 sauvegarde)</string>
     <string name="startscreen_mode_10_lives">Très difficile (10 vies, 1 sauvegarde)</string>
@@ -594,7 +595,7 @@
     <string name="skill_shortdescription_weapon_prof_pole">Meilleur au combat à l\'arme d\'hast</string>
     <string name="skill_title_weapon_prof_pole">Compétence à l\'arme d\'hast</string>
     <string name="loadsave_empty_slot">%1$d.&lt;vide&gt;</string>
-    <string name="menu_save_switch_character">Sauvegarder vous permet de changer de personnage et de poursuivre la partie actuelle. Voulez-vous sauvegarder et quitter la session actuelle \?</string>
+    <string name="menu_save_switch_character">Sauvegarder te permet de changer de personnage et de poursuivre plus tard la partie en cours. Veux-tu sauvegarder et quitter la session actuelle \?</string>
     <string name="skill_longdescription_weapon_prof_pole">Chaque niveau de compétence augmente la chance d\'attaque avec une arme d\'hast de %1$d %% par rapport à celle de base de l\'objet, augmente les chances de parades de %2$d %% par rapport à celle de base de l\'objet, et augmente la compétence cruciale de %3$d %% par rapport à celle de base de l\'objet.</string>
     <string name="iteminfo_effect_set_damage_modifier">Modificateur de dégâts : %1$d%%</string>
     <string name="dialog_permission_information">Le jeu sauvegarde les parties sur l\'espace de stockage disponible de votre appareil. Cela vous permet de facilement sauvegarder vos parties et de les transférer vers un nouvel appareil. Consultez nos forums pour plus d\'information.

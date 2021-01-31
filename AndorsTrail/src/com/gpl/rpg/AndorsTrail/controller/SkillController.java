@@ -72,7 +72,7 @@ public final class SkillController {
 		if (player == null) return 0;
 		if (!ItemTypeCollection.isGoldItemType(item.itemType.id)) return 0;
 
-		return getRollBias(item, player, SkillID.coinfinder, SkillCollection.PER_SKILLPOINT_INCREASE_COINFINDER_QUANTITY_PERCENT);
+		return getRollBias(item.quantity, player, SkillID.coinfinder, SkillCollection.PER_SKILLPOINT_INCREASE_COINFINDER_QUANTITY_PERCENT);
 	}
 
 	private static int getRollBias(DropItem item, Player player, SkillID skill, int perSkillpointIncrease) {
@@ -82,7 +82,7 @@ public final class SkillController {
 	private static int getRollBias(ConstRange chance, Player player, SkillID skill, int perSkillpointIncrease) {
 		int skillLevel = player.getSkillLevel(skill);
 		if (skillLevel <= 0) return 0;
-		return chance.current * skillLevel * perSkillpointIncrease / 100;
+		return chance.current * skillLevel * perSkillpointIncrease;
 	}
 
 
@@ -126,6 +126,9 @@ public final class SkillController {
 		int result = 0;
 		result += getActorConditionEffectChanceRollBiasFromResistanceSkills(effect, player);
 		result += getActorConditionEffectChanceRollBias(effect, player, SkillID.shadowBless, SkillCollection.PER_SKILLPOINT_INCREASE_RESISTANCE_SHADOW_BLESS);
+		if ("spore_poison".equals(effect.conditionType.conditionTypeID)) {
+			result += getActorConditionEffectChanceRollBias(effect, player, SkillID.sporeImmunity, 100);
+		}
 		return result;
 	}
 

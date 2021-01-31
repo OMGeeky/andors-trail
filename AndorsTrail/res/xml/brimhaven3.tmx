@@ -287,7 +287,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn">
+ <objectgroup name="Spawn" visible="0">
   <object name="brv_fisher" type="spawn" x="608" y="736" width="96" height="192">
    <properties>
     <property name="spawngroup" value="brv_fisher"/>
@@ -314,7 +314,7 @@
     <property name="spawngroup" value="brv_villager1"/>
    </properties>
   </object>
-  <object name="brv_villager14" type="spawn" x="256" y="576" width="224" height="320">
+  <object name="brv_villager14" type="spawn" x="256" y="576" width="192" height="320">
    <properties>
     <property name="spawngroup" value="brv_villager14"/>
    </properties>

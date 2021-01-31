@@ -82,9 +82,9 @@
                 "max":6
             },
             "increaseAttackCost":4,
-			"setNonWeaponDamageModifier":102,
             "increaseAttackChance":20,
-            "increaseBlockChance":0
+            "increaseBlockChance":0,
+            "setNonWeaponDamageModifier":102
         },
         "hitEffect":{
             "conditionsTarget":[
@@ -109,8 +109,8 @@
                 "max":11
             },
             "increaseAttackCost":6,
-            "setNonWeaponDamageModifier":130,
-            "increaseAttackChance":15
+            "increaseAttackChance":15,
+            "setNonWeaponDamageModifier":130
         }
     },
     {
@@ -125,10 +125,10 @@
                 "max":13
             },
             "increaseAttackCost":6,
-            "setNonWeaponDamageModifier":130,
             "increaseAttackChance":15,
             "increaseCriticalSkill":4,
-            "setCriticalMultiplier":1.5
+            "setCriticalMultiplier":1.5,
+            "setNonWeaponDamageModifier":130
         },
         "hitEffect":{
             "conditionsTarget":[
@@ -153,11 +153,11 @@
                 "max":3
             },
             "increaseAttackCost":5,
-            "setNonWeaponDamageModifier":115,
             "increaseAttackChance":10,
             "increaseCriticalSkill":1,
             "increaseBlockChance":7,
-            "setCriticalMultiplier":1.5
+            "setCriticalMultiplier":1.5,
+            "setNonWeaponDamageModifier":115
         }
     },
     {
@@ -172,10 +172,10 @@
                 "max":4
             },
             "increaseAttackCost":4,
-			"setNonWeaponDamageModifier":105,
             "increaseAttackChance":17,
             "increaseCriticalSkill":9,
-            "setCriticalMultiplier":2.5
+            "setCriticalMultiplier":2.5,
+            "setNonWeaponDamageModifier":105
         },
         "killEffect":{
             "conditionsSource":[
@@ -198,12 +198,12 @@
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":2,
-                "max":9
+                "max":6
             },
             "increaseAttackCost":6,
-            "setNonWeaponDamageModifier":130,
-            "increaseAttackChance":15,
-            "increaseBlockChance":4
+            "increaseAttackChance":11,
+            "increaseBlockChance":4,
+            "setNonWeaponDamageModifier":130
         }
     },
     {
@@ -221,9 +221,9 @@
                 "max":3
             },
             "increaseAttackCost":6,
-            "setNonWeaponDamageModifier":135,
             "increaseAttackChance":8,
-            "increaseBlockChance":1
+            "increaseBlockChance":1,
+            "setNonWeaponDamageModifier":135
         },
         "hitEffect":{
             "conditionsTarget":[
@@ -268,10 +268,10 @@
                 "max":14
             },
             "increaseAttackCost":6,
-            "setNonWeaponDamageModifier":135,
             "increaseAttackChance":8,
             "increaseCriticalSkill":10,
-            "setCriticalMultiplier":2.0
+            "setCriticalMultiplier":2.0,
+            "setNonWeaponDamageModifier":135
         }
     },
     {
@@ -888,11 +888,11 @@
                 "max":5
             },
             "increaseAttackCost":5,
-            "setNonWeaponDamageModifier":115,
             "increaseAttackChance":15,
             "increaseCriticalSkill":8,
             "increaseBlockChance":5,
-            "setCriticalMultiplier":2.0
+            "setCriticalMultiplier":2.0,
+            "setNonWeaponDamageModifier":115
         }
     },
     {
@@ -907,11 +907,11 @@
                 "max":28
             },
             "increaseAttackCost":13,
-            "setNonWeaponDamageModifier":320,
             "increaseAttackChance":22,
             "increaseCriticalSkill":1,
             "increaseBlockChance":-5,
-            "setCriticalMultiplier":1.5
+            "setCriticalMultiplier":1.5,
+            "setNonWeaponDamageModifier":320
         },
         "hitEffect":{
             "conditionsTarget":[

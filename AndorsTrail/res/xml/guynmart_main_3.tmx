@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="21" height="20" tilewidth="32" tileheight="32" nextobjectid="10">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="21" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="12">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,77 +180,74 @@
  <tileset firstgid="7449" name="map_guynmart" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_guynmart.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="21" height="20">
+ <layer id="1" name="Ground" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJy1k7ENwCAMBGlJkQFYJIzAxOnYLXKBbFkGAx+KK/x6v9Bb1BhCPUBOjJ493fIRJTF69nTLR9wX0+Y3MjTTG6Svh5XZdnVmATJnd1cyR169t0JvV+re3bUuu5VemendXeuyW+m1ekD7tHpAM61+0EyrHyQT+Uc9kH+EsvuPZm75Z5/ZueFOn+R7DvAB73B+iA==
   </data>
  </layer>
- <layer name="Objects_1" width="21" height="20" visible="0">
+ <layer id="2" name="Objects_1" width="21" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2DwA1d+BgY3II5nQ4iB2EJALMyGWx8+wArF6EAJaJ4yGWZGsjAwiDJAMDWBKhRTC+zgwy8/mYV0M08QMHMwgfPASBcCYmEgFgHic9gSwSAC89Hi4wTQvScHuZvJBQCQqwkx
   </data>
  </layer>
- <layer name="Objects" width="21" height="20">
+ <layer id="3" name="Objects" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYKAdsJdBsGX5IXxeIP2XDyjAj10dNj4MsACxP5ocOh+XOIi/gwNTnQiUXswCoZ2gdCSUdobSllD35gD5uUCcBxW/CjRTVYyBQU0MYaYKdidhAE9+wmqGK1hJgt83ixHG6GAG0Pwp0DhihWJKzWwHmrkEaqYoFMPSDblmgoAH1AxVKCbHnf+BeeoWG4R9GIc95LjzFdTMS1Q0k1gwGM00YsEUo8RMUHnTzIIoZwaL39sHqGwCAP1fYy4=
   </data>
  </layer>
- <layer name="Above_1" width="21" height="20" visible="0">
+ <layer id="4" name="Above_1" width="21" height="20" visible="0">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo4B24LIY9c04TAUz0c24RAMzqQEGwkxRfuqbSQ4AmbmflYGBCYiZgZgFiPexUm4mtQGymRNYUOV2At27lww308Kd1EjjtAYAy/EP9A==
   </data>
  </layer>
- <layer name="Above" width="21" height="20">
+ <layer id="5" name="Above" width="21" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYKANuCxGXXUgcJhItcSqo4aZBzgYGLZzkGfmJRq4kxRArJmkxBE6OCQGwfjsJmQ+zAx8GN1MQn4bSDORAbXMRA7DSlkIRmbD+OT6vVMWgpHZnSSaCcKkpGNizSQlHxFrJikAXe9mIuKIGu4EAVB4lvNj6jdmId9MUsKT2gAAtOV14A==
   </data>
  </layer>
- <layer name="Walkable" width="21" height="20" visible="0">
+ <layer id="6" name="Walkable" width="21" height="20">
   <data encoding="base64" compression="zlib">
-   eJzbKMbAsHEEYxhAF0OmkdWhA3Q92MwlpA8fwKaOGH2kmolPLbo+SsN3qJtJjB2Ewp6UdEUIkGM3KeYR63di3EmKf4hVS6qZ5LidWHfiy+/4zMFnJi57aRmelKQRSjAAUuuqPg==
+   eJzlU0EKACAI6xX9/wv+sFMQYmtTPDWIQOaco2yOYR+fDV87b8894Xsi3VcfQsRj+lRNxPV91XxvmVU1O3xGdWbGK3uWxyAzW9Fjd2d8KvuwXFUz4531if470kGat7mdeVbeSOUstairzA==
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
-  <object id="3" name="guynmart_sign_rob1" type="sign" x="160" y="256" width="64" height="64"/>
-  <object id="4" name="guynmart_sign_rob2" type="sign" x="64" y="416" width="96" height="32"/>
-  <object id="5" name="guynmart_sign_rob3" type="sign" x="32" y="576" width="64" height="32"/>
-  <object id="6" name="guynmart_sign_rob4" type="sign" x="224" y="576" width="96" height="32"/>
-  <object id="7" name="guynmart_sign_rob5" type="sign" x="256" y="384" width="32" height="128"/>
-  <object id="1" name="down" type="mapchange" x="608" y="96" width="32" height="32">
+ <objectgroup id="7" name="Mapevents" visible="0">
+  <object id="1" name="guynmart_sign_rob1" type="sign" x="160" y="256" width="64" height="64"/>
+  <object id="2" name="guynmart_sign_rob2" type="sign" x="64" y="416" width="96" height="32"/>
+  <object id="3" name="guynmart_sign_rob3" type="sign" x="32" y="576" width="64" height="32"/>
+  <object id="4" name="guynmart_sign_rob4" type="sign" x="224" y="576" width="96" height="32"/>
+  <object id="5" name="guynmart_sign_rob5" type="sign" x="256" y="384" width="32" height="128"/>
+  <object id="6" name="down" type="mapchange" x="608" y="96" width="32" height="32">
    <properties>
     <property name="map" value="guynmart_main_2"/>
     <property name="place" value="up"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
-  <object id="6" name="guynmart_maid" type="spawn" x="416" y="352" width="224" height="160">
+ <objectgroup id="8" name="Spawn" visible="0">
+  <object id="7" name="guynmart_maid" type="spawn" x="416" y="352" width="224" height="160">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_maid"/>
    </properties>
   </object>
-  <object id="2" name="guynmart_rob" type="spawn" x="160" y="512" width="32" height="32">
+  <object id="8" name="guynmart_rob" type="spawn" x="160" y="512" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_rob"/>
    </properties>
   </object>
   <object id="9" name="guynmart_servant" type="spawn" x="32" y="96" width="32" height="32">
    <properties>
-    <property name="quantity" value="1"/>
     <property name="spawngroup" value="guynmart_servant"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys" visible="0"/>
- <objectgroup name="Replace" visible="0">
-  <object id="8" name="guynmart_qRpl_shutters:1" type="replace" x="32" y="224" width="320" height="384">
+ <objectgroup id="9" name="Keys" visible="0"/>
+ <objectgroup id="10" name="Replace" visible="0">
+  <object id="10" name="guynmart_qRpl_shutters:1" type="replace" x="32" y="224" width="320" height="384">
    <properties>
     <property name="Objects" value="Objects_1"/>
    </properties>
   </object>
-  <object id="8" name="guynmart_qRpl_shutters:1" type="replace" x="32" y="224" width="320" height="384">
+  <object id="11" name="guynmart_qRpl_shutters:1" type="replace" x="32" y="224" width="320" height="384">
    <properties>
     <property name="Above" value="Above_1"/>
    </properties>

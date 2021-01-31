@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorCondition;
 import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
 import com.gpl.rpg.AndorsTrail.model.item.DropList;
@@ -37,6 +38,9 @@ public final class Monster extends Actor {
 		resetStatsToBaseTraits();
 		this.ap.setMax();
 		this.health.setMax();
+		if (this.getMoveCost() == Constants.MONSTER_IMMOBILE_MOVE_COST) {
+			this.nextActionTime = Long.MAX_VALUE;
+		}
 	}
 
 	public void resetStatsToBaseTraits() {

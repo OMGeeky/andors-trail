@@ -75,6 +75,9 @@ public final class MonsterMovementController implements EvaluateWalkable {
 	}
 
 	private void moveMonster(final Monster m, final MonsterSpawnArea area) {
+		if (m.getMoveCost() == Constants.MONSTER_IMMOBILE_MOVE_COST) {
+			return;
+		}
 		PredefinedMap map = world.model.currentMaps.map;
 		LayeredTileMap tileMap = world.model.currentMaps.tileMap;
 		m.nextActionTime = System.currentTimeMillis() + getMillisecondsPerMove(m);

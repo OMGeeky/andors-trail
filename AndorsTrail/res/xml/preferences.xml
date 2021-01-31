@@ -85,6 +85,13 @@
 			android:defaultValue="0"
 			android:entries="@array/preferences_movement_dpad_positions"
 			android:entryValues="@array/preferences_movement_dpad_positions_values" />
+		<com.gpl.rpg.AndorsTrail.view.CustomListPreference
+			android:title="@string/preferences_movement_dpad_transparency_title"
+			android:summary="@string/preferences_movement_dpad_transparency"
+			android:key="dpadtransparency"
+			android:defaultValue="182"
+			android:entries="@array/preferences_movement_dpad_transparencies"
+			android:entryValues="@array/preferences_movement_dpad_transparencies_values" />
 		<CheckBoxPreference
 			android:title="@string/preferences_movement_dpad_minimizeable_title"
 			android:defaultValue="true"

@@ -666,4 +666,5 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
 \nUm Deine Spielstände speichern und laden zu können (und nur dafür) wird Andor\'s Trail um die Erlaubnis zum Zugriff auf das Dateisystem bitten."</string>
     <string name="skill_title_fightstyle_unarmed_unarmored">Kampf-Art: Pfad des Mönchs</string>
     <string name="iteminfo_effect_set_damage_modifier">Schadens Modifikation: %1$d%%</string>
+    <string name="skill_shortdescription_fightstyle_unarmed_unarmored">Verbesserter Kampf ohne Waffen/Rüstung</string>
 </resources>

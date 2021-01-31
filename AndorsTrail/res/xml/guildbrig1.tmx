@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="17" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="4">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="17" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="4">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,22 +180,22 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer id="9" name="Ground" width="17" height="11">
+ <layer id="1" name="Ground" width="17" height="11">
   <data encoding="base64" compression="zlib">
    eJyVkcENgCAMRY23emCA7j9DwwTERTx4dQJTY+VTIMjhJdDQV/IbtmUJEySq0bpwDda9I3LGHIlrBM7mM8fOGXNcVKO9dhbwPvMpg46140Jfemf3HCN0hoL9Iwf+y958mf50BOco9uIcwm2HuEylk2nkMn/8P9Zx5z5TvZ80x9HgBv8EiN0=
   </data>
  </layer>
- <layer id="10" name="Objects" width="17" height="11">
+ <layer id="2" name="Objects" width="17" height="11">
   <data encoding="base64" compression="zlib">
-   eJxjYKAekGRiYPjMxsDgw4QQk2HCoVYWU0wcqpaZnYEhBsouwqEfF1jEimB/4WdgyAHyPwCxmzADww4+iHgykpmN/PjN+yAIZbBBqBNAM3ZwQMyFgdNCEPPhaoHglyiqOSB5ZDNPcEDYm4F6twBxqDCqGhC4ATVPVAC/G2EAZAbILcigCurORyyY6mHhgQxA+tOFIWYRA05gMQPmpy1obkEOM+R4wgYOA/UegWJqAQC+Qx+X
+   eJxjYKAekGRiYPjMxsDgw4QQk2HCoVYWU0wcqpaZnYEhBsouwqEfF1jEimB/4WdgyAHyPwCxmzADww4+iHgykpmN/PjN+yAIZbBBqBNAM3ZwQMyFgdNCEPPhaoHglyiqOSB5ZDNPcEDYm4F6twBxqDCqGhC4ATVPVICBQYyIcACZAXILMqiCuvMRC6Z6WHggA5D+dGGIWcSAE1jMgPlpC5pbkMMMOZ6wgcNAvUegmFoAANyhH68=
   </data>
  </layer>
- <layer id="11" name="Above" width="17" height="11">
+ <layer id="3" name="Above" width="17" height="11">
   <data encoding="base64" compression="zlib">
-   eJxjYKAOOCyGYPsxYRfHpR6bWBwOM3CxCdl3iQpmXEQSv4SDTcgMUgDMjGP8DAxiTNjVXBbDzibXHaSEBz4zNgsxMGwRQojBwugimlmP8cTXYaD+I0LY5ckBAHixHF4=
+   eJxjYKAOOCyGYPsxYRfHpR6bWBwOM3CxCdl3iQpmXEQSv4SDTcgMUgDMjGP8uNVcFsPOJtcdpIQHPjM2CzEwbBFCiMHC6CKaWY/xxNdhoP4jQtjlyQEAWlMcRg==
   </data>
  </layer>
- <layer id="12" name="Walkable" width="17" height="11">
+ <layer id="4" name="Walkable" width="17" height="11">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsHGQYRCgVD8MEDITl1p0QMhdxJiBzTxccuhmEuMmXGLoZlDDL+SEKT6z6ZGuAKSEYfM=
   </data>

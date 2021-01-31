@@ -583,7 +583,7 @@
     <string name="startscreen_mode_50_lives">Hard (50 vidas, 1 save)</string>
     <string name="startscreen_mode_unlimited_lives">Médio (Vidas ilimitadas, 1 save)</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">Padrão (Vidas ilimitadas e saves)</string>
-    <string name="startscreen_attention_message_slot_gets_delete_on_load">O carregamento deste jogo exclui seu slot de salvamento. Você precisará salvar novamente antes de mudar para outro jogo.</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">Carregar este jogo apaga o seu slot de gravação. Precisará gravar novamente antes de mudar para outro jogo.</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">Atenção</string>
     <string name="startscreen_error_loading_empty_slot">Não é possível carregar de um slot vazio.</string>
     <string name="dialog_game_over_title">Fim de jogo</string>

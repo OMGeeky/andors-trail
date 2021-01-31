@@ -89,6 +89,63 @@
             {
                 "text":"Have you seen my brother Andor? He looks similar to me.",
                 "nextPhraseID":"alaun_2"
+            },
+            {
+                "text":"Do you have a job for me?",
+                "nextPhraseID":"alaun_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"About the soup...",
+                "nextPhraseID":"alaun_return_blindstart",
+                "requires":[
+                    {
+                        "requireType":"questLatestProgress",
+                        "requireID":"gison_soup",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"About the soup...",
+                "nextPhraseID":"alaun_return_blindstart",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":50
+                    }
+                ]
+            },
+            {
+                "text":"Gison gave me some of his soup.",
+                "nextPhraseID":"alaun_return",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":30,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":50,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -312,6 +369,453 @@
             {
                 "text":"So will you cut away those trees that block the old pathway?",
                 "nextPhraseID":"fallhaven_lumberjack_11"
+            }
+        ]
+    },
+    {
+        "id":"alaun_1",
+        "message":"Oh, how surprising. How nice of you. Indeed there is something you could do for me.",
+        "replies":[
+            {
+                "text":"Tell me what it is.",
+                "nextPhraseID":"alaun_5"
+            },
+            {
+                "text":"Maybe later.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Let's talk about payment first.",
+                "nextPhraseID":"alaun_4"
+            }
+        ]
+    },
+    {
+        "id":"alaun_4",
+        "message":"Ahh, you are here to earn some money, okay.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"alaun_5"
+            }
+        ]
+    },
+    {
+        "id":"alaun_5",
+        "message":"I'll give you 10 gold if you do this little job for me: Bring me some of that delicious soup which Gison cooks using mushrooms and wild herbs.",
+        "replies":[
+            {
+                "text":"Sounds easy, I'll do it!",
+                "nextPhraseID":"alaun_startquest10"
+            },
+            {
+                "text":"Give me 15 and I'll do it.",
+                "nextPhraseID":"alaun_more1"
+            },
+            {
+                "text":"Give me 20 and I'll do it.",
+                "nextPhraseID":"alaun_more2"
+            },
+            {
+                "text":"No way, I'm not your gopher.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_startquest10",
+        "message":"That's really nice of you.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"alaun_startquest_go"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"alaun_more1",
+        "message":"15? Let me think...erm...\n\nOK, I'll give you 15.",
+        "replies":[
+            {
+                "text":"Sounds good. I will do it.",
+                "nextPhraseID":"alaun_startquest15"
+            },
+            {
+                "text":"I changed my mind.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_more2",
+        "message":"20? Let me think...erm...\n\nOK. I'll give you 20. But please, bring it hot or I won't pay you.",
+        "replies":[
+            {
+                "text":"Sounds good. I will do it.",
+                "nextPhraseID":"alaun_startquest20"
+            },
+            {
+                "text":"I changed my mind.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_startquest15",
+        "message":"That's nice of you.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"alaun_startquest_go"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":15
+            }
+        ]
+    },
+    {
+        "id":"alaun_startquest20",
+        "message":"OK, please bring it hot!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"alaun_startquest_go"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":20
+            }
+        ]
+    },
+    {
+        "id":"alaun_startquest_go",
+        "message":"You can find Gison and his wife Nimael south of here. Cross the path and head into the woods. You will find their house soon.",
+        "replies":[
+            {
+                "text":"OK. See you later.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return",
+        "message":"Aah, you are back. Wonderful. I will stop working for now and take a little break.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"alaun_return_evaluation"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_evaluation",
+        "replies":[
+            {
+                "nextPhraseID":"alaun_return_coldsoup",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"gison_soup",
+                        "value":1
+                    },
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"gison_soup",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"alaun_return20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"alaun_soup_reward",
+                        "value":20
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gison_soup",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"alaun_return15",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"alaun_soup_reward",
+                        "value":15
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gison_soup",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"alaun_return10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"alaun_soup_reward",
+                        "value":10
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gison_soup",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"alaun_return_nosoup"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return10",
+        "message":"Here is the money I promised you.\n\nAnd as a bonus I will give you some of this bread.\n\nNext time I will buy Nimael's soup.",
+        "replies":[
+            {
+                "text":"Nimael's soup?",
+                "nextPhraseID":"alaun_return_nimael"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":30
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gold",
+                "value":10
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"bread",
+                "value":5
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"bottle_empty",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":11
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"alaun_return15",
+        "message":"Here is the money I promised you.\n\nNext time I will buy Nimael's soup.",
+        "replies":[
+            {
+                "text":"Nimael's soup?",
+                "nextPhraseID":"alaun_return_nimael"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gold",
+                "value":15
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"bottle_empty",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":30
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":16
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"alaun_return20",
+        "message":"Here is the money I promised you.\n\nNext time I will buy Nimael's soup.",
+        "replies":[
+            {
+                "text":"Nimael's soup?",
+                "nextPhraseID":"alaun_return_nimael"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":30
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"gold",
+                "value":20
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"bottle_empty",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":21
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"gison_soup",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_end",
+        "message":"Thanks again. And remember to take the bottle back to Gison. Now go please. I want to eat.",
+        "replies":[
+            {
+                "text":"Enjoy your meal.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_nosoup",
+        "message":"Where is it?",
+        "replies":[
+            {
+                "text":"Oops, I forgot that there is a hole in my bag.",
+                "nextPhraseID":"alaun_return_nosoup_1"
+            },
+            {
+                "text":"I ate it.",
+                "nextPhraseID":"alaun_return_nosoup_1"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_nosoup_1",
+        "message":"What are you waiting for? Go on, bring me some soup. Hurry, I'm hungry!",
+        "replies":[
+            {
+                "text":"Yes, I will return quickly.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_blindstart",
+        "message":"Yes. I asked you to bring me some of that delicious mushroom soup from Gison.",
+        "replies":[
+            {
+                "text":"Can you explain the way again?",
+                "nextPhraseID":"alaun_startquest_go"
+            },
+            {
+                "text":"Yes, I'm on my way.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I was not able to bring you the soup.",
+                "nextPhraseID":"alaun_return_fail",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"gison_soup",
+                        "value":50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_coldsoup",
+        "message":"This soup is cold. Return to me with a hot soup!",
+        "replies":[
+            {
+                "text":"Sorry. I will try again.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"It still tastes...",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"alaun_return_fail",
+        "message":"That can't be. Get out of here!\n\n[Alaun starts throwing things at you]",
+        "replies":[
+            {
+                "text":"But...",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Listen...",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"actorCondition",
+                "rewardID":"fear",
+                "value":15
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"alaun_soup_reward",
+                "value":30
             }
         ]
     }

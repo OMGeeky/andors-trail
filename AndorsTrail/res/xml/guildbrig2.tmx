@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.2" orientation="orthogonal" renderorder="right-down" width="10" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="6">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="10" height="12" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="6">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,22 +180,22 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer id="9" name="Ground" width="10" height="12">
+ <layer id="1" name="Ground" width="10" height="12">
   <data encoding="base64" compression="zlib">
    eJw7xsnAcIxIvEMKP4apOyGFH8PUcXMxMPzmxMQwcXT70dXhct9vNLNxuQ/dTnT3oZuDy35c8sjqsLkLHe/A4i5sekBqnnLixr+R2ACODmfE
   </data>
  </layer>
- <layer id="10" name="Objects" width="10" height="12">
+ <layer id="2" name="Objects" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYKAdyOWH0L38uNWECjMw1CLJ90DZhhTYG8TGwBAIxMFAHALEumj2z4Hyk4ByiUCcDMQpbJjmhAnjdnMPP6bYYAQA45MImA==
+   eJxjYKAdyOWH0L38uNWECjMw1CLJ90DZhhTYG8TGwBAIxMFAHALEumj2z4Hyk4ByiUCcDMQpbJhuDRPG7eZ/Qphi2EAPHr/TAwAA/IkKRA==
   </data>
  </layer>
- <layer id="11" name="Above" width="10" height="12">
+ <layer id="3" name="Above" width="10" height="12">
   <data encoding="base64" compression="zlib">
-   eJxjYCAeHBajvTpDFuL0PsKiDtm8+2yE7X0MpN8ToQ4b+CdEnDpizUMGl4hURwwAABZ2DK8=
+   eJxjYCAeHBajvTpDFuL0PsKiDtm8+2yE7X0MpN8ToY4QoLa6S0SqIwYAAGP5C58=
   </data>
  </layer>
- <layer id="12" name="Walkable" width="10" height="12" visible="0">
+ <layer id="4" name="Walkable" width="10" height="12" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsHGAMDYAEyekfqDch80NA6UOn7thbAA5fTyj
   </data>

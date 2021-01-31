@@ -617,8 +617,8 @@
         "message":"They were sending a boy to do some business here, and I was assigned to make sure that the mission was successful.",
         "replies":[
             {
-                "text":"N",
-                "nextPhraseID":"buceth_story_8"
+                "text":"Do you know where he went after he left Loneford?",
+                "nextPhraseID":"buceth_story_7_1"
             }
         ],
         "rewards":[

@@ -2927,7 +2927,7 @@
     },
     {
         "id":"cadoran_4b",
-        "message":"Follow the path to the west. There are two settlements there, Prim and Blackwater mountain Settlement. There has been a rockfall though, making it very difficult to get to them.",
+        "message":"Head out of town to the north. There are two settlements there, Prim and Blackwater mountain Settlement. There has been a rockfall though, making it very difficult to get to them.",
         "replies":[
             {
                 "text":"Thanks for the information. What was it you said about the monsters?",
@@ -10162,7 +10162,7 @@
                 "nextPhraseID":"stn_colonel_84"
             },
             {
-                "text":"Well, It will be interesting.",
+                "text":"Well, it will be interesting.",
                 "nextPhraseID":"stn_colonel_86"
             }
         ]

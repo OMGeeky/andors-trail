@@ -9,6 +9,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.UUID;
 
@@ -47,12 +49,14 @@ public final class Player extends Actor {
 	public int totalExperience;
 	public final Range weaponDamage = new Range();
 
-	private final LinkedHashMap<String, HashSet<Integer> > questProgress = new LinkedHashMap<String, HashSet<Integer> >();
+	private final LinkedHashMap<String, LinkedHashSet<Integer>> questProgress = new LinkedHashMap<String, LinkedHashSet<Integer> >();
 	private String spawnMap;
 	private String spawnPlace;
 	private final HashMap<String, Integer> alignments = new HashMap<String, Integer>();
 	public String id = UUID.randomUUID().toString();
 	public long savedVersion = 1; // the version get's increased for cheat detection everytime a player with limited saves is saved
+
+
 
 	// Unequipped stats
 	public static final class PlayerBaseTraits {
@@ -157,9 +161,13 @@ public final class Player extends Actor {
 		}
 		return true;
 	}
+	public Integer[] getQuestProgress(String questID) {
+		if (!questProgress.containsKey(questID)) return new Integer[] {};
+		return questProgress.get(questID).toArray(new Integer[questProgress.get(questID).size()]);
+	}
 	public boolean addQuestProgress(QuestProgress progress) {
 		if (hasExactQuestProgress(progress.questID, progress.progress)) return false;
-		if (!questProgress.containsKey(progress.questID)) questProgress.put(progress.questID, new HashSet<Integer>());
+		if (!questProgress.containsKey(progress.questID)) questProgress.put(progress.questID, new LinkedHashSet<Integer>());
 		questProgress.get(progress.questID).add(progress.progress);
 		return true; //Progress was added.
 	}
@@ -353,22 +361,34 @@ public final class Player extends Actor {
 		this.spawnPlace = src.readUTF();
 
 		if (fileversion > 13) {
-			LinkedHashMap<String, HashSet<Integer> > questProgress = new LinkedHashMap<String, HashSet<Integer> >();
+			LinkedHashMap<String, LinkedHashSet<Integer> > questProgress = new LinkedHashMap<String, LinkedHashSet<Integer> >();
 			final int numQuests = src.readInt();
 			for(int i = 0; i < numQuests; ++i) {
 				final String questID = src.readUTF();
-				questProgress.put(questID, new HashSet<Integer>());
+				questProgress.put(questID, new LinkedHashSet<Integer>());
 				final int numProgress = src.readInt();
-				for(int j = 0; j < numProgress; ++j) {
-					int progress = src.readInt();
-					questProgress.get(questID).add(progress);
+
+				// queststeps are randomly sorted until 56 so sort it by ID
+				if (fileversion < 56) {
+					List<Integer> steps = new ArrayList<Integer>();
+					for (int j = 0; j < numProgress; ++j) {
+						int progress = src.readInt();
+						steps.add(progress);
+					}
+					Collections.sort(steps);
+					questProgress.get(questID).addAll(steps);
+				} else {
+					for (int j = 0; j < numProgress; ++j) {
+						int progress = src.readInt();
+						questProgress.get(questID).add(progress);
+					}
 				}
 			}
 
 			// questprogress is randomly sorted until 52 so sort it by quest order
 			if (fileversion < 52) {
 				for (Quest q : world.quests.getAllQuests()) {
-					final HashSet<Integer> questSteps = questProgress.get(q.questID);
+					final LinkedHashSet<Integer> questSteps = questProgress.get(q.questID);
 					if (questSteps != null) {
 						this.questProgress.put(q.questID, questSteps);
 					}
@@ -440,7 +460,7 @@ public final class Player extends Actor {
 		dest.writeUTF(spawnMap);
 		dest.writeUTF(spawnPlace);
 		dest.writeInt(questProgress.size());
-		for(Entry<String, HashSet<Integer> > e : questProgress.entrySet()) {
+		for(Entry<String, LinkedHashSet<Integer> > e : questProgress.entrySet()) {
 			dest.writeUTF(e.getKey());
 			dest.writeInt(e.getValue().size());
 			for(int progress : e.getValue()) {

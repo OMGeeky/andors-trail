@@ -698,6 +698,13 @@
                 "text":"N",
                 "nextPhraseID":"guynmart_spectator1_20"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"beetle_watching",
+                "value":1
+            }
         ]
     },
     {
@@ -708,6 +715,13 @@
             {
                 "text":"N",
                 "nextPhraseID":"guynmart_spectator1_30"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"beetle_watching",
+                "value":1
             }
         ]
     },
@@ -720,6 +734,13 @@
                 "text":"N",
                 "nextPhraseID":"guynmart_spectator1_20"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"beetle_watching",
+                "value":1
+            }
         ]
     },
     {
@@ -729,6 +750,13 @@
             {
                 "text":"N",
                 "nextPhraseID":"guynmart_spectator1_30"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"beetle_watching",
+                "value":1
             }
         ]
     },
@@ -1171,7 +1199,7 @@
     },
     {
         "id":"guynmart_wise_20",
-        "message":"It happend in the mines of Mount Galmore. Don't ask any more, I do not wish to recall the memories. It was horrible.",
+        "message":"It happened in the mines of Mount Galmore. Don't ask any more, I do not wish to recall the memories. It was horrible.",
         "replies":[
             {
                 "text":"N",

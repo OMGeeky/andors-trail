@@ -50,6 +50,14 @@
                 "finishesQuest":0
             },
             {
+                "progress":62,
+                "logText":"Andor might have gone to do some business with a rich man in Brimhaven after he left Loneford."
+            },
+            {
+                "progress":65,
+                "logText":"It looks like Andor was involved in the destruction of the Brimhaven dam."
+            },
+            {
                 "progress":70,
                 "logText":"I have found the potion-maker Lodar, and heard his story about Andor. Andor went to visit Lodar in his hideaway to get a sample of something called Narwood extract. Lodar happened to notice that there was someone travelling together with Andor, that hid among the trees and did not seem to want Lodar to spot him.",
                 "finishesQuest":0
@@ -68,6 +76,14 @@
                 "progress":80,
                 "logText":"All clues so far as to where Andor went point to Nor City. I should travel to Nor City by following the Duleian road to the southeast and look for more clues there.",
                 "finishesQuest":0
+            },
+            {
+                "progress":85,
+                "logText":"Andor may have been in Stoutford."
+            },
+            {
+                "progress":86,
+                "logText":"Andor had something to do with the demon under the church in Stoutford."
             },
             {
                 "progress":90,

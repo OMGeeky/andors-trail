@@ -1226,8 +1226,8 @@
     },
     {
         "id":"none",
-        "name":"none",
-        "iconID":"monsters_eye1:0"
+        "name":"Dummy NPC",
+        "iconID":"monsters_guynmart:8"
     },
     {
         "id":"erwyn_skel_lute",

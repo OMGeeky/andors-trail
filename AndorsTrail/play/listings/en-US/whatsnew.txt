@@ -1,10 +1,61 @@
-Changes in the start village Crossglen to make it even more fun and easier in the beginning
-4 new quests and one enhanced quest
-4 new maps
-New weapon class "Pole arm weapons" and fighting style
-When dpad is active (both visible and not minimized), normal touch-based movement is prevented
-Various small changes and bug fixes
-Translations actualized
+I put both (release notes + forum announcement) into this source, so it will be easier to maintain them parallel:
+
+Release notes
+=============
+4 new quests beginning in Fallhaven or south of it.
+Achievements (listed as a quest, but with independent single entries).
+29 new maps.
+
+Fix of rounding issue regarding skills.
+No more tapping out of loot window.
+Quest steps in the quest log are now sorted in chronological order.
+Combat log improvements.
+
+Various other changes and bug fixes.
+Translations actualized.
 
 Finally a warning:
 For any PERMADEATH characters it would be a good idea to save before updating.
+
+Three other languages available: Japanese, Czech and Chinese.
+
+
+Forum announcement
+==================
+Content:
+* 4 new quests beginning in Fallhaven or south of it
+	1) Delicious soup  (Start at Alaun in a house in South Fallhaven)
+	2) Fungi panic  (Start in a new map southeast of Fallhaven)
+	3) A raid for a cookbook  (Start at Gison)
+	4) A giant snake (Start at Fallhaven tavern, later in the game)
+* Achievements
+    Technically listed as a quest, but the achievements are completely independent single steps, which are given as a reward for special things. (Talk to Mikhail)
+	There are very few achievements yet, but more will be added in the next releases.
+* 29 new maps
+* Other changes
+	Thoronir now gives feedback about the shadow faction score
+	Changed the rewards for Fair Play (give more XP for the correct answer)
+	Added more steps to the Andor quest
+	Leading from Loneford to Brimhaven and the destruction of the dam
+	Missing entries for Stoutford
+
+Code:
+* Fixed rounding issues regarding skills and also a fix for gold quantity
+* Made proceedToPhrase non recursive to allow longer chains of dialogues
+* Damage modifier when dual wielding now depends on the dual wield skill
+* Increased API level to 29 so we can update AT after November 2020
+* Prevent stray taps from closing the loot dialog box after combat
+* Queststeps in the quest log are now sorted in chronological order
+* Show item drops, XP gains, and item consumption in the Combat Log
+* jasptravis/travis
+* Updated virtual dpad graphic
+* Updated inventory filters and sorting: "jewelry" is now separate from "armor"; "consumable" is split into "potion" and "food"; sorting by "type" now splits equippable items based on equipment slot
+
+* Various small changes and bug fixes
+* Translations actualized
+* Three other languages available: Japanese, Czech and Chinese (thanks to the translators!)
+
+Finally a warning:
+For any PERMADEATH characters it would be a good idea to save before updating.
+
+

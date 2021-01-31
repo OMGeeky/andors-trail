@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="30" height="24" tilewidth="32" tileheight="32" nextobjectid="18">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="24" tilewidth="32" tileheight="32" infinite="0" nextobjectid="24">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -198,7 +198,7 @@
    eJzFlNENgCAMRF2D/adgFA3sIiYSm6alBxS8Hz689l4bMIdjq1LJy29mXphNc0b01CawXsrymq325ifCavGPcGtZtQ7dmdRrdmfIvDPfWzV0fnQOzYfumJ+tnt4a2dVqRQem2f8G11l6XeE7tcwqns15pD4os7Uf5A1rM3gosrf0pzzu0l/awd66z5IP9Vu9Rn0WxywfykYZaE0Pm1Qv5fTKYuvxa97V2pFBdQNmvmkv
   </data>
  </layer>
- <layer name="Walkable" width="30" height="24" visible="0">
+ <layer name="Walkable" width="30" height="24">
   <data encoding="base64" compression="zlib">
    eJzdVUEOwCAI8xX+/wv8cJctWcyAlmK2rAk3aFGK2hzDzrjDJhdIzcrtgdG88j0Oj5PVRhHdJVrL5rM6DBc655VL6VvxHqKLeBP1HnPebk1vJru0lR6jfUV8X92NKBflROarQtndiK96p9mORj1n8/a0Ub5uML6KODrqFB++jS/tSeW96NbM3keGW9Gs/C9PvXVq/SUO2g38pA==
   </data>
@@ -259,6 +259,10 @@
    </properties>
   </object>
   <object id="17" name="fct_bandit1" type="script" x="64" y="480" width="864" height="160"/>
+  <object id="19" name="grownfood01" type="script" x="640" y="128" width="32" height="32"/>
+  <object id="20" name="grownfood02" type="script" x="640" y="32" width="32" height="32"/>
+  <object id="21" name="grownfood03" type="script" x="768" y="96" width="32" height="32"/>
+  <object id="22" name="chk_wild_berry" type="script" x="0" y="128" width="32" height="512"/>
  </objectgroup>
  <objectgroup name="Spawn" visible="0">
   <object id="10" name="bandit1" type="spawn" x="64" y="512" width="832" height="96">
@@ -298,6 +302,20 @@
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="forestwasp2"/>
+   </properties>
+  </object>
+  <object id="16" name="wild_berry" type="spawn" x="224" y="192" width="576" height="224">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="3"/>
+    <property name="spawngroup" value="wild_berry"/>
+   </properties>
+  </object>
+  <object id="23" name="wild_berry2" type="spawn" x="96" y="640" width="736" height="64">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="wild_berry"/>
    </properties>
   </object>
  </objectgroup>

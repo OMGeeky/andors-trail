@@ -122,7 +122,7 @@
     },
     {
         "id":"arlish_asd_40",
-        "message":"You see, this was my father Lawellyn's most prized possesion. He kept it with him always.",
+        "message":"You see, this was my father Lawellyn's most prized possession. He kept it with him always.",
         "replies":[
             {
                 "text":"Please go on.",
@@ -207,7 +207,7 @@
     },
     {
         "id":"brv_asd_no_info_10",
-        "message":"No, I am sorry, I don't"
+        "message":"No, I am sorry, I don't."
     },
     {
         "id":"brv_tavern1_guest2_asd_10",
@@ -663,7 +663,7 @@
     },
     {
         "id":"brv_guard_deputy_asd_30",
-        "message":"That is as good as done",
+        "message":"That is as good as done.",
         "replies":[
             {
                 "text":"Thanks.",
@@ -739,7 +739,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"I have proof that Ogea murdered Lawellyn and stole his prize dagger.",
+                "text":"I have proof that Ogea murdered Lawellyn and stole his prized dagger.",
                 "nextPhraseID":"brv_guard_deputy_asd_10",
                 "requires":[
                     {
@@ -2283,6 +2283,34 @@
         "id":"brv_churchman_start",
         "replies":[
             {
+                "nextPhraseID":"brv_churchman_mouse1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":60
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":70,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":80,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":90,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"brv_churchman_b1",
                 "requires":[
                     {
@@ -2455,6 +2483,12 @@
                         "requireID":"cheese",
                         "value":1,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":20,
+                        "negate":true
                     }
                 ]
             },
@@ -2471,6 +2505,12 @@
                         "requireType":"questProgress",
                         "requireID":"cat_and_mouse",
                         "value":30
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":20,
+                        "negate":true
                     }
                 ]
             },
@@ -2494,6 +2534,12 @@
                         "requireID":"rock",
                         "value":3,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":30,
+                        "negate":true
                     }
                 ]
             },
@@ -2510,6 +2556,12 @@
                         "requireType":"questProgress",
                         "requireID":"cat_and_mouse",
                         "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":30,
+                        "negate":true
                     }
                 ]
             },
@@ -2526,6 +2578,18 @@
                         "requireType":"inventoryRemove",
                         "requireID":"cheese",
                         "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":20,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"cat_and_mouse",
+                        "value":30,
+                        "negate":true
                     }
                 ]
             },
@@ -2689,7 +2753,7 @@
                 "nextPhraseID":"release_mouse1",
                 "requires":[
                     {
-                        "requireType":"inventoryRemove",
+                        "requireType":"inventoryKeep",
                         "requireID":"trapped_mouse",
                         "value":1
                     }
@@ -2700,22 +2764,17 @@
     {
         "id":"release_mouse1",
         "message":"This looks like a good place to release the mouse.",
-        "switchToNPC":"none",
         "replies":[
             {
-                "text":"N",
-                "nextPhraseID":"release_mouse2"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"dropList",
-                "rewardID":"arlish_bottle"
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"cat_and_mouse",
-                "value":90
+                "text":"[Open the bottle]",
+                "nextPhraseID":"release_mouse1a",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"trapped_mouse",
+                        "value":1
+                    }
+                ]
             }
         ]
     },
@@ -3022,6 +3081,27 @@
                 "rewardType":"questProgress",
                 "rewardID":"nondisplay_2",
                 "value":240
+            }
+        ]
+    },
+    {
+        "id":"release_mouse1a",
+        "message":"You look after as it disappears quickly.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"release_mouse2"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"dropList",
+                "rewardID":"arlish_bottle"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"cat_and_mouse",
+                "value":90
             }
         ]
     }

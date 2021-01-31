@@ -182,7 +182,7 @@
         "iconID":"monsters_men:7",
         "monsterClass":"humanoid",
         "spawnGroup":"bela",
-        "phraseID":"bela",
+        "phraseID":"bela_gsnake",
         "droplistID":"shop_bela"
     },
     {
@@ -244,7 +244,7 @@
         "iconID":"monsters_mage2:0",
         "monsterClass":"humanoid",
         "spawnGroup":"alaun",
-        "phraseID":"alaun"
+        "phraseID":"alaun_start"
     },
     {
         "id":"busy_farmer",

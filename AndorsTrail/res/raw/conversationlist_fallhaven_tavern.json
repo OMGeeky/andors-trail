@@ -5,7 +5,7 @@
         "replies":[
             {
                 "text":"Let me see what food and drinks you have available.",
-                "nextPhraseID":"S"
+                "nextPhraseID":"bela_select"
             },
             {
                 "text":"Are there any rooms available?",
@@ -139,5 +139,165 @@
     {
         "id":"ganos_1",
         "message":"Thieves' Guild? How would I know? Do I look like a thief to you?! Hrmpf."
+    },
+    {
+        "id":"bela_gsnake",
+        "replies":[
+            {
+                "nextPhraseID":"bela",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bela_gsnake",
+                        "value":90
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"bela_gsnake_20",
+                "requires":[
+                    {
+                        "requireType":"killedMonster",
+                        "requireID":"giant_snake",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"bela_gsnake_1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"remgard",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"bela"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_1",
+        "message":"I'm glad you are still alive!",
+        "replies":[
+            {
+                "text":"As you know I can handle myself.",
+                "nextPhraseID":"bela"
+            },
+            {
+                "text":"Why? Has something happened?",
+                "nextPhraseID":"bela_gsnake_2"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_2",
+        "message":"Did you not hear of the most dangerous snake ever seen? It has been spotted on Fallhaven's southern border.",
+        "replies":[
+            {
+                "text":"A snake?",
+                "nextPhraseID":"bela_gsnake_3"
+            },
+            {
+                "text":"No, I didn't hear, and I also don't want to.\nPlease give me something to drink.",
+                "nextPhraseID":"S"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_3",
+        "message":"No normal snake. Huge as a house! Making noise like a hundred galloping horses!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"bela_gsnake_4"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_4",
+        "message":"Few people dare to walk outside of the city nowadays.",
+        "replies":[
+            {
+                "text":"Sounds interesting.",
+                "nextPhraseID":"bela_gsnake_10"
+            },
+            {
+                "text":"Thanks for the warning. I'll avoid that area.",
+                "nextPhraseID":"bela_gsnake_5"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_5",
+        "message":"Good. Enough of such dark words - now go, have a seat anywhere.",
+        "replies":[
+            {
+                "text":"Let me see what food and drinks you have available.",
+                "nextPhraseID":"S"
+            },
+            {
+                "text":"Are there any rooms available?",
+                "nextPhraseID":"bela_room_select"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_10",
+        "message":"Oh no - what have I done? I shouldn't have talked of the giant snake. Promise me you won't go there!",
+        "replies":[
+            {
+                "text":"Well, if it makes you happy.",
+                "nextPhraseID":"bela_gsnake_5"
+            },
+            {
+                "text":"Of course I'll go there.",
+                "nextPhraseID":"bela_gsnake_11"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_11",
+        "message":"What a waste of such a young, promising life! Well...don't forget to pay your tab before you leave my tavern.",
+        "rewards":[
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"giant_snake",
+                "mapName":"gapfiller2"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bela_gsnake",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_20",
+        "message":"You are back!",
+        "replies":[
+            {
+                "text":"Sure. And your little snake monster is no more.",
+                "nextPhraseID":"bela_gsnake_21"
+            }
+        ]
+    },
+    {
+        "id":"bela_gsnake_21",
+        "message":"Incredible! Let's feast now! Everyone have a free drink!",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"bela_gsnake",
+                "value":90
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"mead",
+                "value":1
+            }
+        ]
     }
 ]

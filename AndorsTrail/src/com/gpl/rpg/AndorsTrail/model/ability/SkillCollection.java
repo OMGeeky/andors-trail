@@ -56,6 +56,7 @@ public final class SkillCollection {
 		,specializationWeaponShield
 		,weaponProficiencyPole
 		,fightstyleUnarmedUnarmored
+		,sporeImmunity
 	}
 
 	// should be in the same number &U order as in arrays.xml
@@ -244,6 +245,7 @@ public final class SkillCollection {
 				SkillLevelRequirement.requireExperienceLevels(45, 0)
 				,SkillLevelRequirement.requireOtherSkill(SkillID.fightstyleWeaponShield, 2)
 			}, position++));
+		initializeSkill(new SkillInfo(SkillID.sporeImmunity, 1, SkillInfo.LevelUpType.onlyByQuests, SkillCategory.immunity, null, position++));
 	}
 
 	public SkillInfo getSkill(SkillID skillID) {

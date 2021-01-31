@@ -202,7 +202,8 @@ public final class Dialogs {
 				mainActivity.getResources().getDrawable(R.drawable.ui_icon_equipment), 
 				msg, 
 				combinedLoot.items.isEmpty() ? null : itemList, 
-						true);
+				true,
+				false);
 
 		itemList.setOnItemClickListener(new OnItemClickListener() {
 			@Override
@@ -255,7 +256,8 @@ public final class Dialogs {
 				mainActivity.getResources().getDrawable(R.drawable.ui_icon_combat),
 				mainActivity.getResources().getString(R.string.dialog_game_over_text),
 				null,
-				true);
+				true,
+				false);
 
 		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
 

@@ -52,7 +52,9 @@ public final class HeroinfoActivity_Inventory extends Fragment implements Custom
 	private ItemContainerAdapter inventoryListAdapter;
 	private ItemContainerAdapter inventoryWeaponsListAdapter;
 	private ItemContainerAdapter inventoryArmorListAdapter;
-	private ItemContainerAdapter inventoryUsableListAdapter;
+	private ItemContainerAdapter inventoryJewelryListAdapter;
+	private ItemContainerAdapter inventoryPotionListAdapter;
+	private ItemContainerAdapter inventoryFoodListAdapter;
 	private ItemContainerAdapter inventoryQuestListAdapter;
 	private ItemContainerAdapter inventoryOtherListAdapter;
 
@@ -306,11 +308,15 @@ public final class HeroinfoActivity_Inventory extends Fragment implements Custom
 			return inventoryWeaponsListAdapter.getItem(position).itemType;
 		} else if (v == 2) { //Armor items
 			return inventoryArmorListAdapter.getItem(position).itemType;
-		} else if (v == 3) { //Usable items
-			return inventoryUsableListAdapter.getItem(position).itemType;
-		} else if (v == 4) { //Quest items
+		} else if (v == 3) { //Jewelry items
+			return inventoryJewelryListAdapter.getItem(position).itemType;
+		} else if (v == 4) { //Potion items
+			return inventoryPotionListAdapter.getItem(position).itemType;
+		} else if (v == 5) { //Food items
+			return inventoryFoodListAdapter.getItem(position).itemType;
+		} else if (v == 6) { //Quest items
 			return inventoryQuestListAdapter.getItem(position).itemType;
-		} else if (v == 5) { //Other items
+		} else if (v == 7) { //Other items
 			return inventoryOtherListAdapter.getItem(position).itemType;
 		}
 
@@ -445,15 +451,23 @@ public final class HeroinfoActivity_Inventory extends Fragment implements Custom
 			inventoryArmorListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildArmorItems(), player, wornTiles);
 			inventoryList.setAdapter(inventoryArmorListAdapter);
 			inventoryArmorListAdapter.notifyDataSetChanged();
-		} else if (v == 3) { //Usable items
-			inventoryUsableListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildUsableItems(), player, wornTiles);
-			inventoryList.setAdapter(inventoryUsableListAdapter);
-			inventoryUsableListAdapter.notifyDataSetChanged();
-		} else if (v == 4) { //Quest items
+		} else if (v == 3) { //Jewelry items
+			inventoryJewelryListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildJewelryItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryJewelryListAdapter);
+			inventoryJewelryListAdapter.notifyDataSetChanged();
+		} else if (v == 4) { //Potion items
+			inventoryPotionListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildPotionItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryPotionListAdapter);
+			inventoryPotionListAdapter.notifyDataSetChanged();
+		} else if (v == 5) { //Food items
+			inventoryFoodListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildFoodItems(), player, wornTiles);
+			inventoryList.setAdapter(inventoryFoodListAdapter);
+			inventoryFoodListAdapter.notifyDataSetChanged();
+		} else if (v == 6) { //Quest items
 			inventoryQuestListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildQuestItems(), player, wornTiles);
 			inventoryList.setAdapter(inventoryQuestListAdapter);
 			inventoryQuestListAdapter.notifyDataSetChanged();
-		} else if (v == 5) { //Other items
+		} else if (v == 7) { //Other items
 			inventoryOtherListAdapter = new ItemContainerAdapter(getActivity(), world.tileManager, player.inventory.buildOtherItems(), player, wornTiles);
 			inventoryList.setAdapter(inventoryOtherListAdapter);
 			inventoryOtherListAdapter.notifyDataSetChanged();

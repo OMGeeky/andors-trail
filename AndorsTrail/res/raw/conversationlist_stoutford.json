@@ -201,6 +201,13 @@
                 "text":"Do you know where he was going?",
                 "nextPhraseID":"stoutford_gateguard_andor_2"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"andor",
+                "value":85
+            }
         ]
     },
     {
@@ -557,6 +564,13 @@
             {
                 "text":"Go on.",
                 "nextPhraseID":"yolgen_rumblings10_3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"andor",
+                "value":85
             }
         ]
     },
@@ -1105,6 +1119,13 @@
             {
                 "text":"N",
                 "nextPhraseID":"glasforn_rumblings60_3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"andor",
+                "value":86
             }
         ]
     },

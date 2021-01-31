@@ -498,7 +498,7 @@
         "id":"hand_axe",
         "iconID":"items_weapons_3:35",
         "name":"Hand Axe",
-        "displaytype":"ordinary",
+        "displaytype":"quest",
         "category":"axe",
         "equipEffect":{
             "increaseAttackDamage":{
@@ -531,7 +531,7 @@
         "name":"A strange looking dagger",
         "displaytype":"quest",
         "category":"dagger",
-        "description":"This dagger has a strange-looking hilt.",
+        "description":"The dagger has an inscription etched into the metal \"The Shadow shall bear no witness to the wielder of this blade\".",
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":1,
@@ -548,7 +548,7 @@
         "hasManualPrice":1,
         "baseMarketCost":3706,
         "category":"dagger",
-        "description":"It's sharp!",
+        "description":"The dagger has an inscription etched into the metal \"The Shadow shall bear no witness to the wielder of this blade\".",
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":1,

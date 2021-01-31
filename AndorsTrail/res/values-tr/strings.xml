@@ -4,23 +4,27 @@
     <string name="menu_settings">Tercihler</string>
     <string name="menu_save">Kaydet</string>
     <string name="app_name">Andor\'un İzi</string>
-    <string name="app_description">Macera temelli bir fantezi RPG</string>
-    <string name="menu_save_failed">Kaydetme başarısız! SD kart yerleştirilmiş ve yazılabilir mi?</string>
+    <string name="app_description">Macera temelli bir fantezi Rol Yapma</string>
+    <string name="menu_save_failed">Kaydetme başarısız! SD kart takılı ve yazılabilir mi\?</string>
     <string name="loadsave_title_save">Oyunu kaydet</string>
     <string name="loadsave_title_load">Kayıtlı oyunu yükle</string>
-    <string name="loadsave_selectslot">Pozisyon seçiniz</string>
+    <string name="loadsave_selectslot">Slot seçiniz</string>
     <string name="savegame_currenthero_displayinfo">seviye %1$d, %2$d deneyim, %3$d altın</string>
     <string name="dialog_loading_message">Kaynaklar yükleniyor…</string>
     <string name="dialog_loading_failed_title">Yükleme Başarısız</string>
-    <string name="dialog_loading_failed_message">Andor\'un İzinde oyun kayıt dosyasını yükleyemedi.\n\n:(\n\nDosya zara görmüş veya eksik olabilir.</string>
-    <string name="dialog_loading_failed_incorrectversion">Andor\'un İzinde oyun kayıt dosyasını yükleyemedi. Bu oyun kayıt dosyası mevcut çalışandan daha yeni bir sürümle oluşturulmuş.</string>
+    <string name="dialog_loading_failed_message">Oyunun kayıt dosyası yüklenemedi.
+\n
+\n:(
+\n
+\nDosya zara görmüş veya eksik olabilir.</string>
+    <string name="dialog_loading_failed_incorrectversion">Oyunun kayıt dosyası yüklenemedi. Bu oyun kayıt dosyası mevcut çalışandan daha yeni bir sürümle oluşturulmuş.</string>
     <string name="dialog_close">Kapat</string>
     <string name="dialog_monsterencounter_title">Karşılaşma</string>
     <string name="dialog_monsterencounter_message">Saldırmak istiyor musunuz?\nZorluk: %1$s</string>
     <string name="dialog_monsterencounter_info">Bilgi</string>
     <string name="status_hp">SP:</string>
     <string name="status_ap">AP:</string>
-    <string name="status_exp">Seviye:</string>
+    <string name="status_exp">Tecrübe Puanı:</string>
     <string name="heroinfo_char">Genel Bakış</string>
     <string name="heroinfo_inv">Eşyalar</string>
     <string name="heroinfo_skill">Beceriler</string>
@@ -206,7 +210,7 @@
     <string name="inventory_assign">Hızlı kullanım pozisyonu ata</string>
     <string name="inventory_unassign">Hızlı kullanım pozisyonunu kaldır</string>
     <string name="preferences_movement_dpad_position_title">Sanal yön tuşları</string>
-    <string name="menu_save_gamesaved">Oyun %1$d pozisyona kaydedildi</string>
+    <string name="menu_save_gamesaved">Oyun %1$d slotuna kaydedildi</string>
     <string name="combat_result_herohit">hit %1$s için %2$d hp!</string>
     <string name="combat_result_herohitcritical">"kritik bir vuruştan hit %1$s hp %2$d hasar aldın!"</string>
     <string name="inventory_item_equipped">%1$s giydiniz.</string>
@@ -339,14 +343,14 @@
     <string name="skill_shortdescription_armor_prof_light">Hafif zırh kullanarak daha iyi yapmak</string>
     <string name="skill_shortdescription_armor_prof_heavy">Ağır zırh kullanarak daha iyi yapmak</string>
     <string name="localize_resources_from_mo_filename">tr.mo</string>
-    <string name="dialog_recenter">Yeniden merkezle</string>
+    <string name="dialog_recenter">Yeniden ortala</string>
     <string name="dialog_more">Daha</string>
     <string name="dialog_monsterencounter_conditions">Durumlar</string>
     <string name="heroinfo_skill_categories">Kategori</string>
     <string name="heroinfo_skill_sort">Sırala</string>
     <string name="heroinfo_inventory_categories">Kategori</string>
     <string name="heroinfo_inventory_sort">Sırala</string>
-    <string name="heroinfo_healthpoints">Can puanı (HP):</string>
+    <string name="heroinfo_healthpoints">Can: (HP):</string>
     <string name="heroinfo_experiencepoints">Deneyim puanları (XP):</string>
     <string name="levelup_adds_new_skillpoint">Bu seviye ayrıca size harcayacağınız yeni bir özellik puanı sunuyor!</string>
     <string name="combat_taunt_monster">%1$s\'a sataştın!</string>
@@ -501,15 +505,15 @@
     <string name="skill_shortdescription_weapon_prof_2hsword">İki elli kılıçlarla daha iyi dövüşme</string>
     <string name="skill_shortdescription_weapon_prof_1hsword">Tek elli kılıçlarla daha iyi dövüşme</string>
     <string name="skill_shortdescription_weapon_prof_dagger">Hançerlerle daha iyi dövüşme</string>
-    <string name="heroinfo_one_life">Permadeath (1 can)</string>
-    <string name="heroinfo_limited_lives">Sınırlı can (%1$d/%2$d)</string>
+    <string name="heroinfo_one_life">Fani (1 yaşam hakkı)</string>
+    <string name="heroinfo_limited_lives">Sınırlı Yaşam Hakkı</string>
     <string name="heroinfo_unlimited_lives_and_saves">Standart
 \n(Sınırsız can ve kayıt)</string>
     <string name="heroinfo_unlimited_lives">Sınırsız can, 1 kayıt</string>
     <string name="heroinfo_mode">Mod</string>
-    <string name="dialog_game_over_text">Son nefesini verdin ve öldün.</string>
-    <string name="dialog_game_over_title">Oyun bitti</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trail kayıt dosyasını yükleyemedi. Yüklenmeye çalışılan kayıt dosyası zaten oynatılıyor.</string>
+    <string name="dialog_game_over_text">Son nefesini al ve öl.</string>
+    <string name="dialog_game_over_title">Oyun Bitti</string>
+    <string name="dialog_loading_failed_cheat">Oyunun kayıt dosyası yüklenemedi. Yüklenmeye çalışılan kayıt dosyası zaten oynatılıyor.</string>
     <string name="heroinfo_gamestats_fav_monsters">En çok öldürülen canavarlar</string>
     <string name="heroinfo_gamestats_visited_maps">Ziyaret edilen yer sayısı</string>
     <string name="heroinfo_gamestats_bonemeals">Kemik tozu iksiri kullanıldı</string>
@@ -537,7 +541,7 @@
     <string name="skill_shortdescription_specialization_weapon_shield">Silah ve kalkanla savaşmada uzman</string>
     <string name="skill_shortdescription_specialization_2hand">İki elli silahlarda uzman</string>
     <string name="skill_shortdescription_fightstyle_unarmed_unarmored">Silahsız / zırhsız savaşmada daha iyi</string>
-    <string name="rip_startscreen">HUZUR İÇİNDE YATSIN</string>
+    <string name="rip_startscreen">Huzur İçinde Yat</string>
     <string name="storage_permissions_mandatory">Andor\'un İzinde\'nin kaydedilmiş oyunları ve dünya haritasını işlemesi için depolamaya erişim zorunludur. Andor\'un İzinde kapatılıyor.</string>
     <string name="shoplist_sort_rarity">Nadirlik</string>
     <string name="inventory_sort_rarity">Nadirlik</string>

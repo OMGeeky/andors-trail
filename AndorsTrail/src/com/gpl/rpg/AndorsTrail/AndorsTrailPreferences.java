@@ -27,6 +27,11 @@ public final class AndorsTrailPreferences {
 	public static final int DPAD_POSITION_UPPER_LEFT = 6;
 	public static final int DPAD_POSITION_UPPER_RIGHT = 7;
 	public static final int DPAD_POSITION_UPPER_CENTER = 8;
+	public static final int DPAD_TRANSPARENCY_30_PERCENT = 0;
+	public static final int DPAD_TRANSPARENCY_40_PERCENT = 1;
+	public static final int DPAD_TRANSPARENCY_50_PERCENT = 2;
+	public static final int DPAD_TRANSPARENCY_60_PERCENT = 3;
+	public static final int DPAD_TRANSPARENCY_70_PERCENT = 4;
 	public static final int CONFIRM_OVERWRITE_SAVEGAME_ALWAYS = 0;
 	public static final int CONFIRM_OVERWRITE_SAVEGAME_WHEN_PLAYERNAME_DIFFERS = 1;
 	public static final int CONFIRM_OVERWRITE_SAVEGAME_NEVER = 2;
@@ -48,6 +53,7 @@ public final class AndorsTrailPreferences {
 	public int movementAggressiveness = MOVEMENTAGGRESSIVENESS_NORMAL;
 	public float scalingFactor = 1.0f;
 	public int dpadPosition;
+	public int dpadTransparency;
 	public boolean dpadMinimizeable = true;
 	public boolean optimizedDrawing = false;
 	public boolean highQualityFilters = true;
@@ -71,6 +77,7 @@ public final class AndorsTrailPreferences {
 			dest.movementMethod = Integer.parseInt(prefs.getString("movementmethod", Integer.toString(MOVEMENTMETHOD_STRAIGHT)));
 			dest.scalingFactor = Float.parseFloat(prefs.getString("scaling_factor", "1.0f"));
 			dest.dpadPosition = Integer.parseInt(prefs.getString("dpadposition", Integer.toString(DPAD_POSITION_DISABLED)));
+			dest.dpadTransparency = Integer.parseInt(prefs.getString("dpadtransparency", Integer.toString(DPAD_TRANSPARENCY_50_PERCENT)));
 			dest.dpadMinimizeable = prefs.getBoolean("dpadMinimizeable", true);
 			dest.optimizedDrawing = prefs.getBoolean("optimized_drawing", false);
 			dest.highQualityFilters = prefs.getBoolean("high_quality_filters", true);
@@ -92,6 +99,7 @@ public final class AndorsTrailPreferences {
 			dest.movementAggressiveness = MOVEMENTAGGRESSIVENESS_NORMAL;
 			dest.scalingFactor = 1.0f;
 			dest.dpadPosition = DPAD_POSITION_DISABLED;
+			dest.dpadTransparency = DPAD_TRANSPARENCY_50_PERCENT;
 			dest.dpadMinimizeable = true;
 			dest.optimizedDrawing = false;
 			dest.highQualityFilters = true;

@@ -5,6 +5,10 @@
         "showInLog":0,
         "stages":[
             {
+                "progress":1,
+                "logText":"Achievements rejected"
+            },
+            {
                 "progress":5,
                 "logText":"Back area of the smith in Crossglen"
             },

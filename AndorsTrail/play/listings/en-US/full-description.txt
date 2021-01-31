@@ -2,7 +2,7 @@ Explore the world of Dhayavar looking for your brother Andor in this quest-drive
 
 Battle monsters in turn-based combat, become stronger through level ups and skills, choose from a wide range of equipment, interact with numerous NPCs, visit shops, inns and taverns, search for treasure, and solve quests to follow the trail of your brother and uncover the secrets of the powers at play in Dhayavar. With luck, you may even find a legendary item!
 
-You can currently visit up to 555 maps and complete up to 78 quests.
+You can currently visit up to 584 maps and complete up to 82 quests.
 
 The game is completely free. There is no payment to install, no ads, no in-app purchases, and no DLCs. There is no internet access required, and it can run on all versions of Android from 1.6 (Eclair), so it should run on any device, even low-end oldies.
 
@@ -19,6 +19,15 @@ If you wish to participate, we have released a content editor called ATCS, downl
 Visit our forums on www.andorstrail.com for help, hints, tips and general discussion. We love our community's feedback!
 
 Changelog:
+
+v0.7.12
+Changes in the start village Crossglen to make it even more fun and easier in the beginning
+4 new quests and one enhanced quest
+4 new maps
+New weapon class "Pole arm weapons" and fighting style
+When dpad is active (both visible and not minimized), normal touch-based movement is prevented
+Various small changes and bug fixes
+Translations actualized
 
 v0.7.11
 A new city located east of Loneford
@@ -80,11 +89,3 @@ Translations:
  	48% Hungarian
  	20% Czech
  	20% Turkish
-
-v0.7.5
-Content
-- Fix for crash in guynmart after special exit
-- Fix for loading pl, ar, and pt_BR content translations
-Code
-- Workaround for failure to save on first start
-- Workaround for weird NPE in Taunt messages

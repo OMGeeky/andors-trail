@@ -220,19 +220,35 @@ public class ItemContainer {
 	}
 
 	public int determineType(ItemEntry item) {
-		if (item.itemType.isWeapon()) {
-			if(item.itemType.isTwohandWeapon())
-				return 1;
-			if(false)//item.itemType.isRangedWeapon())
-				return 2;
-			return 3;
-		}            // Weapons
-		else if (item.itemType.isShield()) { return 4; }       // Shields
-		else if (item.itemType.isArmor()) { return 5; }        // Armor, gloves, hats, boots
-		else if (item.itemType.isEquippable()) { return 6; }   // Jewelry
-		else if (item.itemType.isUsable()) { return 7; }       // Items with use, for example food
-		else if (item.itemType.isQuestItem()) { return 8; }          // Quest items
-		else { return 9; }                                              // others
+		if (item.itemType.isEquippable()) {
+			switch (item.itemType.category.inventorySlot) {
+				case weapon:
+					if (item.itemType.isTwohandWeapon()) {
+						return 100;
+					} else {
+						return 110;
+					}
+				case shield: return 200;
+				case head: return 210;
+				case body: return 220;
+				case hand: return 230;
+				case feet: return 240;
+				case neck: return 250;
+				case leftring: return 260;
+				case rightring: return 260; // Note: not used - all rings are leftring by category
+				default: return 270;
+			}
+		} else if (item.itemType.isUsable()) {
+			if ("pot".equals(item.itemType.category.id) || "healing".equals(item.itemType.category.id)) {
+				return 300;
+			} else {
+				return 310;
+			}
+		} else if (item.itemType.isQuestItem()) {
+			return 400;
+		} else {
+			return 500;
+		}
 	}
 
 	public void sortByReverse() {

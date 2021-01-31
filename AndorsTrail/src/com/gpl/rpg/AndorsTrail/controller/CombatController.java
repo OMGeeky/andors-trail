@@ -18,6 +18,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.Actor;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnHitReceived;
 import com.gpl.rpg.AndorsTrail.model.item.ItemTraits_OnUse;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
@@ -58,6 +59,9 @@ public final class CombatController implements VisualEffectCompletedCallback {
 	public void exitCombat(boolean pickupLootBags) {
 		setCombatSelection(null, null);
 		world.model.uiSelections.isInCombat = false;
+		if (pickupLootBags) {
+			recordLootInCombatLog();
+		}
 		combatTurnListeners.onCombatEnded();
 		controllers.actorStatsController.setActorMaxAP(world.model.player);
 		world.model.uiSelections.selectedPosition = null;
@@ -73,6 +77,31 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			controllers.gameRoundController.resume();
 		}
 		resetCombatState();
+	}
+
+	private void recordLootInCombatLog() {
+		Loot combinedLoot = Loot.combine(killedMonsterBags);
+		if (combinedLoot.gold > 0) {
+			world.model.combatLog.append(controllers.getResources().getString(R.string.dialog_loot_foundgold, combinedLoot.gold));
+		}
+		int itemCount = combinedLoot.items.countItems();
+		if (itemCount > 0) {
+			StringBuilder itemMessage = new StringBuilder();
+			if (itemCount == 1) {
+				itemMessage.append(controllers.getResources().getString(R.string.combat_log_item_single));
+			} else {
+				itemMessage.append(controllers.getResources().getString(R.string.combat_log_item_plural, itemCount));
+			}
+			boolean firstItem = true;
+			for (ItemContainer.ItemEntry entry : combinedLoot.items.items) {
+				if (!firstItem) {
+					itemMessage.append(";");
+				}
+				itemMessage.append(" " + entry.itemType.getName(world.model.player) + " (" + entry.quantity + ")");
+				firstItem = false;
+			}
+			world.model.combatLog.append(itemMessage.toString());
+		}
 	}
 
 	private void resetCombatState() {
@@ -211,6 +240,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 
 		world.model.statistics.addMonsterKill(killedMonster.getMonsterTypeID());
 		controllers.actorStatsController.addExperience(loot.exp);
+		world.model.combatLog.append(controllers.getResources().getString(R.string.dialog_monsterloot_gainedexp, loot.exp));
 
 		totalExpThisFight += loot.exp;
 		loot.exp = 0;

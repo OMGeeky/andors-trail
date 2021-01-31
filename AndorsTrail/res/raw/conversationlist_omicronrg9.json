@@ -377,7 +377,7 @@
     {
         "id":"fanamor_guild_3",
         "message":"In the blink of an eye, Fanamor starts attacking the scout.",
-        "switchToNPC":"None",
+        "switchToNPC":"none",
         "replies":[
             {
                 "text":"N",
@@ -624,7 +624,7 @@
     },
     {
         "id":"fanamor_guild_7b",
-        "message":"I need a bandage quickly, or I will never return to the guild house.",
+        "message":"I need a bandage quickly, or I will never return to the guild house. A priest might help ...",
         "replies":[
             {
                 "text":"Yeah, OK.",
@@ -1661,7 +1661,7 @@
     },
     {
         "id":"ambelie_guild02_4b",
-        "message":"(You tap her on the back of the head with the handle of your weapon, and she falls unconsicious)",
+        "message":"(You tap her on the back of the head with the handle of your weapon, and she falls unconscious)",
         "replies":[
             {
                 "text":"Fine ...",
@@ -1718,7 +1718,7 @@
     },
     {
         "id":"umar_guild02_16",
-        "message":"(You put Ambelie, who is still unconsicious, in a chair next to you)\n\nOh! How how did you get here so fast? I've heard reports of a barricade blocking the way from the Duleian road to Fallhaven.",
+        "message":"(You put Ambelie, who is still unconscious, in a chair next to you)\n\nOh! How did you get here so fast? I've heard reports of a barricade blocking the way from the Duleian road to Fallhaven.",
         "replies":[
             {
                 "text":"Barricades, guards ... no big thing for me.",
@@ -4247,7 +4247,7 @@
     },
     {
         "id":"umar_guild03_31a",
-        "message":"And last but not least, I have some useful information for you. The way from here to the southeast has been finally been opened, once Crackshot's hideout was discovered.",
+        "message":"And last but not least, I have some useful information for you. The way from here to the southeast has finally been opened, once Crackshot's hideout was discovered.",
         "replies":[
             {
                 "text":"Good, I'm not going to have to take that detour.",
@@ -4261,7 +4261,7 @@
     },
     {
         "id":"umar_guild03_32",
-        "message":"However, the Feygard presence is still significant. Be cautious with with what you do.",
+        "message":"However, the Feygard presence is still significant. Be cautious with what you do.",
         "replies":[
             {
                 "text":"I will, thank you for the advice.",

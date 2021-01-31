@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.activity.fragment;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -21,6 +22,7 @@ import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
+import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.view.SpinnerEmulator;
 
 public final class HeroinfoActivity_Quests extends Fragment {
@@ -144,12 +146,16 @@ public final class HeroinfoActivity_Quests extends Fragment {
 			groupList.add(item);
 
 			List<Map<String, ?>> logItemList = new ArrayList<Map<String, ?>>();
-			for (QuestLogEntry e : q.stages) {
-				if (e.logtext.length() <= 0) continue; // Do not show if displaytext is empty.
-				if (player.hasExactQuestProgress(q.questID, e.progress)) {
-					item = new HashMap<String, Object>();
-					item.put(mn_logText, e.logtext);
-					logItemList.add(item);
+			for(Integer progress : player.getQuestProgress(q.questID)) {
+				for(QuestLogEntry e : q.stages) {
+					if (e.progress == progress.intValue()) {
+						if (e.logtext.length() > 0) {
+							item = new HashMap<String, Object>();
+							item.put(mn_logText, e.logtext);
+							logItemList.add(item);
+						}
+						continue;
+					}
 				}
 			}
 			childList.add(logItemList);

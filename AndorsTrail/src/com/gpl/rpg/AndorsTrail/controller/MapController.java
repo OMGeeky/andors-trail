@@ -149,6 +149,7 @@ public final class MapController {
 		controllers.monsterSpawnController.spawnAll(world.model.currentMaps.map, world.model.currentMaps.tileMap);
 		world.model.worldData.tickWorldTime(20);
 		controllers.gameRoundController.resetRoundTimers();
+		mapScriptExecutor.proceedToPhrase(controllers.getResources(), Constants.PASSIVE_ACHIEVEMENT_CHECK_PHRASE, true, true);
 	}
 
 	public void rest(MapObject area) {

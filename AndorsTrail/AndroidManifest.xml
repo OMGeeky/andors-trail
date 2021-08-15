@@ -32,6 +32,7 @@
         android:allowBackup="true"
         android:theme="@style/AndorsTrailTheme_Blue"
 		android:requestLegacyExternalStorage="true"
+		android:debuggable="true"
 		>
 		<activity 
 		    android:name=".activity.StartScreenActivity" 

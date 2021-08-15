@@ -1,9 +1,0 @@
-[
-    {
-        "id":"halvor",
-        "name":"Halvor",
-        "iconID":"monsters_tometik1:67",
-        "unique":1,
-        "phraseID":"halvor_select_begin"
-    }
-]

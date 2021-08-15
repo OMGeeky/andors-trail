@@ -205,122 +205,18 @@
   </data>
  </layer>
  <objectgroup name="Mapevents">
-  <object name="cave" type="mapchange" x="576" y="32" width="32" height="32">
-   <properties>
-    <property name="map" value="crossglen_cave"/>
-    <property name="place" value="entrance"/>
-   </properties>
-  </object>
-  <object name="hall" type="mapchange" x="544" y="608" width="32" height="32">
-   <properties>
-    <property name="map" value="crossglen_hall"/>
-    <property name="place" value="entrance"/>
-   </properties>
-  </object>
-  <object name="burhczyd_check1" type="script" x="512" y="640" width="96" height="32"/>
-  <object name="farmhouse" type="mapchange" x="320" y="544" width="32" height="32">
-   <properties>
-    <property name="map" value="crossglen_farmhouse"/>
-    <property name="place" value="entrance"/>
-   </properties>
-  </object>
   <object name="home" type="mapchange" x="160" y="160" width="32" height="32">
    <properties>
     <property name="map" value="home"/>
     <property name="place" value="entrance"/>
    </properties>
   </object>
-  <object name="east" type="mapchange" x="928" y="416" width="32" height="64">
-   <properties>
-    <property name="map" value="wild1"/>
-    <property name="place" value="west"/>
-   </properties>
-  </object>
-  <object name="smith" type="mapchange" x="128" y="800" width="32" height="32">
-   <properties>
-    <property name="map" value="crossglen_smith"/>
-    <property name="place" value="entrance"/>
-   </properties>
-  </object>
-  <object name="south" type="mapchange" x="256" y="928" width="32" height="32">
-   <properties>
-    <property name="map" value="wild2"/>
-    <property name="place" value="north"/>
-   </properties>
-  </object>
-  <object name="crossglen_fortune_teller" type="script" x="96" y="64" width="32" height="32"/>
  </objectgroup>
  <objectgroup name="Spawn">
-  <object name="crossglen_wasp" type="spawn" x="736" y="160" width="192" height="160">
-   <properties>
-    <property name="quantity" value="3"/>
-    <property name="spawngroup" value="crossglen_wasp"/>
-   </properties>
-  </object>
   <object name="trainingrat" type="spawn" x="320" y="96" width="192" height="128">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="trainingrat"/>
-   </properties>
-  </object>
-  <object name="crossglen_farmer1" type="spawn" x="192" y="320" width="256" height="128">
-   <properties>
-    <property name="spawngroup" value="crossglen_farmer1"/>
-   </properties>
-  </object>
-  <object name="crossglen_farmer2" type="spawn" x="64" y="416" width="96" height="192">
-   <properties>
-    <property name="spawngroup" value="crossglen_farmer2"/>
-   </properties>
-  </object>
-  <object name="crossglen_beetle" type="spawn" x="32" y="320" width="384" height="224">
-   <properties>
-    <property name="spawngroup" value="crossglen_beetle"/>
-   </properties>
-  </object>
-  <object name="crossglen_ant" type="spawn" x="512" y="832" width="384" height="96">
-   <properties>
-    <property name="quantity" value="3"/>
-    <property name="spawngroup" value="crossglen_ant"/>
-   </properties>
-  </object>
-  <object name="odair" type="spawn" x="896" y="32" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="odair"/>
-   </properties>
-  </object>
-  <object name="oromir" type="spawn" x="896" y="864" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="oromir"/>
-   </properties>
-  </object>
-  <object name="halvor" type="spawn" x="736" y="608" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="halvor"/>
-   </properties>
-  </object>
-  <object name="oromir_behind_inn_help" type="spawn" x="864" y="544" width="32" height="32">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="oromir_behind_inn_help"/>
-   </properties>
-  </object>
-  <object name="oromir_behind_haystack_help" type="spawn" x="512" y="160" width="32" height="32">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="oromir_behind_haystack_help"/>
-   </properties>
-  </object>
-  <object name="oromir_behind_inn" type="spawn" x="864" y="512" width="32" height="32">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="oromir_behind_inn"/>
-   </properties>
-  </object>
-  <object name="oromir_behind_haystack" type="spawn" x="512" y="160" width="32" height="32">
-   <properties>
-    <property name="active" value="false"/>
-    <property name="spawngroup" value="oromir_behind_haystack"/>
    </properties>
   </object>
  </objectgroup>

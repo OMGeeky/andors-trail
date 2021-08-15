@@ -157,7 +157,7 @@ public final class WorldSetup {
 		controllers.actorStatsController.recalculatePlayerStats(world.model.player);
 		controllers.movementController.respawnPlayer(ctx.getResources());
 		controllers.mapController.lotsOfTimePassed();
-	}
+}
 
 
 	public static interface OnSceneLoadedListener {

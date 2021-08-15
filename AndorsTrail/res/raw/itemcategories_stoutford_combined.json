@@ -1,9 +1,0 @@
-[
-    {
-        "id":"whip",
-        "name":"Whip",
-        "actionType":"equip",
-        "size":"std",
-        "inventorySlot":"weapon"
-    }
-]

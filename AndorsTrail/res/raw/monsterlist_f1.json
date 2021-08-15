@@ -1,0 +1,26 @@
+[
+    {
+        "id":"mikhail",
+        "name":"Mikhail",
+        "iconID":"monsters_karvis2:6",
+		"unique":1,
+        "monsterClass":"humanoid",
+        "phraseID":"mikhail_f1"
+    },
+    {
+        "id":"tiny_rat",
+        "name":"Tiny rat",
+        "iconID":"monsters_rats:0",
+        "maxHP":2,
+        "unique":1,
+        "monsterClass":"animal",
+        "attackDamage":{
+            "min":1,
+            "max":1
+        },
+        "spawnGroup":"trainingrat",
+        "droplistID":"trainingrat",
+        "attackCost":9,
+        "attackChance":50
+    }
+]

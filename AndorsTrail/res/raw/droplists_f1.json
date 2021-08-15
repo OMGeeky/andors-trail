@@ -1,0 +1,31 @@
+[
+    {
+        "id":"startitems",
+        "items":[
+            {
+                "itemID":"gold",
+                "chance":"100",
+                "quantity":{
+                    "min":12,
+                    "max":12
+                }
+            }
+        ]
+    },
+    {
+        "id":"trainingrat",
+        "items":[
+            {
+                "itemID":"gold",
+                "chance":"100",
+                "quantity":{
+                    "min":0,
+                    "max":2
+                }
+            }
+        ]
+    },
+	{	"id":"guynmart_doll",
+		"items":[	{ "itemID":"guynmart_doll",	"chance":"100", "quantity":{ "min":1, "max":5} }]
+	}
+]

@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="loadresource_itemcategories_debug">
-		<item>@raw/itemcategories_1</item>
+		<item>@raw/itemcategories_f1</item>
 	</array>
     
 	<array name="loadresource_actorconditions_debug">
-		<item>@raw/actorconditions_debug</item>
+		<item>@raw/actorconditions_f1</item>
 	</array>
     
 	<array name="loadresource_items_debug">
-		<item>@raw/itemlist_money</item>
-		<item>@raw/itemlist_weapons</item>
-		<item>@raw/itemlist_armour</item>
-		<item>@raw/itemlist_debug</item>
+		<item>@raw/itemlist_f1</item>
 	</array>
 
 	<array name="loadresource_droplists_debug">
-		<item>@raw/droplists_debug</item>
+		<item>@raw/droplists_f1</item>
 	</array>
 
 	<array name="loadresource_quests_debug">
-		<item>@raw/questlist_debug</item>
+		<item>@raw/questlist_f1</item>
 	</array>
 
 	<array name="loadresource_conversationlists_debug">
-		<item>@raw/conversationlist_debug</item>
+		<item>@raw/conversationlist_f1</item>
 	</array>
 
 	<array name="loadresource_monsters_debug">
-		<item>@raw/monsterlist_debug</item>
+		<item>@raw/monsterlist_f1</item>
 	</array>
 
 	<array name="loadresource_maps_debug">
-		<item>@xml/debugmap</item>
+		<item>@xml/home</item>
+		<item>@xml/crossglen</item>
 	</array>
 </resources>

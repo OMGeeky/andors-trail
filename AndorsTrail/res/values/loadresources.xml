@@ -34,6 +34,8 @@
         <!--Added by ATCS v0.6.16 for project fungi_panic-->
         <item>@raw/actorconditions_fungi_panic</item>
         <item>@raw/actorconditions_gison</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/actorconditions_omi2</item>
     </array>
         
     <array name="loadresource_items">
@@ -84,6 +86,9 @@
         <!--Added by ATCS v0.6.16 for project fungi_panic-->
         <item>@raw/itemlist_fungi_panic</item>
         <item>@raw/itemlist_gison</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/itemlist_gorwath</item>
+        <item>@raw/itemlist_omi2</item>
     </array>
         
     <array name="loadresource_droplists">
@@ -128,6 +133,10 @@
         <!--Added by ATCS v0.6.16 for project fungi_panic-->
         <item>@raw/droplists_fungi_panic</item>
         <item>@raw/droplists_gison</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/droplists_omi2</item>
+        <!--Added by ATCS v0.6.16 for project v0715-->
+        <item>@raw/droplists_v0715</item>
     </array>
         
     <array name="loadresource_quests">
@@ -146,7 +155,10 @@
         <item>@raw/questlist_shortcut_lodar</item>
         <item>@raw/questlist_pathway_fallhaven</item>
         <item>@raw/questlist_halvor_surprise</item>
-                                                        -		
+                                                                                -		
+        
+        
+        
         
         
         
@@ -173,6 +185,9 @@
         <!--Added by ATCS v0.6.16 for project fungi_panic-->
         <item>@raw/questlist_fungi_panic</item>
         <item>@raw/questlist_gison</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/questlist_gorwath</item>
+        <item>@raw/questlist_omi2</item>
     </array>
         
     <array name="loadresource_conversationlists">
@@ -363,6 +378,9 @@
         <item>@raw/conversationlist_fungi_panic</item>
         <item>@raw/conversationlist_gison</item>
         <item>@raw/conversationlist_thoronir_faction_check</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/conversationlist_gorwath</item>
+        <item>@raw/conversationlist_omi2</item>
     </array>
         
     <array name="loadresource_monsters">
@@ -414,6 +432,9 @@
         <!--Added by ATCS v0.6.16 for project fungi_panic-->
         <item>@raw/monsterlist_fungi_panic</item>
         <item>@raw/monsterlist_gison</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@raw/monsterlist_gorwath</item>
+        <item>@raw/monsterlist_omi2</item>
     </array>
         
     <array name="loadresource_maps">
@@ -1017,6 +1038,31 @@
         <item>@xml/mywildcave2</item>
         <item>@xml/mywildcave3</item>
         <item>@xml/mywildcave4</item>
+        <!--Added by ATCS v0.6.16 for project ATOmiRep-->
+        <item>@xml/blackwater_mountain70</item>
+        <item>@xml/blackwater_mountain71</item>
+        <item>@xml/blackwater_mountain72</item>
+        <item>@xml/blackwater_mountain73</item>
+        <item>@xml/blackwater_mountain74</item>
+        <item>@xml/blackwater_mountain74_h</item>
+        <item>@xml/blackwater_mountain75</item>
+        <item>@xml/blackwater_mountain76</item>
+        <item>@xml/elm5f_1</item>
+        <item>@xml/elm5f_2</item>
+        <item>@xml/elm_2f_1</item>
+        <item>@xml/elm_2f_2</item>
+        <item>@xml/elm_2f_3</item>
+        <item>@xml/elm_3f</item>
+        <item>@xml/elm_4f_1</item>
+        <item>@xml/elm_4f_2</item>
+        <item>@xml/elm_4f_3</item>
+        <item>@xml/elm_4f_4</item>
+        <item>@xml/elm_4f_5</item>
+        <item>@xml/elm_4f_6</item>
+        <item>@xml/elm_mine2</item>
+        <item>@xml/elm_mine3</item>
+        <item>@xml/elm_mine4</item>
+        <item>@xml/elm_mine5</item>
     </array>
         
 </resources>

@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.context;
 
 import java.lang.ref.WeakReference;
 
+import android.content.Context;
 import android.content.res.Resources;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -58,4 +59,5 @@ public final class ControllerContext {
 	public Resources getResources() {
 		return app.get().getResources();
 	}
+	public Context getContext() {return app.get().getApplicationContext(); }
 }

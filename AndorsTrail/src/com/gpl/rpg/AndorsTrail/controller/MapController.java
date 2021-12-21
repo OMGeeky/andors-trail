@@ -181,7 +181,7 @@ public final class MapController {
 		world.maps.worldMapRequiresUpdate = true;
 
 		if (!updateWorldmap) return;
-		WorldMapController.updateWorldMap(world, res);
+		WorldMapController.updateWorldMap(controllers.getContext(), world, res);
 		mapLayoutListeners.onMapTilesChanged(world.model.currentMaps.map, world.model.currentMaps.tileMap);
 	}
 

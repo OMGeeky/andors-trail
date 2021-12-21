@@ -10,4 +10,29 @@
     <string name="loadsave_selectslot">Valitse paikka</string>
     <string name="dialog_loading_message">Ladataan resursseja…</string>
     <string name="dialog_loading_failed_title">Lataaminen epäonnistui</string>
+    <string name="combat_flee">Pakene</string>
+    <string name="combat_attack">Hyökkäys (%1$d AP)</string>
+    <string name="heroinfo_quests">Tehtävät</string>
+    <string name="heroinfo_actionpoints">Toimintapisteet (AP):</string>
+    <string name="heroinfo_experiencepoints">Kokemuspisteet (XP):</string>
+    <string name="heroinfo_healthpoints">Terveyspisteet (HP):</string>
+    <string name="heroinfo_inventory_sort">Lajitteluperuste</string>
+    <string name="heroinfo_inventory_categories">Kategoria</string>
+    <string name="dialog_monsterencounter_info">Tietoa</string>
+    <string name="exit_to_menu">Palaa valikkoon</string>
+    <string name="heroinfo_mode">Tila</string>
+    <string name="heroinfo_level">Taso</string>
+    <string name="heroinfo_skill_sort">Järjestä</string>
+    <string name="heroinfo_skill_categories">Kategoria</string>
+    <string name="heroinfo_skill">Taidot</string>
+    <string name="heroinfo_char">Yleiskatsaus</string>
+    <string name="dialog_monsterencounter_message">Haluatko hyökätä\?
+\nVaikeusaste: %1$s</string>
+    <string name="dialog_monsterencounter_title">Kohtaaminen</string>
+    <string name="rip_startscreen">(LEPÄÄ RAUHASSA)</string>
+    <string name="dialog_game_over_text">Vedät viimeisen henkäyksesi ja kuolet.</string>
+    <string name="dialog_game_over_title">Peli on ohi</string>
+    <string name="dialog_more">Lisää</string>
+    <string name="dialog_close">Sulje</string>
+    <string name="menu_save_failed">Pelin tallentaminen epäonnistui! Onko SD-kortti asennettu ja kirjoitettavissa\?</string>
 </resources>

@@ -2344,7 +2344,14 @@
         "replies":[
             {
                 "text":"I'll give it to the cat. That should solve the problem.",
-                "nextPhraseID":"brv_churchman_trap3a"
+                "nextPhraseID":"brv_churchman_trap3a",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"trapped_mouse",
+                        "value":1
+                    }
+                ]
             },
             {
                 "text":"I'll release it outside.",
@@ -5822,7 +5829,7 @@
     },
     {
         "id":"nimael_b2",
-        "message":"Thanks to your advice, we have been successful selling more soup to the townsfolk in Fallhaven.\nWe have even cooperated to craft new recipies.\nWe also give free samples of our latest soups to those that buy from us, so they know what is on offer.",
+        "message":"Thanks to your advice, we have been successful selling more soup to the townsfolk in Fallhaven.\nWe have even cooperated to craft new recipes.\nWe also give free samples of our latest soups to those that buy from us, so they know what is on offer.",
         "replies":[
             {
                 "text":"I'm glad I could help. You sell more soup, and the people in Fallhaven get more choices. Everyone wins!",

@@ -815,5 +815,34 @@
         "monsterClass":"humanoid",
         "spawnGroup":"tamarukh",
         "phraseID":"tamarukh"
+    },
+    {
+        "id":"patrol2_roaming",
+        "name":"Feygard soldier",
+        "iconID":"monsters_men:3",
+        "moveCost":1,
+        "monsterClass":"humanoid",
+        "movementAggressionType":"protectSpawn",
+        "spawnGroup":"patrol2_roaming",
+        "phraseID":"brv_patrol2_roaming"
+    },
+    {
+        "id":"patrol2_captain",
+        "name":"Feygard soldier",
+        "iconID":"monsters_men:3",
+        "moveCost":1,
+        "monsterClass":"humanoid",
+        "movementAggressionType":"protectSpawn",
+        "spawnGroup":"patrol2_captain",
+        "phraseID":"brv_patrol2_roaming"
+    },
+    {
+        "id":"remgard_prison_thief",
+        "name":"Tember",
+        "iconID":"monsters_rogue1:0",
+        "unique":1,
+        "movementAggressionType":"protectSpawn",
+        "spawnGroup":"remgard_prison_thief",
+        "phraseID":"remgard_prison_thief"
     }
 ]

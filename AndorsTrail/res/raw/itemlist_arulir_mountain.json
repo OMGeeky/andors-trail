@@ -138,5 +138,25 @@
                 }
             ]
         }
+    },
+    {
+        "id":"gold_bar",
+        "iconID":"items_misc:7",
+        "name":"Gold bar",
+        "displaytype":"ordinary",
+        "hasManualPrice":1,
+        "baseMarketCost":519,
+        "category":"gem",
+        "description":"A small bar made of shining gold."
+    },
+    {
+        "id":"lead_bar",
+        "iconID":"items_misc:9",
+        "name":"Lead bar",
+        "displaytype":"ordinary",
+        "hasManualPrice":1,
+        "baseMarketCost":119,
+        "category":"gem",
+        "description":"A small bar made of lead."
     }
 ]

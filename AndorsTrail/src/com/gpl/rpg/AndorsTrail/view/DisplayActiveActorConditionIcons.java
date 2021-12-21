@@ -118,7 +118,7 @@ public final class DisplayActiveActorConditionIcons implements ActorConditionLis
 	@Override
 	public void onActorConditionImmunityDurationChanged(Actor actor, ActorCondition condition) {
 		if (actor != target) return;
-		ActiveConditionIcon icon = getIconFor(condition, false);
+		ActiveConditionIcon icon = getIconFor(condition, true);
 		if (icon == null) return;
 		icon.setIconAndText();
 	}

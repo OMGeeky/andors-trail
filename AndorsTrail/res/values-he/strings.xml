@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="combat_flee_failed">נכשלת בבריחה!</string>
+    <string name="combat_begin_flee">עכשיו אתה יכול לברוח משדה הקרב על ידי תנועה לכיוון שאתה בוחר.</string>
+    <string name="combat_flee">ברח משדה הקרב</string>
+    <string name="combat_endturn">סיום תור</string>
+    <string name="combat_use">שימוש בפריט</string>
+    <string name="combat_move">זוז (%1$d נקודות פעולה)</string>
+    <string name="combat_attack">התקף (%1$d נקודות פעולה)</string>
+    <string name="heroinfo_one_life">מוות יחיד (חיים בודדים)</string>
+    <string name="heroinfo_limited_lives">חיים מוגבלים (נשארו רק %1$d מתוך %2$d)</string>
+    <string name="heroinfo_unlimited_lives">חיים אין סופיים, שמירה אחת</string>
+    <string name="heroinfo_unlimited_lives_and_saves">סטנדרטי
+\n(חיים ושמירות אין סופיים)</string>
+    <string name="heroinfo_quests">משימות</string>
+    <string name="heroinfo_actionpoints">נקודות פעולה (AP):</string>
+    <string name="heroinfo_experiencepoints">נקודות נסיון (XP):</string>
+    <string name="heroinfo_healthpoints">נקודות חיים (HP):</string>
+    <string name="heroinfo_gold">זהב: %1$d</string>
+    <string name="heroinfo_inventory_sort">מיין על פי</string>
+    <string name="heroinfo_inventory_categories">קטגוריה</string>
+    <string name="heroinfo_inventory">מלאי</string>
+    <string name="heroinfo_wornequipment">ציוד לבוש</string>
+    <string name="heroinfo_totalexperience">סך הנסיון</string>
+    <string name="heroinfo_mode">מצב</string>
+    <string name="heroinfo_level">שלב</string>
+    <string name="heroinfo_levelup">עליית שלב</string>
+    <string name="heroinfo_skill_sort">מיין</string>
+    <string name="heroinfo_skill_categories">קטגוריה</string>
+    <string name="heroinfo_skill">כישורים</string>
+    <string name="heroinfo_inv">חפצים</string>
+    <string name="heroinfo_char">סקירה</string>
+    <string name="status_exp">נסיון:</string>
+    <string name="status_ap">נקודות פעולה:</string>
+    <string name="status_hp">חיים:</string>
+    <string name="dialog_monsterencounter_conditions">תנאים</string>
+    <string name="dialog_monsterencounter_info">מידע</string>
+    <string name="dialog_monsterencounter_message">אתה רוצה לתקוף\?
+\nרמת קושי: %1$s</string>
+    <string name="dialog_monsterencounter_title">מפגש</string>
+    <string name="rip_startscreen">(תנצב\"ה)</string>
+    <string name="dialog_game_over_text">אתה לוקח את נשמתך האחרונה ומת.</string>
+    <string name="dialog_game_over_title">המשחק נגמר</string>
+    <string name="dialog_more">עוד</string>
+    <string name="dialog_close">סגור</string>
+    <string name="dialog_recenter">מרכז מחדש</string>
+    <string name="dialog_loading_failed_cheat">המסע של אנדור לא יכל לטעון את קובץ השמירה. קובץ שמירה זה כבר הומשך.</string>
+    <string name="dialog_loading_failed_incorrectversion">המסע של אנדור לא יכל לטעון את קובץ השמירה. קובץ זה נוצר בגרסה חדשה יותר מזאת שרצה כעט.</string>
+    <string name="dialog_loading_failed_message">המסע של אנדור לא יכל לטעון את השמירה
+\n
+\n:(
+\n
+\nיתכן שהקובץ פגום או חלקי.</string>
+    <string name="dialog_loading_failed_title">טעינה נכשלה</string>
+    <string name="dialog_loading_message">טוען משאבים…</string>
+    <string name="savegame_currenthero_displayinfo">שלב %1$d, %2$d נקודות, %3$d זהב</string>
+    <string name="loadsave_selectslot">בחר משבצת</string>
+    <string name="loadsave_title_load">טעינת שמירה</string>
+    <string name="loadsave_title_save">שמירת משחק.</string>
+    <string name="menu_save_failed">שמירת המשחק נכשלה! נא ודא שכרטיס הזיכרון (SD) מותקן על המכשירך וניתן לכתיבה.</string>
+    <string name="menu_save_gamesaved">המשחק נשמר במשבצת %1$d</string>
+    <string name="menu_save">שמירה</string>
+    <string name="app_description">RPG פנטזיה מבוסס משימות</string>
+    <string name="app_name">המסע של אנדור</string>
+</resources>

@@ -5,7 +5,6 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
 import java.io.IOException;
@@ -21,7 +20,6 @@ import java.util.regex.Pattern;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.os.Environment;
 import android.os.SystemClock;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -31,6 +29,7 @@ import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.L;
 
 public final class Savegames {
@@ -38,6 +37,8 @@ public final class Savegames {
 	public static final long DENY_LOADING_BECAUSE_GAME_IS_CURRENTLY_PLAYED = -1;
 
 	private static long lastBackup = 0;
+
+
 
 	public static enum LoadSavegameResult {
 		success
@@ -71,7 +72,7 @@ public final class Savegames {
 					androidContext.deleteFile(Constants.FILENAME_SAVEGAME_QUICKSAVE);
 					writeCheatCheck(androidContext, savedVersion, id);
 				} else if (SystemClock.uptimeMillis() > lastBackup + 120000) {
-					writeBackup(savegame, id);
+					writeBackup(androidContext, savegame, id);
 					lastBackup = SystemClock.uptimeMillis();
 				}
 			}
@@ -83,9 +84,8 @@ public final class Savegames {
 		}
 	}
 
-	private static void writeBackup(byte[] savegame, String playerId) throws IOException {
-		File root = Environment.getExternalStorageDirectory();
-		File cheatDetectionFolder = new File(root, Constants.CHEAT_DETECTION_FOLDER);
+	private static void writeBackup(Context androidContext, byte[] savegame, String playerId) throws IOException {
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File backupFile = new File(cheatDetectionFolder, playerId + "X");
 		FileOutputStream fileOutputStream = new FileOutputStream(backupFile);
@@ -111,7 +111,7 @@ public final class Savegames {
                 if (!saveWorld(world, androidContext, SLOT_QUICKSAVE)) {
 					return LoadSavegameResult.unknownError;
 				}
-				getSlotFile(slot).delete();
+				getSlotFile(slot, androidContext).delete();
 				writeCheatCheck(androidContext, DENY_LOADING_BECAUSE_GAME_IS_CURRENTLY_PLAYED, fh.playerId);
 			}
 			return result;
@@ -129,8 +129,7 @@ public final class Savegames {
 
 	private static boolean triedToCheat(Context androidContext, FileHeader fh) throws IOException {
 		long savedVersionToCheck = 0;
-		File root = Environment.getExternalStorageDirectory();
-		File cheatDetectionFolder = new File(root, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, fh.playerId);
 		if (cheatDetectionFile.exists()) {
@@ -172,32 +171,28 @@ public final class Savegames {
 		if (slot == SLOT_QUICKSAVE) {
 			return androidContext.openFileOutput(Constants.FILENAME_SAVEGAME_QUICKSAVE, Context.MODE_PRIVATE);
 		} else {
-			ensureSavegameDirectoryExists();
-			return new FileOutputStream(getSlotFile(slot));
+			ensureSavegameDirectoryExists(androidContext);
+			return new FileOutputStream(getSlotFile(slot, androidContext));
 		}
 	}
-	private static void ensureSavegameDirectoryExists() {
-		File root = Environment.getExternalStorageDirectory();
-		File dir = new File(root, Constants.FILENAME_SAVEGAME_DIRECTORY);
+	private static void ensureSavegameDirectoryExists(Context context) {
+		File dir = AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		if (!dir.exists()) dir.mkdir();
 	}
 	private static FileInputStream getInputFile(Context androidContext, int slot) throws IOException {
 		if (slot == SLOT_QUICKSAVE) {
 			return androidContext.openFileInput(Constants.FILENAME_SAVEGAME_QUICKSAVE);
 		} else {
-			return new FileInputStream(getSlotFile(slot));
+			return new FileInputStream(getSlotFile(slot, androidContext));
 		}
 	}
 
-	public static File getSlotFile(int slot) {
-		File root = getSavegameDirectory();
+	public static File getSlotFile(int slot, Context context) {
+		File root = AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
 		return new File(root, Constants.FILENAME_SAVEGAME_FILENAME_PREFIX + slot);
 	}
 
-	private static File getSavegameDirectory() {
-		File root = Environment.getExternalStorageDirectory();
-		return new File(root, Constants.FILENAME_SAVEGAME_DIRECTORY);
-	}
+
 
 	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException {
 		DataOutputStream dest = new DataOutputStream(outStream);
@@ -240,7 +235,7 @@ public final class Savegames {
 	public static FileHeader quickload(Context androidContext, int slot) {
 		try {
 			if (slot != SLOT_QUICKSAVE) {
-				File f = getSlotFile(slot);
+				File f = getSlotFile(slot, androidContext);
 				if (!f.exists()) return null;
 			}
 			FileInputStream fos = getInputFile(androidContext, slot);
@@ -255,8 +250,7 @@ public final class Savegames {
 	}
 
 	private static void writeCheatCheck(Context androidContext, long savedVersion, String playerId) throws IOException {
-		File root = Environment.getExternalStorageDirectory();
-		File cheatDetectionFolder = new File(root, Constants.CHEAT_DETECTION_FOLDER);
+		File cheatDetectionFolder = AndroidStorage.getStorageDirectory(androidContext, Constants.CHEAT_DETECTION_FOLDER);
 		if (!cheatDetectionFolder.exists()) cheatDetectionFolder.mkdir();
 		File cheatDetectionFile = new File(cheatDetectionFolder, playerId);
 		FileOutputStream fileOutputStream = new FileOutputStream(cheatDetectionFile);
@@ -273,10 +267,11 @@ public final class Savegames {
 	}
 
 	private static final Pattern savegameFilenamePattern = Pattern.compile(Constants.FILENAME_SAVEGAME_FILENAME_PREFIX + "(\\d+)");
-	public static List<Integer> getUsedSavegameSlots() {
+
+	public static List<Integer> getUsedSavegameSlots(Context context) {
 		try {
 			final List<Integer> result = new ArrayList<Integer>();
-			getSavegameDirectory().listFiles(new FilenameFilter() {
+			AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY).listFiles(new FilenameFilter() {
 				@Override
 				public boolean accept(File f, String filename) {
 					Matcher m = savegameFilenamePattern.matcher(filename);

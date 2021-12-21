@@ -26,21 +26,41 @@ public final class InputController implements OnClickListener, OnLongClickListen
 
 	public boolean onKeyboardAction(int keyCode) {
 		switch (keyCode) {
+		case KeyEvent.KEYCODE_NUMPAD_8:
 		case KeyEvent.KEYCODE_DPAD_UP:
 		case KeyEvent.KEYCODE_W:
 			onRelativeMovement(0, -1);
 			return true;
+		case KeyEvent.KEYCODE_NUMPAD_2:
 		case KeyEvent.KEYCODE_DPAD_DOWN:
 		case KeyEvent.KEYCODE_S:
 			onRelativeMovement(0, 1);
 			return true;
+		case KeyEvent.KEYCODE_NUMPAD_4:
 		case KeyEvent.KEYCODE_DPAD_LEFT:
 		case KeyEvent.KEYCODE_A:
 			onRelativeMovement(-1, 0);
 			return true;
+		case KeyEvent.KEYCODE_NUMPAD_6:
 		case KeyEvent.KEYCODE_DPAD_RIGHT:
 		case KeyEvent.KEYCODE_D:
 			onRelativeMovement(1, 0);
+			return true;
+		case KeyEvent.KEYCODE_NUMPAD_7:
+		case KeyEvent.KEYCODE_DPAD_UP_LEFT:
+			onRelativeMovement(-1, -1);
+			return true;
+		case KeyEvent.KEYCODE_NUMPAD_9:
+		case KeyEvent.KEYCODE_DPAD_UP_RIGHT:
+			onRelativeMovement(1, -1);
+			return true;
+		case KeyEvent.KEYCODE_NUMPAD_1:
+		case KeyEvent.KEYCODE_DPAD_DOWN_LEFT:
+			onRelativeMovement(-1, 1);
+			return true;
+		case KeyEvent.KEYCODE_NUMPAD_3:
+		case KeyEvent.KEYCODE_DPAD_DOWN_RIGHT:
+			onRelativeMovement(1, 1);
 			return true;
 		case KeyEvent.KEYCODE_DPAD_CENTER:
 		case KeyEvent.KEYCODE_SPACE:

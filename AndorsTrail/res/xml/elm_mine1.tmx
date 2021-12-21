@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="2017.05.26" orientation="orthogonal" renderorder="right-down" width="12" height="19" tilewidth="32" tileheight="32" nextobjectid="2">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="12" height="19" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="8">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="256"/>
  </tileset>
@@ -180,27 +180,27 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="12" height="19">
+ <layer id="1" name="Ground" width="12" height="19">
   <data encoding="base64" compression="zlib">
    eJxbx8TAcIBIvA6I1wPxJSLxWqj6J0RimPotnMThgVRfKsbAUAbE5WKo6g/iUN8KVNcGxO1o6i+TqB6XW4eKelzhSWv1A5V+QHlmDpEYpBYADtKkng==
   </data>
  </layer>
- <layer name="Objects" width="12" height="19">
+ <layer id="2" name="Objects" width="12" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYKAczGZjYJgDxHOBeD8fA8MBPlT5W6wMDLeB+C4rhL8aqG4NEK9lQ6hxYEWwXwHZr4H4LRAnC0DwRTGIHIwdgKT+ABIbrF8I042PkMQuIKn/AnXrFhYGhq1AvI0FU+8DNPOPoKk5hkXPdUEE+wpQXpUfaDY/hH8Ni3pkcAVNHqT+GtS8p0wI8a98CPUnoWb/5CPPfHSAHF4w87G5fy4TAwaAmY+s/gtSmihkxVR/GqoWZA+6exqB6uNZEWGA7P7DWNRPBKrNR7LjCVB+KjDNTAPi6UD8DE39dKDaGWhu+gJU8xWIv2EJm+VAtSvQ1F8TROVjS4PEAADlUUIc
   </data>
  </layer>
- <layer name="Above" width="12" height="19">
+ <layer id="3" name="Above" width="12" height="19">
   <data encoding="base64" compression="zlib">
    eJxjYCAdHBZDsIOZiFevKIxdnhPNDGTzL4pBMLHuIQaA1F8mQQ9I/SUs6mF+RzeLkHvQ7celXkkYIY+sBptb0M0nNkxAYU+KelLNx6aeUNijqwexlXCkHVzq0QGy/kto8UlO+qEVAABj4yGJ
   </data>
  </layer>
- <layer name="Walkable" width="12" height="19" visible="0">
+ <layer id="4" name="Walkable" width="12" height="19" visible="0">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsHEIYBiAsXHJ4wPUVI/LbbjMHij1uAC11JPjflLDE5seWqsn5Cdy1BODAUxlYSw=
   </data>
  </layer>
- <objectgroup name="Mapevents" visible="0">
+ <objectgroup id="5" name="Mapevents" visible="0">
   <object id="1" name="west" type="mapchange" x="0" y="320" width="32" height="64">
    <properties>
     <property name="map" value="blackwater_mountain13"/>
@@ -208,7 +208,44 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0"/>
- <objectgroup name="Keys"/>
- <objectgroup name="Replace"/>
+ <objectgroup id="6" name="Spawn">
+  <object id="2" name="ehrenfest" type="spawn" x="96" y="480" width="64" height="96">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ehrenfest"/>
+   </properties>
+  </object>
+  <object id="3" name="ortholion_guard10b" type="spawn" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard10"/>
+   </properties>
+  </object>
+  <object id="4" name="ortholion_guard10a" type="spawn" x="160" y="352" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard10"/>
+   </properties>
+  </object>
+  <object id="5" name="ortholion_guard11b" type="spawn" x="160" y="416" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard11"/>
+   </properties>
+  </object>
+  <object id="6" name="ortholion_guard11a" type="spawn" x="288" y="448" width="32" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard11"/>
+   </properties>
+  </object>
+  <object id="7" name="ortholion" type="spawn" x="288" y="288" width="32" height="96">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Keys"/>
+ <objectgroup id="8" name="Replace"/>
 </map>

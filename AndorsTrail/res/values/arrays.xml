@@ -140,18 +140,19 @@
 	<string-array name="preferences_language">
 		<item>@string/preferences_language_default</item>
 		<item>English</item>
-		<item>čeština (36%)</item>
-		<item>Deutsch (81%)</item>
-		<item>Español (77%)</item>
-		<item>Française (93%)</item>
-		<item>Italiano (93%)</item>
-		<item>Magyar (35%)</item>
-		<item>Polski (80%)</item>
-		<item>Português (90%)</item>
+		<item>čeština (62%)</item>
+		<item>Deutsch (91%)</item>
+		<item>Español (90%)</item>
+		<item>Française (86%)</item>
+		<item>Italiano (90%)</item>
+		<item>Magyar (32%)</item>
+		<item>Polski (97%)</item>
+		<item>Português (83%)</item>
 		<item>Português Brasil (93%)</item>
-		<item>Русский язык (93%)</item>
-		<item>日本人 (93%)</item>
-		<item>中文 (32%)</item>
+		<item>Русский язык (90%)</item>
+		<item>Türkçe (39%)</item>
+		<item>日本人 (91%)</item>
+		<item>中文 (68%)</item>
 	</string-array>
 
 	<!-- see AndorsTrailApplication.localeForLanguageTag for allowed formats -->
@@ -168,6 +169,7 @@
 		<item>pt</item>
 		<item>pt-BR</item>
 		<item>ru</item>
+		<item>tr</item>
 		<item>ja</item>
 		<item>zh-rCN</item>
 	</string-array>

@@ -268,13 +268,14 @@ public final class TMXMapTranslator {
 		return new CoordRect(topLeft, new Size(width, height));
 	}
 
+	private static final String LAYERNAME_BASE = "base";
 	private static final String LAYERNAME_GROUND = "ground";
 	private static final String LAYERNAME_OBJECTS = "objects";
 	private static final String LAYERNAME_ABOVE = "above";
 	private static final String LAYERNAME_TOP = "top";
 	private static final String LAYERNAME_WALKABLE = "walkable";
 	private static final String PROPNAME_FILTER = "colorfilter";
-	private static final SetOfLayerNames defaultLayerNames = new SetOfLayerNames(LAYERNAME_GROUND, LAYERNAME_OBJECTS, LAYERNAME_ABOVE, LAYERNAME_TOP, LAYERNAME_WALKABLE);
+	private static final SetOfLayerNames defaultLayerNames = new SetOfLayerNames(LAYERNAME_BASE, LAYERNAME_GROUND, LAYERNAME_OBJECTS, LAYERNAME_ABOVE, LAYERNAME_TOP, LAYERNAME_WALKABLE);
 
 	private static LayeredTileMap transformMap(TMXLayerMap map, TileCache tileCache) {
 		final Size mapSize = new Size(map.width, map.height);
@@ -316,7 +317,8 @@ public final class TMXMapTranslator {
 					final CoordRect position = getTMXObjectPosition(obj, map);
 					SetOfLayerNames layerNames = new SetOfLayerNames();
 					for (TMXProperty prop : obj.properties) {
-						if (prop.name.equalsIgnoreCase(LAYERNAME_GROUND)) layerNames.groundLayerName = prop.value;
+						if (prop.name.equalsIgnoreCase(LAYERNAME_BASE)) layerNames.baseLayerName = prop.value;
+						else if (prop.name.equalsIgnoreCase(LAYERNAME_GROUND)) layerNames.groundLayerName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_OBJECTS)) layerNames.objectsLayerName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_ABOVE)) layerNames.aboveLayersName = prop.value;
 						else if (prop.name.equalsIgnoreCase(LAYERNAME_TOP)) layerNames.topLayersName = prop.value;
@@ -359,13 +361,14 @@ public final class TMXMapTranslator {
 			SetOfLayerNames layerNames
 	) {
 
+		final MapLayer layerBase = transformMapLayer(layersPerLayerName, layerNames.baseLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerGround = transformMapLayer(layersPerLayerName, layerNames.groundLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerObjects = transformMapLayer(layersPerLayerName, layerNames.objectsLayerName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerAbove = transformMapLayer(layersPerLayerName, layerNames.aboveLayersName, srcMap, tileCache, area, usedTileIDs);
 		final MapLayer layerTop = transformMapLayer(layersPerLayerName, layerNames.topLayersName, srcMap, tileCache, area, usedTileIDs);
 		boolean[][] isWalkable = transformWalkableMapLayer(findLayer(layersPerLayerName, layerNames.walkableLayersName, srcMap.name), area);
 		byte[] layoutHash = calculateLayoutHash(srcMap, layersPerLayerName, layerNames);
-		return new MapSection(layerGround, layerObjects, layerAbove, layerTop, isWalkable, layoutHash);
+		return new MapSection(layerBase, layerGround, layerObjects, layerAbove, layerTop, isWalkable, layoutHash);
 	}
 
 	private static TMXLayer findLayer(HashMap<String, TMXLayer> layersPerLayerName, String layerName, String mapName) {
@@ -373,7 +376,7 @@ public final class TMXMapTranslator {
 		if (layerName.length() == 0) return null;
 		TMXLayer result = layersPerLayerName.get(layerName.toLowerCase());
 		if (AndorsTrailApplication.DEVELOPMENT_VALIDATEDATA) {
-			if (result == null && !"top".equals(layerName)) {
+			if (result == null && !"top".equals(layerName) && !"base".equals(layerName)) {
 				L.log("WARNING: Cannot find maplayer \"" + layerName + "\" requested by map \"" + mapName + "\".");
 			}
 		}
@@ -427,6 +430,7 @@ public final class TMXMapTranslator {
 	private static byte[] calculateLayoutHash(TMXLayerMap map, HashMap<String, TMXLayer> layersPerLayerName, SetOfLayerNames layerNames) {
 		try {
 			MessageDigest digest = MessageDigest.getInstance("MD5");
+			digestLayer(layersPerLayerName, layerNames.baseLayerName, map, digest);
 			digestLayer(layersPerLayerName, layerNames.groundLayerName, map, digest);
 			digestLayer(layersPerLayerName, layerNames.objectsLayerName, map, digest);
 			digestLayer(layersPerLayerName, layerNames.aboveLayersName, map, digest);
@@ -464,19 +468,22 @@ public final class TMXMapTranslator {
 	}
 
 	private static final class SetOfLayerNames {
+		public String baseLayerName;
 		public String groundLayerName;
 		public String objectsLayerName;
 		public String aboveLayersName;
 		public String topLayersName;
 		public String walkableLayersName;
 		public SetOfLayerNames() {
+			this.baseLayerName = null;
 			this.groundLayerName = null;
 			this.objectsLayerName = null;
 			this.aboveLayersName = null;
 			this.topLayersName = null;
 			this.walkableLayersName = null;
 		}
-		public SetOfLayerNames(String groundLayerName, String objectsLayerName, String aboveLayersName, String topLayersName, String walkableLayersName) {
+		public SetOfLayerNames(String baseLayerName, String groundLayerName, String objectsLayerName, String aboveLayersName, String topLayersName, String walkableLayersName) {
+			this.baseLayerName = baseLayerName;
 			this.groundLayerName = groundLayerName;
 			this.objectsLayerName = objectsLayerName;
 			this.aboveLayersName = aboveLayersName;

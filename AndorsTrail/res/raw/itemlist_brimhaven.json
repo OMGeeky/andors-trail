@@ -704,11 +704,11 @@
                     "magnitude":-99
                 },
                 {
-                    "condition":"poison_irdegh_weak",
+                    "condition":"poison_irdegh",
                     "magnitude":-99
                 },
                 {
-                    "condition":"poison_blood",
+                    "condition":"venom",
                     "magnitude":-99
                 }
             ]

@@ -1,0 +1,10 @@
+[
+    {
+        "id":"gorwath_letter",
+        "iconID":"items_misc_3:61",
+        "name":"Gorwath's letter",
+        "displaytype":"quest",
+        "category":"other",
+        "description":"(The letter is sealed so that curious people like you cannot read it)"
+    }
+]

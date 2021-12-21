@@ -7,9 +7,9 @@ import java.util.Locale;
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.Pair;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -24,15 +24,15 @@ public final class AndorsTrailApplication extends Application {
 	public static final boolean DEVELOPMENT_DEBUGRESOURCES = false;
 	public static final boolean DEVELOPMENT_FORCE_STARTNEWGAME = false;
 	public static final boolean DEVELOPMENT_FORCE_CONTINUEGAME = false;
-	public static final boolean DEVELOPMENT_DEBUGBUTTONS = true;
+	public static final boolean DEVELOPMENT_DEBUGBUTTONS = false;
 	public static final boolean DEVELOPMENT_FASTSPEED = false;
-	public static final boolean DEVELOPMENT_VALIDATEDATA = true;
-	public static final boolean DEVELOPMENT_DEBUGMESSAGES = true;
-	public static final boolean DEVELOPMENT_INCOMPATIBLE_SAVEGAMES = DEVELOPMENT_DEBUGRESOURCES || DEVELOPMENT_DEBUGBUTTONS || DEVELOPMENT_FASTSPEED;
-	public static final int DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION = 999;
-	public static final int CURRENT_VERSION = DEVELOPMENT_INCOMPATIBLE_SAVEGAMES ? DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION : 59;
-	public static final String CURRENT_VERSION_DISPLAY = "0.7.14dev";
+	public static final boolean DEVELOPMENT_VALIDATEDATA = false;
+	public static final boolean DEVELOPMENT_DEBUGMESSAGES = false;
+	public static final String CURRENT_VERSION_DISPLAY = "0.7.16dev";
 	public static final boolean IS_RELEASE_VERSION = !CURRENT_VERSION_DISPLAY.matches(".*[a-d].*");
+	public static final boolean DEVELOPMENT_INCOMPATIBLE_SAVEGAMES = DEVELOPMENT_DEBUGRESOURCES || DEVELOPMENT_DEBUGBUTTONS || DEVELOPMENT_FASTSPEED || !IS_RELEASE_VERSION;
+	public static final int DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION = 999;
+	public static final int CURRENT_VERSION = DEVELOPMENT_INCOMPATIBLE_SAVEGAMES ? DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION : 63;
 
 	private final AndorsTrailPreferences preferences = new AndorsTrailPreferences();
 	private WorldContext world = new WorldContext();
@@ -118,9 +118,7 @@ public final class AndorsTrailApplication extends Application {
 		super.onCreate();
 
 		if ( DEVELOPMENT_DEBUGMESSAGES && isExternalStorageWritable() ) {
-
-			File root = Environment.getExternalStorageDirectory();
-			File appDirectory = new File(root, Constants.FILENAME_SAVEGAME_DIRECTORY);
+			File appDirectory = AndroidStorage.getStorageDirectory(getApplicationContext(), Constants.FILENAME_SAVEGAME_DIRECTORY);
 			File logDirectory = new File( appDirectory, "log" );
 			File logFile = new File( logDirectory, "logcat" + System.currentTimeMillis() + ".txt" );
 

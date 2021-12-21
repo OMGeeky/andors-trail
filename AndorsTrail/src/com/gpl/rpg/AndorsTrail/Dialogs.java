@@ -46,6 +46,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Inventory;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject;
+import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 import com.gpl.rpg.AndorsTrail.view.ItemContainerAdapter;
@@ -333,8 +334,8 @@ public final class Dialogs {
 		//		.show();
 
 		String text = currentActivity.getResources().getString(R.string.dialog_newversion_message);
-
-		if (!hasPermissions(currentActivity)) {
+		
+		if (!hasPermissions(currentActivity) && Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
 			text += currentActivity.getResources().getString(R.string.dialog_newversion_permission_information);
 		}
 

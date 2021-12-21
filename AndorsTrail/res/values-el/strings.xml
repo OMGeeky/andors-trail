@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Μονοπάτι του Andor</string>
+    <string name="app_name">Andor\'s Trail</string>
     <string name="exit_to_menu">Έξοδος στο μενού</string>
     <string name="menu_settings">Προτιμήσεις</string>
     <string name="menu_save">Αποθήκευση</string>
@@ -12,7 +12,7 @@
     <string name="dialog_loading_message">Φόρτωση πόρων…</string>
     <string name="dialog_loading_failed_title">Η φόρτωση απέτυχε</string>
     <string name="savegame_currenthero_displayinfo">επίπεδο %1$d, %2$d εμπειρία, %3$d χρυσό</string>
-    <string name="dialog_loading_failed_incorrectversion">Το μονοπάτι του Andor δεν μπόρεσε να φορτώσει το αρχείο που αποθηκεύτηκε το παιχνίδι. Αυτό το αρχείο έχει δημιουργηθεί με μια νεότερη έκδοση από αυτή που λειτουργεί τώρα.</string>
+    <string name="dialog_loading_failed_incorrectversion">Το Andor\'s Trail δεν μπόρεσε να φορτώσει το αρχείο αποθήκευσης του παιχνιδιού. Το αρχείο έχει δημιουργηθεί με μια νεότερη έκδοση από αυτή που χρησιμοποιείτε αυτή τη στιγμή.</string>
     <string name="dialog_recenter">Στοχεύστε πάλι</string>
     <string name="dialog_close">Κλείσιμο</string>
     <string name="dialog_monsterencounter_title">Συνάντηση</string>
@@ -42,7 +42,7 @@
     <string name="heroinfo_quests">Αποστολές</string>
     <string name="combat_attack">Επίθεση (%1$d AP)</string>
     <string name="combat_move">Κίνηση (%1$d AP)</string>
-    <string name="combat_use">Χρησιμοποίηση αντικειμένου</string>
+    <string name="combat_use">Χρήση αντικειμένου</string>
     <string name="combat_endturn">Τέλος σειράς</string>
     <string name="combat_flee">Διαφυγή</string>
     <string name="combat_begin_flee">Μπορείς τώρα να φύγεις από την μάχη κάνοντας κλικ προς την κατεύθυνση που θέλεις να πας.</string>
@@ -64,12 +64,12 @@
     <string name="combat_condition_player_apply">Επηρεάζεσαι από %1$s.</string>
     <string name="combat_condition_player_clear">Απαλάσσεσαι από %1$s.</string>
     <string name="combat_condition_player_immune">Τώρα έχεις ανοσία από %1$s.</string>
-    <string name="app_description">RPG φαντασίας βασισμένο σε αναζητήσεις</string>
-    <string name="dialog_loading_failed_message">Το μονοπάτι του Andor δεν μπόρεσε να φορτώσει το αρχείο που περιείχε το παιχνίδι.
+    <string name="app_description">RPG φαντασίας βασισμένο σε αποστολές</string>
+    <string name="dialog_loading_failed_message">Το Andor\'s Trail δεν μπόρεσε να φορτώσει το αρχείο αποθήκευσης του παιχνιδιού.
 \n
 \n:(
 \n
-\nΤο αρχείο μπορεί να είναι κατεστραμμένος ή ημιτελές.</string>
+\nΤο αρχείο μπορεί να είναι κατεστραμμένο ή ημιτελές.</string>
     <string name="dialog_more">Περισσότερα</string>
     <string name="combat_condition_monster_apply">%1$s επηρεάζεται από %2$s.</string>
     <string name="combat_condition_monster_clear">%1$s έχει απαλλαγεί από %2$s.</string>
@@ -82,9 +82,9 @@
     <string name="inventory_item_used">Χρησιμοποίησες το %1$s.</string>
     <string name="inventory_item_dropped">%1$s πετάχτηκε.</string>
     <string name="inventory_item_equipped">Εξόπλισες %1$s.</string>
-    <string name="dialog_loot_pickall">Μάζεμα όλων</string>
-    <string name="dialog_loot_foundgold">"Βρήκες  %1$d χρυσό."</string>
-    <string name="dialog_loot_pickedupitem">Πήρες ένα αντικείμενο.</string>
+    <string name="dialog_loot_pickall">Συλλογή όλων</string>
+    <string name="dialog_loot_foundgold">Βρήκες %1$d χρυσού.</string>
+    <string name="dialog_loot_pickedupitem">Συνέλεξες ένα αντικείμενο.</string>
     <string name="dialog_groundloot_title">Αντικείμενα</string>
     <string name="dialog_groundloot_message">Βρήκες μερικά αντικείμενα.</string>
     <string name="dialog_monsterloot_title">Νίκη</string>
@@ -122,7 +122,7 @@
     <string name="startscreen_newgame_confirm">Θα χάσετε το τρέχον σας παιχνίδι και τον χαρακτήρα σας, θέλετε οπωσδήποτε να αρχίσετε ένα νέο παιχνίδι\?</string>
     <string name="startscreen_about">Σχετικά/βοήθεια</string>
     <string name="startscreen_selectherosprite">Διαλέξετε τον ήρωά σας</string>
-    <string name="startscreen_enterheroname">Εισάγετε το όνομα του ήρωα</string>
+    <string name="startscreen_enterheroname">Καταχωρίστε το όνομα του ήρωα</string>
     <string name="startscreen_load">Φόρτωση</string>
     <string name="conversation_rewarditem">[Πήρες ένα αντικειμενο]</string>
     <string name="conversation_next">Επόμενο</string>
@@ -143,9 +143,9 @@
     <string name="about_button1">Βοήθεια</string>
     <string name="about_button2">Δημιουργοί</string>
     <string name="about_button3">Άδεια</string>
-    <string name="about_contents3">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό; μπορείτε να το αναδιανείμετε και/ή τροποποιήσετε κάτω από τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού; είτε την έκδοση 2 της Άδειας, είτε (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.&lt;br /&gt; &lt;br /&gt; Το παρόν πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΜΙΑ ΕΓΓΥΗΣΗ; χωρίς καν την υπονοούμενη εγγύηση της ΕΜΠΟΡΙΚΟΤΗΤΑΣ Η ΤΗΣ ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΚΑΠΟΙΟΝ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την Γενική Άδεια Δημόσιας Χρήσης GNU για περισσότερες λεπτομέρειες.&lt;br /&gt; &lt;br /&gt; Θα πρέπει να έχετε λάβει ένα αντόγραφο της Άδειας Γενικής Δημόσιας Χρήσης GNU μαζί με το παρόν πρόγραμμα; αν όχι δείτε στο &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Για τον πηγαίο κώδικα και να ζητήσετε χαρακτηριστικά, παρακαλώ επισκεφθείτε τη σελίδα του παιχνιδιού στο &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents3">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό· μπορείτε να το αναδιανείμετε και/ή τροποποιήσετε κάτω από τους όρους της Γενικής Άδειας Δημόσιας Χρήσης GNU όπως αυτή δημοσιεύεται από το Ίδρυμα Ελεύθερου Λογισμικού· είτε τη δεύτερη έκδοση της Άδειας, είτε (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.&lt;br /&gt; &lt;br /&gt; Το παρόν πρόγραμμα διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΜΙΑ ΕΓΓΥΗΣΗ· χωρίς καν την υπονοούμενη εγγύηση της ΕΜΠΟΡΙΚΟΤΗΤΑΣ Η ΤΗΣ ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΚΑΠΟΙΟΝ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε την Γενική Άδεια Δημόσιας Χρήσης GNU για περισσότερες λεπτομέρειες.&lt;br /&gt; &lt;br /&gt; Θα πρέπει να έχετε λάβει ένα αντόγραφο της Άδειας Γενικής Δημόσιας Χρήσης GNU μαζί με το παρόν πρόγραμμα· αν όχι ανατρέξτε στο &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Για τον πηγαίο κώδικα και για την αίτηση χαρακτηριστικών, παρακαλώ επισκεφθείτε τη σελίδα του παιχνιδιού στο &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="localize_resources_from_mo_filename">el.mo</string>
-    <string name="dialog_loot_pickedupitems">Πήρες %1$d αντικείμενα.</string>
+    <string name="dialog_loot_pickedupitems">Συνέλεξες %1$d αντικείμενα.</string>
     <string name="traitsinfo_criticalhit_multiplier">Πολλαπλασιαστής κρίσιμου χτυπήματος:</string>
     <string name="iteminfo_category">Κατηγορία:</string>
     <string name="conversation_rewardexp">[Πήρες %1$d εμπειρία]</string>
@@ -155,26 +155,26 @@
     <string name="shop_buyitem">Αγορά (%1$d χρυσό)</string>
     <string name="shop_item_bought">%1$s αγοράστηκε.</string>
     <string name="shop_item_sold">%1$s πωλήθηκε.</string>
-    <string name="levelup_description">Καλωσήρθες στο επίπεδο %1$d!</string>
+    <string name="levelup_description">Καλώς όρισες στο επίπεδο %1$d!</string>
     <string name="levelup_add_health_description">Προσθέτει %1$d στη μέγιστη υγεία.</string>
     <string name="levelup_add_attackchance">Αύξηση πιθανοτητας επίθεσης (+%1$d)</string>
     <string name="levelup_add_attackchance_description">Προσθέτει %1$d στην βασική πιθανότητα επίθεσης.</string>
     <string name="levelup_add_attackdamage">Αύξηση ζημιάς επίθεσης (+%1$d)</string>
     <string name="levelup_add_blockchance">Αύξηση πιθανότητας για μπλοκάρισμα (+%1$d)</string>
     <string name="levelup_add_blockchance_description">Προσθέτει %1$d στην βασική πιθανότητα για μπλοκάρισμα.</string>
-    <string name="about_contents1">Καλωσήλθατε στο Andor\'s Trail, ένα ανοιχτού κώδικα roguelike RPG.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;To forums του παιχνιδιού στο andorstrail.com για ερωτήσεις και συζήτηση για το παιχνίδι.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;Wiki για πληροφορίες για τον κόσμο του Andor\'s Trail world, μεταξύ άλλων.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Ο πηγαίος κώδικας στο github.com για προγραμματιστές.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Παρακαλούμε επισκεφθείτε το forum για να συζητήσετε για το παιχνίδι με άλλους παίκτες.&lt;br /</string>
-    <string name="about_interface">&lt;div&gt;&lt;b&gt;Οι Ρυθμίσεις του Παιχνιδιού&lt;/b&gt; μπορούν να βρεθούν πιέζοντας το πλήκτρο Menu της συσκευής σας.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Εικονίδια Περιβάλλοντος&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Το Σεντούκι&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Quickslots [Μακρά πίεση στο σακί εντός για την ανάθεση αντικειμένων για άμεση χρήση]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Ο Ήρωας&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Μενού [Γενικά, Quests, Ικανότητες &amp;amp; Εξοπλισμός *]&lt;/p&gt; &lt;p&gt;* (Μέσα στον εξοπλισμό, πατήστε ένα αντικεμενο για πληροφορίες &amp;amp; μακρά πίεση για περισσότερες επιλογές)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Οι εχθροί&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Πληροφορίες [Εμφανίζεται στη διάρκεια της Μάχης]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Μάχη&lt;/h1&gt; &lt;p&gt;Πράξεις κατά τη διάρκεια της μάχης κόστίζουν AP...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Επίθεση&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Φόρεμα Εξοπλισμού &amp;amp; Χρήση αντικειμένων μπορεί να αλλάξει το AP &amp;amp; κόστος χρήσης)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Χρήση Αντικειμένων&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Διαφυγή&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Προηγμένη Μάχη&lt;/h1&gt; &lt;div&gt;Κατά τη διάρκεια της Μάχης, πιέστε μακρά σε ένα σημείο δίπλα στον Ήρωα...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Για Διαφυγή&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(το επιλεγμένο σημείο φωτίζεται - Το κουμπί επίθεσης αλλάζει σε Μετακίνηση)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[λειτουργία διαφυγής ενεργή - Πιέστε μακρά σε έναν εχθρό για να ξαναμπείτε σε μάχη]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Για να Αλλάξετε Στόχο&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(ο κόκκινος φωτισμός μετακινείται μεταξύ εχθρών)&lt;/p&gt; &lt;p&gt;[ο στόχος έχει αλλάξει]&lt;/p&gt;</string>
-    <string name="dialog_newversion_title">Καλωσήλθατε</string>
+    <string name="about_contents1">Καλώς ορίσατε στο Andor\'s Trail, ένα ανοιχτού κώδικα roguelike RPG.&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Ο χώρος συζητήσεων του παιχνιδιού είναι στο andorstrail.com για ερωτήσεις και συζήτηση για το παιχνίδι.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;Wiki για πληροφορίες για τον κόσμο του Andor\'s Trail, μεταξύ άλλων.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Ο πηγαίος κώδικας στο github.com για προγραμματιστές.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Παρακαλούμε επισκεφθείτε τον χώρο συζητήσεων για να συζητήσετε τα του παιχνιδιού με άλλους παίκτες.&lt;br /</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;Οι Ρυθμίσεις του Παιχνιδιού&lt;/b&gt; μπορούν να βρεθούν πιέζοντας το πλήκτρο Μενού της συσκευής σας.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Εικονίδια Περιβάλλοντος&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Το Σεντούκι&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Quickslots [Μακρά πίεση στο σακί εντός για την ανάθεση αντικειμένων για άμεση χρήση]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Ο Ήρωας&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Μενού [Γενικά, Αποστολές, Ικανότητες &amp;amp; Εξοπλισμός *]&lt;/p&gt; &lt;p&gt;* (Μέσα στον εξοπλισμό, πατήστε ένα αντικεμενο για πληροφορίες &amp;amp; μακρά πίεση για περισσότερες επιλογές)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Οι εχθροί&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Πληροφορίες [Εμφανίζεται στη διάρκεια της Μάχης]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Μάχη&lt;/h1&gt; &lt;p&gt;Πράξεις κατά τη διάρκεια της μάχης κόστίζουν AP...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Επίθεση&lt;/b&gt; - [3AP] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Φόρεμα Εξοπλισμού &amp;amp; Χρήση αντικειμένων μπορεί να αλλάξει το AP &amp;amp; κόστος χρήσης)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Χρήση Αντικειμένων&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Διαφυγή&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Προηγμένη Μάχη&lt;/h1&gt; &lt;div&gt;Κατά τη διάρκεια της Μάχης, πιέστε μακρά σε ένα σημείο δίπλα στον Ήρωα...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Για Διαφυγή&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(το επιλεγμένο σημείο φωτίζεται - Το κουμπί επίθεσης αλλάζει σε Μετακίνηση)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[λειτουργία διαφυγής ενεργή - Πιέστε μακρά σε έναν εχθρό για να ξαναμπείτε σε μάχη]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Για να Αλλάξετε Στόχο&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(ο κόκκινος φωτισμός μετακινείται μεταξύ εχθρών)&lt;/p&gt; &lt;p&gt;[ο στόχος έχει αλλάξει]&lt;/p&gt;</string>
+    <string name="dialog_newversion_title">Καλώς ορίσατε</string>
     <string name="dialog_newversion_message">Σας ευχαριστούμε που κατεβάσατε το Andor\'s Trail!
 \n
 \nΠαρακαλούμε προσέξτε οτι αυτή η έκδοση του Andor\'s Trail είναι ΣΕ ΔΙΑΡΚΗ ΕΞΕΛΙΞΗ, που σημαίνει όλοι οι χάρτες δεν είναι ακόμη ολοκληρωμένοι.
-\nΠαρακαλούμε επισκευθείτε το forum του παιχνιδιού για να συζητήσετε το παιχνίδι με άλλους παίκτες ή να βοηθήσετε το παιχνίδι να γίνει ακόμη καλύτερο (δείτε το σχετικά).
+\nΠαρακαλούμε επισκευθείτε τον χώρο συζητήσεων του παιχνιδιού για να συζητήσετε το παιχνίδι με άλλους παίκτες ή να βοηθήσετε το παιχνίδι να γίνει ακόμη καλύτερο (δείτε το σχετικά).
 \n
 \nΕυχαριστούμε για τις παρατηρήσεις!</string>
-    <string name="questlog_includecompleted_prompt">Επιλέξτε quests για προβολή</string>
-    <string name="questlog_includecompleted_hidecompleted">Απόκρυψη ολοκληρωμένων quests</string>
-    <string name="questlog_includecompleted_includecompleted">Συμπερίληψη ολοκληρωμένων quests</string>
-    <string name="questlog_includecompleted_onlycompleted">Μόνο ολοκληρωμένα quests</string>
+    <string name="questlog_includecompleted_prompt">Επιλέξτε αποστολές για προβολή</string>
+    <string name="questlog_includecompleted_hidecompleted">Ενεργές αποστολές</string>
+    <string name="questlog_includecompleted_includecompleted">Όλες οι αποστολές</string>
+    <string name="questlog_includecompleted_onlycompleted">Ολοκληρωμένες αποστολές</string>
     <string name="questlog_queststatus">Κατάσταση: %1$s</string>
     <string name="questlog_queststatus_inprogress">Σε εξέλιξη</string>
     <string name="questlog_queststatus_completed">Ολοκληρώθηκε</string>
@@ -183,7 +183,7 @@
     <string name="preferences_display_fullscreen">Εμφανίζει το παιχνίδι σε λειτουργία πλήρους οθόνης (Απαιτεί επανεκκίνηση)</string>
     <string name="preferences_dialog_category">Επιβεβαίωση διαλόγων</string>
     <string name="preferences_dialog_confirmrest_title">Επιβεβαίωση ξεκούρασης</string>
-    <string name="preferences_dialog_confirmrest">Εμφανίζει μια ερώτηση αν θέλετε να ξεκουραστείτε όταν μπαίνετε σε ένα κρεβάτι. Αλλιώς πάντα θα ξεκουράζεστε αυτόματα.</string>
+    <string name="preferences_dialog_confirmrest">Εμφανίζει μια ερώτηση για το αν θέλετε να ξεκουραστείτε όταν μπαίνετε σε ένα κρεβάτι. Αλλιώς, πάντα θα ξεκουράζεστε αυτόματα.</string>
     <string name="preferences_dialog_confirmattack_title">Επιβεβαίωση επίθεσης</string>
     <string name="preferences_dialog_confirmattack">Ενεργοποιεί τον διάλογο \'Θέλετε να επιτεθείτε...\?\' όταν επιτίθεστε σε ένα τέρας.</string>
     <string name="preferences_dialog_monsterloot_title">Εμφάνιση λείας τερατων</string>
@@ -335,11 +335,11 @@
     <string name="loadsave_save_overwrite_confirmation_title">Αντικατάσταση αποθηκευμένου παιχνιδιού;</string>
     <string name="loadsave_save_overwrite_confirmation">Αυτό το αποθηκευμένο παιχνίδι περιέχει διαφορετικό όνομα παίκτη (%1$s) απο το τρέχον όνομα παίκτη (%2$s). Είστε σίγουροι οτι θέλετε να αντικαταστήσετε αυτό το αποθηκευμένο παιχνίδι;</string>
     <string name="iteminfo_displaytypes_ordinary">Κανονικό</string>
-    <string name="iteminfo_displaytypes_quest">Αντικείμενο quest</string>
+    <string name="iteminfo_displaytypes_quest">Αντικείμενο αποστολής</string>
     <string name="iteminfo_displaytypes_legendary">Μυθικό</string>
     <string name="iteminfo_displaytypes_extraordinary">Εξαιρετικό</string>
     <string name="iteminfo_displaytypes_rare">Σπάνιο</string>
-    <string name="dialog_loading_failed_cheat">Το μονοπάτι του Andor δεν μπόρεσε να φορτώσει το αρχείο αποθήκευσης. Αυτό το αρχείο αποθήκευσης έχει ήδη συνεχιστεί.</string>
+    <string name="dialog_loading_failed_cheat">Το Andor\'s Trail δεν μπόρεσε να φορτώσει το αρχείο αποθήκευσης. Αυτό το αρχείο αποθήκευσης έχει ήδη συνεχιστεί.</string>
     <string name="dialog_game_over_title">Τέλος παιχνιδιού</string>
     <string name="dialog_game_over_text">Παίρνεις την τελευταία σου ανάσα και πεθαίνεις.</string>
     <string name="rip_startscreen">(Αναπαύσου εν ειρήνη)</string>
@@ -444,13 +444,13 @@
     <string name="combat_result_monstermoved">%1$s κινήσεις.</string>
     <string name="combat_log_title">Αρχείο καταγραφής μάχης</string>
     <string name="combat_log_noentries">Δεν υπάρχουν ακόμα καταχωρήσεις.</string>
-    <string name="conversation_reward_quest_finished">[Quest ολοκληρώθηκε: \"%1$s\"]</string>
-    <string name="conversation_reward_quest_updated">[Quest ενημερώθηκε: \"%1$s\"]</string>
+    <string name="conversation_reward_quest_finished">[Ολοκληρώθηκε η αποστολή: «%1$s»]</string>
+    <string name="conversation_reward_quest_updated">[Ενημερώθηκε η αποστολή: «%1$s»]</string>
     <string name="skill_title_weapon_prof_dagger">Επιδεξιότητα Στιλέτου</string>
     <string name="skill_title_weapon_prof_1hsword">Επιδεξιότητα Σπαθιού με ένα χέρι</string>
     <string name="skill_title_weapon_prof_2hsword">Επιδεξιότητα Σπαθιού με δύο χέρια</string>
     <string name="skill_title_weapon_prof_axe">Επιδεξιότητα Τσεκουριού</string>
-    <string name="skill_title_weapon_prof_blunt">Επιδεξιότητα Αμβλέων Όπλων</string>
+    <string name="skill_title_weapon_prof_blunt">Επιδεξιότητα αμβλέων όπλων</string>
     <string name="skill_title_weapon_prof_unarmed">Άοπλη μάχη</string>
     <string name="skill_title_armor_prof_shield">Επιδεξιότητα ασπίδας</string>
     <string name="skill_title_armor_prof_unarmored">Άθωράκιστη μάχη</string>
@@ -468,7 +468,7 @@
     <string name="skill_shortdescription_weapon_prof_axe">Καλύτερη μάχη με τσεκούρια</string>
     <string name="skill_shortdescription_weapon_prof_blunt">Καλύτερη μάχη με αμβλεία όπλα</string>
     <string name="skill_shortdescription_weapon_prof_unarmed">Καλύτερη άοπλη μάχη</string>
-    <string name="skill_shortdescription_armor_prof_shield">Καλύτερη χρήση ασπίδων</string>
+    <string name="skill_shortdescription_armor_prof_shield">Καλύτερη χρήση ασπίδων και όπλων απόκρουσης</string>
     <string name="skill_shortdescription_armor_prof_unarmored">Καλύτερη μάχη χωρίς θωράκιση</string>
     <string name="skill_shortdescription_armor_prof_light">Καλύτερη χρήση ελαφράς θωράκισης</string>
     <string name="skill_shortdescription_armor_prof_heavy">Καλύτερη χρήση βαρέας θωράκισης</string>
@@ -488,19 +488,19 @@
     <string name="skill_longdescription_weapon_prof_1hsword">Για κάθε επίπεδο, αυξάνει την πιθανότητα επίθεσης χρησιμοποιώντας ξίφη, μακριά σπαθιά και broadsword κατά %1$d %% της αρχικής πιθανότητας επίθεσης του αντικειμένου, αυξάνει την πιθανότητα απόκρουσης κατά %2$d %% της αρχικής πιθανότητας απόκρουσης του αντικειμένου, και αυξάνει την πιθανότητα κρίσιμου χτυπήματος κατά%3$d %% της αρχικής πιθανότητας κρίσιμου χτυπήματος του αντικειμένου.</string>
     <string name="skill_longdescription_weapon_prof_2hsword">Για κάθε επίπεδο, αυξάνει την πιθανότητα επίθεσης χρησιμοποιώντας σπαθιά δυο χεριών κατά %1$d %% της βασικής πιθανότητας επίθεσης του αντικειμένου, αυξάνει την πιθανότητα απόκρουσης κατά %2$d %% της αρχικής πιθανότητας απόκρουσης του αντικειμένου, και αυξάνει την πιθανότητα κρίσιμου χτυπήματος κατά %3$d %% της αρχικής πιθανότητας κρίσιμου χτυπήματος του αντικειμένου.</string>
     <string name="skill_longdescription_weapon_prof_axe">Για κάθε επίπεδο, αυξάνει την πιθανότητα επίθεσης για τσεκούρια και τσεκούρια δυο χεριών κατά %1$d %% της βασικής πιθανότητας επίθεσης του αντικειμένου, αυξάνει την πιθανότητα απόκρουσης κατά %2$d %% της βασικής πιθανότητας απόκρουσης του αντικειμένου, και αυξάνει την πιθανότητα κρίσιμου χτυπήματος κατά%3$d %% της βασικής πιθανότητας κρίσιμου χτυπήματος του αντικειμένου.</string>
-    <string name="skill_longdescription_weapon_prof_blunt">Για κάθε επίπεδο, αυξάνει την πιθανότητα επίθεσης για ρόπαλα κατά %1$d %% της βασικής πιθανότητας επίθεσης του αντικειμένου, αυξάνει την πιθανότητα απόκρουσης κατά %2$d %% της βασικής πιθανότητας απόκρουσης του αντικειμένου, και αυξάνει την πιθανότητα κρίσιμου χτυπήματος κατά %3$d %% της βασικής πιθανότητας κρίσιμου χτυπήματος του αντικειμένου. Αυτό περιλαμβάνει ρόπαλα, κοντάρια, σκήπτρα και πολεμικούς πελέκεις και γιγάντιους πελέκεις.</string>
+    <string name="skill_longdescription_weapon_prof_blunt">Για κάθε επίπεδο ικανοτήτων, αυξάνει την πιθανότητα επίθεσης για αμβλέα όπλα κατά %1$d %% της βασικής πιθανότητας επίθεσης του αντικειμένου, αυξάνει την πιθανότητα απόκρουσης κατά %2$d %% της βασικής πιθανότητας απόκρουσης του αντικειμένου και αυξάνει την πιθανότητα κρίσιμου χτυπήματος κατά %3$d %% της βασικής πιθανότητας κρίσιμου χτυπήματος του αντικειμένου. Αυτό περιλαμβάνει ρόπαλα, κοντάρια, σκήπτρα, μαστίγια, πολεμικά σφυριά και γιγάντια σφυριά.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">Κατά τη μάχη χωρίς όπλο και ασπίδα, αύξηση %1$d στην πιθανότητα επίθεσης, %2$d στην δυνατότητα ζημιάς και %3$d στην ικανότητα απόκρουσης για κάθε επίπεδο της ικανότητας.</string>
-    <string name="skill_longdescription_armor_prof_shield">Αυξάνει την αντίσταση ζημιάς κατά %1$d για κάθε επίπεδο ικανότητας εφόσον ενώ είναι εξοπλισμένη ασπίδα.</string>
+    <string name="skill_longdescription_armor_prof_shield">Αυξάνει την αντίσταση ζημιάς κατά %1$d για κάθε επίπεδο ικανότητας ενώ είστε εξοπλισμένος με ασπίδα ή όπλο απόκρουσης.</string>
     <string name="skill_longdescription_armor_prof_unarmored">Κατά τη μάχη χωρίς κανένα αντικείμενο πανοπλίας, απόκτηση %1$d ικανότητα απόκρουσης για κάθε επίπεδο ικανότητας. Αντικείμενα που είναι φτιαγμένα από ύφασμα δεν θεωρούνται πανοπλία.</string>
     <string name="skill_longdescription_armor_prof_light">Για κάθε επίπεδο ικανότητας, αυξάνει την πιθανότητα απόκρουσης για κάθε κομμάτι ελαφράς θωράκισης που φοράται κατά %1$d %% από την βασική του πιθανότητα μπλοκαρίσματος. Η ελαφρά θωράκιση συμπεριλαμβάνει πανοπλίες από δέρμα, ελαφρύ μέταλλο και τομάρι.</string>
     <string name="skill_longdescription_armor_prof_heavy">Για κάθε επίπεδο ικανότητας αυξάνει την πιθανότητα απόκρουσης για κάθε κομμάτι βαρέας θωράκισης που φοράται κατά %1$d %% από την βασική του πιθανότητα μπλοκαρίσματος. Η ποινή κίνησης για τα κομμάτια βαρέας θωράκισης μειώνεται κατά %2$d %% για κάθε επίπεδο ικανότητας και ποινή στην ταχύτητα επίθεσης μειώνεται κατά %3$d %% για κάθε επίπεδο ικανότητας. Η βαρέα θωράκιση συμπεριλαμβάνει μεταλλικές πανοπλίες, αλυσιδωτούς θώρακες και θωράκιση με πλάκες.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">Δίνει προτερήματα κατά τη μάχη με δύο όπλα την ίδια στιγμή, ένα στο κύριο χέρι και ένα στο δευτερεύον.
+    <string name="skill_longdescription_fightstyle_dualwield">Δίνει πλεονεκτήματα κατά τη μάχη με δύο όπλα ταυτόχρονα, ένα στο κύριο χέρι και ένα στο δευτερεύον.
 \n
-\nΧωρίς αυτή την ικανότητα, μόνο %1$d %% από τις δυνατότητες του όπλου μπορούν να χρησιμοποιηθούν όταν χρησιμοποιείται στο δευτερεύον χέρι. Αυτό περιλαμβάνει την πιθανότητα επίθεσης, κρίσιμου χτυπήματος, ζημιάς και απόκρουσης. Χωρίς αυτή την ικανότητα, η ταχύτητα επίθεσης (κόστος AP) είναι το άθροισμα της ταχύτητας επίθεσης του κύριου και δευτερεύοντος όπλου.
+\nΧωρίς αυτή την ικανότητα, μόνο %1$d %% από τις δυνατότητες του όπλου μπορούν να χρησιμοποιηθούν όταν χρησιμοποιείται στο δευτερεύον χέρι. Αυτό περιλαμβάνει την πιθανότητα επίθεσης, κρίσιμου χτυπήματος, ζημιάς και απόκρουσης. Χωρίς αυτή την ικανότητα, η ταχύτητα κόστους (κόστος AP) είναι το άθροισμα της ταχύτητας επίθεσης του κύριου και δευτερεύοντος όπλου. Θα χρησιμοποιηθεί ο χαμηλότερος από τους τροποποιητές ζημιάς.
 \n
-\nΜε ένα επίπεδο αυτής της ικανότητας, %2$d %% της δυνατότητας του δευτερεύοντος όπλου μπορεί να χρησιμοποιηθεί, και η ταχύτητα επίθεσης είναι η υψηλότερη ταχύτητα επίθεσης και των δυο όπλων συν %3$d %% της ταχύτητας επίθεσης του όπλου με την μικρότερη ταχύτητα επίθεσης.
+\nΜε ένα επίπεδο αυτής της ικανότητας, μπορεί να χρησιμοποιηθεί %2$d %% της δυνατότητας του δευτερεύοντος όπλου και η ταχύτητα κόστους είναι η υψηλότερη ταχύτητα κόστους και των δυο όπλων συν %3$d %% της ταχύτητας κόστους του όπλου με την μικρότερη ταχύτητα κόστους.
 \n
-\nΜε δυο επίπεδα αυτής της ικανότητας, %4$d %% της δυνατότητας του δευτερεύοντος όπλου μπορεί να χρησιμοποιηθεί, και η ταχύτητα επίθεσης ισούται με την μεγαλύτερη ταχύτητα επίθεσης των δυο όπλων που είναι εξοπλισμένα.</string>
+\nΜε δυο επίπεδα αυτής της ικανότητας, μπορεί να χρησιμοποιηθεί %4$d %% της δυνατότητας του δευτερεύοντος όπλου και η ταχύτητα κόστους ισούται με την μεγαλύτερη ταχύτητα κόστους των δυο όπλων που είναι εξοπλισμένα. Θα χρησιμοποιηθεί ο υψηλότερος τροποποιητής ζημιάς.</string>
     <string name="skill_longdescription_fightstyle_2hand">Δίνει πλεονεκτήματα όταν χρησιμοποιούνται όπλα που χρειάζονται δύο χέρια, όπως σπαθιά δύο χεριών, μεγάλοι πελέκεις ή γιγάντια σφυριά.
 \n
 \nΚάθε επίπεδο ικανότητας αυξάνει τη δυνατότητα ζημιάς για όπλα δυο χεριών κατά %1$d %% της αρχικής δυνατότητας ζημιάς.</string>
@@ -509,7 +509,7 @@
 \nΚάθε επίπεδο ικανότητας αυξάνει την πιθανότητα επίθεσης των όπλων με %1$d %% από τις αρχικές τους πιθανότητες επίθεσης, και την πιθανότητα απόκρουσης των ασπίδων κατά %2$d %% από τις αρχικές τους πιθανότητες απόκρουσης.</string>
     <string name="skill_longdescription_specialization_dualwield">Αυξάνει την πιθανότητα επίθεσης και των δύο εξοπλισμένων όπλων κατά επιπλέον %1$d %% από τις αρχικές τους πιθανότητες επίθεσης, επιπρόσθετα από τα πλεονεκτήματα που δίνονται από την ικανότητα χειρισμού όπλων. Οι πιθανότητες απόκρουσης επίσης αυξάνονται κατά %2$d %% από τις αρχικές τους πιθανότητες απόκρουσης.</string>
     <string name="skill_longdescription_specialization_2hand">Αυξάνει την δυνατότητα για ζημιά των όπλων δύο χεριών για ένα επιπλέον %1$d %% από την αρχική τους δυνατότητα ζημιάς, επιπρόσθετα από τα πλεονεκτήματα που δίνονται από την ικανότητα χειρισμού όπλων. Οι πιθανότητες επίθεσης των όπλων δύο χεριών επίσης αυξάνονται κατά %2$d %% από τις αρχικές τους πιθανότητες επίθεσης.</string>
-    <string name="skill_longdescription_specialization_weapon_shield">Αυξάνει και την πιθανότητα επίθεσης και την δυνατότητα ζημιάς των όπλων. Η πιθανότητα επίθεσης αυξάνεται κατά %1$d %% της αρχικής πιθανότητας επίθεσης, και η δυνατότητα ζημιάς αυξάνεται κατά %2$d %% από την αρχική δυνατότητα ζημιάς.</string>
+    <string name="skill_longdescription_specialization_weapon_shield">Αυξάνει και την πιθανότητα επίθεσης και την δυνατότητα ζημιάς των όπλων του κύριου χεριού. Η πιθανότητα επίθεσης αυξάνεται κατά %1$d %% της αρχικής πιθανότητας επίθεσης, και η δυνατότητα ζημιάς αυξάνεται κατά %2$d %% από την αρχική δυνατότητα ζημιάς.</string>
     <string name="preferences_quickslots_placement">Θέση γρήγορης χρήσης</string>
     <string name="preferences_quickslots_placement_summary">Που να τοποθετηθεί η θέση γρήγορης χρήσης</string>
     <string name="preferences_quickslots_placements_horizontal_center_bottom">Κάτω κέντρο</string>
@@ -524,7 +524,7 @@
     <string name="startscreen_incompatible_savegames">Αυτή είναι μια έκδοση ανάπτυξης του Andor\'s Trail. Αποθηκευμένα παιχνίδια που παράγονται από αυτή την έκδοση δεν είναι συμβατά με την κανονική έκδοση.</string>
     <string name="startscreen_non_release_version">Αυτή είναι μια προέκδοση του Andor\'s Trail. Αποθηκευμένα παιχνίδια που παράγονται από αυτή την έκδοση ενδέχεται να μην είναι συμβατά με την κανονική έκδοση.</string>
     <string name="heroinfo_gamestats">Στατιστικά παιχνιδιού</string>
-    <string name="heroinfo_gamestats_quests">Ολοκληρωμένα quest</string>
+    <string name="heroinfo_gamestats_quests">Ολοκληρωμένες αποστολές</string>
     <string name="heroinfo_gamestats_deaths">Αριθμός λιποθυμιών</string>
     <string name="heroinfo_gamestats_spent_gold">Χρυσός που ξοδεύτηκε σε καταστήματα</string>
     <string name="heroinfo_gamestats_bonemeals">Φίλτρα Bonemeal που χρησιμοποιήθηκαν</string>
@@ -543,7 +543,7 @@
     <string name="inventory_category_weapons">Όπλο</string>
     <string name="inventory_category_armor">Πανοπλία</string>
     <string name="inventory_category_usable">Αναλώσιμο</string>
-    <string name="inventory_category_quest">Αντικείμενο Quest</string>
+    <string name="inventory_category_quest">Αντικείμενο Αποστολής</string>
     <string name="inventory_category_other">Άλλο</string>
     <string name="inventory_sort_custom">Μη-ταξινομημένο</string>
     <string name="inventory_sort_name">Όνομα</string>
@@ -580,5 +580,26 @@
     <string name="dialog_permission_information_title">Φόρτωση και αποθήκευση παιχνιδιών</string>
     <string name="dialog_newversion_permission_information">"
 \n
-\nΠροκειμένου να αποθηκεύσετε και να φορτώσετε τα παιχνίδια σας (και μόνο για αυτό το σκοπό), το μονοπάτι του Andor θα σας ζητήσει άδεια πρόσβασης στον αποθηκευτικό χώρο σας."</string>
+\nΠροκειμένου να αποθηκεύσετε και να φορτώσετε τα παιχνίδια σας (και μόνο για αυτό το σκοπό), το Andor\'s Trail θα σας ζητήσει άδεια πρόσβασης στον αποθηκευτικό χώρο σας."</string>
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Ενώ μάχεστε άοπλος, χωρίς πανοπλία, χωρίς όπλο ή ασπίδα, κερδίστε %1$d πιθανότητας επίθεσης, %2$d πιθανότητας μπλοκαρίσματος, %3$d αντοχής σε ζημιά και αυξήστε τη μέγιστη ζημιά κατά %4$d ανά επίπεδο ικανότητας. Ακόμη, η ικανότητα δίνει έναν πολλαπλασιαστή κρίσιμου χτυπήματος του 1 συν 0. %5$d ανά επίπεδο.
+\n
+\nΑντικείμενα κατασκευασμένα από ύφασμα δεν κατατάσσονται στις πανοπλίες.</string>
+    <string name="skill_shortdescription_fightstyle_unarmed_unarmored">Μάχεται καλύτερα άοπλος</string>
+    <string name="iteminfo_effect_set_damage_modifier">Τροποποιητής ζημιάς: %1$d%%</string>
+    <string name="skill_title_fightstyle_unarmed_unarmored">Τρόπος μάχης: Η μέθοδος του μοναχού</string>
+    <string name="dialog_permission_information">Το Andor\'s Trail αποθηκεύει τα αποθηκευμένα παιχνίδια στον, προσβάσιμο από τον χρήστη, αποθηκευτικό χώρο της συσκευής σας. Αυτό σας επιτρέπει, με ευκολία, να κρατάτε αντίγραφα ασφαλείας των αποθηκευμένων παιχνιδιών σας ή να τα μεταφέρετε σε μία νέα συσκευή. Παρακαλώ επισκεφθείτε τους χώρους συζητήσεων μας για περισσότερες πληροφορίες.
+\n
+\nΤο Andor\'s Trail δε χρησιμοποιεί την πρόσβαση στη συσκευή σας για κανέναν άλλο σκοπό και δεν έχει πρόσβαση στο διαδίκτυο. Το Andor\'s Trail είναι ανοιχτού κώδικα και ο πηγαίος κώδικας μπορεί να βρεθεί στο github.</string>
+    <string name="combat_log_item_plural">Βρήκες %1$d αντικείμενα:</string>
+    <string name="combat_log_item_single">Βρήκες ένα αντικείμενο:</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="skill_shortdescription_spore_immunity">Πλήρης ανοσία στο δηλητήριο των σπόρων</string>
+    <string name="skill_title_spore_immunity">Ανοσία στο δηλητήριο των σπόρων</string>
+    <string name="inventory_category_food">Τροφή</string>
+    <string name="inventory_category_potion">Φίλτρο</string>
+    <string name="inventory_category_jewelry">Κοσμήματα</string>
 </resources>

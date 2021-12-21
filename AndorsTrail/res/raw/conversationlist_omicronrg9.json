@@ -209,7 +209,7 @@
                 "nextPhraseID":"troublemaker_guild_8a"
             },
             {
-                "text":"That's not my favourite kind of job, but I will bring them.",
+                "text":"That's not my favorite kind of job, but I will bring them.",
                 "nextPhraseID":"troublemaker_guild_8a"
             },
             {
@@ -4197,7 +4197,7 @@
     },
     {
         "id":"umar_guild03_30",
-        "message":"Take 4000 gold coins, and some bottles of my favourite mead.\nNow you deserve a good rest, my friend. You have earned the trust of the Thieves Guild.",
+        "message":"Take 4000 gold coins, and some bottles of my favorite mead.\nNow you deserve a good rest, my friend. You have earned the trust of the Thieves Guild.",
         "replies":[
             {
                 "text":"I'll be back soon.",
@@ -4282,7 +4282,22 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"andor",
-                        "value":99972
+                        "value":72
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood2",
+                        "value":50
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"flagstone",
+                        "value":100
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"stoutford_castle",
+                        "value":50
                     }
                 ]
             },

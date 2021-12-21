@@ -1861,7 +1861,7 @@
                 "nextPhraseID":"brv_teacher_102_20"
             },
             {
-                "text":"Your little favourite provoked me.",
+                "text":"Your little favorite provoked me.",
                 "nextPhraseID":"brv_teacher_102_20"
             }
         ]
@@ -4156,7 +4156,7 @@
     },
     {
         "id":"golin_40",
-        "message":"It's about time. This is my favourite class.",
+        "message":"It's about time. This is my favorite class.",
         "replies":[
             {
                 "text":"What will happen now?",

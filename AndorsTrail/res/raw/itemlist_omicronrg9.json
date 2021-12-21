@@ -35,11 +35,11 @@
             },
             "increaseReequipCost":0,
             "increaseAttackCost":4,
-			"setNonWeaponDamageModifier":96,
             "increaseAttackChance":15,
             "increaseCriticalSkill":10,
             "increaseBlockChance":2,
-            "setCriticalMultiplier":2.5
+            "setCriticalMultiplier":2.5,
+            "setNonWeaponDamageModifier":96
         }
     },
     {
@@ -80,8 +80,6 @@
         "category":"food",
         "description":"Even fly larvae have died eating this.",
         "useEffect":{
-
-
             "increaseCurrentHP":{
                 "min":-15,
                 "max":-10
@@ -118,12 +116,12 @@
             },
             "increaseMaxHP":0,
             "increaseAttackCost":5,
-            "setNonWeaponDamageModifier":113,
             "increaseAttackChance":19,
             "increaseCriticalSkill":10,
             "increaseBlockChance":0,
             "increaseDamageResistance":0,
-            "setCriticalMultiplier":2.0
+            "setCriticalMultiplier":2.0,
+            "setNonWeaponDamageModifier":113
         }
     },
     {
@@ -159,19 +157,34 @@
         "id":"gauntlet_omi2_1",
         "iconID":"items_weapons:23",
         "name":"Spiked Gloves",
-        "displaytype":"ordinary",
-        "hasManualPrice":1,
+        "displaytype":"rare",
         "baseMarketCost":1994,
         "category":"gauntlet",
+        "description":"These gloves can be used on your hands or even with other gloves, but they don't allow the use of weapons at the same time.",
         "equipEffect":{
             "increaseAttackDamage":{
                 "min":3,
                 "max":4
             },
+            "increaseMoveCost":0,
+            "increaseUseItemCost":4,
+            "increaseReequipCost":3,
             "increaseAttackCost":4,
-			"setNonWeaponDamageModifier":101,
             "increaseAttackChance":9,
-            "increaseBlockChance":11
+            "increaseCriticalSkill":10,
+            "increaseBlockChance":11,
+            "setCriticalMultiplier":1.5,
+            "setNonWeaponDamageModifier":101
+        },
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"bleeding_wound",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"5"
+                }
+            ]
         }
     }
 ]

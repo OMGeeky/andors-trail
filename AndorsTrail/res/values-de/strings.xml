@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Andor\'s Trail</string>
-    <string name="app_description">Questbasiertes Fantasy-Rollenspiel</string>
+    <string name="app_description">Aufgabenbasiertes Phantasiewelt-Rollenspiel</string>
     <string name="exit_to_menu">Zum Menü</string>
     <string name="menu_settings">Einstellungen</string>
     <string name="menu_save">Speichern</string>
@@ -10,7 +10,7 @@
     <string name="loadsave_title_save">Spielstand speichern</string>
     <string name="loadsave_title_load">Spielstand laden</string>
     <string name="loadsave_selectslot">Speicherplatz wählen</string>
-    <string name="savegame_currenthero_displayinfo">Level %1$d, %2$d Erfahrung, %3$d Goldmünzen</string>
+    <string name="savegame_currenthero_displayinfo">Stufe %1$d, %2$d Erfahrung, %3$d Goldmünzen</string>
     <string name="dialog_loading_message">Lade Ressourcen…</string>
     <string name="dialog_loading_failed_title">Laden fehlgeschlagen</string>
     <string name="dialog_loading_failed_message">Der Spielstand konnte nicht geladen werden.\n\n:(\n\nDie Datei könnte beschädigt oder unvollständig sein.</string>
@@ -19,28 +19,28 @@
     <string name="dialog_monsterencounter_title">Begegnung</string>
     <string name="dialog_monsterencounter_message">Möchtest du angreifen\? 
 \nSchwierigkeit: %1$s</string>
-    <string name="dialog_monsterencounter_info">Info</string>
+    <string name="dialog_monsterencounter_info">Auskunft</string>
     <string name="status_hp">LP:</string>
     <string name="status_ap">AP:</string>
     <string name="status_exp">EP:</string>
     <string name="heroinfo_char">Übersicht</string>
-    <string name="heroinfo_inv">Inventar</string>
+    <string name="heroinfo_inv">Ausstattung</string>
     <string name="heroinfo_skill">Fähigkeiten</string>
-    <string name="heroinfo_levelup">Level aufgestiegen</string>
-    <string name="heroinfo_level">Level</string>
+    <string name="heroinfo_levelup">Stufe aufsteigen</string>
+    <string name="heroinfo_level">Stufe</string>
     <string name="heroinfo_totalexperience">Erfahrung</string>
     <string name="heroinfo_wornequipment">Ausrüstung</string>
-    <string name="heroinfo_inventory">Inventar</string>
+    <string name="heroinfo_inventory">Ausstattung</string>
     <string name="heroinfo_gold">Gold: %1$d</string>
     <string name="heroinfo_actionpoints">Aktionspunkte (AP):</string>
-    <string name="heroinfo_quests">Quests</string>
+    <string name="heroinfo_quests">Aufgaben</string>
     <string name="combat_attack">Angriff (%1$d AP)</string>
     <string name="combat_move">Bewegung (%1$d AP)</string>
-    <string name="combat_use">Benutzen</string>
+    <string name="combat_use">Gegenstand benutzen</string>
     <string name="combat_endturn">Runde beenden</string>
     <!-- <string name="combat_endcombat">Kampf beenden</string>-->
     <string name="combat_flee">Fliehen</string>
-    <string name="combat_begin_flee">Du kannst nun aus dem Kampf flüchten indem du in die gewünschte Fluchtrichtung klickst.</string>
+    <string name="combat_begin_flee">Du kannst nun aus dem Kampf flüchten, indem du in die gewünschte Fluchtrichtung klickst.</string>
     <string name="combat_flee_failed">Die Flucht ist misslungen!</string>
     <string name="combat_status_ap">AP: %1$d</string>
     <string name="combat_monsterhealth">LP:</string>
@@ -55,7 +55,7 @@
     <string name="combat_result_herokillsmonster">%1$s ist besiegt!</string>
     <string name="combat_not_enough_ap">Es sind nicht mehr genug AP in dieser Runde übrig.</string>
     <string name="combat_hero_dies">Du wirst bewusstlos, wachst aber glücklicherweise wieder lebendig, benommen und entkräftet auf. Du verlierst %1$d Erfahrungspunkte.</string>
-    <string name="inventory_info">Info</string>
+    <string name="inventory_info">Auskunft</string>
     <string name="inventory_equip">Anlegen</string>
     <string name="inventory_unequip">Ablegen</string>
     <string name="inventory_use">Benutzen</string>
@@ -71,7 +71,7 @@
     <string name="dialog_groundloot_message">Du hast ein paar Gegenstände gefunden.</string>
     <string name="dialog_monsterloot_title">Sieg</string>
     <string name="dialog_monsterloot_message">Du hast den Kampf überlebt. </string>
-    <string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrung. </string>
+    <string name="dialog_monsterloot_gainedexp">Du erhältst %1$d Erfahrungspunkte.</string>
     <string name="monster_difficulty_veryeasy">Sehr leicht</string>
     <string name="monster_difficulty_easy">Leicht</string>
     <string name="monster_difficulty_normal">Normal</string>
@@ -84,8 +84,8 @@
     <string name="actorinfo_attack">Angriff:</string>
     <string name="actorinfo_defense">Abwehr:</string>
     <string name="actorinfo_movecost">Bewegungskosten (AP):</string>
-    <string name="actorinfo_basetraits">Basiskampfeigenschaften (ohne Ausrüstung und Skills)</string>
-    <string name="actorinfo_currenttraits">Kampfeigenschaften (aktuell)</string>
+    <string name="actorinfo_basetraits">Grundkampfeigenschaften (ohne Ausrüstung und Fähigkeiten)</string>
+    <string name="actorinfo_currenttraits">Kampfeigenschaften (gegenwärtig)</string>
     <string name="traitsinfo_attack_cost">Angriffskosten (AP):</string>
     <string name="traitsinfo_attack_chance">Angriffschance:</string>
     <string name="traitsinfo_attack_damage">Schaden:</string>
@@ -103,12 +103,12 @@
     <string name="iteminfo_action_unequip_ap">Ablegen (%1$d AP)</string>
     <string name="startscreen_continue">Aktuelles Spiel fortsetzen</string>
     <string name="startscreen_newgame">Neues Spiel</string>
-    <string name="startscreen_newgame_confirm">Das aktuelle Spiel wird verworfen. Sind sie sicher, dass sie ein neues Spiel starten wollen?</string>
+    <string name="startscreen_newgame_confirm">Das aktuelle Spiel wird verworfen. Bist du sicher, dass du ein neues Spiel starten willst\?</string>
     <string name="startscreen_about">Über/Hilfe</string>
     <string name="startscreen_enterheroname">Heldennamen eingeben</string>
     <string name="startscreen_load">Laden</string>
     <!-- <string name="conversation_title">%1$s sagt</string> -->
-    <string name="conversation_rewardexp"> [Du erhältst %1$d Erfahrung]</string>
+    <string name="conversation_rewardexp">[Du erhältst %1$d Erfahrungspunkte]</string>
     <string name="conversation_rewardgold"> [Du erhältst %1$d Goldmünzen]</string>
     <string name="conversation_lostgold"> [Du verlierst %1$d Goldmünzen]</string>
     <string name="conversation_rewarditem"> [Du erhältst einen Gegenstand]</string>
@@ -117,7 +117,7 @@
     <string name="conversation_leave">Verlassen</string>
     <string name="shop_buy">Kaufen</string>
     <string name="shop_sell">Verkaufen</string>
-    <string name="shop_infoitem">Info</string>
+    <string name="shop_infoitem">Auskunft</string>
     <string name="shop_buyitem">Kaufen (%1$d Gold)</string>
     <string name="shop_sellitem">Verkaufen (%1$d Gold)</string>
     <string name="shop_yourgold">Deine Goldmünzen: %1$d</string>
@@ -140,28 +140,14 @@
     <string name="about_button1">Hilfe</string>
     <string name="about_button2">Autoren</string>
     <string name="about_button3">Lizenz</string>
-    <string name="about_contents1">Willkommen bei Andor\'s Trail, einem rogue-like Open-Source Rollenspiel für Android&lt;br /&gt; 
-\n &lt;br /&gt; 
-\n &lt;a href=http://andorstrail.com/&gt;Forum auf andorstrail.com für Fragen und Diskussionen.&lt;/a&gt;&lt;br /&gt; 
-\n &lt;br /&gt; 
-\n &lt;a href=http://docs.andorstrail.com/&gt;Game-Wiki über die Welt von Andor\'s Trail und weitergehende Informationen.&lt;/a&gt;&lt;br /&gt; 
-\n &lt;br /&gt; 
-\n &lt;a href="https://github.com/AndorsTrailRelease/andors-trail/"&gt;Projekt-Homepage auf github.com für Entwickler.&lt;/a&gt;&lt;br /&gt; 
-\n &lt;br /&gt; 
-\n Bitte besuche das Forum, um das Spiel mit anderen Spielern zu diskutieren.&lt;br /&gt;</string>
+    <string name="about_contents1">Willkommen bei Andor\'s Trail, einem rogue-like Open-Source Rollenspiel für Android&lt;br /&gt;&lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;Forum auf andorstrail.com für Fragen und Diskussionen.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;Game-Wiki über die Welt von Andor\'s Trail und weitergehende Informationen.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Projekt-Homepage auf github.com für Entwickler.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt; Bitte besuche das Forum, um das Spiel mit anderen Spielern zu diskutieren.&lt;br /&gt;</string>
     <!--
 		This is the GNU GPL v2 text, originally from
 			http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 		For translation of this text, you might be able to find a version in your language here:
 			http://www.gnu.org/licenses/old-licenses/gpl-2.0-translations.html
 	-->
-    <string name="about_contents3">Dieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version.&lt;br /&gt;
-\n &lt;br /&gt;
-\n Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;
-\n &lt;br /&gt;
-\n Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe hier:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;
-\n &lt;br /&gt;
-\n Für den Quelltext und Verbesserungsanfragen, besuchen Sie bitte die Projektseite:&lt;a href="https://github.com/AndorsTrailRelease/andors-trail/"&gt;"https://github.com/AndorsTrailRelease/andors-trail/"&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents3">Dieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 2 der Lizenz oder (nach Ihrer Option) jeder späteren Version.&lt;br /&gt;&lt;br /&gt; Die Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.&lt;br /&gt;&lt;br /&gt; Sie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe hier:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;&lt;br /&gt; Für den Quelltext und Verbesserungsanfragen, besuchen Sie bitte die Projektseite:&lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="about_interface"><![CDATA[
 
 <div><b>Spiel Einstellungen</b> können über den Menüknopf deines Gerätes erreicht werden.</div>
@@ -217,10 +203,10 @@
 \n Bitte besuche das Projekt-Forum für weitere Informationen oder wenn Du mithelfen willst (siehe Über).
 \n 
 \n Danke für alle bisherigen Rückmeldungen!</string>
-    <string name="questlog_includecompleted_prompt">Anzuzeigende Quests auswählen</string>
-    <string name="questlog_includecompleted_hidecompleted">Aktive Quests</string>
-    <string name="questlog_includecompleted_includecompleted">Alle Quests</string>
-    <string name="questlog_includecompleted_onlycompleted">Abgeschlossene Quests</string>
+    <string name="questlog_includecompleted_prompt">Anzuzeigende Aufgaben auswählen</string>
+    <string name="questlog_includecompleted_hidecompleted">Aktive Aufgaben</string>
+    <string name="questlog_includecompleted_includecompleted">Alle Aufgaben</string>
+    <string name="questlog_includecompleted_onlycompleted">Abgeschlossene Aufgaben</string>
     <string name="questlog_queststatus">Status: %1$s</string>
     <string name="questlog_queststatus_inprogress">Offen</string>
     <string name="questlog_queststatus_completed">Abgeschlossen</string>
@@ -387,7 +373,7 @@
     <string name="iteminfo_displaytypes_rare">Selten</string>
     <string name="actorconditioninfo_category">Effekt Kategorie: %1$s</string>
     <string name="actorcondition_categories_spiritual">Geistig</string>
-    <string name="actorcondition_categories_mental">Mental</string>
+    <string name="actorcondition_categories_mental">Psychisch</string>
     <string name="actorcondition_categories_physical">Physisch</string>
     <string name="actorcondition_categories_blood">Blutstörungen</string>
     <string name="traitsinfo_base_max_hp">Max LP:</string>
@@ -511,13 +497,13 @@
     <string name="skill_longdescription_armor_prof_unarmored">Beim Kampf ohne Benutzung irgendeines Rüstungsteils erhältst du %1$d %% Abwehrchance je Level des Skills. Gegenstände aus Stoff gelten nicht als Rüstung.</string>
     <string name="skill_longdescription_armor_prof_light">Erhöht die Abwehrchance jedes getragenen Teils leichter Rüstung um %1$d %% seiner ursprünglichen Abwehrchance je Level des Skills. Leichte Rüstung umfasst Leder, leichtes Metall und Häute.</string>
     <string name="skill_longdescription_armor_prof_heavy">Erhöht die Abwehrchance jedes getragenen Teils schwerer Rüstung um %1$d %% seiner ursprünglichen Abwehrchance je Level des Skills. Die Bewegungsstrafe für schwere Rüstungsteile reduziert sich um %2$d %% je Level des Skills und ihre Strafe bzgl. Angriffsgeschwindigkeit reduziert sich um %3$d %% je Level des Skills. Schwere Rüstung umfasst Metallrüstungen, Kettenrüstungen und Plattenpanzer.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">"Bringt Vorteile, wenn mit zwei Waffen gleichzeitig gekämpft wird, einer in der Haupthand und einer in der Nebenhand.
+    <string name="skill_longdescription_fightstyle_dualwield">Bringt Vorteile wenn mit zwei Waffen gleichzeitig gekämpft wird, einer in der Haupthand und einer in der Nebenhand.
 \n
-\nOhne diesen Skill können nur %1$d %% des Potentials einer Waffe genutzt werden, die mit der Nebenhand geführt wird. Dies umfasst Angriffschance, Kritische Fähigkeit, Schadenspotential und Abwehrchance. Ohne diesen Skill  ergeben sich die Angriffskosten (AP Kosten) für eine Attacke aus der Summe der Angriffskosten der Hauptwaffe und der Waffe in der Nebenhand.
+\nOhne diese Fähigkeit können nur %1$d %% des Potentials einer Waffe genutzt werden, die mit der Nebenhand geführt wird. Dies umfasst Angriffschance, kritische Fähigkeit, Schadenspotential und Abwehrchance. Ohne diese Fähigkeit ergeben sich die Angriffskosten (AP Kosten) für eine Attacke aus der Summe der Angriffskosten der Hauptwaffe und der Waffe in der Nebenhand.
 \n
-\nMit einem Level dieses Skills können %2$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die  Angriffskosten ergeben sich aus den Angriffskosten der Waffe in der Haupthand plus %3$d %% der Angriffakoaten der Waffe in der Nebenhand.
+\nMit einer Stufe dieser Fähigkeit können %2$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die Angriffskosten ergeben sich aus den Angriffskosten der Waffe in der Haupthand plus %3$d %% der Angriffskosten der Waffe in der Nebenhand.
 \n
-\nMit zwei Leveln dieses Skills können %4$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die Angriffskosten ergeben sich aus dem höheren der beiden Werte der getragenen Waffen."</string>
+\nMit zwei Stufen dieser Fähigkeit können %4$d %% des Potentials einer Waffe in der Nebenhand genutzt werden und die Angriffskosten ergeben sich aus dem höheren der beiden Werte der getragenen Waffen.</string>
     <string name="skill_longdescription_fightstyle_2hand">"Bringt Vorteile im Umgang mit Waffen, die mit beiden Händen geführt werden müssen, wie zum Beispiel Zweihandschwerter, Großäxte oder Riesenhämmer.
 
 Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um %1$d %% ihres ursprünglichen Schadenspotentials."</string>
@@ -528,7 +514,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="skill_longdescription_specialization_2hand">Erhöht das Schadenspotential zweihändiger Waffen um weitere %1$d %% ihres ursprünglichen Schadenspotentials, zusätzlich zu den Vorteilen, die durch den Kampftechnik-Skill gewährt werden. Die Angriffschancen zweihändiger Waffen werden ebenso um %2$d %% ihrer ursprünglichen Angriffschancen erhöht.</string>
     <string name="skill_longdescription_specialization_weapon_shield">Erhöht sowohl Angriffschance als auch Schadenspotential von Hauptwaffen. Die Angriffschance erhöht sich um %1$d %% der ursprünglichen Angriffschance und das Schadenspotential erhöht sich um %2$d %% des ursprünglichen Schadenspotentials.</string>
     <string name="preferences_quickslots_placement">Position der Schnellzugriffsleiste</string>
-    <string name="preferences_quickslots_placement_summary">Wo soll die Schnellzugriffsleiste positioniert werden?</string>
+    <string name="preferences_quickslots_placement_summary">Wo die Schnellzugriffsleiste platziert wird</string>
     <string name="preferences_quickslots_placements_horizontal_center_bottom">Zentriert unten</string>
     <string name="preferences_quickslots_placements_vertical_center_left">Links in der Mitte</string>
     <string name="preferences_quickslots_placements_vertical_center_right">Rechts in der Mitte</string>
@@ -537,7 +523,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="preferences_quickslots_placements_horizontal_bottom_right">Rechts unten, am unteren Rand</string>
     <string name="preferences_quickslots_placements_vertical_bottom_right">Rechts unten, am rechten Rand</string>
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">Zeige Schnellzugriffsleiste wenn die Werkzeugskiste geöffnet wird</string>
-    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Die Buttons der Schnellzugriffsleiste werden angezeigt, sobald die Werkzeugskiste geöffnet wird.</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Die Schaltflächen der Schnellzugriffsleiste werden angezeigt, sobald die Werkzeugskiste geöffnet wird</string>
     <string name="startscreen_incompatible_savegames">Dies ist eine Entwicklungsversion von Andor\'s Trail. Gespeicherte Spielstände, die mit dieser Version angelegt werden sind inkompatibel zur Releaseversion.</string>
     <string name="startscreen_non_release_version">Dies ist eine Vorabversion von Andor\'s Trail. Gespeicherte Spielstände, die mit dieser Version angelegt werden sind möglicherweise nicht mit der Releaseversion kompatibel.</string>
     <string name="heroinfo_gamestats">Spielstatistiken</string>
@@ -557,7 +543,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="preferences_ui_use_localized_resources_title">Benutze lokalisierte Ressourcen</string>
     <string name="preferences_ui_use_localized_resources">Verwende Übersetzungen von Oberfläche und Inhalt, sofern verfügbar. (Erfordert Neustart)</string>
     <string name="change_locale_requires_restart">Änderung der Lokalisierung erfordert Neustart. Andor\'s Trail wurde beendet.</string>
-    <string name="combat_miss_animation_message">MISS</string>
+    <string name="combat_miss_animation_message">verfehlt</string>
     <string name="dialog_recenter">Zentrieren</string>
     <string name="change_theme_requires_restart">Die Änderung des Oberflächendesigns erfordert einen Neustart. Andor\'s Trail wurde beendet.</string>
     <string name="dialog_more">Mehr</string>
@@ -568,7 +554,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="combat_condition_monster_apply">%1$s ist betroffen von %2$s.</string>
     <string name="combat_condition_monster_immune">%1$s ist jetzt immun gegen %2$s.</string>
     <string name="startscreen_newgame_start">Spiel starten</string>
-    <string name="shop_item_sort">Sortieren</string>
+    <string name="shop_item_sort">Ordnen</string>
     <string name="actorcondition_info_immunity">Immun gegen %1$s</string>
     <string name="iteminfo_effect_works_when_hit_by_attacker">Wenn vom Angreifer getroffen</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">Wenn von Angreifer getötet</string>
@@ -577,7 +563,7 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="inventory_category_weapons">Waffen</string>
     <string name="inventory_category_armor">Rüstung</string>
     <string name="inventory_category_usable">Verbrauchsgüter</string>
-    <string name="inventory_category_quest">Questgegenstände</string>
+    <string name="inventory_category_quest">Gegenstand für Aufgabe</string>
     <string name="inventory_category_other">Andere</string>
     <string name="inventory_sort_custom">Unsortiert</string>
     <string name="inventory_sort_name">Name</string>
@@ -602,12 +588,12 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="heroinfo_healthpoints">Lebenspunkte (LP):</string>
     <string name="heroinfo_experiencepoints">Erfahrungspunkte (EP):</string>
     <string name="combat_condition_player_apply">Du bist von %1$s betroffen.</string>
-    <string name="combat_condition_player_clear">Du bist geheilt von %1$s.</string>
+    <string name="combat_condition_player_clear">Du bist erlöst von %1$s.</string>
     <string name="combat_condition_player_immune">Du bist jetzt immun gegen %1$s.</string>
-    <string name="combat_condition_monster_clear">%1$s wurde von %2$s geheilt.</string>
+    <string name="combat_condition_monster_clear">%1$s ist erlöst von %2$s.</string>
     <string name="startscreen_selectherosprite">Wähle deinen Helden</string>
     <string name="iteminfo_effect_works_on_attacker">Auf Angreifer</string>
-    <string name="inventory_selectitem">Wähle den Gegenstand</string>
+    <string name="inventory_selectitem">Wähle einen Gegenstand aus</string>
     <string name="preferences_high_quality_filters_title">Hochwertige Filter</string>
     <string name="preferences_high_quality_filters">Deaktivieren Sie dies, wenn Sie Leistungsprobleme auf gefilterten Karten (z.B. dunkle Höhlen) feststellen. Wenn Sie diese Option aktivieren, wird das Spiel anstelle von Vollfarbüberlagerungen erweiterte Farbfilter verwenden.</string>
     <string name="combat_log_noentries">Noch keine Einträge.</string>
@@ -623,29 +609,29 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="preferences_display_theme">Oberflächendesign auswählen (Neustart notwendig)</string>
     <string name="combat_taunt_monster">Du verhöhnst %1$s!</string>
     <string name="storage_permissions_mandatory">Der Zugriff auf den Datenspeicher ist zwingend notwendig, um Spielstände zu laden und zu speichern. Andor\'s Trail wird daher geschlossen.</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trail konnte die Savegame-Datei nicht laden. Diese Savegame-Datei wurde bereits fortgesetzt.</string>
-    <string name="dialog_game_over_title">Game over</string>
+    <string name="dialog_loading_failed_cheat">Der Spielstand konnte nicht geladen werden. Diese Datei wurde bereits fortgesetzt.</string>
+    <string name="dialog_game_over_title">Spiel ist vorbei</string>
     <string name="dialog_game_over_text">Du nimmst deinen letzten Atemzug und stirbst.</string>
-    <string name="rip_startscreen">(RIP)</string>
+    <string name="rip_startscreen">(Ruhe in Frieden)</string>
     <string name="heroinfo_mode">Modus</string>
     <string name="heroinfo_unlimited_lives_and_saves">Standard
 \n(Unbegrenzte Leben und Speichern)</string>
     <string name="heroinfo_unlimited_lives">Unbegrenzte Leben, 1 mal speichern</string>
     <string name="heroinfo_limited_lives">Begrenzte Leben (%1$d/%2$d übrig)</string>
-    <string name="heroinfo_one_life">Permadeath (1 Leben)</string>
-    <string name="startscreen_game_mode">Modus</string>
+    <string name="heroinfo_one_life">Sofort-Tod (1 Leben)</string>
+    <string name="startscreen_game_mode">Art und Weise</string>
     <string name="startscreen_load_game">Spiel laden</string>
     <string name="startscreen_load_game_confirm">Das aktuelle Spiel ist nicht gespeichert und du wirst deinen Charakter verlieren.</string>
     <string name="startscreen_error_loading_game">Fehler beim Laden des Spiels</string>
     <string name="startscreen_error_loading_empty_slot">Von einem leeren Speicherplatz kann nicht geladen werden.</string>
     <string name="startscreen_attention_slot_gets_delete_on_load">Achtung</string>
-    <string name="startscreen_attention_message_slot_gets_delete_on_load">Das Laden dieses Spiels löscht seinen Speicherplatz. Sie müssen erneut speichern, bevor Sie zu einem anderen Spiel wechseln.</string>
-    <string name="startscreen_mode_unlimited_saves_and_lives">Standard (Unbegrenzte Leben und Speichern)</string>
-    <string name="startscreen_mode_unlimited_lives">Medium (Unbegrenzte Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_50_lives">Hart (50 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_10_lives">Sehr hart (10 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_3_lives">Extrem (3 Leben, 1 Speicherplatz)</string>
-    <string name="startscreen_mode_1_life">Permadeath (1 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">Das Laden dieses Spiels löscht seinen Speicherplatz. Du musst erneut speichern, bevor du zu einem anderen Spiel wechselst.</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">Normal (Unbegrenzte Leben und Speichern)</string>
+    <string name="startscreen_mode_unlimited_lives">Mittel (Unbegrenzte Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_50_lives">Schwer (50 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_10_lives">Sehr schwer (10 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_3_lives">Äußerst schwer (3 Leben, 1 Speicherplatz)</string>
+    <string name="startscreen_mode_1_life">Sofort-Tod (1 Leben, 1 Speicherplatz)</string>
     <string name="preferences_language_default">Systemsprache</string>
     <string name="preferences_language">Sprache</string>
     <string name="preferences_language_description">Wähle die Sprache aus. Englisch wird verwendet, wenn die Systemsprache nicht verfügbar ist oder Inhalte nicht übersetzt wurden. (Neustart erforderlich)</string>
@@ -654,12 +640,12 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="loadsave_empty_slot">%1$d.&lt;leer&gt;</string>
     <string name="skill_title_weapon_prof_pole">Fertigkeit: Stabwaffen</string>
     <string name="skill_shortdescription_weapon_prof_pole">Verbesserter Kampf mit Stabwaffen</string>
-    <string name="skill_longdescription_weapon_prof_pole">Erhöht für jede Fertigkeitsstufe die Angriffswahrscheinlichkeit beim Einsatz von Stabaffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Blockchance um %2$d %% der Basisblockchance des Gegenstands und die kritische Fertigkeit um %3$d %% der basiskritischen Fertigkeit des Gegenstands.</string>
+    <string name="skill_longdescription_weapon_prof_pole">Erhöht für jede Fertigkeitsstufe die Angriffswahrscheinlichkeit beim Einsatz von Stabwaffen um %1$d %% der Basisangriffschance des Gegenstands, erhöht die Blockchance um %2$d %% der Basisblockchance des Gegenstands und die kritische Fertigkeit um %3$d %% der basiskritischen Fertigkeit des Gegenstands.</string>
     <string name="preferences_display_scaling_factor_50_percent">Halbe Größe</string>
     <string name="preferences_display_scaling_factor_75_percent">0,75-fache Größe</string>
-    <string name="dialog_permission_information">"Andor\'s Trail schreibt Spielstände in den für Benutzer zugänglichen Speicher auf dem Gerät. Dadurch kannst Du Deine gespeicherten Spielestände einfach sichern oder auf ein neues Gerät übertragen. Bitte besuche unsere Foren für weitere Informationen.
+    <string name="dialog_permission_information">Andor\'s Trail schreibt Spielstände in den für Benutzer zugänglichen Speicher auf dem Gerät. Dadurch kannst Du deine gespeicherten Spielestände einfach sichern oder auf ein neues Gerät übertragen. Bitte besuche unsere Foren für weitere Informationen.
 \n
-\nAndor\'s Trail verwendet den Zugriff auf Dein Gerät nicht für andere Zwecke und greift nicht auf das Internet zu. Andors Trail ist Open Source;  Die Quellen findest Du auf Github."</string>
+\nAndor\'s Trail verwendet den Zugriff auf dein Gerät nicht für andere Zwecke und greift nicht auf das Internet zu. Andors Trail ist Open Source; die Quellen findest du auf Github.</string>
     <string name="dialog_permission_information_title">Spielstände laden und speichern</string>
     <string name="dialog_newversion_permission_information">"
 \n
@@ -667,4 +653,22 @@ Jeder Level des Skills erhöht das Schadenspotential von zweihändigen Waffen um
     <string name="skill_title_fightstyle_unarmed_unarmored">Kampf-Art: Pfad des Mönchs</string>
     <string name="iteminfo_effect_set_damage_modifier">Schadens Modifikation: %1$d%%</string>
     <string name="skill_shortdescription_fightstyle_unarmed_unarmored">Verbesserter Kampf ohne Waffen/Rüstung</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency_title">D-Pad Transparenz</string>
+    <string name="skill_longdescription_spore_immunity">Verhindert dauerhaft, dass Monsterattacken eine Sporenvergiftung verursachen.</string>
+    <string name="skill_shortdescription_spore_immunity">Volle Immunität gegen Sporengift</string>
+    <string name="skill_title_spore_immunity">Immunität gegen Sporenvergiftung</string>
+    <string name="inventory_category_food">Nahrung</string>
+    <string name="inventory_category_potion">Trank</string>
+    <string name="skill_longdescription_fightstyle_unarmed_unarmored">Im Kampf ohne Rüstung, Waffe und Schild, erlange %1$d Angriffschance, %2$d Abwehrchance, %3$d Schadensresistenz und erhöhe den maximalen Schaden um %4$d pro Fähigkeitsstufe. Die Fähigkeit erhöht außerdem die kritische Fertigkeit um 1 plus 0.%5$d pro level.
+\n
+\nGegenstände aus Stoff werden nicht als Rüstung betrachtet.</string>
+    <string name="combat_log_item_plural">Du hast %1$d Gegenstände gefunden:</string>
+    <string name="combat_log_item_single">Du hast einen Gegenstand gefunden:</string>
+    <string name="preferences_movement_dpad_transparency">Wenn das virtuelle D-Pad aktiv ist, legt diese Einstellung dessen Transparenz fest.</string>
+    <string name="inventory_category_jewelry">Schmuck</string>
 </resources>

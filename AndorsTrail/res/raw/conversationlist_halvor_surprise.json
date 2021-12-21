@@ -1370,12 +1370,12 @@
         "id":"halvor_mlake_14",
         "message":"Thank you. You'll find me here when you return.",
         "rewards":[
-        	{
-            	"rewardType":"questProgress",
-            	"rewardID":"halvor_surprise",
-            	"value":130
-        	}
-    	]
+            {
+                "rewardType":"questProgress",
+                "rewardID":"halvor_surprise",
+                "value":130
+            }
+        ]
     },
     {
         "id":"halvor_mlake_15",
@@ -1545,7 +1545,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"halvor_surprise",
-                "value":160
+                "value":165
             },
             {
                 "rewardType":"giveItem",

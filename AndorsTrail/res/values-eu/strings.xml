@@ -64,7 +64,7 @@
     <string name="preferences_optimized_drawing">Desgaitu hau akats grafikoak ikusten badituzu. Aukera hau gaitzean jokoak aldatutako parteak besterik ez ditu marraztuko fotograma bakoitzean.</string>
     <string name="skill_longdescription_rejuvenation">Txanda bakoitzean (6 segundo), %1$d %% ko aukera bat dago aktibo dauden baldintza negatiboetako bat magnitude batean gutxiagotzeko. Hau gorputza eragiten duten efektu iragankor mota guztiei aplikatzen zaie, hala nola Nahastuta bezalako baldintza mentalak edo Nekea bezalako baldintza fisikoak, baita pozoia bezalako odol arazoei.</string>
     <string name="skill_shortdescription_taunt">Erasotzaileak EPak galtzen ditu kale egitean</string>
-    <string name="skill_longdescription_taunt">Erasotzaileak kale egiten badu, %2$d ekintza puntu (EP) galtzeko %1$d %%ko aukera bat dago. Hau zure kontrako aurrez aurreko eraso guztiei aplikatzen zaie.</string>
+    <string name="skill_longdescription_taunt">Erasotzaileak huts egiten badu, %2$d ekintza puntu (EP) galtzeko %1$d -ko aukera bat dago. Hau zure kontrako aurrez aurreko eraso guztiei aplikatzen zaie.</string>
     <string name="menu_button_worldmap">Mapa</string>
     <string name="menu_button_worldmap_failed">Ezin da mapa bistaratu.</string>
     <string name="display_worldmap_not_available">Mapa ezin da kokapen honetan bistaratu.</string>
@@ -328,15 +328,7 @@
     <string name="skill_longdescription_barkskin">Kalteari erresistentzia areagotzen du %1$d trebetasun maila bakoitzeko.</string>
     <string name="skill_longdescription_more_criticals">Ekipoak emandako kolpe kritikorako gaitasuna areagotzen du %1$d %% trebetasun maila bakoitzeko.</string>
     <string name="skill_longdescription_better_criticals">Ekipoak emandako multiplikatzaile kritikoa areagotzen du %1$d %% trebetasun maila bakoitzeko.</string>
-    <string name="about_contents1">Ongi etorri Andorren bidera, Androiderako roguelike RPG libre bat.&lt;br /&gt;
-\n &lt;br /&gt;
-\n &lt;a href=http://andorstrail.com/&gt;andorstrail.com webgunean jokoaren foroetan galderak egin eta jokoari buruz eztabaidatu dezakezu.&lt;/a&gt;&lt;br /&gt;
-\n &lt;br /&gt;
-\n &lt;a href=http://andorstrail.com/wiki&gt;Jokoaren Wikian Andorren bidearen munduari buruzko informazioa dago, besteak beste.&lt;/a&gt;&lt;br /&gt;
-\n &lt;br /&gt;
-\n &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Proiektuaren iturburu kodea github.com webgunean dago garatzaileen eskura.&lt;/a&gt;&lt;br /&gt;
-\n &lt;br /&gt;
-\n Foroetan ongi etorria zara, zatoz beste jokalariekin jokoari buruz eztabaidatzera.&lt;br /&gt;</string>
+    <string name="about_contents1">Ongi etorri Andorren bidera, Androiderako roguelike RPG libre bat.&lt;br /&gt;&lt;br /&gt;&lt;a href=http://andorstrail.com/&gt;andorstrail.com webgunean jokoaren foroetan galderak egin eta jokoari buruz eztabaidatu dezakezu.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=http://andorstrail.com/wiki&gt;Jokoaren Wikian Andorren bidearen munduari buruzko informazioa dago, besteak beste.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Proiektuaren iturburu kodea github.com webgunean dago garatzaileen eskura.&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Foroetan ongi etorria zara, zatoz beste jokalariekin jokoari buruz eztabaidatzera.&lt;br /&gt;</string>
     <string name="skill_longdescription_more_exp">Munstroak garaitzean lortutako esperientzia areagotzen du %1$d %% trebetasun maila bakoitzeko.</string>
     <string name="skillinfo_action_levelup">Igo mailaz</string>
     <string name="skill_current_level">Uneko maila: %1$d</string>
@@ -374,7 +366,7 @@
     <string name="iteminfo_displaytypes_extraordinary">Apartekoa</string>
     <string name="iteminfo_displaytypes_legendary">Elezaharretakoa</string>
     <string name="iteminfo_displaytypes_ordinary">Arrunta</string>
-    <string name="skill_longdescription_magicfinder">"Ezohiko objektuak aurkitzeko aukera maila bakoitzeko %% %1$d  areagotzen du."</string>
+    <string name="skill_longdescription_magicfinder">Ezohikoak diren gauzak aurkitzeko aukera %% %1$d areagotzen da maila bakoitzeko.</string>
     <string name="inventory_selectitem">Hautatu objektua esleitzeko</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">Erasotzaileak hiltzean</string>
     <string name="iteminfo_effect_works_when_hit_by_attacker">Erasotzaileak jotzean</string>
@@ -382,4 +374,11 @@
     <string name="shop_item_sort">Ordenatu</string>
     <string name="inventory_category_quest">Erronkako objektua</string>
     <string name="combat_log_noentries">Sarrerarik ez oraindik.</string>
+    <string name="dialog_loading_failed_cheat">Ezin izan da gorderiko jokoa birzamatu. Joko hau jadanik jarraitua izan da.</string>
+    <string name="dialog_game_over_text">Azkenekoz asnartu eta hil egiten zara.</string>
+    <string name="heroinfo_mode">Modua</string>
+    <string name="heroinfo_unlimited_lives_and_saves">Arrunta
+\n(Bizitza eta gordetze amaigabeak)</string>
+    <string name="rip_startscreen">Goian bego</string>
+    <string name="dialog_game_over_title">Jokoaren amaiera</string>
 </resources>

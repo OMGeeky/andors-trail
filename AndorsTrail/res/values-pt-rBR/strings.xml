@@ -485,13 +485,13 @@
     <string name="skill_longdescription_weapon_prof_2hsword">Para cada nível de habilidade, aumenta a chance de ataque de espadas de duas mãos em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade crítica em %3$d %% da habilidade crítica básica do item.</string>
     <string name="skill_longdescription_weapon_prof_axe">Para cada nível de habilidade, aumenta a chance de ataque de machados e machados grandes em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item e aumenta a habilidade crítica em %3$d %% da habilidade crítica básica do item.</string>
     <string name="skill_longdescription_weapon_prof_blunt">Para cada nível de habilidade, aumenta a chance de ataque de armas brancas em %1$d %% da chance de ataque base do item, aumenta a chance de bloqueio em %2$d %% da chance de bloqueio base do item, e aumenta a habilidade de ataques críticos em %3$d %% da habilidade de ataques críticos base do item. Isto inclui Porretes, Bastões, Clavas, Centros, Chicotes Martelos de Guerra e Martelos Gigantes.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">Da benefícios quando está lutando com duas armas ao mesmo tempo, uma na mão principal e na mão secundária. 
-\n 
-\nSem esta habilidade, apenas %1$d %% da qualidade da arma pode ser usada quando equipada na mão secundária. Isto inclui chance de ataque, habilidade crítica, potencia do dano e chance de bloqueio. Sem essa habilidade, o custo ataque (Custo de AP) de fazer um ataque é a soma do custo de ataque da arma principal e a que está sendo usada na mão secundária. 
-\n 
-\nCom um nível desta habilidade, %2$d %% da qualidade da arma da mão secundária pode ser usada, e o custo de ataque da arma na mão principal mais %3$d %% do custo de ataque da arma na mão secundária. 
-\n 
-\nCom dois níveis desta habilidade, %4$d %% da qualidade da arma da mão secundária pode ser usada, e o custo de ataque é igual ao mais alto dos custos de ataque das duas armas equipadas.</string>
+    <string name="skill_longdescription_fightstyle_dualwield">Da benefícios quando está lutando com duas armas ao mesmo tempo, uma na mão principal e na mão secundária.
+\n
+\nSem esta habilidade, apenas %1$d %% da qualidade da arma pode ser usada quando equipada na mão secundária. Isto inclui chance de ataque, habilidade crítica, potencia do dano e chance de bloqueio. Sem essa habilidade, o custo ataque (Custo de AP) de fazer um ataque é a soma do custo de ataque da arma principal e a que está sendo usada na mão secundária. O menor de ambos os modificadores de dano será usado.
+\n
+\nCom um nível desta habilidade, %2$d %% da qualidade da arma da mão secundária pode ser usada, e o custo de ataque da arma na mão principal mais %3$d %% do custo de ataque da arma na mão secundária. A média de ambos os modificadores de dano será usada
+\n
+\nCom dois níveis desta habilidade, %4$d %% da qualidade da arma da mão secundária pode ser usada, e o custo de ataque é igual ao mais alto dos custos de ataque das duas armas equipadas. O modificador de dano mais alto será usado.</string>
     <string name="skill_longdescription_fightstyle_2hand">Da benefícios quando esta usando armas que exige ambas as mãos para manejar, tal como espadas de duas mãos, machados grandes ou martelos gigantes. 
 \n 
 \nCada nível de habilidade aumenta a potência do dano de armas de duas mãos com %1$d %% do potencial do dano original.</string>
@@ -568,7 +568,7 @@
     <string name="startscreen_load_game">Carregar jogo</string>
     <string name="startscreen_game_mode">Modo</string>
     <string name="heroinfo_one_life">Morte permanente (1 vida)</string>
-    <string name="heroinfo_limited_lives">Vidas limitadas (%1$d/%2$d esquerda)</string>
+    <string name="heroinfo_limited_lives">Vidas limitadas (%1$d/%2$d restante)</string>
     <string name="heroinfo_unlimited_lives_and_saves">Padrão
 \n(Vidas e salvamentos ilimitados)</string>
     <string name="heroinfo_mode">Modo</string>
@@ -611,4 +611,22 @@
     <string name="dialog_newversion_permission_information">"
 \n
 \nPara salvar e carregar seus jogos (e apenas para esse fim), o Trilha de Andor solicitará permissão para acessar seu armazenamento."</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Se o d-pad virtual estiver habilitado, esta configuração determina o quão transparente deve ser.</string>
+    <string name="preferences_movement_dpad_transparency_title">Transparência do D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Impede permanentemente que ataques de monstros lhe Inflijam envenenamento por Esporo.</string>
+    <string name="skill_shortdescription_spore_immunity">Total imunidade ao veneno de esporos</string>
+    <string name="skill_title_spore_immunity">Imunidade a veneno de esporo</string>
+    <string name="inventory_category_food">comida</string>
+    <string name="inventory_category_potion">Poção</string>
+    <string name="inventory_category_jewelry">Joalheria</string>
+    <string name="combat_log_item_plural">Você encontrou %1$d itens:</string>
+    <string name="combat_log_item_single">Você encontrou um item:</string>
+    <string name="startscreen_migration_title">Migração de dados</string>
+    <string name="startscreen_migration_text">Migrando dados do jogo salvo.</string>
+    <string name="startscreen_migration_failure">Falha ao migrar os dados do jogo salvo.</string>
 </resources>

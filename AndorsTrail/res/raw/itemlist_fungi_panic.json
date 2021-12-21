@@ -11,6 +11,7 @@
         "id":"bogsten_staff",
         "iconID":"items_weapons_3:18",
         "name":"Bogsten's staff",
+        "displaytype":"quest",
         "category":"staff",
         "equipEffect":{
             "increaseAttackDamage":{

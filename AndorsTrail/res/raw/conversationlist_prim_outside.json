@@ -165,8 +165,36 @@
                 "nextPhraseID":"moyra_2"
             },
             {
+                "text":"Do you know anything about the accident with Lorn?",
+                "nextPhraseID":"moyra_8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":9,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"Who are you?",
                 "nextPhraseID":"moyra_3"
+            },
+            {
+                "text":"Do you know anything about the accident with Lorn?",
+                "nextPhraseID":"moyra_12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":9
+                    }
+                ]
             }
         ]
     },
@@ -233,6 +261,23 @@
             {
                 "text":"[Lie] Yes, I am here to help your village.",
                 "nextPhraseID":"prim_commoner1_2"
+            },
+            {
+                "text":"Maybe, but first tell me what do you know about Lorn's crew accident?",
+                "nextPhraseID":"prim_commoner1_5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":21,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
@@ -322,7 +367,37 @@
     },
     {
         "id":"prim_commoner3",
-        "message":"Hello. Welcome to Prim."
+        "message":"Hello. Welcome to Prim.",
+        "replies":[
+            {
+                "text":"Do you know anything about Lorn's accident?",
+                "nextPhraseID":"prim_commoner3_2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":21,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Thank you for the hints, bye.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":21
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"prim_commoner4",
@@ -339,6 +414,23 @@
             {
                 "text":"[Lie] Yes, I have come to help your village.",
                 "nextPhraseID":"prim_commoner4_3"
+            },
+            {
+                "text":"What do you know about Lorn's accident?",
+                "nextPhraseID":"prim_commoner4_4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":20
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":21,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },

@@ -276,7 +276,7 @@
         "message":"Sure! Already on my way! The work will be finished soon.",
         "replies":[
             {
-                "text":"That sounds great! Remember to ask the stupid warden for a decent payment.",
+                "text":"That sounds great! Remember to ask the stupid guard captain for a decent payment.",
                 "nextPhraseID":"fallhaven_lumberjack_12"
             }
         ],
@@ -304,7 +304,7 @@
     },
     {
         "id":"fallhaven_lumberjack_13",
-        "message":"You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the warden.",
+        "message":"You're welcome. But you're not the only one who is happy. There are more people resting for a night in Fallhaven, which helps our economy. Some even bought items at my store! By the way, I was surprised, but I even got paid well by the guard captain.",
         "replies":[
             {
                 "text":"Great. Now everything is much better than it was before!",

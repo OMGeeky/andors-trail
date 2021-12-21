@@ -42,7 +42,7 @@
     <string name="menu_save_gamesaved">حفظ الملف للخانة %1$d</string>
     <string name="menu_save_failed">فشل حفظ اللعبة! هل ركبت بطاقة ذاكرة قابلة للكتابة؟</string>
     <string name="loadsave_title_load">فتح ملف الحفظ</string>
-    <string name="savegame_currenthero_displayinfo">"مستوى %1$d،  %2$d خبرة ، %3$d ذهب"</string>
+    <string name="savegame_currenthero_displayinfo">المستوى %1$d، الخبرة %2$d، الذهب %3$d</string>
     <string name="dialog_loading_message">جار التحميل…</string>
     <string name="dialog_loading_failed_message">عجزت اللعبة عن فتح ملف الحفظ.
 \n
@@ -58,4 +58,123 @@
     <string name="status_hp">صحة:</string>
     <string name="status_ap">فعل:</string>
     <string name="status_exp">خبرة:</string>
+    <string name="combat_attack">هجوم (%1$d )ن ه</string>
+    <string name="heroinfo_one_life">مميت (1حياة)</string>
+    <string name="heroinfo_unlimited_lives">لا حدود لعدد مرات إعادة اللعب، حفظ 1</string>
+    <string name="heroinfo_unlimited_lives_and_saves">اساسي
+\n(لا حدود لعدد مرات إعادة اللعب و حفظ اللعبة)</string>
+    <string name="heroinfo_quests">مهمة</string>
+    <string name="heroinfo_actionpoints">نقاط الحركة (ن ح):</string>
+    <string name="heroinfo_experiencepoints">نقاط الخبرة (ن خ):</string>
+    <string name="heroinfo_healthpoints">نقاط الصحة (نص):</string>
+    <string name="heroinfo_gold">ذهب: %1$d</string>
+    <string name="heroinfo_inventory_categories">فئة</string>
+    <string name="heroinfo_inventory">الخزانة</string>
+    <string name="heroinfo_wornequipment">المعدات البالية</string>
+    <string name="heroinfo_totalexperience">الخبرة الجملية</string>
+    <string name="heroinfo_mode">وضع</string>
+    <string name="heroinfo_level">مستوى</string>
+    <string name="heroinfo_levelup">رفع مستوى</string>
+    <string name="heroinfo_skill_sort">فرز</string>
+    <string name="heroinfo_skill_categories">فئة</string>
+    <string name="heroinfo_skill">مهارات</string>
+    <string name="heroinfo_inv">عناصر</string>
+    <string name="heroinfo_char">نظرة عامة</string>
+    <string name="rip_startscreen">(RIP)</string>
+    <string name="dialog_game_over_text">تأخذ أنفاسك الأخيرة و تموت.</string>
+    <string name="dialog_game_over_title">إنتهت اللعبة</string>
+    <string name="dialog_loading_failed_cheat">لم يتمكن التطبيق من تحميل ملف savegame. تم بالفعل متابعة ملف savegame هذا.</string>
+    <string name="heroinfo_gamestats_quests">مهمة مكتملة</string>
+    <string name="heroinfo_gamestats">إحصائيات اللعبة</string>
+    <string name="startscreen_non_release_version">هذه نسخة تجريبية من Andor Trail. قد لا تتوافق الألعاب المحفوظة التي ينتجها هذا الإصدار مع نسخة الإصدار.</string>
+    <string name="startscreen_incompatible_savegames">هذه نسخة مطورة من Andor Trail. اللعبة المحفوظة التي تنتجها هذه النسخة غير متوافقة مع نسخة الإصدار.</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">جعل أزرار المعدات السريعة تُعرض بمجرد فتح صندوق الأدوات</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">إظهار المعدات السريعة عند فتح صندوق الأدوات</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_right">أسفل اليمين ، بمحاذاة الحد الأيمن</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_right">أسفل اليمين ، بمحاذاة الحد السفلي</string>
+    <string name="preferences_quickslots_placements_horizontal_bottom_left">أسفل اليسار ، بمحاذاة الحد السفلي</string>
+    <string name="preferences_quickslots_placements_vertical_bottom_left">أسفل اليسار ، بمحاذاة الحد الأيسر</string>
+    <string name="preferences_quickslots_placements_vertical_center_right">في اليمين في الوسط</string>
+    <string name="preferences_quickslots_placements_vertical_center_left">في اليسار في الوسط</string>
+    <string name="preferences_quickslots_placements_horizontal_center_bottom">في الوسط في الأسفل</string>
+    <string name="preferences_quickslots_placement_summary">أين مكان المعدات السريعة</string>
+    <string name="preferences_quickslots_placement">مكان المعدات السريعة</string>
+    <string name="questlog_includecompleted_onlycompleted">مهمات مكتملة</string>
+    <string name="questlog_includecompleted_includecompleted">كل المهام</string>
+    <string name="questlog_includecompleted_hidecompleted">المهام النشطة</string>
+    <string name="questlog_includecompleted_prompt">حدد المهام لإظهارها</string>
+    <string name="dialog_permission_information">"يكتب Andor Trail الألعاب المحفوظة للتخزين الذي يمكن للمستخدم الوصول إليه على جهازك.  يتيح لك ذلك إجراء نسخ احتياطي لألعابك المحفوظة بسهولة أو نقلها إلى جهاز جديد.  يرجى زيارة منتدياتنا لمزيد من المعلومات.
+\n
+\n لا يستخدم Andor Trail الوصول إلى جهازك لأي غرض آخر ولا يتصل بالإنترنت.  Andor Trail مفتوح المصدر.  يمكن العثور على المصادر على جيثب."</string>
+    <string name="dialog_permission_information_title">تحميل وحفظ الألعاب</string>
+    <string name="dialog_newversion_permission_information">"
+\n
+\nمن أجل حفظ وتحميل ألعابك (ولهذا الغرض فقط) سيطلب منك Andor Trail الإذن للوصول إلى التخزين الخاص بك."</string>
+    <string name="dialog_newversion_message">شكرًا لك على تنزيل Andor Trail!
+\n
+\n يرجى ملاحظة أن هذا الإصدار من Andor Trail هو عمل قيد التقدم ، مما يعني أن جميع الخرائط لم تكتمل بعد.
+\n يرجى زيارة منتديات المشروع لمناقشة اللعبة مع لاعبين آخرين أو للمساعدة في تحسين اللعبة (انظر حول).
+\n
+\n شكرا لكل الردود!</string>
+    <string name="about_interface">"&lt;div&gt; يمكن العثور على &lt;b&gt; إعدادات اللعبة &lt;/ b&gt; بالضغط على زر قائمة جهازك. &lt;/ div&gt; &lt;p&gt; ________________ &lt;/p&gt; &lt;h1&gt; رموز الواجهة &lt;/ h1&gt; &lt;div&gt; &lt;b&gt;  الصندوق &lt;/ b&gt; &lt;img alt = chest src = chest.png /&gt; &lt;/div&gt; &lt;p&gt; Quickslots [الضغط لفترة طويلة على الأكياس بالداخل لتعيين العناصر للاستخدام الفوري] &lt;/ p&gt; &lt;div&gt; &lt;b&gt; البطل  &lt;/b&gt; &lt;img alt = hero src = char_hero.png /&gt; &lt;/div&gt; &lt;p&gt; القائمة [نظرة عامة ، المهام ، المهارات والمخزون *] &lt;/p&gt; &lt;p&gt; * (أثناء وجودك في المخزون ، اضغط على أحد العناصر  للحصول على معلومات والضغط مع الاستمرار لمزيد من الخيارات) &lt;/ p&gt; &lt;div&gt; &lt;b&gt; العدو &lt;/ b&gt; &lt;img alt = monster src = monster.png /&gt; &lt;/div&gt; &lt;p&gt; المعلومات [تظهر أثناء القتال]  &lt;/p&gt; &lt;p&gt; ________________ &lt;/p&gt; &lt;h1&gt; القتال &lt;/ h1&gt; &lt;p&gt; الإجراءات التي تم اتخاذها أثناء تكلفة المعركة AP ... &lt;/p&gt; &lt;div&gt; &lt;b&gt; الهجوم &lt;/ b&gt; - [3AP  ] * &lt;/div&gt; &lt;img alt = attacking src = doubleattackexample.png /&gt; &lt;p&gt; * (قد يؤدي تجهيز العتاد واستخدام العناصر إلى تغيير نقطة الوصول وتكلفة الاستخدام) &lt;/ p&gt; &lt;div&gt; &lt;b&gt; استخدام العناصر &lt;/ b  &gt; - [5AP] &lt;/div&gt; &lt;div&gt; &lt;b&gt; الهروب &lt;/ b&gt; - [6AP] &lt;/div&gt; &lt;p&gt; ________________ &lt;/p&gt; &lt;h1&gt; القتال المتقدم &lt;/ h1&gt; &lt;div&gt; أثناء القتال  ، اضغط لفترة طويلة على البلاط المجاور لـ  Hero ... &lt;/div&gt; &lt;div&gt; &lt;b&gt; للهروب &lt;/ b&gt; &lt;/div&gt; &lt;p&gt; (تم تمييز المربع المختار - يتغير زر الهجوم إلى التحرك) &lt;/ p&gt; &lt;img alt = flee src =  flee_example.png /&gt; &lt;p&gt; [تم تنشيط وضع الفرار - اضغط لفترة طويلة على العدو لدخول القتال مرة أخرى] &lt;/ p&gt; &lt;div&gt; &lt;b&gt; لتغيير الأهداف &lt;/ b&gt; &lt;/div&gt; &lt;p&gt; (الهدف الأحمر  تسليط الضوء على التحولات بين الأعداء) &lt;/ p&gt; &lt;p&gt; [تم تغيير الهدف] &lt;/ p&gt;"</string>
+    <string name="about_contents3">"هذا البرنامج هو برنامج مجاني.  يمكنك إعادة توزيعه و / أو تعديله بموجب شروط رخصة جنو العمومية كما نشرتها مؤسسة البرمجيات الحرة ؛  إما الإصدار 2 من الترخيص ، أو (حسب اختيارك) أي إصدار لاحق. &lt;br /&gt; &lt;br /&gt; يتم توزيع هذا البرنامج على أمل أن يكون مفيدًا ، ولكن بدون أي ضمان ؛  حتى بدون الضمان الضمني لقابلية التسويق أو الملاءمة لغرض معين.  راجع رخصة جنو العمومية لمزيد من التفاصيل. &lt;br /&gt; &lt;br /&gt; يجب أن تكون قد تلقيت نسخة من رخصة جنو العمومية مع هذا البرنامج ؛  إذا لم يكن الأمر كذلك ، فراجع &lt;a href=http://www.gnu.org/licenses&gt; http://www.gnu.org/licenses &lt;/a&gt; &lt;br /&gt; &lt;br /&gt; لمعرفة التعليمات البرمجية المصدر وطلبات الميزات ،  يرجى زيارة صفحة المشروع على &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt; https://github.com/AndorsTrailRelease/andors-trail/ &lt;/a&gt; &lt;br /&gt;"</string>
+    <string name="about_contents1">"مرحبًا بك في Andor Trail ، لعبة roguelike RPG مفتوحة المصدر على Android. &lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt; منتديات الألعاب على andorstrail.com لطرح الأسئلة ومناقشات اللعبة. &lt;/ a  &gt; &lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt; Game wiki للحصول على معلومات حول عالم Andor Trail ، من بين أشياء أخرى. &lt;/a&gt; &lt;br /&gt; &lt;br /&gt;  &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt; كود مصدر المشروع على github.com للمطورين. &lt;/a&gt; &lt;br /&gt; &lt;br /&gt; يرجى زيارة المنتديات لمناقشة اللعبة مع  لاعبين آخرين. &lt;br /&gt;"</string>
+    <string name="about_button1">مساعدة</string>
+    <string name="dialog_rest_message">لقد ارتحت و استعدت صحتك الكاملة.</string>
+    <string name="dialog_rest_title">راحة</string>
+    <string name="levelup_buttontext">رفع مستوى</string>
+    <string name="levelup_title">رفع مستوى</string>
+    <string name="shop_item_sort">فرز</string>
+    <string name="conversation_rewarditem">[لقد حصلت على عنصر]</string>
+    <string name="startscreen_mode_1_life">الموت الدائم (1 حياة ، 1 إنقاذ)</string>
+    <string name="startscreen_mode_3_lives">شديد الصعوبة (3 أرواح ، 1 إنقاذ)</string>
+    <string name="startscreen_mode_10_lives">صعب جدًا (10 أرواح ، إنقاذ واحد)</string>
+    <string name="startscreen_mode_50_lives">صعب (حياة 50 ، إنقاذ واحد)</string>
+    <string name="startscreen_mode_unlimited_lives">متوسط (حياة غير محدودة ، 1 إنقاذ)</string>
+    <string name="startscreen_mode_unlimited_saves_and_lives">قياسي (حياة وإنقاذ غير محدودة)</string>
+    <string name="startscreen_attention_message_slot_gets_delete_on_load">تحميل هذه اللعبة يحذف فتحة الحفظ الخاصة بها. سيكون عليك الحفظ مرة أخرى قبل التبديل إلى لعبة أخرى.</string>
+    <string name="startscreen_attention_slot_gets_delete_on_load">انتباه</string>
+    <string name="startscreen_error_loading_empty_slot">لا يمكن التحميل من فتحة فارغة.</string>
+    <string name="startscreen_error_loading_game">خطأ في تحميل اللعبة</string>
+    <string name="startscreen_load_game_confirm">اللعبة الحالية غير محفوظة وستفقد شخصيتك.</string>
+    <string name="startscreen_load_game">لعبة محملة</string>
+    <string name="startscreen_game_mode">وضع</string>
+    <string name="startscreen_newgame_confirm">ستفقد لعبتك الحالية وشخصيتك الحالية ، هل أنت متأكد أنك تريد بدء لعبة جديدة؟</string>
+    <string name="iteminfo_action_unequip">خلع</string>
+    <string name="iteminfo_action_equip">إرتداء</string>
+    <string name="traitsinfo_defense_damageresist">مقاومة الضرر:</string>
+    <string name="traitsinfo_defense_chance">فرصة الحظر:</string>
+    <string name="traitsinfo_criticalhit_skill">مهارة الضربة الحاسمة:</string>
+    <string name="traitsinfo_attack_damage">ضرر الهجوم:</string>
+    <string name="traitsinfo_attack_chance">فرص الهجوم:</string>
+    <string name="traitsinfo_attack_cost">تكلفة الهجوم (ن ح):</string>
+    <string name="actorinfo_currenttraits">إحصائيات القتال (الحالية)</string>
+    <string name="actorinfo_basetraits">إحصائيات قتالية أساسية (بدون معدات ومهارات)</string>
+    <string name="actorinfo_movecost">تكلفة التنقل (ن ح):</string>
+    <string name="actorinfo_defense">دفاع:</string>
+    <string name="actorinfo_attack">هجوم:</string>
+    <string name="actorinfo_health">صحة:</string>
+    <string name="actorinfo_class">فصل:</string>
+    <string name="dialog_monsterloot_message">لقد نجوت من المهواجهة.</string>
+    <string name="dialog_monsterloot_title">نصر</string>
+    <string name="dialog_groundloot_message">وجدت بعض العناصر.</string>
+    <string name="dialog_groundloot_title">عناصر</string>
+    <string name="dialog_loot_pickedupitem">لقد التقطت عنصرًا.</string>
+    <string name="inventory_drop">رمي</string>
+    <string name="inventory_unequip">خلع</string>
+    <string name="inventory_equip">إرتداء</string>
+    <string name="inventory_info">معلومات</string>
+    <string name="combat_log_item_single">لقد وجدت عنصرًا:</string>
+    <string name="combat_miss_animation_message">خطأ</string>
+    <string name="combat_not_enough_ap">لم يتبق ما يكفي من ن ح هذه الجولة.</string>
+    <string name="combat_result_heromiss">هجومك يخطئ.</string>
+    <string name="combat_monsterhealth">ن ص:</string>
+    <string name="combat_begin_flee">يمكنك الآن الهروب من القتال بالظغط في الاتجاه الذي تريد الذهاب إليه.</string>
+    <string name="combat_endturn">إنهاء جولة</string>
+    <string name="combat_use">إستخدام عنصر</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
 </resources>

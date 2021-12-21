@@ -34,6 +34,7 @@ import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames;
 import com.gpl.rpg.AndorsTrail.savegames.Savegames.FileHeader;
+import com.gpl.rpg.AndorsTrail.util.AndroidStorage;
 import com.gpl.rpg.AndorsTrail.util.L;
 import com.gpl.rpg.AndorsTrail.util.ThemeHelper;
 import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
@@ -149,6 +150,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 		// and afterwards check the permissions
 		if (!isNewVersion()) {
 			checkAndRequestPermissions(getActivity());
+			migrateDataOnDemand(getActivity());
 		}
 		
 		return root;
@@ -186,12 +188,55 @@ public class StartScreenActivity_MainMenu extends Fragment {
 				public void onDismiss(DialogInterface arg0) {
 					setCurrentVersionForVersionCheck();
 					checkAndRequestPermissions(getActivity());
+					migrateDataOnDemand(getActivity());
+					boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
+					startscreen_load.setEnabled(hasSavegames);
 				}
 			});
 		}
 
-		boolean hasSavegames = !Savegames.getUsedSavegameSlots().isEmpty();
+		boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
 		startscreen_load.setEnabled(hasSavegames);
+	}
+
+	@TargetApi(29)
+	public void migrateDataOnDemand(final Activity activity) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+			if (activity.getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+				if (AndroidStorage.shouldMigrateToInternalStorage(activity.getApplicationContext())) {
+					final Dialog d = CustomDialogFactory.createDialog(activity,
+							getString(R.string.startscreen_migration_title),
+							activity.getResources().getDrawable(android.R.drawable.ic_dialog_alert),
+							getString(R.string.startscreen_migration_text),
+							null,
+							true);
+					CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+					d.setOnDismissListener(new DialogInterface.OnDismissListener() {
+						@Override
+						public void onDismiss(DialogInterface arg0) {
+							boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
+							startscreen_load.setEnabled(hasSavegames);
+						}
+					});
+					CustomDialogFactory.show(d);
+					if (!AndroidStorage.migrateToInternalStorage(activity.getApplicationContext())) {
+						final Dialog errorDlg = CustomDialogFactory.createDialog(activity,
+								getString(R.string.startscreen_migration_title),
+								activity.getResources().getDrawable(android.R.drawable.ic_dialog_alert),
+								getString(R.string.startscreen_migration_failure),
+								null,
+								true);
+						CustomDialogFactory.addDismissButton(errorDlg, android.R.string.ok);
+						d.cancel();
+						CustomDialogFactory.show(errorDlg);
+					}
+				} else {
+					L.log("INFO: No external files or destination folder ist not empty. No data migration.");
+				}
+			} else {
+				L.log("INFO: No read permission on external folder. No data migration.");
+			}
+		}
 	}
 
 	private static final int READ_EXTERNAL_STORAGE_REQUEST=1;
@@ -199,7 +244,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
 
 	@TargetApi(23)
 	public static void checkAndRequestPermissions(final Activity activity) {
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Build.VERSION.SDK_INT <= Build.VERSION_CODES.Q) {
 			if (activity.getApplicationContext().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
 				activity.requestPermissions(new String[] {Manifest.permission.READ_EXTERNAL_STORAGE}, READ_EXTERNAL_STORAGE_REQUEST);
 			}

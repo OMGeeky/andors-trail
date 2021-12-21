@@ -164,7 +164,7 @@
     <string name="questlog_queststatus_completed">Ukończone</string>
     <string name="preferences_display_category">Ekran</string>
     <string name="preferences_display_fullscreen_title">Pełny ekran</string>
-    <string name="preferences_display_fullscreen">Wyświetla grę w trybie pełnoekranowym (wymaga restartu).</string>
+    <string name="preferences_display_fullscreen">Wyświetla grę w trybie pełnoekranowym. (Wymaga restartu)</string>
     <string name="preferences_dialog_category">Konfiguracja powiadomień</string>
     <string name="preferences_dialog_confirmrest_title">Potwierdź odpoczynek</string>
     <string name="preferences_dialog_confirmrest">Wyświetla okienko z zapytaniem o odpoczynek po wejściu na pole z łóżkiem. Wyłączenie tej opcji powoduje automatyczny odpoczynek w tej sytuacji.</string>
@@ -266,26 +266,26 @@
     <string name="skill_title_resistance_mental">Silny Umysł</string>
     <string name="skill_title_resistance_physical_capacity">Wytrzymałe Ciało</string>
     <string name="skill_title_resistance_blood_disorder">Czysta Krew</string>
-    <string name="skill_shortdescription_weapon_chance">Zwiększa szansę trafienia.</string>
-    <string name="skill_shortdescription_weapon_dmg">Zwiększa zadawane obrażenia.</string>
-    <string name="skill_shortdescription_barter">Lepsze ceny w sklepach.</string>
-    <string name="skill_shortdescription_dodge">Zwiększa szansę zablokowania ciosu.</string>
-    <string name="skill_shortdescription_barkskin">Odporność na obrażenia.</string>
-    <string name="skill_shortdescription_more_criticals">Zwiększa umiejętność zadawania ciosów krytycznych.</string>
-    <string name="skill_shortdescription_better_criticals">Zwiększa obrażenia zadawane przez ciosy krytyczne.</string>
+    <string name="skill_shortdescription_weapon_chance">Zwiększa szansę trafienia</string>
+    <string name="skill_shortdescription_weapon_dmg">Zwiększa zadawane obrażenia</string>
+    <string name="skill_shortdescription_barter">Lepsze ceny w sklepach</string>
+    <string name="skill_shortdescription_dodge">Zwiększa szansę zablokowania ciosu</string>
+    <string name="skill_shortdescription_barkskin">Odporność na obrażenia</string>
+    <string name="skill_shortdescription_more_criticals">Zwiększa umiejętność zadawania ciosów krytycznych</string>
+    <string name="skill_shortdescription_better_criticals">Zwiększa obrażenia zadawane przez ciosy krytyczne</string>
     <string name="skill_shortdescription_speed">Zwiększa liczbę Punktów Akcji (PA)</string>
-    <string name="skill_shortdescription_coinfinder">Zwiększa szansę na znalezienie złota.</string>
-    <string name="skill_shortdescription_more_exp">Zwiększa liczbę punktów doświadczenia uzyskiwaną z zabicia przeciwnika.</string>
-    <string name="skill_shortdescription_cleave">Zabicie przeciwnika przywraca Punkty Akcji (PA).</string>
-    <string name="skill_shortdescription_eater">Zabicie przeciwnika przywraca punkty życia (PŻ).</string>
-    <string name="skill_shortdescription_fortitude">Podnosi Punkty Życia (PŻ) przy awansie na kolejny poziom.</string>
-    <string name="skill_shortdescription_evasion">Zwiększa szansę na udaną ucieczkę.</string>
-    <string name="skill_shortdescription_regeneration">Przywraca Punkty Życia (PŻ) w każdej rundzie.</string>
-    <string name="skill_shortdescription_lower_exploss">Obniża liczbę punktów doświadczenia traconych w wyniku śmierci.</string>
-    <string name="skill_shortdescription_magicfinder">Zwiększa szansę na znalezienie magicznych przedmiotów.</string>
-    <string name="skill_shortdescription_resistance_mental">Zwiększa odporność na umysłowe efekty ataku.</string>
-    <string name="skill_shortdescription_resistance_physical_capacity">Zwiększa odporność na fizyczne efekty ataku.</string>
-    <string name="skill_shortdescription_resistance_blood_disorder">Zwiększa odporność na choroby krwi.</string>
+    <string name="skill_shortdescription_coinfinder">Zwiększa szansę na znalezienie złota</string>
+    <string name="skill_shortdescription_more_exp">Zwiększa liczbę punktów doświadczenia uzyskiwaną z zabicia przeciwnika</string>
+    <string name="skill_shortdescription_cleave">Zabicie przeciwnika przywraca Punkty Akcji (PA)</string>
+    <string name="skill_shortdescription_eater">Zabicie przeciwnika przywraca punkty życia (PŻ)</string>
+    <string name="skill_shortdescription_fortitude">Zwiększa liczbę Punktów Życia (PŻ) przy awansie na kolejny poziom</string>
+    <string name="skill_shortdescription_evasion">Zwiększa szansę na udaną ucieczkę</string>
+    <string name="skill_shortdescription_regeneration">Przywraca Punkty Życia (PŻ) w każdej rundzie</string>
+    <string name="skill_shortdescription_lower_exploss">Obniża liczbę punktów doświadczenia traconych w wyniku śmierci</string>
+    <string name="skill_shortdescription_magicfinder">Zwiększa szansę na znalezienie magicznych przedmiotów</string>
+    <string name="skill_shortdescription_resistance_mental">Zwiększa odporność na umysłowe efekty ataku</string>
+    <string name="skill_shortdescription_resistance_physical_capacity">Zwiększa odporność na fizyczne efekty ataku</string>
+    <string name="skill_shortdescription_resistance_blood_disorder">Zwiększa odporność na choroby krwi</string>
     <string name="skill_longdescription_weapon_chance">Zwiększa szansę trafienia o %1$d procent na każdy poziom umiejętności.</string>
     <string name="skill_longdescription_weapon_dmg">Zwiększa zadawane obrażenia o %1$d na każdy poziom umiejętności.</string>
     <string name="skill_longdescription_barter">Obniża różnicę pomiędzy ceną zakupu a ceną sprzedaży o %1$d procent na każdy poziom umiejętności.</string>
@@ -443,7 +443,7 @@
     <string name="skill_longdescription_weapon_prof_1hsword">Kiedy używasz rapiera, długiego miecza lub pałasza to z każdym poziomem tej umiejętności zwiększają się (w odniesieniu do wartości bazowych poszczególnych cech danej broni): szansa trafienia o %1$d %% ; szansa bloku o %2$d %% oraz szansa trafienia krytycznego o %3$d %%.</string>
     <string name="skill_longdescription_weapon_prof_2hsword">Kiedy używasz dwuręcznego miecza, to z każdym poziomem tej umiejętności zwiększają się (w odniesieniu do wartości bazowych poszczególnych cech danej broni): szansa trafienia o %1$d %% ; szansa bloku o %2$d %% oraz szansa trafienia krytycznego o %3$d %%.</string>
     <string name="skill_longdescription_weapon_prof_axe">Kiedy używasz topora lub wielkiego topora, to z każdym poziomem tej umiejętności zwiększają się (w odniesieniu do wartości bazowych poszczególnych cech danej broni): szansa trafienia o %1$d %% ; szansa bloku o %2$d %% oraz szansa trafienia krytycznego o %3$d %%.</string>
-    <string name="skill_longdescription_weapon_prof_blunt">Kiedy używasz broni obuchowej, to z każdym poziomem tej umiejętności zwiększają się (w odniesieniu do wartości bazowych poszczególnych cech danej broni): szansa trafienia o %1$d %% ; szansa bloku o %2$d %% oraz szansa trafienia krytycznego o %3$d %%. Umiejętność obejmuje takie bronie jak: maczugi, buławy, berła, młoty bojowe i olbrzymie młoty.</string>
+    <string name="skill_longdescription_weapon_prof_blunt">Kiedy używasz broni obuchowej, to z każdym poziomem tej umiejętności zwiększają się (w odniesieniu do wartości bazowych poszczególnych cech danej broni): szansa trafienia o %1$d %% ; szansa bloku o %2$d %% oraz szansa trafienia krytycznego o %3$d %%. Umiejętność obejmuje takie bronie jak: maczugi, buławy, berła, bicze, młoty bojowe i olbrzymie młoty.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">Kiedy walczysz bez broni i tarczy, to z każdym poziomem tej umiejętności zwiększają się: szansa trafienia o %1$d, zadawane obrażenia o %2$d oraz szansa bloku o %3$d.</string>
     <string name="skill_longdescription_armor_prof_shield">Jeśli używasz tarczy lub lewaka, to z każdym poziomem umiejętności o %1$d zwiększa się odporność na obrażenia.</string>
     <string name="skill_longdescription_armor_prof_unarmored">Kiedy walczysz bez jakiegokolwiek elementu zbroi, to z każdym poziomem tej umiejętności o %1$d zwiększa się szansa bloku. Rzeczy wykonane z tkaniny nie są uważane za zbroję.</string>
@@ -451,11 +451,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Z każdym poziomem tej umiejętności,o %1$d %% zwiększa się szansa bloku za każdy element ekwipunku należący do kategorii zbroi ciężkich (w odniesieniu do wartości bazowej szansy bloku używanego ekwiunku). Ponadto reducji ulegają kary naliczane za używanie tychże elementów ekwipunku: kara dla ruchu o %2$d %% na poziom umiejętności oraz kara dla kosztu ataku o %3$d %% na poziom umiejętności. Kategoria ciężkie zbroje obejmuje pancerze metalowe, kolczugi i zbroje płytowe.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Daje korzyści w przypadku walki dwoma broniami równocześnie (gdy w każdej ręce znajduje się broń).
 \n
-\nBez tej umiejętności, tylko %1$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Dotyczy to szansy trafienia, szansy trafienia krytycznego, zadawanych obrażeń oraz szansy bloku. Ponadto, koszt ataku (liczony w PA) jest sumą kosztów ataku obu broni znajdujących się w rękach bohatera. 
+\nBez tej umiejętności, tylko %1$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Dotyczy to szansy trafienia, szansy trafienia krytycznego, zadawanych obrażeń oraz szansy bloku. Ponadto, koszt ataku (liczony w PA) jest sumą kosztów ataku obu broni znajdujących się w rękach bohatera. Zostanie użyta niższa wartość modyfikatorów obrażeń obu broni.
 \n
-\nNa pierwszym poziomie umiejętności, %2$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Ponadto koszt ataku (liczony w PA) jest sumą: kosztu ataku broni w prawej ręce plus %3$d %% kosztu ataku broni w lewej ręce. 
+\nNa pierwszym poziomie umiejętności, %2$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Ponadto koszt ataku (liczony w PA) jest sumą: kosztu ataku broni w prawej ręce plus %3$d %% kosztu ataku broni w lewej ręce. Zostanie użyta średnia wartość modyfikatorów obrażeń obu broni.
 \n
-\nNa drugim poziomie umiejętności, %4$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Jako prędkość ataku (koszt ataku liczony w PA) przyjmuje się wyższą wartość spośród wartości ataku używanych broni.</string>
+\nNa drugim poziomie umiejętności, %4$d %% wartości cech broni jest wykorzystywane, gdy broń znajduje się w lewej ręce. Jako prędkość ataku (koszt ataku liczony w PA) przyjmuje się wyższą wartość spośród wartości ataku używanych broni. Zostanie użyta wyższa wartość modyfikatorów obrażeń obu broni.</string>
     <string name="skill_longdescription_fightstyle_2hand">"Daje korzyści z używania broni wymagających użycia obu rąk, jak na przykład miecze dwuręczne, wielkie topory czy też olbrzymie młoty.
 
 Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczną o %1$d %% (licząc z wartości bazowej obrażeń zadawanych przez daną broń)."</string>
@@ -478,17 +478,17 @@ Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczn
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">Pokazuje sloty ekwipunku tak długo, jak otwarty jest przybornik</string>
     <string name="startscreen_incompatible_savegames">To jest wersja deweloperska Andor`s Trail. Zapisy z tej wersji mogą być niekompatybilne z publicznymi wersjami gry.</string>
     <string name="startscreen_non_release_version">Jest to wersja testowa Andor`s Trail. Zapisy z tej wersji mogą być niekompatybilne z publicznymi wersjami gry.</string>
-    <string name="heroinfo_gamestats">Statystyki gry:</string>
-    <string name="heroinfo_gamestats_quests">Zadania ukończone:</string>
-    <string name="heroinfo_gamestats_deaths">Liczba zgonów bohatera:</string>
-    <string name="heroinfo_gamestats_spent_gold">Złoto wydane w sklepach:</string>
-    <string name="heroinfo_gamestats_bonemeals">Użyte mikstury z kostnego prochu:</string>
-    <string name="heroinfo_gamestats_num_used_items">Przedmioty użyte:</string>
-    <string name="heroinfo_gamestats_visited_maps">Odwiedzone miejsca:</string>
-    <string name="heroinfo_gamestats_fav_item">Najczęściej używany przedmiot:</string>
-    <string name="heroinfo_gamestats_num_killed_monsters">Zabici przeciwnicy:</string>
-    <string name="heroinfo_gamestats_top_boss">Najsilniejszy zabity przeciwnik:</string>
-    <string name="heroinfo_gamestats_fav_monsters">Najczęściej zabijany przeciwnik:</string>
+    <string name="heroinfo_gamestats">Statystyki gry</string>
+    <string name="heroinfo_gamestats_quests">Zadania ukończone</string>
+    <string name="heroinfo_gamestats_deaths">Liczba zgonów bohatera</string>
+    <string name="heroinfo_gamestats_spent_gold">Złoto wydane w sklepach</string>
+    <string name="heroinfo_gamestats_bonemeals">Użyte mikstury z kostnego prochu</string>
+    <string name="heroinfo_gamestats_num_used_items">Przedmioty użyte</string>
+    <string name="heroinfo_gamestats_visited_maps">Odwiedzone miejsca</string>
+    <string name="heroinfo_gamestats_fav_item">Najczęściej używany przedmiot</string>
+    <string name="heroinfo_gamestats_num_killed_monsters">Zabici przeciwnicy</string>
+    <string name="heroinfo_gamestats_top_boss">Najsilniejszy zabity przeciwnik</string>
+    <string name="heroinfo_gamestats_fav_monsters">Najczęściej zabijany przeciwnik</string>
     <string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
     <!-- =========================================== -->
     <!-- Added in v0.7.1 -->
@@ -608,4 +608,22 @@ Każdy poziom umiejętności podnosi obrażenia zadawane każdą broń dwuręczn
 \n
 \nPrzedmioty wykonane z tkaniny nie są uważane za zbroję.</string>
     <string name="skill_shortdescription_fightstyle_unarmed_unarmored">Lepszy w walce bez użycia broni/pancerza</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Jeśli wirtualny d-pad jest włączony, to ustawienie określa jego przezroczystość.</string>
+    <string name="preferences_movement_dpad_transparency_title">Przezroczystość D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Trwale eliminuje zatrucie zarodnikami jako efekt ataku potworów.</string>
+    <string name="skill_shortdescription_spore_immunity">Pełna odporność na truciznę zarodników</string>
+    <string name="skill_title_spore_immunity">Odporność na truciznę zarodników</string>
+    <string name="inventory_category_food">Żywność</string>
+    <string name="inventory_category_potion">Mikstura</string>
+    <string name="inventory_category_jewelry">Biżuteria</string>
+    <string name="combat_log_item_plural">Znalazłeś%1$d przedmioty/ów:</string>
+    <string name="combat_log_item_single">Znalazłeś przedmioty:</string>
+    <string name="startscreen_migration_title">Przenoszenie danych</string>
+    <string name="startscreen_migration_text">Przeniesienie zapisów gry.</string>
+    <string name="startscreen_migration_failure">Przeniesienie danych nieudane.</string>
 </resources>

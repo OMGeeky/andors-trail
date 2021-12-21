@@ -157,6 +157,9 @@
 	<string name="startscreen_enterheroname">Enter hero name</string>
 	<string name="startscreen_load">Load</string>
 	<string name="startscreen_game_mode">Mode</string>
+	<string name="startscreen_migration_title">Data Migration</string>
+	<string name="startscreen_migration_text">Migrating savegame data.</string>
+	<string name="startscreen_migration_failure">Failed to migrate savegame data.</string>
 	<string name="startscreen_load_game">Load game</string>
 	<string name="startscreen_load_game_confirm">The current game is unsaved and you will lose your character.</string>
 	<string name="startscreen_error_loading_game">Error loading game</string>
@@ -714,6 +717,7 @@ Items made of cloth are not considered as being armor." </string>
 	<string name="inventory_category_potion">Potion</string>
 	<string name="inventory_category_food">Food</string>
 	<string name="inventory_category_quest">Quest Item</string>
+	<string name="inventory_category_usable">Usable</string>
 	<string name="inventory_category_other">Other</string>
 
 	<string name="inventory_sort_custom">Unsorted</string>

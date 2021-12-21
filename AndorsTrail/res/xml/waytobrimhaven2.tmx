@@ -274,13 +274,13 @@
     <property name="spawngroup" value="erumen_2"/>
    </properties>
   </object>
-  <object name="erumen_2_1" type="spawn" x="512" y="96" width="352" height="352">
+  <object name="erumen_2_1" type="spawn" x="512" y="96" width="352" height="448">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="erumen_2"/>
    </properties>
   </object>
-  <object name="erumen_3" type="spawn" x="512" y="448" width="320" height="416">
+  <object name="erumen_3" type="spawn" x="512" y="544" width="224" height="320">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="erumen_3"/>
@@ -301,6 +301,11 @@
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="tamarukh"/>
+   </properties>
+  </object>
+  <object name="erumen_4" type="spawn" x="736" y="544" width="128" height="224">
+   <properties>
+    <property name="spawngroup" value="erumen_2"/>
    </properties>
   </object>
  </objectgroup>

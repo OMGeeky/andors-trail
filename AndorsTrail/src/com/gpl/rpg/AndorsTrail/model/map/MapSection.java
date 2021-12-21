@@ -4,6 +4,7 @@ import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 
 public final class MapSection {
+	public final MapLayer layerBase;
 	public final MapLayer layerGround;
 	public final MapLayer layerObjects;
 	public final MapLayer layerAbove;
@@ -12,13 +13,15 @@ public final class MapSection {
 	private final byte[] layoutHash;
 
 	public MapSection(
-			MapLayer layerGround
+			MapLayer layerBase
+			, MapLayer layerGround
 			, MapLayer layerObjects
 			, MapLayer layerAbove
 			, MapLayer layerTop
 			, boolean[][] isWalkable
 			, byte[] layoutHash
 	) {
+		this.layerBase = layerBase;
 		this.layerGround = layerGround;
 		this.layerObjects = layerObjects;
 		this.layerAbove = layerAbove;
@@ -28,6 +31,7 @@ public final class MapSection {
 	}
 
 	public void replaceLayerContentsWith(final MapSection replaceLayersWith, final CoordRect replacementArea) {
+		replaceTileLayerSection(layerBase, replaceLayersWith.layerBase, replacementArea);
 		replaceTileLayerSection(layerGround, replaceLayersWith.layerGround, replacementArea);
 		replaceTileLayerSection(layerObjects, replaceLayersWith.layerObjects, replacementArea);
 		replaceTileLayerSection(layerAbove, replaceLayersWith.layerAbove, replacementArea);

@@ -72,6 +72,8 @@ public final class MainView extends SurfaceView
 
 	private final SurfaceHolder holder;
 	private final Paint mPaint = new Paint();
+	private final Paint debugPaint = new Paint();
+	private final int[] debugColors = {Color.MAGENTA, Color.BLUE, Color.CYAN, Color.GREEN, Color.YELLOW, Color.RED, Color.WHITE};
 	private final CoordRect p1x1 = new CoordRect(new Coord(), new Size(1,1));
 	private boolean hasSurface = false;
 	
@@ -391,12 +393,16 @@ public final class MainView extends SurfaceView
 			applyAlternateFilter(canvas, area);
 		}
 	}
-	
+
 	private void doDrawRect_Ground(Canvas canvas, CoordRect area) {
+		if (AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAMES) {
+			drawUnderLayer(canvas, area);
+		}
+		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerBase);
 		drawMapLayer(canvas, area, currentTileMap.currentLayout.layerGround);
 		tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
 	}
-	
+
 	private void doDrawRect_Objects(Canvas canvas, CoordRect area) {
 //		if (!tryDrawMapBitmap(canvas, area, objectsBitmap)) {
 //			tryDrawMapLayer(canvas, area, currentTileMap.currentLayout.layerObjects);
@@ -451,6 +457,20 @@ public final class MainView extends SurfaceView
 
 	private void tryDrawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {
 		if (layer != null) drawMapLayer(canvas, area, layer);
+	}
+
+	// In debug builds, draw a fake layer under the Ground to make incorrect transparency more obvious when testing
+	private void drawUnderLayer(Canvas canvas, final CoordRect area) {
+		float left = (area.topLeft.x - mapViewArea.topLeft.x) * tileSize;
+		float top = (area.topLeft.y - mapViewArea.topLeft.y) * tileSize;
+		float right = left + area.size.width * tileSize;
+		float bottom = top + area.size.height * tileSize;
+
+		int selectedColor = (int)(System.currentTimeMillis() / 500 % debugColors.length);
+		// int selectedColor = (int)(Math.random() * debugColors.length);
+		debugPaint.setColor(debugColors[selectedColor]);
+
+		canvas.drawRect(left, top, right, bottom, debugPaint);
 	}
 
 	private void drawMapLayer(Canvas canvas, final CoordRect area, final MapLayer layer) {

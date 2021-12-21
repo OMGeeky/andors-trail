@@ -2,7 +2,7 @@ Explore the world of Dhayavar looking for your brother Andor in this quest-drive
 
 Battle monsters in turn-based combat, become stronger through level ups and skills, choose from a wide range of equipment, interact with numerous NPCs, visit shops, inns and taverns, search for treasure, and solve quests to follow the trail of your brother and uncover the secrets of the powers at play in Dhayavar. With luck, you may even find a legendary item!
 
-You can currently visit up to 584 maps and complete up to 82 quests.
+You can currently visit up to 608 maps and complete up to 84 quests.
 
 The game is completely free. There is no payment to install, no ads, no in-app purchases, and no DLCs. There is no internet access required, and it can run on all versions of Android from 1.6 (Eclair), so it should run on any device, even low-end oldies.
 
@@ -18,7 +18,19 @@ If you wish to participate, we have released a content editor called ATCS, downl
 
 Visit our forums on www.andorstrail.com for help, hints, tips and general discussion. We love our community's feedback!
 
+
 Changelog:
+
+v0.7.14
+2 new quests:
+"Climbing up is forbidden"
+"You're the postman"
+24 new maps
+Turkish translation available
+Changed savegame location due to Google requirements
+
+v0.7.13
+Japanese translation available
 
 v0.7.12
 Changes in the start village Crossglen to make it even more fun and easier in the beginning
@@ -26,8 +38,6 @@ Changes in the start village Crossglen to make it even more fun and easier in th
 4 new maps
 New weapon class "Pole arm weapons" and fighting style
 When dpad is active (both visible and not minimized), normal touch-based movement is prevented
-Various small changes and bug fixes
-Translations actualized
 
 v0.7.11
 A new city located east of Loneford
@@ -35,8 +45,7 @@ Seven new quests
 37 new maps
 One new extraordinary item by rare drop
 Remember Bonemeal is illegal - And now there are consequences for its possession
-Various bug fixes - Burhczyd fix
-Translations actualized
+Burhczyd fix
 
 v0.7.10
 Weapon Rebalancing
@@ -46,18 +55,12 @@ Sorting of quest logs by time
 Fixes for monster difficulty
 Better explanation for permissions
 Conversation will not close when you click outside of dialogues
-Fix toast crashes (e.g. after fights)
-Fix listener crashes
-Fix Mapchange crashes
-Fix minor bugs and typos
-Translations actualized
+Fix crashes with toast, listener, mapchange
 
 v0.7.9
 For a better overview you can now reduce the view to 75% or 50%
 A certain person has found another, rather unfrequented tavern
-Fixed the Arulir crashes
-Fixed Ukrainian language crash and change language crash on older phones
-Updated translations
+Fixed crashes in Arulir and with diverse languages
 
 v0.7.8
 A few new quests and several new maps.
@@ -67,25 +70,9 @@ For new characters you can choose one of the new hardcore modes: No Saves, Limit
 Up to now, languages have been limited to English or your local language, as determined by your device settings. Now you can choose between different languages that are translated to a significant extent.
 
 v0.7.7
-Content:
- 	Fixed typos
-
-Translations:
- 	Fixed issues with translations integration in 0.7.6
- 	Fixed crashes for Greek players
+Fixed crashes with diverse languages
 
 v0.7.6
-Content
- 	Three quests with well known thieves.
- 	Five new maps.
+3 quests with well known thieves.
+5 new maps.
 
-Translations:
- 	100% Italian, Polish, Russian, Spanish
- 	99% German
- 	87% Portuguese
- 	84% Portuguese Brazil
- 	65% Basque
- 	64% French
- 	48% Hungarian
- 	20% Czech
- 	20% Turkish

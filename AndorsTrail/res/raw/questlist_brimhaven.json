@@ -216,6 +216,14 @@
                 "logText":"showed money to shop owner"
             },
             {
+                "progress":138,
+                "logText":"Tember active"
+            },
+            {
+                "progress":139,
+                "logText":"Feygard patrol wall"
+            },
+            {
                 "progress":140,
                 "logText":"Movement blocked by the Feygard patrol"
             },

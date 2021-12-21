@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" nextobjectid="12">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="17">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,27 +183,27 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="20" height="20">
+ <layer id="1" name="Ground" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJzbyMnAsHEE4TlMEEwt8w4wQfBBKpl5iQmCL1PJvCdMEDzQ4U7LeFgLNGcdFFPbPGq4cy2SWTBz1wOxISsEk2Meshth5hmRYRa6eeuR6DBW8szEZR4l4Udr83DF8WYoxmfeOibccYLNPGxmwNIZTC82N2JzJ7p5c9DcsA7NTGRz1mHho9Po+QBdHAB2xhwC
   </data>
  </layer>
- <layer name="Objects" width="20" height="20">
+ <layer id="2" name="Objects" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJyFlMFKw0AQhpdA8CbdgAt9Mr35CB682GcpvoFnaw+ehDSRXNpDQmj1GIiiloJHwRkzw04mGzsw7GZn98u/M5Nsp8a8g2/B38DZGmvMwvnn3Pp5BvND0p3hs6GR7YfOSp62doTRki4eM6FD8jjeiHhIVwnxCvw2MuYExrUL86Sldlxfaft7c+u1SN7S9XOxSYZ3a6fmX5O8ve1zZX0wlipdd9FwLaeznFOMr898vIT4PXlNex/dcX9VeVyq53lEfOvfwfxSzNl2bshAa21379r6OhzTlbqOh/n/Y1DuuS6HZPgeNOyX2aTvyFkQT8ekcw4qeket6nAd+3syD+0m9rpChhydF+znMR7aOei5mHTcFdw1G7mvZoZ4z6QNv7nvU2MKWC+IJ78Lnl/Gfu0F9n4S74Nqg31YCK07wQvZVdzf24A/gLdCI458T83D3NWiJk+u66cN7V05/819UQ/tRT+hfu5laaFelbxM1YQZrKVSNZfP/O8K8Zijz4f06N7RZ6Qe3if38NovXMHH7A==
   </data>
  </layer>
- <layer name="Above" width="20" height="20">
+ <layer id="3" name="Above" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYCAP3JQkrOYWHjUg/fjkKQXEuI/abrksRrkZyOASlc0bDoDW6YZWYDYTphgsvVzEE8/uAgwMHgIQ9nYhBoYdQqjyc5HMPUzl9DJQ5mHzJyXm4QLocTIXSxyRA5DNoXaZgAzmMaHSuAC2tAcCxPoXm36YGAAt2xsX
   </data>
  </layer>
- <layer name="Walkable" width="20" height="20">
+ <layer id="4" name="Walkable" width="20" height="20">
   <data encoding="base64" compression="zlib">
    eJzbKMbAsBEJEws2ihHGpABizMNnJjZ5ersPn1soMY8SQG3zqAEGgx9hanHFHanxQ4o+YuManzg18gmleY4ct5EKqGEeKX6GqRkI95GaXrDR9MYAIGiWCA==
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup id="5" name="Mapevents">
   <object id="1" name="entrance1" type="mapchange" x="192" y="576" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain9"/>
@@ -230,31 +230,67 @@
   </object>
   <object id="5" name="exit" type="mapchange" x="96" y="96" width="32" height="32"/>
   <object id="6" name="sign_blackwater10" type="sign" x="384" y="192" width="32" height="32"/>
-  <object id="10" name="entrance2" type="mapchange" x="256" y="576" width="32" height="32">
+  <object id="7" name="entrance2" type="mapchange" x="256" y="576" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain9"/>
     <property name="place" value="exit2"/>
    </properties>
   </object>
-  <object id="11" name="entrance3" type="mapchange" x="320" y="576" width="32" height="32">
+  <object id="8" name="entrance3" type="mapchange" x="320" y="576" width="32" height="32">
    <properties>
     <property name="map" value="blackwater_mountain9"/>
     <property name="place" value="exit3"/>
    </properties>
   </object>
+  <object id="16" name="omi2_fix_ortholion_guard5" type="script" x="224" y="320" width="96" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
-  <object id="7" name="forestboar4" type="spawn" x="320" y="64" width="224" height="256">
+ <objectgroup id="6" name="Spawn">
+  <object id="9" name="forestboar4" type="spawn" x="320" y="64" width="224" height="256">
    <properties>
     <property name="quantity" value="2"/>
+    <property name="spawngroup" value="forestboar4"/>
    </properties>
   </object>
-  <object id="8" name="primwolf1" type="spawn" x="64" y="160" width="384" height="320">
+  <object id="10" name="primwolf1" type="spawn" x="64" y="160" width="384" height="320">
    <properties>
     <property name="quantity" value="3"/>
+    <property name="spawngroup" value="primwolf1"/>
    </properties>
   </object>
-  <object id="9" name="tonis" type="spawn" x="160" y="64" width="96" height="64"/>
+  <object id="11" name="tonis" type="spawn" x="160" y="64" width="96" height="64">
+   <properties>
+    <property name="spawngroup" value="tonis"/>
+   </properties>
+  </object>
+  <object id="12" name="ortholion_guard6" type="spawn" x="192" y="352" width="160" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard6"/>
+   </properties>
+  </object>
+  <object id="13" name="ortholion_guard3a" type="spawn" x="128" y="448" width="32" height="128">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard3"/>
+   </properties>
+  </object>
+  <object id="14" name="ortholion_guard3" type="spawn" x="384" y="352" width="128" height="128">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="ortholion_guard3"/>
+   </properties>
+  </object>
+  <object id="15" name="ortholion_guard5" type="spawn" x="224" y="480" width="96" height="64">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_guard5"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup id="7" name="Keys"/>
 </map>

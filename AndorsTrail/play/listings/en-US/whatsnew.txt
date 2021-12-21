@@ -1,5 +1,123 @@
 I put both (release notes + forum announcement) into this source, so it will be easier to maintain them parallel:
 
+APK 62 (0.7.15)  //just fixes+translations
+
+Release notes
+=============
+* Fix of the notification crash bug
+* Fix of missing scout and of a non disappearing Ortholion and Ehrenfest in certain conditions
+* Various small changes and bug fixes
+* Translations actualized
+
+
+Forum announcement  //2021-12-18
+==================
+Hello fellow adventurers,
+
+here is a new Andor's Trail release! 8-)
+
+No, there is no new content - and also no christmas edition (awww...)
+
+We publish this release mainly to fix some nasty bugs:
+- Loot notifications could crash the game.
+- A missing scout could prevent you from getting entry to the Elm mine.
+- Non disappearing Ortholion and Ehrenfest in certain conditions are somewhat strange...
+
+Beside that:
+- Venom dagger gets poisonous
+- Some more translations
+- Other fixes of little bugs and typos
+
+Here is the link to the productive version: https://andorstrail.com/static/AndorsTrail_v0.7.15.apk
+
+(Google Play will follow in a few days, unfortunately we can't provide a version for F-droid at the moment)
+
+
+
+APK 61 (0.7.14)  //Omi2
+
+Release notes
+=============
+Two new quests:
+"Climbing up is forbidden"  south east of Prim
+"You're the postman"  near home
+24 new maps
+
+Turkish translation available
+
+Changed savegame location due to Google requirements
+Not only for any PERMADEATH characters it would be a good idea to save before updating.
+
+
+Forum announcement  //2021-11-08
+==================
+Hello fellow adventurers,
+
+here is the new Andor's Trail release now! 8-)
+Download it from our forum storage, or wait a few more days for Google play or FDroid.
+
+:!: If you had tested a beta in the last weeks, you must deinstall it first.
+:!: Do make a backup of your whole directory first! (andors-trail, together with the sub-directory "worldmap")
+
+
+There are two new quests:
+"Climbing up is forbidden"
+After the thieves quests this is another great story from Ømicron, that blends in beautifully with the Blackwater Mountain area. Beware: Beginning with medium difficulty level, the second half is really hard. You should have developed your hero well before daring deep into the depths of the Elm mine...
+Start at the foot of the mountains south east of Prim. (The path will be blocked if your hero is considered too weak for the quest)
+"You're the postman"
+This low level quest begins with Gorwath near your home. It was originally created by Lille1_opendev2015 more than 6 years ago. Almost forgotten, but fortunately Lord Ilham reminded us.
+
+
+And there are also important engine changes:
+Google has changed the requirements for storage access, so we had to change some basic things in Andor's Trail, otherwise it could not be published on Google Play any more.
+
+- The update imports any existing savegames and copies them to an app specific area. (This might take a while - be patient!)
+- Manual backups to PC are more difficult now. You won't get access to the saved games easily from a PC like before. But some file explorers like Total Commander should be able to do so.
+
+
+Lastly, the actual translations.
+    91% Deutsch (old 81%)
+    90% Русский язык (old 93%)
+    90% Español (old 77%)
+    90% Italiano (old 93%)
+    90% 日本人 (old 93%)
+    90% Polski (old 80%)
+    89% Português Brasil (old 93%)
+    86% Française (old 93%)
+    83% Português (old 90%)
+    62% čeština (old 36%)
+    41% 中文 (old 32%)
+    39% Türkçe (old <30%)
+    32% Magyar (old 35%)
+Turkish translations had increased to over 30%, so I added it to the language selection. Special thanks to the Turkish translators!
+(Because of the new content we have no complete translations at the moment of course ...)
+
+
+
+Now here is the link to the productive version: static/AndorsTrail_v0.7.14.apk
+And again:
+:!: It is a good idea to BACKUP your saves + maps before doing anything else!
+
+Thanks for your support and your patience.
+We hope that you have as much fun playing it as we had on creation :)
+
+
+
+
+APK 58 (0.7.13)  //Translation update
+
+Release notes
+=============
+
+
+Forum announcement  //2021-03-20
+==================
+
+
+
+
+APK 55 (0.7.12)  //Fungi panic + cookbook
+
 Release notes
 =============
 4 new quests beginning in Fallhaven or south of it.
@@ -20,7 +138,7 @@ For any PERMADEATH characters it would be a good idea to save before updating.
 Three other languages available: Japanese, Czech and Chinese.
 
 
-Forum announcement
+Forum announcement  //2020-09-17
 ==================
 Content:
 * 4 new quests beginning in Fallhaven or south of it

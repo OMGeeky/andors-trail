@@ -254,8 +254,10 @@ public final class ResourceLoader {
 		final Size sz2x2 = new Size(2, 2);
 		final Size sz2x3 = new Size(2, 3);
 		final Size sz3x1 = new Size(3, 1);
+		final Size sz5x1 = new Size(5, 1);
 		final Size sz6x1 = new Size(6, 1);
 		final Size sz7x1 = new Size(7, 1);
+		final Size sz8x3 = new Size(8, 3);
 		final Size sz20x12 = new Size(20, 12);
 		final Size mapTileSize = new Size(16, 8);
 		final Size sz8x8 = new Size(8, 8);
@@ -276,6 +278,7 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.actorconditions_2, "actorconditions_2", sz3x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.actorconditions_japozero, "actorconditions_japozero", new Size(16, 4), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.actorconditions_omi1, "actorconditions_omi1", sz2x1, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.actorconditions_omi2, "actorconditions_omi2", sz5x1, sz1x1, mTileSize);
 		/*INSERT_ACTORCONDITIONS_TILESETS_HERE*/
 
 		loader.prepareTileset(R.drawable.items_armours, "items_armours", new Size(14, 3), sz1x1, mTileSize);
@@ -303,6 +306,8 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.items_rijackson_1, "items_rijackson_1", new Size(5, 4), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.items_g03_package_omi1, "items_g03_package_omi1", sz1x1, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.items_consumables_omi1, "items_consumables_omi1", sz1x1, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.items_feygard1, "items_feygard1", new Size(6, 2), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.items_omi2, "items_omi2", new Size(6, 5), sz1x1, mTileSize);
 		/*INSERT_ITEMS_TILESETS_HERE*/
 		
 		loader.prepareTileset(R.drawable.monsters_armor1, "monsters_armor1", sz1x1, sz1x1, mTileSize);
@@ -361,6 +366,7 @@ public final class ResourceLoader {
         loader.prepareTileset(R.drawable.monsters_giantbasilisk, "monsters_giantbasilisk", sz1x1, sz2x2, mTileSize);
         loader.prepareTileset(R.drawable.monsters_gisons, "monsters_gisons", new Size(8, 2), sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.monsters_bosses_2x2, "monsters_bosses_2x2", sz1x1, sz2x2, mTileSize);
+		loader.prepareTileset(R.drawable.monsters_omi2, "monsters_omi2", sz8x3, sz1x1, mTileSize);
 		/*INSERT_NPCS_TILESETS_HERE*/
 		
 		loader.prepareTileset(R.drawable.map_bed_1, "map_bed_1", mapTileSize, sz1x1, mTileSize);
@@ -425,6 +431,10 @@ public final class ResourceLoader {
 		loader.prepareTileset(R.drawable.map_window_1, "map_window_1", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_window_2, "map_window_2", mapTileSize, sz1x1, mTileSize);
 		loader.prepareTileset(R.drawable.map_guynmart, "map_guynmart", mapTileSize, sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_cavewall_5, "map_cavewall_5", new Size(6, 6), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_rock_3, "map_rock_3", new Size(6, 5), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_sign_ladder_omi2, "map_sign_ladder_omi2", new Size(8, 4), sz1x1, mTileSize);
+		loader.prepareTileset(R.drawable.map_transition_6, "map_transition_6", new Size(18, 8), sz1x1, mTileSize);
 		/*INSERT_MAP_TILESETS_HERE*/
 
 		loader.prepareTileset(R.drawable.effect_blood4, "effect_blood4", new Size(7, 2), sz1x1, mTileSize);

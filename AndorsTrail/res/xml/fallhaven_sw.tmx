@@ -243,5 +243,10 @@
     <property name="spawngroup" value="vacor"/>
    </properties>
   </object>
+  <object name="arensia" type="spawn" x="192" y="320" width="96" height="96">
+   <properties>
+    <property name="spawngroup" value="arensia"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

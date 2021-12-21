@@ -1,7 +1,7 @@
 [
     {
         "id":"warden",
-        "name":"Warden",
+        "name":"Guard captain",
         "iconID":"monsters_men:3",
         "monsterClass":"humanoid",
         "spawnGroup":"fallhaven_warden",

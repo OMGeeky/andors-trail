@@ -307,7 +307,7 @@
     <string name="skill_longdescription_barter">Minden egyes képességszintnél csökkenti a vételi és eladási aranybüntetést %1$d százalékponttal.</string>
     <string name="skill_longdescription_dodge">Megnöveli a blokkolási esélyt %1$d százalékponttal minden egyes képességszintnél.</string>
     <string name="skill_longdescription_barkskin">Megnöveli a sebzésellenállást %1$d ponttal minden egyes képességszintnél.</string>
-    <string name="skill_longdescription_more_criticals">Megnöveli a felszerelés által adott összes meglévő kritikus képességet %1$d%%-kal minden egyes képességszintnél.</string>
+    <string name="skill_longdescription_more_criticals">Megnöveli a felszerelés által adott összes meglévő kritikus képességet %1$d %%-kal minden egyes képességszintnél.</string>
     <string name="skill_longdescription_better_criticals">Megnöveli a felszerelés által adott összes meglévő kritikus szorzót %1$d%%-kal minden egyes képességszintnél.</string>
     <string name="skill_longdescription_speed">Megnöveli a maximális akciópontot (AP) %1$d ponttal minden egyes képességszintnél.</string>
     <string name="skill_longdescription_coinfinder">Megnöveli a szörnyek megölése utáni arany találatának esélyét %1$d%%-kal, és megnöveli az eldobott arany mennyiségét %2$d%%-kal minden egyes képességszintnél (legfeljebb a maximális mennyiségig, amit a szörny eldobott).</string>

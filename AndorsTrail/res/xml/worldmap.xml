@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldmap>
+  <segment id="omi2_bwmhole" x="-28" y="50">
+    <map id="blackwater_mountain71" x="11" y="50"/>
+    <map id="blackwater_mountain72" x="-2" y="50"/>
+    <map id="blackwater_mountain73" x="-2" y="71"/>
+    <map id="blackwater_mountain74" x="-2" y="92"/>
+    <map id="blackwater_mountain75" x="-28" y="71"/>
+    <map id="blackwater_mountain76" x="-28" y="50"/>
+  </segment>
+  <segment id="elmmine" x="-39" y="-76">
+    <map id="blackwater_mountain13" x="-13" y="-19"/>
+    <map id="elm_mine0" x="-39" y="-22"/>
+    <map id="elm_mine1" x="7" y="-19"/>
+    <map id="elm_mine2" x="-13" y="-50"/>
+    <map id="elm_mine3" x="-33" y="-50"/>
+    <map id="elm_mine4" x="7" y="-50"/>
+    <map id="elm_mine5" x="-13" y="-76"/>
+  </segment>
+  <segment id="elmmine2f" x="8" y="-12">
+    <map id="elm_2f_1" x="8" y="-12"/>
+    <map id="elm_2f_2" x="33" y="15"/>
+  </segment>
+  <segment id="elm4f" x="-35" y="-33">
+    <map id="elm_4f_1" x="2" y="-7"/>
+    <map id="elm_4f_2" x="-14" y="14"/>
+    <map id="elm_4f_3" x="-14" y="-7"/>
+    <map id="elm_4f_4" x="-14" y="-18"/>
+    <map id="elm_4f_6" x="2" y="-33"/>
+    <map id="elm_4f_5" x="-35" y="3"/>
+  </segment>
+  <segment id="elm5f" x="7" y="-17">
+    <map id="elm5f_1" x="10" y="14"/>
+    <map id="elm5f_2" x="7" y="-17"/>
+  </segment>
   <segment id="fungi_panic" x="186" y="403">
     <map id="mywildcave1" x="185" y="518"/>
     <map id="mywildcave2" x="190" y="492"/>
@@ -259,7 +292,7 @@
     <map id="roadbeforecrossroads3" x="262" y="366"/>
     <map id="roadbeforecrossroads4" x="272" y="382"/>
     <map id="roadbeforecrossroads5" x="272" y="403"/>
-    <map id="roadbeforecrossroads6" x="293" y="404"/>
+    <map id="roadbeforecrossroads6" x="293" y="405"/>
     <map id="roadbeforecrossroads7" x="314" y="420"/>
     <map id="roadbeforecrossroads8" x="335" y="420"/>
     <map id="roadbeforecrossroads9" x="356" y="420"/>
@@ -300,9 +333,9 @@
     <map area="charwoodh" id="waytolostmine2" x="426" y="301"/>
     <map area="charwoodh" id="waytolostmine3" x="426" y="330"/>
     <map id="waytominingtown0" x="314" y="404"/>
-    <map id="waytominingtown1" x="343" y="389"/>
-    <map id="waytominingtown1a" x="374" y="407"/>
-    <map id="waytominingtown2" x="374" y="386"/>
+    <map id="waytominingtown1" x="344" y="389"/>
+    <map id="waytominingtown1a" x="375" y="407"/>
+    <map id="waytominingtown2" x="375" y="386"/>
     <map id="waytominingtown3" x="395" y="378"/>
     <map id="waytomountaincave0" x="627" y="255"/>
     <map id="waytomountaincave1" x="621" y="285"/>
@@ -399,6 +432,7 @@
     <map id="mywild19" x="192" y="459"/>
     <map id="mywild20" x="217" y="455"/>
     <map id="mywildcave" x="192" y="480"/>
+    <map id="blackwater_mountain70" x="64" y="337"/>
     <namedarea id="crossglen" name="Crossglen" type="settlement"/>
     <namedarea id="crossroads" name="Crossroads Guardhouse" type="other"/>
     <namedarea id="charwoodh" name="Charwood" type="settlement"/>

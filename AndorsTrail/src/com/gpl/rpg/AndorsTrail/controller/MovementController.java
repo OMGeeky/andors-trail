@@ -128,7 +128,7 @@ public final class MovementController implements TimedMessageTask.Callback {
 		moveBlockedActors(newMap, model.currentMaps.tileMap);
 		refreshMonsterAggressiveness(newMap, model.player);
 		controllers.effectController.updateSplatters(newMap);
-		WorldMapController.updateWorldMap(world, res);
+		WorldMapController.updateWorldMap(controllers.getContext(), world, res);
 	}
 
 	private boolean mayMovePlayer() {

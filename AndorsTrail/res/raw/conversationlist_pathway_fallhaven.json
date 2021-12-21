@@ -57,7 +57,7 @@
     },
     {
         "id":"guard_pathway_2",
-        "message":"You're really curious boy... Well our superior, the warden, only wants to pay the woodcutter when he has done his work.",
+        "message":"You're really curious boy... Well our superior, the guard captain, only wants to pay the woodcutter when he has done his work.",
         "replies":[
             {
                 "text":"Maybe I could help?",
@@ -85,7 +85,7 @@
     },
     {
         "id":"guard_pathway_4",
-        "message":"OK, maybe you can be of use. Talk to the warden. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast.",
+        "message":"OK, maybe you can be of use. Talk to the guard captainn. Maybe you can convince him to pay the woodcutter first. But I have to warn you, he is a stubborn beast.",
         "replies":[
             {
                 "text":"OK, thanks for your advice. I'm going to do that!",

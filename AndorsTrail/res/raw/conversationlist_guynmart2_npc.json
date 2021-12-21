@@ -1319,7 +1319,7 @@
             },
             {
                 "text":"No, not yet.",
-                "nextPhraseID":"guynmart_wise_900"
+                "nextPhraseID":"guynmart_wise_800"
             }
         ]
     },
@@ -1350,7 +1350,7 @@
             },
             {
                 "text":"No, not yet.",
-                "nextPhraseID":"guynmart_wise_900"
+                "nextPhraseID":"guynmart_wise_800"
             }
         ]
     },
@@ -1703,5 +1703,184 @@
     {
         "id":"guynmart_hero_10",
         "message":"$playername monument - not bad."
+    },
+    {
+        "id":"guynmart_wise_800",
+        "message":"Ah - I can see it before my eyes: a loaf of bread with a piece of delicious cheese! No, better two loaves of bread.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_802"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_802",
+        "message":"Along with a bottle of good red wine!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_804"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_804",
+        "message":"The bread maybe still warm ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_806"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_806",
+        "message":"Sigh.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_810"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_810",
+        "message":"Two loaves of bread! Hmmmm.",
+        "replies":[
+            {
+                "text":"Well ...",
+                "nextPhraseID":"guynmart_wise_812"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_812",
+        "message":"And cheese - how I missed it!",
+        "replies":[
+            {
+                "text":"But ...",
+                "nextPhraseID":"guynmart_wise_814"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_814",
+        "message":"A bottle of red wine with it, of course. Ooooh!",
+        "replies":[
+            {
+                "text":"I'm beginning to find your requests outrageous. I have to leave now.",
+                "nextPhraseID":"guynmart_wise_820"
+            },
+            {
+                "text":"OK, OK, I understand.",
+                "nextPhraseID":"guynmart_wise_830"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_820",
+        "message":"Noo! Please, don't go! I didn't mean it.",
+        "replies":[
+            {
+                "text":"Forget it, bye.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"OK. Bread, cheese and vine - that's it?",
+                "nextPhraseID":"guynmart_wise_800"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_830",
+        "message":"Great! It's settled then, I'll wait for you here.",
+        "replies":[
+            {
+                "text":"I'll hurry now. See you soon.",
+                "nextPhraseID":"guynmart_wise_840"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_840",
+        "message":"Ah - bread ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_841"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_841",
+        "replies":[
+            {
+                "nextPhraseID":"guynmart_wise_842",
+                "requires":[
+                    {
+                        "requireType":"random",
+                        "requireID":"50"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_wise_844"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_842",
+        "message":"And cheese ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_843"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_843",
+        "replies":[
+            {
+                "nextPhraseID":"guynmart_wise_840",
+                "requires":[
+                    {
+                        "requireType":"random",
+                        "requireID":"50"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_wise_844"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_844",
+        "message":"Vine ...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"guynmart_wise_845"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_wise_845",
+        "replies":[
+            {
+                "nextPhraseID":"guynmart_wise_840",
+                "requires":[
+                    {
+                        "requireType":"random",
+                        "requireID":"50"
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_wise_842"
+            }
+        ]
     }
 ]

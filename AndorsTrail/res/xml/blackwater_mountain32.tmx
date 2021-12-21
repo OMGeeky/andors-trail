@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextobjectid="21">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="25">
  <properties>
   <property name="outdoors" value="1"/>
  </properties>
@@ -183,27 +183,27 @@
  <tileset firstgid="7449" name="map_window_2" tilewidth="32" tileheight="32" tilecount="128" columns="16">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="30" height="30">
+ <layer id="1" name="Ground" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJzFl01OwzAQhat41xNwpN6q7RGMuQCEsGRTlC3iCj0RsZqnTJ9mxj+oYvHUKB77i+fPbgy73dPe1nEZPyk6F+YlYzwu758XjeH2bM2HHctaF8zJGM+897A9W2zYsax1PSY0h/v1LXa2Y/Uyrb15Prd0LvjgUezk+MD6Tot9rFynx7deTiKPS9/dyizNQR57Pi/VMAt1f6J6ZMYs6vuw34Re4vmLJTmJ6tHKqVHhtviYOZNSjxZbcmPDXhNxptVXVmy9uI6Ve+VcR2wtLrOxz9Za4W+r4YL9JmKLGCG+3LOljeaPWm7Wl+AiRuByz5Y2Xi3VcDWBq+VeaS723HMORINbI3B7zgHMaekbzOXcbWH3nHuJ4sts2WM4X3tiA2nfKu80ssdwvlp3H0vo715cvDo4KHY1Qn//y32kV6397lF6/Ye95zhfnPzU7gK9HKyD8+Jz8O/mrblbWgdMSObfy/p7HW7i/yop3NtHenehcawzEzPrZ9jGP4TtVfHHpIzzO0vfK+8X6yci+Q==
   </data>
  </layer>
- <layer name="Objects" width="30" height="30">
+ <layer id="2" name="Objects" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJy9VktOG0EUbAUUBVYZk2DBdXISLsIpcoYcAMvOAluyE8EemF02TjRH8AEyJXeJmvLr9pBFShrN9GdevX93Siltpim99A+xmwy/P12k1E5ev/Hu+mdxldK6Gf7z1Mv5IbLaPM99Lp/cWL+XPUBnnHgDj1f797aJOV2GYn5yyE2Zvrd9H8uEns55e7K3lbpRpvJF3LRB1zrhvc3z4HsOON1OtwFYNWW7gYePw/0Yd9nfM/MrOBEr5Vli/HmoJ+E+IDf/X1rMKaNkJ2U6oOfKZJXspr3UAeMoh7i+CnIXOug/kd9rPmfcZxU7t+Zn5Jfr+TwdPuBwn26mQzkqg5y7yaFfOT4WD7VvHqyV8OHd67f7r1bTJW5gHtSE2wU/wkeMAeK7DmpascgyYHsU1/umbHvkL6LGif9c91JOea4AOqacLsgh8MwsHwjIXQY9alPJwdIT5dAs++4093b2Fj8Lorgeg9eB2kZ70eMg78VioOcBuBdBz8F6W9BF80Vl/u557vrn5+V+jjH03tVWctfRBnEGeOaizuAL2swepvmDOdaD+m1remEfdXe+ki/Ai32MsXM7jsVX110/XdMYR3XzNCJn34ptc3hmOveYvja2pqL6+iP5NKYfR2fwW4E8570QPsC3cmOdNf2rcic7BtaV6oy5KJeY5+tCjnBdZelerUm9x8CWVT4v9P6q0Lrw2h4DPRsV2rujGtKc1rNBAXv1PPA9vNuoHM/pTaW3+9q/5DDlEH4e/A8gzsvKuf5d7gK1nrWzta8mT+WA0/Pzi+XCdSE3iDNbv8njb8J7nucmshd8fwExfDhy
   </data>
  </layer>
- <layer name="Above" width="30" height="30">
+ <layer id="3" name="Above" width="30" height="30">
   <data encoding="base64" compression="zlib">
-   eJytV0mOwkAMbCk8gEVC4pXzAvgVXBCniDwg4TbXechgiVYcq7w1qctMEndXuexeKGXG7VRMbA7Lv/3Rjve+VwyM19Mg55Xx0/vbeFy+j8wZwch4uebK+S2uW/xc/ebIcnIP/vY5Xa/97PloeJ+Fli+H10Nr1Zbw+/FlrXpKWPlyTpmTluMU1Pjc6s/RNcqRGTMp/RKZ47GL80qPUGymrly3xUv7AOdG81v7FeG+w/o8rYPT+5FcJWe0p1DsuSvl0s35RDkJmsfILy0Wve+Bn1ofenuJ5qfHi/DTzf97ddSAtHs1p7hMjRG49gwy61dDi3bEW/ks788sT+mrdb+oz4jXq3UdU9cSge+DfLycazi1n10t5wCh1qN1fOs5i+4jCGveDyRf67rlsPRltEdi1/aCQB68xH1S7v+aT/J8186NyJr/dk9D81i9NTn9h/Twd/J7hIvQ8purT4z/B5V3fpw=
+   eJytV0uOwjAMjdQ5AHQkJE7JCZhbDRvEqqIHaNlxGcYaRXWt51/atylJnDz72flQyoLbuZj4+l5/h5Nt741XjIzX80GuK+3nv7HptO6PrBnBxHi5z5VzK34PuF315shybtHg1S+aT4b2WWjxcng1tFduCe/+/7tXPiWseDmnjEmLcQ76+Dzo7ege5cjMmZV6iazxOMZ5pUbINpNX7rfFS+cA50brW+cV4X7E/nm+jk7tR2KVnNGaQrbXrpSfboknyknQNEZ6abaofwB6anXonSWanh4vwqVbfnt51IB893JOdpkcI3DfM8jsXw0tviPeymdpf2VxSl2t90VtI14v13VO3UsEfg7y+XKt8dx+d7XcA4Saj9b5rfcseo8g7Pk+kHyt+5bD8i/je8R2by0IpMGrX/fJ81/TSd7v2r0R2fNbzzS0jlVbs1N/yB/eJ8cjXISW/1xDYv4H8e19pg==
   </data>
  </layer>
- <layer name="Walkable" width="30" height="30">
+ <layer id="4" name="Walkable" width="30" height="30">
   <data encoding="base64" compression="zlib">
    eJztlMENhTAMQ5mC/VdgQ65QYueZlhuRKvHV2E6c9B/79ohjv393Z8RQ3BV7/U3wVZA7xVHVovJV7UkPrj7licp1QbWVF5SD6BKc4nD1dprVXCo+kl/tO93ztM8qL+nX+af2zemt1CWRekx11f1brdl+Z2en+JSXzhfHTXVdv+p90Rklc+p66u7GvLe6Iyedc+JD9+3wKpdgO70KS7RIzSk27Xu1brL36i04v8n+03dCT6pL6p7RHXkrPeVf53XXL+FZEWQnZ+6dX2qHHZ763/1f/ef7cwIF+oAS
   </data>
  </layer>
- <objectgroup name="Mapevents">
+ <objectgroup id="5" name="Mapevents" visible="0">
   <object id="1" name="east" type="mapchange" x="928" y="96" width="32" height="64">
    <properties>
     <property name="map" value="blackwater_mountain30"/>
@@ -217,96 +217,112 @@
    </properties>
   </object>
   <object id="3" name="sign_blackwater32" type="sign" x="832" y="128" width="32" height="32"/>
-  <object id="16" name="north1" type="mapchange" x="32" y="0" width="224" height="32">
+  <object id="4" name="ortholion_subdued_s" type="script" x="320" y="352" width="96" height="32">
+   <properties>
+    <property name="when" value="enter"/>
+   </properties>
+  </object>
+  <object id="5" name="ortholion_subdued_s2" type="script" x="320" y="128" width="96" height="96">
+   <properties>
+    <property name="when" value="always"/>
+   </properties>
+  </object>
+  <object id="20" name="north1" type="mapchange" x="32" y="0" width="224" height="32">
    <properties>
     <property name="map" value="blackwater_mountain55"/>
     <property name="place" value="south1"/>
    </properties>
   </object>
-  <object id="17" name="north2" type="mapchange" x="544" y="0" width="160" height="32">
+  <object id="21" name="north2" type="mapchange" x="544" y="0" width="160" height="32">
    <properties>
     <property name="map" value="blackwater_mountain55"/>
     <property name="place" value="south2"/>
    </properties>
   </object>
-  <object id="18" name="chk_wild_berry" type="script" x="352" y="96" width="32" height="32"/>
+  <object id="22" name="chk_wild_berry" type="script" x="352" y="96" width="32" height="32"/>
  </objectgroup>
- <objectgroup name="Spawn" visible="0">
-  <object id="4" name="wyrm_2" type="spawn" x="832" y="672" width="32" height="32">
+ <objectgroup id="6" name="Spawn" visible="0">
+  <object id="6" name="wyrm_2" type="spawn" x="832" y="672" width="32" height="32">
    <properties>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="5" name="wyrm_2_1" type="spawn" x="608" y="32" width="320" height="256">
+  <object id="7" name="wyrm_2_1" type="spawn" x="608" y="32" width="320" height="256">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="6" name="wyrm_3" type="spawn" x="320" y="160" width="96" height="192">
+  <object id="8" name="wyrm_3" type="spawn" x="320" y="160" width="96" height="192">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="7" name="wyrm_3_1" type="spawn" x="96" y="512" width="352" height="160">
+  <object id="9" name="wyrm_3_1" type="spawn" x="96" y="512" width="352" height="160">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="8" name="wyrm_3_2" type="spawn" x="64" y="736" width="704" height="128">
+  <object id="10" name="wyrm_3_2" type="spawn" x="64" y="736" width="704" height="128">
    <properties>
     <property name="quantity" value="4"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="9" name="wyrm_3_3" type="spawn" x="288" y="448" width="64" height="64">
+  <object id="11" name="wyrm_3_3" type="spawn" x="288" y="448" width="64" height="64">
    <properties>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="10" name="wyrm_3_4" type="spawn" x="480" y="224" width="320" height="224">
+  <object id="12" name="wyrm_3_4" type="spawn" x="480" y="224" width="320" height="224">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="11" name="wyrm_3_5" type="spawn" x="608" y="448" width="32" height="96">
+  <object id="13" name="wyrm_3_5" type="spawn" x="608" y="448" width="32" height="96">
    <properties>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="12" name="wyrm_2_2" type="spawn" x="768" y="736" width="160" height="128">
+  <object id="14" name="wyrm_2_2" type="spawn" x="768" y="736" width="160" height="128">
    <properties>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="13" name="wyrm_3_6" type="spawn" x="352" y="672" width="32" height="32">
+  <object id="15" name="wyrm_3_6" type="spawn" x="352" y="672" width="32" height="32">
    <properties>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="14" name="wyrm_3_7" type="spawn" x="32" y="384" width="192" height="288">
+  <object id="16" name="wyrm_3_7" type="spawn" x="32" y="384" width="192" height="288">
    <properties>
     <property name="quantity" value="2"/>
     <property name="spawngroup" value="wyrm_3"/>
    </properties>
   </object>
-  <object id="15" name="wyrm_2_3" type="spawn" x="480" y="512" width="416" height="160">
+  <object id="17" name="wyrm_2_3" type="spawn" x="480" y="512" width="416" height="160">
    <properties>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wyrm_2"/>
    </properties>
   </object>
-  <object id="19" name="wild_berry" type="spawn" x="32" y="480" width="192" height="384">
+  <object id="18" name="ortholion_subdued" type="spawn" x="320" y="160" width="96" height="32">
+   <properties>
+    <property name="active" value="false"/>
+    <property name="spawngroup" value="ortholion_subdued"/>
+   </properties>
+  </object>
+  <object id="23" name="wild_berry" type="spawn" x="32" y="480" width="192" height="384">
    <properties>
     <property name="active" value="false"/>
     <property name="quantity" value="3"/>
     <property name="spawngroup" value="wild_berry2"/>
    </properties>
   </object>
-  <object id="20" name="wild_berry2" type="spawn" x="64" y="32" width="608" height="96">
+  <object id="24" name="wild_berry2" type="spawn" x="64" y="32" width="608" height="96">
    <properties>
     <property name="active" value="false"/>
     <property name="quantity" value="2"/>
@@ -314,5 +330,15 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Keys"/>
+ <objectgroup id="7" name="Keys" visible="0">
+  <object id="19" name="ortholion_subdued_1" type="key" x="352" y="96" width="32" height="32">
+   <properties>
+    <property name="phrase" value="ortholion_subdued_3"/>
+    <property name="requireId" value="bwm72_beginning"/>
+    <property name="requireNegation" value="true"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="20"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

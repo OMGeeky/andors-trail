@@ -65,6 +65,16 @@
             "increaseAttackChance":10,
             "increaseCriticalSkill":5,
             "setCriticalMultiplier":2.0
+        },
+        "hitEffect":{
+            "conditionsTarget":[
+                {
+                    "condition":"poison_weak",
+                    "magnitude":1,
+                    "duration":2,
+                    "chance":"35"
+                }
+            ]
         }
     },
     {

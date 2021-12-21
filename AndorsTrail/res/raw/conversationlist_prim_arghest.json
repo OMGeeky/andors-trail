@@ -3,6 +3,23 @@
         "id":"arghest_start",
         "replies":[
             {
+                "text":"N",
+                "nextPhraseID":"arghest_alert",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":47
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":22,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"arghest_return_1",
                 "requires":[
                     {
@@ -74,7 +91,7 @@
     },
     {
         "id":"arghest_4",
-        "message":"The attacks on Prim by the beasts and the bandits really reduced our numbers. Now we cannot keep up the mining activity any longer.",
+        "message":"The attacks on Prim by the beasts, the bandits and the disappearances really reduced our numbers. Now we cannot keep up the mining activity any longer.",
         "replies":[
             {
                 "text":"Who are you?",
@@ -92,7 +109,26 @@
             },
             {
                 "text":"Can I enter the mine?",
-                "nextPhraseID":"arghest_6"
+                "nextPhraseID":"arghest_6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":22,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Can I enter the mine?",
+                "nextPhraseID":"arghest_15",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":22
+                    }
+                ]
             }
         ]
     },
@@ -134,7 +170,26 @@
             },
             {
                 "text":"Can I enter the mine?",
-                "nextPhraseID":"arghest_6"
+                "nextPhraseID":"arghest_6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":22,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Can I enter the mine?",
+                "nextPhraseID":"arghest_15",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":22
+                    }
+                ]
             }
         ]
     },

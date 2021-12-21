@@ -47,7 +47,7 @@ public class LegacySavegamesContentAdaptations {
 			if (segmentsCovered.contains(segment.name)) continue;
 			segmentsCovered.add(segment.name);
 			try {
-				WorldMapController.updateWorldMapSegment(res, world, segment.name);
+				WorldMapController.updateWorldMapSegment(controllers.getContext(), res, world, segment.name);
 				if (AndorsTrailApplication.DEVELOPMENT_DEBUGMESSAGES) {
 					L.log("Forcing generation of worldmap file for segment " + segment.name);
 				}

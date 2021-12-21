@@ -305,7 +305,8 @@ public final class MainActivity
 			t = Toast.makeText(this, msg, duration);
 			lastToast = new WeakReference<Toast>(t);
 		} else {
-			if (Build.VERSION.SDK_INT  >= Build.VERSION_CODES.P && t.getView().isShown()) {
+			if (Build.VERSION.SDK_INT >= 30 ||
+				Build.VERSION.SDK_INT >= 26 && t.getView().isShown()) {
 				t.cancel();
 			}
 			t.setText(msg);

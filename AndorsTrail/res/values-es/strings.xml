@@ -274,22 +274,7 @@
     <string name="skill_shortdescription_resistance_physical_capacity">Resistencia contra condiciones de capacidad física</string>
     <string name="skill_shortdescription_resistance_blood_disorder">Resistencia contra desórdenes en la sangre</string>
     <string name="skill_longdescription_weapon_chance">Incrementa la probabilidad de ataque en %1$d por cada nivel de habilidad.</string>
-    <string name="about_interface">&lt;div&gt;&lt;b&gt;Los ajustes del juego&lt;/b&gt; pueden encontrase pulsando el botón de Menú del dispositivo.&lt;/div&gt;
-\n&lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Iconos de interfaz&lt;/h1&gt;
-\n&lt;div&gt;&lt;b&gt;El cofre&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt;
-\n&lt;p&gt;Ranuras rápidas [Manten pulsada una de las bolsas para asignar objetos para su uso instantáneo]&lt;/p&gt;
-\n&lt;div&gt;&lt;b&gt;El héroe&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt;
-\n&lt;p&gt;Menú [Visión general, Misiones, Habilidades e Inventario *]&lt;/p&gt;&lt;p&gt;* (En el inventario, pulsa un objeto para ver información y mantenlo pulsado para más opciones)&lt;/p&gt;
-\n&lt;div&gt;&lt;b&gt;El enemigo&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt;
-\n&lt;p&gt;Información [Aparece durante el combate]&lt;/p&gt;&lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Combate&lt;/h1&gt;&lt;p&gt;Toda acción de combate cuesta PA.&lt;/p&gt;
-\n&lt;div&gt;&lt;b&gt;Atacar&lt;/b&gt; - [3PA] *&lt;/div&gt;
-\n&lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Equiparse con objetos y usar objetos puede alterar el coste de PA y coste de uso)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Usar objetos&lt;/b&gt; - [5PA]&lt;/div&gt;
-\n&lt;div&gt;&lt;b&gt;Huir&lt;/b&gt; - [6PA]&lt;/div&gt;
-\n&lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Combate avanzado&lt;/h1&gt;
-\n&lt;div&gt;Durante el combate, mantén pulsado un espacio adyacente al héroe...&lt;/div&gt;
-\n&lt;div&gt;&lt;b&gt;Para Huir&lt;/b&gt;&lt;/div&gt;
-\n&lt;p&gt;(El espacio adyacente se resalta - El botón de \"Atacar\" cambia a \"Mover\")&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt;&lt;p&gt;[modo de huida activado - Mantén pulsado al enemigo para reanudar el combate]&lt;/p&gt;
-\n&lt;div&gt;&lt;b&gt;Para cambiar de objetivo&lt;/b&gt;&lt;/div&gt;&lt;p&gt;(El sombreado rojo cambia entre los enemigos)&lt;/p&gt;&lt;p&gt;[El objetivo ha sido cambiado]&lt;/p&gt;</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;Los ajustes del juego&lt;/b&gt; pueden encontrase pulsando el botón de Menú del dispositivo.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Iconos de interfaz&lt;/h1&gt; &lt;div&gt;&lt;b&gt;El cofre&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Ranuras rápidas [Manten pulsada una de las bolsas para asignar objetos para su uso instantáneo]&lt;/p&gt; &lt;div&gt;&lt;b&gt;El héroe&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menú [Visión general, Misiones, Habilidades e Inventario *]&lt;/p&gt;&lt;p&gt;* (En el inventario, pulsa un objeto para ver información y mantenlo pulsado para más opciones)&lt;/p&gt; &lt;div&gt;&lt;b&gt;El enemigo&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Información [Aparece durante el combate]&lt;/p&gt;&lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Combate&lt;/h1&gt;&lt;p&gt;Toda acción de combate cuesta PA.&lt;/p&gt; &lt;div&gt;&lt;b&gt;Atacar&lt;/b&gt; - [3PA] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Equiparse con objetos y usar objetos puede alterar el coste de PA y coste de uso)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Usar objetos&lt;/b&gt; - [5PA]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Huir&lt;/b&gt; - [6PA]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt;&lt;h1&gt;Combate avanzado&lt;/h1&gt; &lt;div&gt;Durante el combate, mantén pulsado un espacio adyacente al héroe...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Para Huir&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(El espacio adyacente se resalta - El botón de \"Atacar\" cambia a \"Mover\")&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt;&lt;p&gt;[modo de huida activado - Mantén pulsado al enemigo para reanudar el combate]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Para cambiar de objetivo&lt;/b&gt;&lt;/div&gt;&lt;p&gt;(El sombreado rojo cambia entre los enemigos)&lt;/p&gt;&lt;p&gt;[El objetivo ha sido cambiado]&lt;/p&gt;</string>
     <string name="skill_longdescription_weapon_dmg">Incrementa el daño máximo en %1$d por cada nivel de habilidad.</string>
     <string name="change_locale_requires_restart">Cambiar local requiere un reinicio. El sendero de Andor (Andor\'s Trail) se ha cerrado.</string>
     <string name="skill_longdescription_barter">Por cada nivel de habilidad, disminuye la penalización de oro al comprar y vender un %1$d por ciento.</string>
@@ -440,7 +425,7 @@
     <string name="skill_longdescription_weapon_prof_1hsword">Aumenta tu probabilidad de ataque usando estoques, espadas largas y sables en un %1$d %% de la probabilidad de ataque base del arma,por cada nivel de habilidad. Además, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%. La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
     <string name="skill_longdescription_weapon_prof_2hsword">Aumenta tu probabilidad de ataque usando espadas de dos manos en un %1$d %% de la probabilidad de ataque base del arma, por cada nivel de habilidad. Además, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%. La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
     <string name="skill_longdescription_weapon_prof_axe">Aumenta tu probabilidad de ataque usando hachas de todo tipo en un %1$d %% de la probabilidad de ataque base del arma, por cada nivel de habilidad. Además, aumenta la probabilidad de bloqueo (defensa), también de la base del arma en un %2$d %%. La capacidad para asestar golpes críticos aumentará en un %3$d %% sobre los puntos básicos del arma.</string>
-    <string name="skill_longdescription_weapon_prof_blunt">Por cada nivel de habilidad, aumenta la probabilidad de ataque de las armas romas en %1$d %% de la probabilidad de ataque base del objeto, aumenta la probabilidad de bloqueo en %2$d %% de la probabilidad de bloqueo base del objeto, y aumenta la habilidad crítica en %3$d %% de la habilidad crítica base del objeto. Esto incluye palos, palos de golf, mazas, cetro, látigos, martillos de guerra y martillos gigantes.</string>
+    <string name="skill_longdescription_weapon_prof_blunt">Por cada nivel de habilidad, aumenta la probabilidad de ataque de las armas romas en %1$d %% de la probabilidad de ataque base del objeto, aumenta la probabilidad de bloqueo en %2$d %% de la probabilidad de bloqueo base del objeto, y aumenta la habilidad crítica en %3$d %% de la habilidad crítica base del objeto. Esto incluye palos, bastones, mazas, cetro, látigos, martillos de guerra y martillos gigantes.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">Al luchar sin arma y escudo, tu probabilidad de ataque aumenta %1$d puntos, tu daño en %2$d puntos y tu defensa en %3$d puntos, por cada nivel de habilidad.</string>
     <string name="skill_longdescription_armor_prof_shield">Aumenta la resistencia al daño en %1$d punto/s por cada nivel de habilidad, siempre y cuando haya un escudo o arma defensiva equipada.</string>
     <string name="skill_longdescription_armor_prof_unarmored">Luchando sin armadura, gana %1$d puntos de defensa (probabilidad de bloqueo) por cada nivel de habilidad.La ropa de tela no es considerada armadura.</string>
@@ -448,11 +433,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Cada nivel de habilidad aumenta la probabilidad de bloqueo (defensa) en un %1$d%% sobre el nivel base de cada pieza de armadura pesada que lleves puesta.Las penalizaciones de movimiento serán reducidas en un %2$d%% por nivel de habilidad, a demás de las penalizaciones de velocidad de ataque (reducidas en un %3$d%% por nivel).Las armaduras pesadas son metálicas, incluyendo cotas de mallas y armaduras de placas.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Otorga beneficios al luchar con dos armas a la vez (una de ellas en la mano principal y otra en la secundaria).
 \n
-\nSin esta habilidad, solamente un %1$d%% de los atributos del arma serán usados al estar equipada en la mano secundaria. Esto incluye probabilidad de ataque, habilidad para asestar golpes críticos, potencial daño del arma e incluso defensa. Sin la habilidad, el coste de ataque (los PA necesarios para lanzar un ataque) serán la suma de los PA necesarios de cada arma (la principal y la de la mano secundaria).
+\nSin esta habilidad, solamente un %1$d%% de los atributos del arma serán usados al estar equipada en la mano secundaria. Esto incluye la probabilidad de ataque, la habilidad para asestar golpes críticos, la potencial de daño del arma e la incluso defensa. Sin la habilidad, el coste de ataque (los PA) necesarios para lanzar un ataque serán la suma de los PA necesarios de cada arma (la principal y la de la mano secundaria). Sera utilizado el modificador de daño mas bajo.
 \n
-\nCon el primer nivel de habilidad, será utilizado un %2$d%% de los atributos del arma secundaria, y el coste de ataque (los PA necesarios para lanzar un ataque) será el coste del arma con mayor PA de las dos armas más un %3$d%% del arma que tenga menor coste de ataque de ambas armas.
+\nCon el primer nivel de habilidad, será utilizado un %2$d%% de los atributos del arma secundaria, y el coste de ataque (los PA necesarios para lanzar un ataque) será el coste del arma con mayor PA de las dos armas más un %3$d%% del arma que tenga menor coste de ataque de ambas armas. Se utilizara el promedio de los dos modificadores de daño.
 \n
-\nCon el segundo nivel de habilidad, será utilizado un %4$d%% de los atributos del arma secundaria y los PA necesarios para lanzar un ataque serán los del arma con mayor coste.</string>
+\nCon el segundo nivel de habilidad, será utilizado un %4$d%% de los atributos del arma secundaria y los PA necesarios para lanzar un ataque serán los del arma con mayor coste. Se utilizara el modificador de daño más alto.</string>
     <string name="skill_longdescription_fightstyle_2hand">Da beneficios al usar armas de dos manos, como espadas de dos manos, hachas de guerra o martillos gigantes.
 \n
 \nCada nivel de habilidad aumenta el daño potencial del arma de dos manos un %1$d %% de su daño original.</string>
@@ -476,7 +461,7 @@
     <string name="startscreen_newgame_start">Comenzar el juego</string>
     <string name="startscreen_selectherosprite">Elige tu héroe</string>
     <string name="shop_item_sort">Ordenar</string>
-    <string name="actorcondition_info_immunity">Inmunidad de %1$s</string>
+    <string name="actorcondition_info_immunity">Inmune a %1$s</string>
     <string name="iteminfo_effect_works_when_killed_by_attacker">Cuando es asesinado por el atacante</string>
     <string name="preferences_high_quality_filters">Desactive esta opción si experimenta problemas de rendimiento en mapas filtrados (por ejemplo, cuevas oscuras). Habilitar esta opción hará que el juego utilice filtros de color avanzados, en lugar de superposiciones de color sólido.</string>
     <string name="combat_log_noentries">No hay entradas todavía.</string>
@@ -602,4 +587,19 @@
     <string name="startscreen_mode_10_lives">Muy duro (10 vidas, guardar 1 partida)</string>
     <string name="startscreen_mode_50_lives">Duro (50 vidas, guardar 1 partida)</string>
     <string name="startscreen_mode_unlimited_saves_and_lives">Normal (vidas infinitas y guardar partida ilimitado)</string>
+    <string name="skill_shortdescription_spore_immunity">Inmunidad al envenenamiento por esporas</string>
+    <string name="skill_title_spore_immunity">Resistencia al envenenamiento por esporas</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Si el D-pad virtual esta activado, esta opcion determinara la transparencia de este.</string>
+    <string name="preferences_movement_dpad_transparency_title">transparencia del D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Evita permanentemente que los ataques de monstruos puedan dejar los efectos de envenenamiento por esporas.</string>
+    <string name="inventory_category_food">Comida</string>
+    <string name="inventory_category_potion">Poción</string>
+    <string name="inventory_category_jewelry">Joyas</string>
+    <string name="combat_log_item_plural">Has econtrado %1$d Objetos:</string>
+    <string name="combat_log_item_single">Has encontrado un objeto:</string>
 </resources>

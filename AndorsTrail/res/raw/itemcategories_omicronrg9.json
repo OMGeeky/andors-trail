@@ -9,7 +9,7 @@
         "id":"gauntlet",
         "name":"Gauntlet",
         "actionType":"equip",
-        "size":"light",
-        "inventorySlot":"hand"
+        "size":"large",
+        "inventorySlot":"weapon"
     }
 ]

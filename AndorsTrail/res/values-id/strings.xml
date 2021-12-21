@@ -7,17 +7,17 @@
     <string name="menu_save_gamesaved">Permainan telah disimpan pada slot %1$d</string>
     <string name="menu_save_failed">Gagal menyimpan permainan! Apakah kartu SD terpasang dan dapat ditulis?</string>
     <string name="loadsave_title_save">Simpan permainan</string>
-    <string name="loadsave_title_load">Muat permainan tersimpan</string>
+    <string name="loadsave_title_load">Muat permainan yang tersimpan</string>
     <string name="loadsave_selectslot">Pilih slot</string>
     <string name="savegame_currenthero_displayinfo">level %1$d, %2$d exp, %3$d emas</string>
     <string name="dialog_loading_message">Memuat sumber…</string>
     <string name="dialog_loading_failed_title">Gagal memuat</string>
-    <string name="dialog_loading_failed_message">Andor\'s Trail gagal memuat berkas simpanan permainan.
+    <string name="dialog_loading_failed_message">Andor\'s Trail gagal memuat file savegame.
 \n
 \n:(
 \n
 \nBerkas mungkin rusak atau tidak lengkap.</string>
-    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail gagal memuat berkas simpanan permainan. Simpanan permainan ini dibuat oleh versi yang lebih baru dari yang sedang dijalankan.</string>
+    <string name="dialog_loading_failed_incorrectversion">Andor\'s Trail gagal memuat file savegame. Savegame ini dibuat oleh versi yang lebih baru dari yang sedang dijalankan.</string>
     <string name="dialog_close">Tutup</string>
     <string name="dialog_monsterencounter_title">Pertempuran</string>
     <string name="dialog_monsterencounter_message">Kamu mau menyerang?
@@ -54,7 +54,7 @@
     <string name="combat_result_herohitcritical">Kamu melakukan serangan kritis pada %1$s sebanyak %2$d HP!</string>
     <string name="combat_result_herokillsmonster">%1$s kalah!</string>
     <string name="combat_not_enough_ap">Sisa AP tidak mencukupi pada ronde ini.</string>
-    <string name="app_description">RPG fantasi berbasis-misi</string>
+    <string name="app_description">RPG fantasi berukuran ringan</string>
     <string name="heroinfo_actionpoints">Poin Aksi (AP):</string>
     <string name="combat_hero_dies">Kamu pingsan, untungnya terbangun dalam keadaan hidup, linglung dan kelelahan. Kamu kehilangan %1$d Pengalaman.</string>
     <string name="combat_miss_animation_message">MELESET</string>
@@ -422,11 +422,11 @@
     <string name="skill_longdescription_armor_prof_heavy">Untuk tiap level keahlian, meningkatkan kesempatan menangkis untuk tiap pelindung berat yang digunakan sebanyak %1$d %% dari basis kesempatan menangkis pelindung tersebut. Pelindung berat memiliki penalti pergerakan sebesar %2$d %% per level keahlian, dan penalti kecepatan menyerang sebesar %3$d %% per level keahlian. Pelindung berat termasuk pelindung dari logam, pelindung dari rantai, dan pelindung dari pelat.</string>
     <string name="skill_longdescription_fightstyle_dualwield">Memberikan keuntungan ketika bertarung dengan dua senjata dalam waktu bersamaan, satu di tangan dominan dan lainnya di tangan non-dominan.
 \n
-\nTanpa keahlian ini, hanya %1$d %% dari kualitas senjata yang akan digunakan ketika memakainya tangan non-dominan. Termasuk juga peluang menyerang, keahlian serangan kritis, potensial cedera dan peluang menangkis. Tanpa keahlian ini, kecepatan menyerang (AP yang dibutuhkan) untuk melakukan serangan adalah jumlah dari kecepatan menyerang dari senjata utama dan senjata yang digunakan tangan non-dominan.
+\nTanpa keahlian ini, hanya %1$d %% dari kualitas senjata yang akan digunakan ketika memakainya di tangan non-dominan. Termasuk juga peluang menyerang, keahlian serangan kritis, potensial cedera dan peluang menangkis. Tanpa keahlian ini, kecepatan menyerang (AP yang dibutuhkan) untuk melakukan serangan adalah jumlah dari kecepatan menyerang senjata utama dan senjata yang digunakan di tangan non-dominan. Pengubah angka cedera yang digunakan adalah yang lebih rendah.
 \n
-\nDengan satu level dari keahlian ini, %2$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang dari kecepatan menyerang senjata utama ditambahkan %3$d %% dari kecepatan menyerang senjata tambahan.
+\nDengan satu level dari keahlian ini, %2$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang dari kecepatan menyerang senjata utama ditambahkan %3$d %% dari kecepatan menyerang senjata tambahan. Pengubah angka cederanya adalah rata-rata dari keduanya.
 \n
-\nDengan dua level dari keahlian ini, %4$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang sebanding dengan kecepatan tercepat dari dua senjata yang digunakan.</string>
+\nDengan dua level dari keahlian ini, %4$d %% dari kualitas senjata tambahan akan digunakan, dan kecepatan menyerang sebanding dengan kecepatan tercepat dari dua senjata yang digunakan. Pengubah angka cedera yang digunakan adalah yang lebih tinggi.</string>
     <string name="skill_longdescription_fightstyle_2hand">Memberi keuntungan ketika menggunakan senjata yang memerlukan dua tangan dalam penggunaannya, seperti pedang dua-tangan, kapak besar, atau palu raksasa.
 \n
 \nTiap level keahlian menambah daya rusak dari senjata dua-tangan sebanyak %1$d %% dari daya rusak aslinya.</string>
@@ -500,7 +500,7 @@
     <string name="heroinfo_experiencepoints">Poin pengalaman (XP):</string>
     <string name="heroinfo_healthpoints">Poin nyawa (HP):</string>
     <string name="heroinfo_skill_sort">Urut</string>
-    <string name="dialog_game_over_text">Anda mengambil napas terakhir dan mati.</string>
+    <string name="dialog_game_over_text">Kamu mengambil napas terakhir dan mati.</string>
     <string name="heroinfo_one_life">Mati Permanen (1 Nyawa)</string>
     <string name="heroinfo_limited_lives">Nyawa terbatas (%1$d/%2$d left)</string>
     <string name="heroinfo_inventory_sort">Urutkan dari</string>
@@ -576,4 +576,36 @@
     <string name="inventory_category_other">Lain-lain</string>
     <string name="inventory_category_quest">Barang misi</string>
     <string name="inventory_category_usable">Konsumsi</string>
+    <string name="skill_category_defense">Pertahanan</string>
+    <string name="inventory_category_food">Makanan</string>
+    <string name="inventory_category_potion">Ramuan</string>
+    <string name="inventory_category_jewelry">Perhiasan</string>
+    <string name="combat_log_item_plural">Anda menemukan %1$d item:</string>
+    <string name="combat_log_item_single">Anda menemukan item:</string>
+    <string name="preferences_movement_dpad_transparency">Pengaturan ini menentukan seberapa transparan virtual D-pad.</string>
+    <string name="skill_category_speciality">Keahlian khusus</string>
+    <string name="skill_category_utility">Kegunaan</string>
+    <string name="skill_category_criticals">Kritis</string>
+    <string name="preferences_movement_dpad_transparency_title">transparansi D-pad</string>
+    <string name="skill_longdescription_spore_immunity">Secara permanen mencegah serangan monster menimbulkan efek status keracunan spora.</string>
+    <string name="skill_shortdescription_spore_immunity">Kekebalan penuh terhadap racun spora</string>
+    <string name="skill_title_spore_immunity">Kekebalan racun spora</string>
+    <string name="storage_permissions_mandatory">Akses ke penyimpanan diperlukan bagi Andor\'s Trail untuk menangani game dan peta dunia yang disimpan. Menutup Andor\'s Trail.</string>
+    <string name="change_theme_requires_restart">Mengubah tema UI membutuhkan restart. Andor\'s Trail telah ditutup.</string>
+    <string name="preferences_display_theme_charcoal">Obsidian</string>
+    <string name="preferences_display_theme_green">Perunggu</string>
+    <string name="preferences_display_theme_blue">Kobalt</string>
+    <string name="preferences_display_theme">Pilih tema UI. (game perlu di restart)</string>
+    <string name="preferences_display_theme_title">Tema</string>
+    <string name="skill_sort_unlocked">Terbuka</string>
+    <string name="skill_sort_points">Poin</string>
+    <string name="skill_category_offense">Serangan</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="startscreen_migration_title">Migrasi Data</string>
+    <string name="startscreen_migration_text">Migrasi data savegame.</string>
+    <string name="startscreen_migration_failure">Gagal memigrasikan data savegame.</string>
 </resources>

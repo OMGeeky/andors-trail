@@ -165,11 +165,11 @@
     <string name="about_contents3">Tento program je svobodný. Můžeš jej za splnění podmínek licence GNU General Public License (verze 2 nebo novější) vydanou Free Software Foundation dále šířit a/nebo upravovat.&lt;br /&gt; &lt;br /&gt; Tento program je distribuován s vírou, že je dobrý, ale BEZ JAKÉKOLIV ZÁRUKY JAKÉHOKOLI DRUHU, AŤ VÝSLOVNÉ NEBO VYPLÝVAJÍCÍ, VČETNĚ, ALE NIKOLI JEN, ZÁRUK OBCHODOVATELNOSTI A VHODNOSTI PRO URČITÝ ÚČEL. Detaily najdeš v GNU General Public License.&lt;br /&gt; &lt;br /&gt; Společně s touto kopií jsi obdržel/a jeden exemplář GNU General Public License. Pokud tomu tak není, navštiv:&lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; Zdrojový kód a/nebo požadavky na vylepšení můžeš stáhnout/najít/zadat na této stránce:&lt;a href=http://github.com/AndorsTrailRelease/andors-trail/&gt;http://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="about_interface">&lt;div&gt;&lt;b&gt;Nastavení&lt;/b&gt; lze změnit po stisknutí tlačítka \"Menu\" na tvém přístroji.&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Herní ikony&lt;/h1&gt; &lt;div&gt;&lt;b&gt;Truhla&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;Pozice okamžitého použití [Podržením prstu na vacích se zobrazí nabídka předmětů k okamžitému použití]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Hrdina&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Přehled, Mise, Dovednosti a Inventář *]&lt;/p&gt; &lt;p&gt;* (Informace o předmětu zobrazíš tak, že v inventáři klikneš na daný předmět; podržením prstu na předmětu zobrazíš další možností)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Nepřítel&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;Informace [Pouze během boje]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Boj&lt;/h1&gt; &lt;p&gt;Akce vykonané v boji stojí akční body (AB)...&lt;/p&gt; &lt;div&gt;&lt;b&gt;Útok&lt;/b&gt; - [3 AB] *&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;* (Případná výstroj a výbava může změnit časovou náročnost provedení akce - útoku, použití předmětu apod.)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Použití předmětu&lt;/b&gt; - [5 AB]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Útěk&lt;/b&gt; - [6 AB]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;Souboj detailněji&lt;/h1&gt; &lt;div&gt;Během souboje podrž prst na políčku vedle hrdiny...&lt;/div&gt; &lt;div&gt;&lt;b&gt;Pro útěk&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(vybrané políčko se zvýrazní - tlačítko útoku se změní na tlačítko pohybu)&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[aktivován mód útěku - podrž prst na nepříteli pro návrat k boji]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Pro změnu cíle útoku&lt;/b&gt;&lt;/div&gt; &lt;p&gt;(červené zvýraznění cíle útoku se přesune na nového nepřítele)&lt;/p&gt; &lt;p&gt;[cíl útoku byl změněn]&lt;/p&gt;</string>
     <string name="dialog_newversion_title">Vítej</string>
-    <string name="dialog_newversion_message">Děkujeme zs instalaci hry Andor\'s Trail! 
-\n 
-\nMysli prosím na to, že tato verze hry Andor\'s Trail není končná. Jedná se o hru VE VÝVOJI a to znamená, že ne všechny mapy jsou hotové. 
-\nProsím navštiv fórum o hře, kde lze diskutovat s ostatními hráči i vývojáři této hry. Případně můžeš pomoci tuto hru zlepšit (viz O hře). 
-\n 
+    <string name="dialog_newversion_message">Děkujeme za instalaci hry Andor\'s Trail!
+\n
+\nMysli prosím na to, že tato verze hry Andor\'s Trail není končná. Jedná se o hru VE VÝVOJI a to znamená, že ne všechny mapy a překlady jsou hotové.
+\nProsím navštiv fórum o hře, kde lze diskutovat s ostatními hráči i vývojáři této hry. Případně můžeš pomoci tuto hru zlepšit (viz O hře).
+\n
 \nDěkujeme za jakoukoliv zpětnou vazbu!</string>
     <string name="questlog_includecompleted_prompt">Vyber zobrazované mise</string>
     <string name="questlog_includecompleted_hidecompleted">Aktivní mise</string>
@@ -523,13 +523,13 @@
     <string name="preferences_display_theme_green">Malachit</string>
     <string name="preferences_display_theme_charcoal">Obsidián</string>
     <string name="change_theme_requires_restart">Změna motivu vyžaduje restart. Hra Andor\'s Trail byla zavřena.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">Poskytne bojový bonus, když je útok veden dvěma zbraněmi současně, jedna je v pravé ruce a druhá je v levé ruce. 
-\n 
-\nBez osvojení této dovednosti se využije pouze %1$d %% z charakteristik zbraně vybavené v levé ruce. To obsahuje šanci na zásah, úroveň kritického zásahu, zranění způsobená útokem a šanci na odvrácení útoku. Bez znalosti této dovednosti je časová náročnost (počet AB) útoku rovna součtu časové náročnosti útoku obou zbraní. 
-\n 
-\nPři osvojení jedné úrovně této dovednosti se využije %2$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna součtu časové náročnosti útoku zbraně s vyšší časovou náročností a %3$d %% časové náročnosti zbraně s menší časovou náročností. 
-\n 
-\nPři osvojení dvou úrovní této dovednosti se využije %4$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna časové náročnosti útoku zbraně s vyšší časovou náročností.</string>
+    <string name="skill_longdescription_fightstyle_dualwield">Poskytne bojový bonus, když je útok veden dvěma zbraněmi současně, jedna je v pravé ruce a druhá je v levé ruce.
+\n
+\nBez osvojení této dovednosti se využije pouze %1$d %% z charakteristik zbraně vybavené v levé ruce. To obsahuje šanci na zásah, úroveň kritického zásahu, zranění způsobená útokem a šanci na odvrácení útoku. Bez znalosti této dovednosti je časová náročnost (počet AB) útoku rovna součtu časové náročnosti útoku obou zbraní. Použije se nižší z obou násobitelů zranění.
+\n
+\nPři osvojení jedné úrovně této dovednosti se využije %2$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna součtu časové náročnosti útoku zbraně s vyšší časovou náročností a %3$d %% časové náročnosti zbraně s menší časovou náročností. Použije se průměr z obou násobitelů zranění.
+\n
+\nPři osvojení dvou úrovní této dovednosti se využije %4$d %% z charakteristik zbraně vybavené v levé ruce a časová náročnost útoku je rovna časové náročnosti útoku zbraně s vyšší časovou náročností. Použije se vyšší násobitel zranění.</string>
     <string name="skill_longdescription_fightstyle_2hand">Poskytne bojový bonus, když je útok veden obouruční zbraní jako je např. obouruční meč, válečná sekera, obří kladivo. 
 \n 
 \nKaždá úroveň osvojení dovednosti zvýší zbrani zranění způsobená útokem o %1$d %% základního zranění způsobeného útokem zbraně.</string>
@@ -590,4 +590,22 @@
     <string name="dialog_game_over_text">Naposledy se nadechuješ a umířáš.</string>
     <string name="dialog_game_over_title">Konec hry</string>
     <string name="dialog_loading_failed_cheat">Andor\'s Trail nebyl schopen načíst uloženou hru. Uložená hra byla opět rozehrána.</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency">Pokud je virtuální D-pad zapnutý, toto nastavení určuje, jak průhledný bude.</string>
+    <string name="preferences_movement_dpad_transparency_title">Průhlednost D-padu</string>
+    <string name="skill_longdescription_spore_immunity">Trvale zabraňuje útokům monster způsobit efekt stavu otravy spór.</string>
+    <string name="skill_shortdescription_spore_immunity">Plná imunita vůči otravě spór</string>
+    <string name="skill_title_spore_immunity">Imunita vůči otravě spór</string>
+    <string name="inventory_category_food">Jídlo</string>
+    <string name="inventory_category_potion">Lektvar</string>
+    <string name="inventory_category_jewelry">Šperky</string>
+    <string name="combat_log_item_plural">Našel jsi %1$d ks předmětů:</string>
+    <string name="combat_log_item_single">Našel jsi předmět:</string>
+    <string name="startscreen_migration_title">Migrace dat</string>
+    <string name="startscreen_migration_text">Migrace dat uložených her.</string>
+    <string name="startscreen_migration_failure">Migrace dat uložených her se nezdařila.</string>
 </resources>

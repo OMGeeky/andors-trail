@@ -172,6 +172,19 @@
     },
     {
         "id":"prim_tavern_guest4_3",
-        "message":"And it's all my fault. *sob*"
+        "message":"And it's all my fault. *sob*",
+        "replies":[
+            {
+                "text":"What do you know about Lorn's accident?",
+                "nextPhraseID":"prim_tavern_guest4_4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":21
+                    }
+                ]
+            }
+        ]
     }
 ]

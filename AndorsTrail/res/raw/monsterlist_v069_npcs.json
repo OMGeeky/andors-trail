@@ -168,11 +168,11 @@
     },
     {
         "id":"prim_bar_regular",
-        "name":"Prim bar regular",
+        "name":"Jern",
         "iconID":"monsters_rltiles1:106",
         "monsterClass":"humanoid",
         "spawnGroup":"prim_tavern_guest4",
-        "phraseID":"prim_tavern_guest4"
+        "phraseID":"prim_tavern_guest4_selector"
     },
     {
         "id":"prim_armorer",

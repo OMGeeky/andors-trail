@@ -2307,6 +2307,11 @@
                         "requireID":"cat_and_mouse",
                         "value":90,
                         "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"trapped_mouse",
+                        "value":1
                     }
                 ]
             },

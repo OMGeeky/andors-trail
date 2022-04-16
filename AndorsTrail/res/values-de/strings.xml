@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Andors Pfad</string>
+    <string name="app_name">Andor\'s Trail</string>
     <string name="app_description">Aufgabenbasiertes Phantasiewelt-Rollenspiel</string>
     <string name="exit_to_menu">Zum Menü</string>
     <string name="menu_settings">Einstellungen</string>

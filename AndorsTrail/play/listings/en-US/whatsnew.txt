@@ -1,5 +1,25 @@
 I put both (release notes + forum announcement) into this source, so it will be easier to maintain them parallel:
 
+APK 64 (0.7.17)  //Bugfix
+
+Release notes
+=============
+* Fix of unloadable savegames in certain conditions
+
+Forum announcement  //2022-02-20
+==================
+Hello fellow adventurers,
+
+we fixed a bug in the last Andor's Trail release that could result into unloadable savegames.
+These savegames should work normally now, so that you could start the Delivery at last :)
+
+Here is the link to the productive version: https://andorstrail.com/static/AndorsTrail_v0.7.17.apk
+
+(Google Play and Itch will follow in a few days, unfortunately we still can't provide a version for F-droid)
+
+
+
+
 APK 63 (0.7.16)  //Delivery
 
 Release notes

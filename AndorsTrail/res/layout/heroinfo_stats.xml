@@ -72,18 +72,18 @@
                 android:background="?attr/ui_theme_stdframe_bitmap"
                 android:orientation="vertical" >
 
-                <com.gpl.rpg.AndorsTrail.view.RangeBar
+                <com.gpl.rpg.AndorsTrail_beta1.view.RangeBar
                     android:id="@+id/heroinfo_healthbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <com.gpl.rpg.AndorsTrail.view.RangeBar
+                <com.gpl.rpg.AndorsTrail_beta1.view.RangeBar
                     android:id="@+id/heroinfo_expbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5sp" />
                 
-                <com.gpl.rpg.AndorsTrail.view.RangeBar
+                <com.gpl.rpg.AndorsTrail_beta1.view.RangeBar
                     android:id="@+id/heroinfo_apbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                     <include layout="@layout/traitsinfoview" />
                 </TableLayout>
 
-                <com.gpl.rpg.AndorsTrail.view.ItemEffectsView
+                <com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView
                     android:id="@+id/actorinfo_onhiteffects"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/actorinfo_currentconditions" />
 
-                <com.gpl.rpg.AndorsTrail.view.ActorConditionList
+                <com.gpl.rpg.AndorsTrail_beta1.view.ActorConditionList
                     android:id="@+id/actorinfo_currentconditions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />

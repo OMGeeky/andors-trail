@@ -36,12 +36,12 @@
             android:layout_toRightOf="@id/status_image"
             android:orientation="vertical" >
 
-            <com.gpl.rpg.AndorsTrail.view.RangeBar
+            <com.gpl.rpg.AndorsTrail_beta1.view.RangeBar
                 android:id="@+id/statusview_health"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.gpl.rpg.AndorsTrail.view.RangeBar
+            <com.gpl.rpg.AndorsTrail_beta1.view.RangeBar
                 android:id="@+id/statusview_exp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

@@ -2,9 +2,9 @@
 
 <manifest 
 	xmlns:android="http://schemas.android.com/apk/res/android" 
-	package="com.gpl.rpg.AndorsTrail"
-	android:versionCode="64"
-	android:versionName="0.7.17"
+	package="com.gpl.rpg.AndorsTrail_beta1"
+	android:versionCode="65"
+	android:versionName="0.7.18.dev"
 	android:installLocation="auto"
 	>
 	<uses-sdk 
@@ -25,8 +25,8 @@
 
 
 	<application 
-		android:name="com.gpl.rpg.AndorsTrail.AndorsTrailApplication"
-		android:label="@string/app_name" 
+		android:name="com.gpl.rpg.AndorsTrail_beta1.AndorsTrailApplication"
+		android:label="Andor's Trail Beta"
 		android:icon="@drawable/icon"
 		android:description="@string/app_description"
         android:allowBackup="true"
@@ -36,7 +36,7 @@
 		android:preserveLegacyExternalStorage="true"
 		>
 		<activity 
-		    android:name="com.gpl.rpg.AndorsTrail.activity.StartScreenActivity"
+		    android:name="com.gpl.rpg.AndorsTrail_beta1.activity.StartScreenActivity"
 		    android:clearTaskOnLaunch="true"
 		    >
 			<intent-filter>
@@ -45,29 +45,29 @@
 			</intent-filter>
 		</activity>
    		<activity 
-			android:name="com.gpl.rpg.AndorsTrail.activity.MainActivity"
+			android:name="com.gpl.rpg.AndorsTrail_beta1.activity.MainActivity"
 			android:label="@string/app_name" 
 			android:theme="@style/AndorsTrailTheme_Blue.NoBackground"
 			/>
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.HeroinfoActivity" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.MonsterInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.ItemInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.LevelUpActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.MonsterEncounterActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.ConversationActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.ShopActivity" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.AboutActivity" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.LoadingActivity" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.Preferences" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.LoadSaveActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.ActorConditionInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.BulkSelectionInterface" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.SkillInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
-		<activity android:name="com.gpl.rpg.AndorsTrail.activity.DisplayWorldMapActivity" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.HeroinfoActivity" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.MonsterInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.ItemInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.LevelUpActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.MonsterEncounterActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.ConversationActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.ShopActivity" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.AboutActivity" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.LoadingActivity" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.Preferences" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.LoadSaveActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.ActorConditionInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.BulkSelectionInterface" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.SkillInfoActivity" android:theme="@style/AndorsTrailDialogTheme_Blue" />
+		<activity android:name="com.gpl.rpg.AndorsTrail_beta1.activity.DisplayWorldMapActivity" />
 
         <provider
         android:name="android.support.v4.content.FileProvider"
-        android:authorities="com.gpl.rpg.AndorsTrail.fileprovider"
+        android:authorities="com.gpl.rpg.AndorsTrail_beta1.fileprovider"
         android:grantUriPermissions="true"
         android:exported="false">
         <meta-data

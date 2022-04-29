@@ -139,6 +139,12 @@ public final class DebugInterface {
 					AndorsTrailApplication.getApplicationFromActivity(mainActivity).getControllerContext().movementController.resetMovementHandler();
 				}
 			})
+			,new DebugButton("map", new OnClickListener() {
+				@Override
+				public void onClick(View arg0) {
+					showToast(mainActivity, "DEBUG: map=" + world.model.currentMaps.map.name , Toast.LENGTH_SHORT);
+				}
+			})
 		}));
 		
 		tpButtons.addAll(Arrays.asList(new DebugButton[] {

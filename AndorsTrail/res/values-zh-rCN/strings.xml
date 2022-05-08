@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="localize_resources_from_mo_filename">zh_CN.mo</string>
-    <string name="app_description">任务驱动型的幻想RPG</string>
+    <string name="app_description">任务驱动型的幻想 RPG</string>
     <string name="exit_to_menu">返回菜单</string>
     <string name="menu_settings">设定</string>
     <string name="menu_save">保存</string>
@@ -531,7 +531,7 @@
     <string name="skill_shortdescription_lower_exploss">减少死亡时经验值损失</string>
     <string name="skill_shortdescription_regeneration">每回合恢复生命值</string>
     <string name="skill_shortdescription_evasion">增加逃跑几率</string>
-    <string name="skill_shortdescription_fortitude">每次等级提升后恢复生命值</string>
+    <string name="skill_shortdescription_fortitude">每次等级提升后增加更多生命值</string>
     <string name="skill_shortdescription_eater">每次击杀敌人后恢复HP</string>
     <string name="skill_shortdescription_cleave">每次击杀敌人后恢复AP</string>
     <string name="skill_shortdescription_more_exp">击杀敌人获得更多经验值</string>
@@ -584,11 +584,11 @@
     <string name="iteminfo_effect_decrease_damage_resistance">降低伤害减免%1$d</string>
     <string name="startscreen_non_release_version">这是Andor\'s Trail的预发布版本。这个版本的游戏存档与正式版不兼容。</string>
     <string name="startscreen_incompatible_savegames">这是Andor\'s Trail的开发版本。这个版本的游戏存档与正式版不兼容。</string>
-    <string name="skill_title_fortitude">勇气提升</string>
+    <string name="skill_title_fortitude">增加坚韧</string>
     <string name="dialog_permission_information">Andor\'s Trail写入游戏存档到你设备上的内部存储。这可以让你很容易地备份你保存的游戏或转移到一个新的设备。请访问我们的论坛获取更多信息。
 \n
 \nAndor\'s Trail不使用访问您的设备用于任何其他目的，也不访问互联网。Andor’s Trail是开源的；源代码可以在github上找到。</string>
-    <string name="about_contents3">本程序为自由软件，在自由软件联盟发布的GNU通用公共许可协议的约束下，你可以对其进行再发布及修改。协议版本为第二版或（任意）更新的版本。&lt;br /&gt; &lt;br /&gt; 我们希望发布的这款程序有用，但&lt;b&gt;不保证&lt;/b&gt;，甚至不保证它有&lt;b&gt;经济价值&lt;/b&gt;和&lt;b&gt;适合特定用途&lt;/b&gt;。详情参见GNU通用公共许可协议。&lt;br /&gt; &lt;br /&gt; 你理当已收到一份GNU通用公共许可协议的副本，如果没有，请见 &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 有关源代码和功能请求，请访问项目页面 &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents3">本程序为自由软件，在自由软件基金会发布的GNU通用公共许可协议的约束下，你可以对其进行再发布及修改。协议版本为第二版或（任意）更新的版本。&lt;br /&gt; &lt;br /&gt; 我们希望发布的这款程序有用，但&lt;b&gt;不保证&lt;/b&gt;，甚至不保证它有&lt;b&gt;经济价值&lt;/b&gt;和&lt;b&gt;适合特定用途&lt;/b&gt;。详情参见GNU通用公共许可协议。&lt;br /&gt; &lt;br /&gt; 你理当已收到一份GNU通用公共许可协议的副本，如果没有，请见 &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; 有关源代码和功能请求，请访问项目页面 &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="preferences_display_theme">主题（需要重启游戏）</string>
     <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
     <string name="preferences_movement_dpad_transparency_60_pct">60%</string>

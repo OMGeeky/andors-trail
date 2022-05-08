@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <com.gpl.rpg.AndorsTrail.view.ItemEffectsView
+            <com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView
                 android:id="@+id/iteminfo_effects"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

@@ -286,6 +286,27 @@
                         "value":100
                     }
                 ]
+            },
+            {
+                "text":"Yes, I'm here to deliver the order for a 'Plush Pillow'. But what for?",
+                "nextPhraseID":"brv_wh_delivery_mikhail",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_01",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":100
+                    }
+                ]
             }
         ]
     },

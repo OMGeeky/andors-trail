@@ -25,7 +25,7 @@
     <string name="heroinfo_experiencepoints">경험치 (XP):</string>
     <string name="heroinfo_quests">퀘스트</string>
     <string name="dialog_loading_message">리소스 불러오는 중…</string>
-    <string name="dialog_loading_failed_incorrectversion">안도르의 흔적에서 저장 파일을 불러올 수 없습니다. 이 파일은 현재 버전보다 높은 버전에서 저장된 파일입니다.</string>
+    <string name="dialog_loading_failed_incorrectversion">안도르의 흔적에서 저장 파일을 불러올 수 없습니다. 이 파일은 현재 버전보다 최신 버전에서 저장된 파일입니다.</string>
     <string name="dialog_recenter">현재 위치</string>
     <string name="app_name">안도르의 흔적</string>
     <string name="app_description">퀘스트 중심의 판타지 RPG</string>
@@ -605,4 +605,7 @@
     <string name="skill_shortdescription_weapon_prof_pole">창 계열 무기로 더 잘 싸우게 됩니다</string>
     <string name="combat_log_item_plural">발견한 %1$d개의 물품:</string>
     <string name="combat_log_item_single">발견한 물품:</string>
+    <string name="startscreen_migration_title">데이터 마이그레이션</string>
+    <string name="startscreen_migration_text">저장 게임 데이터를 마이그레이션하는 중입니다.</string>
+    <string name="startscreen_migration_failure">저장 게임 데이터를 마이그레이션하지 못했습니다.</string>
 </resources>

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Andors Trail\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-10 11:48+0000\n"
-"PO-Revision-Date: 2021-03-16 14:51+0000\n"
-"Last-Translator: Alessandro Mandelli <mandelli.alessandro@ngi.it>\n"
+"PO-Revision-Date: 2022-04-13 13:55+0000\n"
+"Last-Translator: MARCO ACORTE <macorte@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/it/>\n"
 "Language: it\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5.2-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 "X-Launchpad-Export-Date: 2015-11-02 12:28+0000\n"
 
 #: [none]
@@ -353,27 +353,27 @@ msgstr "Sazio"
 
 #: actorconditions_omi2.json:panic
 msgid "Panic"
-msgstr ""
+msgstr "Panico"
 
 #: actorconditions_omi2.json:satiety
 msgid "Satiety"
-msgstr ""
+msgstr "Sazietà"
 
 #: actorconditions_omi2.json:frozen1
 msgid "Minor freeze"
-msgstr ""
+msgstr "Congelamento minore"
 
 #: actorconditions_omi2.json:frozen2
 msgid "Icy wounds"
-msgstr ""
+msgstr "Ferite ghiacciate"
 
 #: actorconditions_omi2.json:relax
 msgid "Requiescence"
-msgstr ""
+msgstr "Requiescenza"
 
 #: actorconditions_omi2.json:kazarite_misery
 msgid "Kazaul possession"
-msgstr ""
+msgstr "Possessione di Kazaul"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -420,6 +420,10 @@ msgstr "Sto cercando Andor."
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
 msgstr "Che libro è quello che hai in mano?"
+
+#: conversationlist_mikhail.json:mikhail_default:9
+msgid "Yes, I'm here to deliver the order for a 'Plush Pillow'. But what for?"
+msgstr ""
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -524,6 +528,7 @@ msgstr "Grazie per il pane che mi hai portato prima."
 #: conversationlist_guynmart2_npc.json:guynmart_child_90:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:0
 msgid "You're welcome."
 msgstr "Prego, è stato un piacere."
 
@@ -1277,6 +1282,7 @@ msgstr "Non pensavo che fossi così. Tu e tuo fratello siete sempre stati dei vi
 #: conversationlist_brimhaven.json:remgard_prison_thief_200:0
 #: conversationlist_omi2.json:prim_guard5_3a:0
 #: conversationlist_omi2.json:ehrenfest_7a:0
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:1
 msgid "Bye."
 msgstr "Addio."
 
@@ -1326,6 +1332,7 @@ msgstr "Grazie mille per l'aiuto, ragazzino! Forse tu e tuo fratello non siete c
 #: conversationlist_brimhaven.json:melona_1:0
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:0
 msgid "Thanks."
 msgstr "Grazie."
 
@@ -1359,6 +1366,7 @@ msgstr "Vuoi parlarne?"
 #: conversationlist_omi2.json:moyra_12:1
 #: conversationlist_omi2.json:prim_tavern_guest4_17c:1
 #: conversationlist_omi2.json:capvjern_22:0
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:0
 msgid "OK, bye."
 msgstr "Ok, addio."
 
@@ -1699,6 +1707,10 @@ msgstr "Ho notato la tua statua di Elythara al piano di sotto."
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
 msgid "You really seem to like your books."
 msgstr "Sembra proprio che ami i tuoi libri."
+
+#: conversationlist_fallhaven_arcir.json:arcir_start:2
+msgid "And I'm your delivery kid. Did you order a 'Dusty old book'?"
+msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
 msgid "Anything else you wanted to ask?"
@@ -3061,6 +3073,13 @@ msgstr "L'hai ucciso? Hai la mia gratitudine, amico mio. Ora siamo al sicuro dal
 #: conversationlist_gison.json:gison_catchsoup_new:0
 #: conversationlist_gorwath.json:gorwath_love_2:0
 #: conversationlist_omi2.json:ehrenfest_31b:0
+#: conversationlist_delivery.json:brv_wh_delivery_arcir:0
+#: conversationlist_delivery.json:brv_wh_delivery_edrin:0
+#: conversationlist_delivery.json:brv_wh_delivery_odirath:0
+#: conversationlist_delivery.json:brv_wh_delivery_venanra:0
+#: conversationlist_delivery.json:brv_wh_delivery_tjure:0
+#: conversationlist_delivery.json:brv_wh_delivery_servant:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge:0
 msgid "Thank you."
 msgstr "Grazie."
 
@@ -4068,7 +4087,7 @@ msgstr "Ciao."
 #: conversationlist_fungi_panic.json:zuul_khan_20:0
 #: conversationlist_fungi_panic.json:fungi_rescued:0
 msgid "Who are you?"
-msgstr ""
+msgstr "Chi sei?"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_2
 msgid "My real name is unimportant. People mostly call me Quickfingers."
@@ -6236,6 +6255,10 @@ msgstr "No, non ho ancora trovato nulla."
 msgid "Yes, I have found out the story about what happened to him."
 msgstr "Sì, ho scoperto quello che gli è successo."
 
+#: conversationlist_wrye.json:wrye_return_1:3
+msgid "Not yet, but your order has finally arrived."
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_return_2
 msgid "Welcome back. Thank you for your help in finding out what happened to my son."
 msgstr "Bentornato. Grazie per avermi aiutato a scoprire cosa è successo a mio figlio."
@@ -6246,6 +6269,10 @@ msgstr "Bentornato. Grazie per avermi aiutato a scoprire cosa è successo a mio 
 msgid "You are welcome."
 msgstr "Di nulla."
 
+#: conversationlist_wrye.json:wrye_return_2:2
+msgid "Yes, I came back to deliver your order of a 'Lyre'. You must be good at playing it?"
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
 msgstr "Che l'Ombra mi aiuti."
@@ -6255,6 +6282,10 @@ msgstr "Che l'Ombra mi aiuti."
 #: conversationlist_prim_outside.json:tonis_1:0
 msgid "What is the matter?"
 msgstr "Qual è il problema?"
+
+#: conversationlist_wrye.json:wrye_mourn_1:1
+msgid "Excuse me, I'm here to deliver your order for a 'Lyre'."
+msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_2
 msgid "My son! My son is gone."
@@ -6269,6 +6300,10 @@ msgstr "Jolnor mi ha detto di venire qui da te e di chiederti di tuo figlio."
 #: conversationlist_brimhaven_2.json:leta_oromir_complete2_helped_oromir
 msgid "What about him?"
 msgstr "Cosa puoi dirmi di lui?"
+
+#: conversationlist_wrye.json:wrye_mourn_2:2
+msgid "Maybe your order here will comfort you?"
+msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_3
 msgid "I don't want to talk about it. Not with an outsider like you."
@@ -7373,7 +7408,7 @@ msgstr "Da che cosa ti stai nascondendo?"
 #: conversationlist_prim_outside.json:moyra_1:1
 #: conversationlist_prim_outside.json:moyra_1:3
 msgid "Do you know anything about the accident with Lorn?"
-msgstr ""
+msgstr "Sai qualcosa dell'incidente di Lorn?"
 
 #: conversationlist_prim_outside.json:moyra_2
 msgid "Claws, beasts, gornauds. They cannot reach me here."
@@ -7425,7 +7460,7 @@ msgstr "[Bugia] Sì, sono qui per aiutare il vostro villaggio."
 
 #: conversationlist_prim_outside.json:prim_commoner1:2
 msgid "Maybe, but first tell me what do you know about Lorn's crew accident?"
-msgstr ""
+msgstr "Potrebbe, ma prima dimmi cosa sai dell'incidente all'equipaggio di Lorn?"
 
 #: conversationlist_prim_outside.json:prim_commoner1_2
 msgid "Thank you. We really need your help."
@@ -7471,11 +7506,11 @@ msgstr "Ciao. Benvenuto a Prim."
 
 #: conversationlist_prim_outside.json:prim_commoner3:0
 msgid "Do you know anything about Lorn's accident?"
-msgstr ""
+msgstr "Sai qualcosa dell'incidente di Lorn?"
 
 #: conversationlist_prim_outside.json:prim_commoner3:1
 msgid "Thank you for the hints, bye."
-msgstr ""
+msgstr "Grazie dei suggerimenti, ciao."
 
 #: conversationlist_prim_outside.json:prim_commoner4
 msgid "Hello. Who are you? Are you here to help us?"
@@ -7496,7 +7531,7 @@ msgstr "[Bugia] Sì, sono venuto per aiutare il vostro villaggio."
 #: conversationlist_prim_outside.json:prim_commoner4:3
 #: conversationlist_prim_tavern.json:prim_tavern_guest4_3:0
 msgid "What do you know about Lorn's accident?"
-msgstr ""
+msgstr "Cosa sai dell'incidente di Lorn?"
 
 #: conversationlist_prim_outside.json:prim_commoner4_1
 msgid "Your brother? Son, you should know that we do not get many visitors around here."
@@ -9481,7 +9516,7 @@ msgstr "Fammi vedere cosa hai in vendita."
 
 #: conversationlist_prim_merchants.json:prim_tailor:1
 msgid "What do you know about Lorn's crew's accident?"
-msgstr ""
+msgstr "Cosa sai dell'incidente all'equipaggio di Lorn?"
 
 #: conversationlist_prim_merchants.json:prim_tailor_1
 msgid "Sell? I'm sorry, my supplies are all out. Now that the traders do not come here anymore, I don't get my regular shipments. So at the moment, I have nothing to trade with you unfortunately."
@@ -11550,6 +11585,7 @@ msgstr "Salve di nuovo. Hai consegnato quelle cose al fabbro di Vilegard?"
 #: conversationlist_brimhaven.json:brv_employee_10:0
 #: conversationlist_brimhaven.json:mikhail_news_20:2
 #: conversationlist_gison.json:gison_p2_50:2
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:1
 msgid "Not yet."
 msgstr "Non ancora."
 
@@ -17143,6 +17179,7 @@ msgstr "Benvenuto nella mia taverna. Spero troverai piacevole il tuo soggiorno."
 
 #: conversationlist_kendelow.json:kendelow_d
 #: conversationlist_ervelyn.json:ervelyn_d
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:0
 msgid "How may I be of service?"
 msgstr "Come posso essere d'aiuto?"
 
@@ -17227,12 +17264,16 @@ msgid "How interesting. The child from Fallhaven, here in Remgard?"
 msgstr "Interessante. Il ragazzo di Fallhaven, qui a Remgard?"
 
 #: conversationlist_arghes.json:arghes_2:0
-msgid "I'm not from Fallhaven, I am from Crossglen, west of Fallhaven."
+msgid "I'm not from Fallhaven, I'm from Crossglen, west of Fallhaven."
 msgstr "Non sono di Fallhaven, vengo da Crossglen, ad ovest di Fallhaven."
 
 #: conversationlist_arghes.json:arghes_2:2
 msgid "How do you know where I am from?"
 msgstr "Come fai a sapere da dove vengo?"
+
+#: conversationlist_arghes.json:arghes_2:3
+msgid "And how interesting that you ordered a pair of 'Yellow boots'. Did you really order this?"
+msgstr ""
 
 #: conversationlist_arghes.json:arghes_3a
 msgid "Is that so? Hmm, most interesting. It does not change anything, however."
@@ -25570,6 +25611,10 @@ msgstr "Cosa stai facendo nelle stanze dei miei signori?"
 msgid "You are lying around in bed in broad daylight?"
 msgstr "Te ne strai stravaccato a letto in pieno giorno?"
 
+#: conversationlist_guynmart_npc.json:guynmart_servant_10:1
+msgid "I'm here to give you your ordered item. You don't want it?"
+msgstr ""
+
 #: conversationlist_guynmart_npc.json:guynmart_servant_20
 msgid "I am checking that the bed of young Robalyrius is still in order."
 msgstr "Sto verificando che il letto del giovane Robalyrius sia ancora funzionante."
@@ -27669,27 +27714,27 @@ msgstr "Monumento di $playername. Niente male."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_800
 msgid "Ah - I can see it before my eyes: a loaf of bread with a piece of delicious cheese! No, better two loaves of bread."
-msgstr ""
+msgstr "Ah - Ho potuto vederlo coi miei occhi: una pagnotta di pane con un pezzo di delizioso formaggio! No, meglio due pagnotte di pane."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_802
 msgid "Along with a bottle of good red wine!"
-msgstr ""
+msgstr "Insieme a una bottiglia di buon vino rosso!"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_804
 msgid "The bread maybe still warm ..."
-msgstr ""
+msgstr "Il pane potrebbe essere ancora caldo ..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_810
 msgid "Two loaves of bread! Hmmmm."
-msgstr ""
+msgstr "Due pagnotte di pane! Hmmmm."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_810:0
 msgid "Well ..."
-msgstr ""
+msgstr "Bene ..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_812
 msgid "And cheese - how I missed it!"
-msgstr ""
+msgstr "E formaggio - come mi è mancato!"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_812:0
 #: conversationlist_omicronrg9.json:troublemaker_guild02_9:1
@@ -27698,47 +27743,47 @@ msgstr "Ma..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_814
 msgid "A bottle of red wine with it, of course. Ooooh!"
-msgstr ""
+msgstr "Con una bottiglia di vino rosso, certo. Ooooh!"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_814:0
 msgid "I'm beginning to find your requests outrageous. I have to leave now."
-msgstr ""
+msgstr "Sto iniziando a trovare le tue richieste oltraggiose. Devo andarmene ora."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_814:1
 msgid "OK, OK, I understand."
-msgstr ""
+msgstr "OK, OK, ho capito."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_820
 msgid "Noo! Please, don't go! I didn't mean it."
-msgstr ""
+msgstr "No! Per favore, non andare! Non lo intendevo."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_820:0
 msgid "Forget it, bye."
-msgstr ""
+msgstr "Lascia perdere, ciao."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_820:1
 msgid "OK. Bread, cheese and vine - that's it?"
-msgstr ""
+msgstr "OK. Pane, formaggio e vino - tutto qui?"
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_830
 msgid "Great! It's settled then, I'll wait for you here."
-msgstr ""
+msgstr "Grande! Allora è deciso, ti aspetto qui."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_830:0
 msgid "I'll hurry now. See you soon."
-msgstr ""
+msgstr "Mi affretto ora. Ci vediamo presto."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_840
 msgid "Ah - bread ..."
-msgstr ""
+msgstr "Ah - pane ..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_842
 msgid "And cheese ..."
-msgstr ""
+msgstr "E formaggio..."
 
 #: conversationlist_guynmart2_npc.json:guynmart_wise_844
 msgid "Vine ..."
-msgstr ""
+msgstr "Vino..."
 
 #: conversationlist_trader_teksin.json:teksin11:0
 #: conversationlist_trader_teksin.json:teksin50:2
@@ -29213,6 +29258,10 @@ msgstr "Sembri un po' preoccupato."
 #: conversationlist_stoutford_combined.json:odirath_0:4
 msgid "You look happy again."
 msgstr "Guardi di nuovo felice."
+
+#: conversationlist_stoutford_combined.json:odirath_0:5
+msgid "Did you really order such an ugly porcelain figure? Oops, sorry I didn't mean to offend you"
+msgstr ""
 
 #: conversationlist_stoutford_combined.json:odirath_1
 msgid "I did see someone that might have been your brother. He was with a rather dubious looking person. They didn't stay around here very long though. Sorry, but that's all I can tell you. You should ask around town. Other townsfolk may know more."
@@ -30762,6 +30811,7 @@ msgid "Now to your next opponent."
 msgstr "Passiamo ora al prossimo avversario."
 
 #: conversationlist_stoutford_combined.json:stn_colonel_140:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:1
 msgid "What is it this time?"
 msgstr "Che cos'è questa volta?"
 
@@ -33898,6 +33948,10 @@ msgstr "Cosa stai facendo in un posto così solitario?"
 msgid "Eh, sorry to disturb you."
 msgstr "Eh, scusa se ti disturbo."
 
+#: conversationlist_arulir_mountain.json:tjure_0:3
+msgid "I'm surprised to see you here as well. Did you order 'Mysterious green something'?"
+msgstr ""
+
 #: conversationlist_arulir_mountain.json:tjure_0_10
 msgid "I am Tjure of Brimhaven. I am ... was ... a successful merchant. But my luck has run out."
 msgstr "Sono Tjure di Brimhaven. Io sono ... ero ... un mercante di successo. Ma la mia fortuna si è esaurita."
@@ -34011,12 +34065,34 @@ msgid "(For a second you feel very dizzy. At least you manage not to faint. As f
 msgstr "(Per un secondo ti senti molto stordito. Almeno riesci a non svenire. Da lontano si sente una voce.)"
 
 #: conversationlist_arulir_mountain.json:tjure_90
+#: conversationlist_delivery.json:tjure_wh_delivery_90
 msgid "*Sigh* You were my last hope. Leave me now."
 msgstr "*Sospiro* Eri la mia ultima speranza. Ora lasciami."
+
+#: conversationlist_arulir_mountain.json:tjure_90:0
+msgid "Hope you learned from it."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:1
+msgid "OK. One question before I go: did you order a 'Mysterious green something'?"
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:0
+#: conversationlist_arulir_mountain.json:tjure_200:0
+msgid "It was an interesting experience."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:1
+msgid "No problem. By the way, did you order a 'Mysterious green something'?"
+msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_200
 msgid "Oh, you look better than the last time we met. Thank you for your help."
 msgstr "Oh, hai un aspetto migliore dell'ultima volta che ci siamo incontrati. Grazie per l'aiuto."
+
+#: conversationlist_arulir_mountain.json:tjure_200:1
+msgid "Indeed. By the way, did you order a 'Mysterious green something'?"
+msgstr ""
 
 #: conversationlist_arulir_mountain.json:watermark_script_100
 msgid "This seems to be a very strange place. Maybe even dangerous."
@@ -35733,6 +35809,10 @@ msgstr "Voglio che migliori alcuni dei miei vestiti."
 msgid "Have you ever seen a glove like this? [Shows Venanra the glove.]"
 msgstr "Hai mai visto un guanto come questo? [Mostra ul guanto a Venanra.]"
 
+#: conversationlist_brimhaven.json:brv_laundry_boss_0:5
+msgid "Did you order an 'Old, worn cape'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_laundry_boss_1
 msgid "We are working on some nice green dresses. We can also repair and improve your clothes."
 msgstr "Stiamo lavorando su alcuni bei vestiti verdi. Possiamo anche riparare e migliorare i tuoi vestiti."
@@ -36649,6 +36729,10 @@ msgstr "Ho un pugnale. Penso che sia quello che corrisponde alla gemma di cui ab
 msgid "I'm looking for my brother, Andor. Have you seen anyone around town that looks a bit like me?"
 msgstr "Sto cercando mio fratello, Andor. Hai visto qualcuno in giro per la città che mi assomiglia un po'?"
 
+#: conversationlist_brimhaven.json:edrin_0_0:6
+msgid "Hello, did you order a 'Striped Hammer'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:edrin_5_0
 msgid "Yes, that's the one that matches the dagger! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr "Sì, è quella che corrisponde al pugnale! Ora che ho entrambe le parti, sono in grado di riparare il pugnale, se vorrai."
@@ -36699,7 +36783,7 @@ msgstr "Mi ci vorrà del tempo. Torna più tardi per ritirare il pugnale riparat
 #: conversationlist_brimhaven.json:edrin_7_1a
 #: conversationlist_brimhaven.json:edrin_7_1b
 msgid "Yes, it is done. Here is the repaired dagger.  It's nice to see Lawellyn's dagger brought back to its original glory. There is some mystery about his death. I don't know anything about it though. Maybe someone else in town can tell you more."
-msgstr "[REVIEW][REVIEW]Sì, è fatto. Ecco il pugnale riparato."
+msgstr "Sì, è fatto. Ecco il pugnale riparato. È bello vedere il pugnale di Lawellyn riportato al suo splendore originale. C'è del mistero sulla sua morte. Non ne so nulla però. Forse qualcun altro in città può dirti di più."
 
 #: conversationlist_brimhaven.json:edrin_7_1c
 msgid "No, not yet. You must have patience. I told you this is a difficult repair."
@@ -37014,6 +37098,10 @@ msgstr "Non ho 100 pezzi d'oro per pagarti."
 msgid "Maybe I can help you."
 msgstr "Forse ti posso aiutare."
 
+#: conversationlist_brimhaven.json:brv_fortune_choice:3
+msgid "Are you the one who ordered a 'Crystal Globe'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_fortune_andor_10
 msgid "I see you talking to your brother, somewhere far from here in a big city. Feygard or Nor City, I think."
 msgstr "Ti vedo parlare con tuo fratello, da qualche parte lontano da qui in una grande città. Feygard o Nor City, credo."
@@ -37145,12 +37233,18 @@ msgid "What has brought you to me? It looks like you might need my help."
 msgstr "Cosa ti ha portato da me? Sembra che tu abbia bisogno del mio aiuto."
 
 #: conversationlist_brimhaven.json:brv_fortune_10:0
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:0
 msgid "What help can you offer?"
 msgstr "Che tipo di aiuto puoi offrire?"
 
 #: conversationlist_brimhaven.json:brv_fortune_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:1
 msgid "I am searching..."
 msgstr "Sto cercando..."
+
+#: conversationlist_brimhaven.json:brv_fortune_10:2
+msgid "So you are the one who ordered a 'Crystal Globe'?"
+msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_50
 msgid "It will cost you 100 gold."
@@ -37307,154 +37401,160 @@ msgid ""
 "\n"
 "And we have to arrest you of course. Report to prison! Now!"
 msgstr ""
+"Che cos'è questo? Odora di farina d'ossa!\n"
+"\n"
+"La farina d'ossa è illegale e proibita dalla legge di Feygard. Dovrò confiscarlo.\n"
+"[Ti restituisce tutti i tuoi averi ma tiene i Bonemeals]\n"
+"\n"
+"E dobbiamo arrestarti, ovviamente. Presentati in prigione! Adesso!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk
 msgid "You rattle at the iron bars."
-msgstr ""
+msgstr "Fai rumore alle sbarre di ferro."
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:0
 msgid "Hey, I'm starving!"
-msgstr ""
+msgstr "Ehi, sto morendo di fame!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:1
 msgid "Room service!"
-msgstr ""
+msgstr "Servizio in camera!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:2
 msgid "Anybody there? I want to talk to my lawyer!"
-msgstr ""
+msgstr "C'è qualcuno? Voglio parlare con il mio avvocato!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:3
 msgid "I am innocent!"
-msgstr ""
+msgstr "Sono innocente!"
 
 #: conversationlist_brimhaven.json:remgard_prison_talk:4
 msgid "Hey! Has anybody seen my brother Andor? I am looking for him everywhere, even in prisons."
-msgstr ""
+msgstr "Ehi! Qualcuno ha visto mio fratello Andor? Lo cerco ovunque, anche nelle carceri."
 
 #: conversationlist_brimhaven.json:remgard_prison_talk_1
 msgid "No reaction."
-msgstr ""
+msgstr "Nessuna reazione."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief
 msgid "Hi $playername. Got comfortable already?"
-msgstr ""
+msgstr "Ciao $playername. Ti sei già messo a tuo agio?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief:0
 msgid "What the ..."
-msgstr ""
+msgstr "Che diavolo..."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_10
 msgid "Don't look startled. You should have expected this from us thieves."
-msgstr ""
+msgstr "Non sembrare sorpreso. Avresti dovuto aspettarti questo da noi ladri."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_12
 msgid "Especially when you have carried such a lot of bonemeal potions with you."
-msgstr ""
+msgstr "Soprattutto quando hai portato con te così tante pozioni di farina d'ossa."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_12:0
 msgid "Hey, what do you know about it?"
-msgstr ""
+msgstr "Ehi, cosa ne sai?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_14
 msgid "We know everything."
-msgstr ""
+msgstr "Sappiamo tutto."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_14:0
 msgid "Yeah, obviously."
-msgstr ""
+msgstr "Sì, ovviamente."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_20
 msgid "We are thankful for your potions, and we are always grateful."
-msgstr ""
+msgstr "Siamo grati per le tue pozioni e ti saremo sempre grati."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_22
 msgid "So we offer you half of your stock. And your freedom. Deal?"
-msgstr ""
+msgstr "Quindi ti offriamo metà del tuo stock. E la tua libertà. D'accordo?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_22:0
 msgid "Do I have a choice?"
-msgstr ""
+msgstr "Ho una scelta?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_30
 msgid "Sure you do. You could get nothing and stay here to starve."
-msgstr ""
+msgstr "Certo che lo fai. Non potresti ottenere nulla e rimanere qui a morire di fame."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_30:0
 msgid "Ah no. Let's have the first offer."
-msgstr ""
+msgstr "Ah no. Facciamo la prima offerta."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_52
 msgid "Here we go. I will count out loud, so you can check that I don't cheat."
-msgstr ""
+msgstr "Eccoci qui. Conterò ad alta voce, così puoi controllare che non baro."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_52:0
 msgid "[muttering] Cheat - with my own potions ..."
-msgstr ""
+msgstr "[mormorando] Baro - con le mie stesse pozioni ..."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_54
 msgid "You already have your share. You do not try to cheat, do you? In that case I would be very disappointed."
-msgstr ""
+msgstr "Hai già la tua quota. Non provi a imbrogliare, vero? In tal caso sarei molto deluso."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_54:0
 msgid "No, no. Everything is awful."
-msgstr ""
+msgstr "No, no. Tutto è terribile."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_1000
 msgid "1000 bonemeal potions."
-msgstr ""
+msgstr "1000 pozioni di farina d'ossa."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_100
 msgid "100 bonemeal potions."
-msgstr ""
+msgstr "100 pozioni di farina d'ossa."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_10
 msgid "10 bonemeal potions."
-msgstr ""
+msgstr "10 pozioni di farina d'ossa."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback_1
 msgid "1 bonemeal potion."
-msgstr ""
+msgstr "1 pozione di farina d'ossa."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_1000
 msgid "1000 exotic bonemeal potions."
-msgstr ""
+msgstr "1000 pozioni di farina d'ossa esotiche."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_100
 msgid "100 exotic bonemeal potions."
-msgstr ""
+msgstr "100 pozioni di farina d'ossa esotiche."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_10
 msgid "10 exotic bonemeal potions."
-msgstr ""
+msgstr "10 pozioni di farina d'ossa esotiche."
 
 #: conversationlist_brimhaven.json:remgard_prison_getback2_1
 msgid "1 exotic bonemeal potion."
-msgstr ""
+msgstr "1 pozione di farina d'ossa esotica."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_100
 msgid "Ha ha ha! That was fun, wasn't it?"
-msgstr ""
+msgstr "Hahaha! È stato divertente, vero?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_110
 msgid "Now it's all settled. We may leave now."
-msgstr ""
+msgstr "Ora è tutto sistemato. Possiamo andarcene adesso."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_110:0
 msgid "What? How can we leave?"
-msgstr ""
+msgstr "Che cosa? Come possiamo partire?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_112
 msgid "Oh, that is easy. Check the back wall - it is fake. We had it exchanged secretly, and those stupid guards haven't found out yet."
-msgstr ""
+msgstr "Oh, è facile. Controlla il muro di fondo - è falso. L'abbiamo scambiato di nascosto e quelle stupide guardie non l'hanno ancora scoperto."
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_112:0
 msgid "Oh really?"
-msgstr ""
+msgstr "Davvero?"
 
 #: conversationlist_brimhaven.json:remgard_prison_thief_200
 msgid "Bye now. I will keep an eye on you."
-msgstr ""
+msgstr "Ciao, per ora. Ti terrò d'occhio."
 
 #: conversationlist_brimhaven2.json:brv_school_check_duel_14a
 msgid "When the other students see how you killed Golin, a panic breaks out. Screaming, they all run out of the building."
@@ -42894,67 +42994,67 @@ msgstr "Ho davvero bisogno del tuo aiuto!"
 
 #: conversationlist_gorwath.json:gorwath_letter
 msgid "Hey, Andor!"
-msgstr ""
+msgstr "Hei, Andor!"
 
 #: conversationlist_gorwath.json:gorwath_letter:0
 msgid "I am not Andor. What do you want from him?"
-msgstr ""
+msgstr "Non sono Andor. Cosa vuoi da lui?"
 
 #: conversationlist_gorwath.json:gorwath_letter_1
 msgid "Oh, Andor promised to meet me here. Who are you?"
-msgstr ""
+msgstr "Oh, Andor ha promesso di incontrarmi qui. Chi sei?"
 
 #: conversationlist_gorwath.json:gorwath_letter_1:0
 msgid "My name is $playername. I'm looking for my brother too, he has been away for a while now."
-msgstr ""
+msgstr "Il mio nome è $playername. Anch'io sto cercando mio fratello, è stato via per un po'."
 
 #: conversationlist_gorwath.json:gorwath_letter_1:1
 msgid "My name is none of your business. Get out of our property now!"
-msgstr ""
+msgstr "Il mio nome non sono affari tuoi. Esci subito dalla nostra proprietà!"
 
 #: conversationlist_gorwath.json:gorwath_letter_2
 msgid "Oh dear, oh dear. This is a very personal matter. I don't want everyone to know about it."
-msgstr ""
+msgstr "Oh caro, oh caro. Questa è una questione molto personale. Non voglio che tutti lo sappiano."
 
 #: conversationlist_gorwath.json:gorwath_letter_2:0
 msgid "I want to help you since my brother did not. Please tell me what's on your mind."
-msgstr ""
+msgstr "Voglio aiutarti visto che mio fratello non l'ha fatto. Per favore, dimmi cosa ti passa per la testa."
 
 #: conversationlist_gorwath.json:gorwath_letter_3
 msgid "Really? That's very kind of you."
-msgstr ""
+msgstr "Davvero? È molto gentile da parte tua."
 
 #: conversationlist_gorwath.json:gorwath_letter_10
 msgid "You probably don't know me. I am Gorwath. I only recently moved to Crossglen to live with my aunt."
-msgstr ""
+msgstr "Probabilmente non mi conosci. Sono Gorwath. Mi sono trasferito da poco a Crossglen per vivere con mia zia."
 
 #: conversationlist_gorwath.json:gorwath_letter_10:0
 msgid "With Leta?"
-msgstr ""
+msgstr "Con Leta?"
 
 #: conversationlist_gorwath.json:gorwath_letter_11
 msgid "Yes. You know her? Then you will also know how strict she can be. Sigh."
-msgstr ""
+msgstr "Si'. La conosci? Allora saprai anche quanto possa essere severa. Sospira."
 
 #: conversationlist_gorwath.json:gorwath_letter_12
 msgid "I met someone at the last weekly market and I want to send them something."
-msgstr ""
+msgstr "Ho incontrato qualcuno all'ultimo mercato settimanale e voglio mandargli qualcosa."
 
 #: conversationlist_gorwath.json:gorwath_letter_12:0
 msgid "Who is he?"
-msgstr ""
+msgstr "Chi è?"
 
 #: conversationlist_gorwath.json:gorwath_letter_13
 msgid "To be precise, I have a letter ... for ... a lovely girl."
-msgstr ""
+msgstr "Per essere precisi, ho una lettera... per... una bella ragazza."
 
 #: conversationlist_gorwath.json:gorwath_letter_13:0
 msgid "Huh?"
-msgstr ""
+msgstr "Eh?"
 
 #: conversationlist_gorwath.json:gorwath_letter_14
 msgid "Yes, she is the most beautiful girl in the world! Her name is Arensia."
-msgstr ""
+msgstr "Sì, è la ragazza più bella del mondo! Il suo nome è Arensia."
 
 #: conversationlist_gorwath.json:gorwath_letter_14:0
 msgid "Hm, I don't know anyone here by that name."
@@ -47447,6 +47547,214 @@ msgstr ""
 msgid "That sounds kind of true. You are a very persuasive speaker."
 msgstr ""
 
+#: conversationlist_omi2.json:omi2_fix_ehrenfest_53
+msgid "You are wrong. I'm not here, just an illusion."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10
+msgid "Ah! You have finally returned, my new worker."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:2
+msgid "Ah! You are still insolent."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_20
+msgid "I need someone to deliver all of the items that are in storage."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30
+msgid "Come back to me when you have delivered all of the items. The order is not important. Here is the list of customers."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:0
+msgid "It will be done."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:1
+msgid "You want me to deliver these items to your customers?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40
+msgid "Yes yes, hurry now. I have work to do here."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:0
+msgid "I'm going now."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:1
+msgid "Hope I get paid better this time."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arcir
+msgid "Yes, an old but useful book, but you should have wiped it off first. Anyway, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_edrin
+msgid "Ah, yes, a striped hammer. Don't look so impatient. Here's my delivery charge, and now you can leave!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_odirath
+msgid "Yes, indeed. A gift for my beautiful daughter... but why did it take so long? Sigh, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_venanra
+msgid "Yes I did, kid. Incredibly, it has become the latest fashion to buy new capes with holes. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_tjure
+msgid "What?! My lucky clover...but why now? Anyway, I'll no longer run out of luck. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_servant
+msgid "Finally, I'm no longer afraid of that room every time my lord turns off the lights to scare me. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arghes
+msgid "Yes kid, thank you. Here, take this gold for them."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre_negative
+msgid "That's not what I'm waiting for! Go out and find out what happened to my son, please!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre
+msgid "Yes, I'm longing for it just like how I'm longing for my son. But now I can mourn as I play his favorite song until I die."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre:0
+msgid "My sincere condolence for the loss of your beloved son."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail
+msgid "Oh wow! Finally, your brother's gift has arrived and we only have to wait for his arrival."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:0
+msgid "Sigh. I hope so."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:1
+msgid "What?! Where's my gift?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail3
+msgid "I already gave you his shield."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2
+msgid "Anyway, it's been a very long time so please go look for your brother."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:1
+msgid "I'm still looking for him."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:2
+msgid "Eh, you have to pay for it..."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4
+msgid "Ah, yes, I almost forgot. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:0
+msgid "Thanks. I'm on my way again, bye."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:1
+msgid "Hmm... Bye"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune
+msgid ""
+"Ah yes, I need a new one. My current crystal globe has become a bit cloudy - otherwise I would of course have seen that you would bring me a new globe.\n"
+"Here is the gold for it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:0
+msgid "Do you want to try the crystal ball with me to see if it works?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:1
+msgid "Thanks for choosing Facutloni's delivery."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10
+msgid "You say you want me to help you?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10
+msgid "You are back. Did you deliver all of the items?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:0
+msgid "Yes. I delivered everything."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no
+msgid "Then what are you standing there for?! Get out and deliver everything!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:0
+msgid "[Run]"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:1
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:1
+msgid "Yes boss."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes
+msgid "That's nice to hear. Then you can now give me the... eh...330 gold pieces that you should have received from the sales."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:0
+msgid "Sure. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:1
+msgid "Uh, I had expenses along the way and I don't have all the gold anymore."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1
+msgid "And then you walk into my sight? Go get my gold!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:2
+msgid "Oh, I just found the 330 gold pieces in my pocket. Please take it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10
+msgid "Good job! I am glad that you work responsibly."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:0
+msgid "And seriously."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:1
+msgid "I travelled far and wide."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward
+msgid "That is serious. And here you have your well-deserved reward: 100 gold."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:1
+msgid "What the?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge
+msgid "Pardon?"
+msgstr ""
+
+#: conversationlist_delivery.json:tjure_wh_delivery_90:0
+msgid "Not until I have delivered this to you. Are you the one who ordered a 'Mysterious green something'?"
+msgstr ""
+
 #: itemcategories_1.json:dagger
 msgid "Dagger"
 msgstr "Pugnale"
@@ -50054,7 +50362,7 @@ msgstr "Un pugnale dall'aspetto strano"
 #: itemlist_brimhaven.json:strange_dagger:description
 #: itemlist_brimhaven.json:dagger_assassin:description
 msgid "The dagger has an inscription etched into the metal \"The Shadow shall bear no witness to the wielder of this blade\"."
-msgstr "[OUTDATED][OUTDATED]È affilato!"
+msgstr "Il pugnale ha un'iscrizione incisa nel metallo \"L'ombra non darà testimonianza a chi impugna questa lama\"."
 
 #: itemlist_brimhaven.json:dagger_assassin
 msgid "Assassin's blade"
@@ -50947,7 +51255,7 @@ msgid "Unknown gem (extracted from the Elm mine)"
 msgstr ""
 
 #: itemlist_omi2.json:elm_gem_u:description
-msgid "It is very cold and very sticky to the touch. It gives a feel of dizziness when you stare at it."
+msgid "It is very cold and very sticky to the touch. It gives a feeling of dizziness when you stare at it."
 msgstr ""
 
 #: itemlist_omi2.json:bwm_fish2
@@ -51031,7 +51339,7 @@ msgid "Cave fern"
 msgstr ""
 
 #: itemlist_omi2.json:elm_fern:description
-msgid "A fern inside a cave is something out of normal, not seen everyday."
+msgid "A fern inside a cave is something unusual, not seen every day."
 msgstr ""
 
 #: itemlist_omi2.json:yczorah
@@ -51076,6 +51384,14 @@ msgstr ""
 
 #: itemlist_omi2.json:ortholion_reward:description
 msgid "You feel a warm and comfortable feeling when holding it."
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket
+msgid "Facutloni's Docket"
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket:description
+msgid "A document listing the contents of a delivery   Arcir the book-lover from Fallhaven ordered a 'Dusty Old Book'.   Edrin the metalsmith from Brimhaven ordered a 'Striped Hammer'.   Odirath the armorer from Stoutford ordered a 'Pretty Porcelain Figure'.   Venanra the laundress from Brimhaven ordered an 'Old, worn cape'.   Tjure the unlucky merchant ordered a 'Mysterious green something'.   Servant the servant from Guynmart Castle ordered a 'Chandelier'.   Arghes from Remgard tavern ordered 'Yellow Boots'.   Wyre the mournful woman from Vilegard ordered a 'Lyre'.   Mikhail from Crossglen ordered a 'Plush Pillow'.   Pangitain the fortune teller from Brimhaven ordered a 'Crystal Globe'. "
 msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
@@ -53635,7 +53951,6 @@ msgstr "Cadavere del cimitero"
 
 #: monsterlist_graveyard1.json:graveyard_corpse2
 #: monsterlist_graveyard1.json:graveyard_corpse3
-#: monsterlist_graveyard1.json:graveyard_corpse3
 msgid "Angry graveyard corpse"
 msgstr "Cadavere del cimitero infuriato"
 
@@ -54708,11 +55023,11 @@ msgstr "Ladro"
 
 #: monsterlist_gorwath.json:gorwath
 msgid "Gorwath"
-msgstr ""
+msgstr "Gorwath"
 
 #: monsterlist_gorwath.json:arensia
 msgid "Arensia"
-msgstr ""
+msgstr "Arensia"
 
 #: monsterlist_omi2.json:mountain_wolf_2
 msgid "Trained mountain wolf"
@@ -54748,7 +55063,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:ehrenfest
 msgid "Ehrenfest"
-msgstr ""
+msgstr "Ehrenfest"
 
 #: monsterlist_omi2.json:ortholion
 #: monsterlist_omi2.json:ortholion_hidden
@@ -54855,7 +55170,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:kamelio
 msgid "Kamelio"
-msgstr ""
+msgstr "Kamelio"
 
 #: monsterlist_omi2.json:kamelio2
 msgid "Undead Kamelio"
@@ -57111,7 +57426,7 @@ msgstr "[REVIEW]Ho rinunciato a trovare peli di animali che soddisfino il gusto 
 
 #: questlist_halvor_surprise.json:halvor_surprise:100
 msgid "I met Halvor again. He was standing by the lakeside, near an old house, in the north."
-msgstr "[REVIEW][REVIEW]Ho di nuovo incontrato Havlor. Se ne sta sulla riva del lago, vicino a una vecchia casa, a nord."
+msgstr "Ho incontrato di nuovo Halvor. Si trovava in riva al lago, vicino a una vecchia casa, a nord."
 
 #: questlist_halvor_surprise.json:halvor_surprise:110
 msgid "Halvor was in bad shape. He asked me to give him a healing potion."
@@ -57326,7 +57641,7 @@ msgid "Cithurn did not remember if the forest invasion began before the events i
 msgstr "Cithurn non ricordava se l'invasione della foresta è iniziata prima o dopo gli eventi di Charwood. Tuttavia, sulla base delle mie esperienze a Charwood, Cithurn ritiene che ci sia una connessione tra le due cose."
 
 #: questlist_graveyard1.json:waterwayacave:35
-msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave northeast of Cithurn's home."
+msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave east of Cithurn's home."
 msgstr "Ho promesso a Cithurn di indagare sull'origine dell'invasione dei mostri nella foresta. Dovrò passare attraverso la foresta per accedere all'ingresso di una grotta a nord-est di casa di Cithurn."
 
 #: questlist_graveyard1.json:waterwayacave:40
@@ -58488,7 +58803,7 @@ msgstr "[REVIEW]Edrin vuole 800 pezzi d'oro per riparare il pugnale. Sono d'acco
 #: questlist_brimhaven.json:brv_dagger:90
 #: questlist_brimhaven.json:brv_dagger:100
 msgid "I collected the repaired dagger from Edrin. Apparently there was something mysterious about Lawellyn's death. I should ask people in town to find out more."
-msgstr "[REVIEW][REVIEW]Ho ritirato il pugnale riparato da Edrin."
+msgstr "Ho ritirato il pugnale riparato da Edrin. Apparentemente c'era qualcosa di misterioso nella morte di Lawellyn. Dovrei chiedere alle persone in città di saperne di più."
 
 #: questlist_brimhaven.json:brv_dagger:105
 msgid "Zorvan told me Lawellyn is dead and buried, but could tell me little more other than that his death was suspicious."
@@ -59307,6 +59622,62 @@ msgstr ""
 
 #: questlist_omi2.json:Omi2_bwm1:63
 msgid "For my bravery and... ignorance?, General Ortholion gave me a few days to rest and urged me to come back soon after that."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery
+msgid "Delivery"
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:10
+msgid "Facutloni asked me to help him deliver all of the items ordered by his customers a long time ago. He even gave me an old document with the names and items written on it."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:20
+msgid "Arcir the Fallhaven book-lover ordered a 'Dusty Old book'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:30
+msgid "Edrin the Brimhaven metalsmith ordered a 'Striped Hammer'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:40
+msgid "Odirath the Stoutford armorer ordered a 'Pretty Porcelain Figure'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:50
+msgid "Venanra the Brimhaven laundress ordered an 'Old, worn cape'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:60
+msgid "Tjure the unlucky Brimhaven merchant ordered a 'Mysterious green something'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:70
+msgid "Servant the Guynmart servant ordered a 'Chandelier'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:80
+msgid "Arghes at Remgard tavern ordered 'Yellow boots'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:90
+msgid "Wyre the mournful Vilegard woman ordered a 'Lyre'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:100
+msgid "Mikhail ordered a 'Plush Pillow'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:110
+msgid "Pangitain the Brimhaven fortune teller ordered a 'Crystal Globe'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:120
+msgid "Facutloni wants me to report back after the deliveries are complete."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:130
+msgid "I reported back to Facutloni. He is very happy."
 msgstr ""
 
 #: worldmap.xml:world1:crossglen

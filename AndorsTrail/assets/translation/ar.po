@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-17 15:16+0200\n"
-"PO-Revision-Date: 2021-07-13 21:46+0000\n"
-"Last-Translator: Lihan Zhu <lihan@proctorio.com>\n"
+"PO-Revision-Date: 2022-02-18 21:31+0000\n"
+"Last-Translator: عادل نصري <nsrya06@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/andors-trail/"
 "game-content/ar/>\n"
 "Language: ar\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.7.2-dev\n"
+"X-Generator: Weblate 4.11-dev\n"
 
 #: actorconditions_v069.json:bless
 msgid "Bless"
@@ -61,15 +61,15 @@ msgstr "مخمور"
 
 #: actorconditions_v069_bwm.json:dazed
 msgid "Dazed"
-msgstr ""
+msgstr "مذهول"
 
 #: actorconditions_v0610.json:chaotic_grip
 msgid "Chaotic grip"
-msgstr ""
+msgstr "قبضة فوضوية"
 
 #: actorconditions_v0610.json:chaotic_curse
 msgid "Chaotic curse"
-msgstr ""
+msgstr "لعنة الفوضى"
 
 #: actorconditions_v0611.json:contagion
 msgid "Insect contagion"
@@ -77,11 +77,11 @@ msgstr "عدوى الحشرات"
 
 #: actorconditions_v0611.json:blister
 msgid "Blistering skin"
-msgstr ""
+msgstr "تقرح الجلد"
 
 #: actorconditions_v0611.json:stunned
 msgid "Stunned"
-msgstr ""
+msgstr "مندهش"
 
 #: actorconditions_v0611.json:focus_dmg
 msgid "Focused damage"
@@ -89,7 +89,7 @@ msgstr "ضرر مركز"
 
 #: actorconditions_v0611.json:focus_ac
 msgid "Focused accuracy"
-msgstr ""
+msgstr "دقة مركزة"
 
 #: actorconditions_v0611.json:poison_irdegh
 msgid "Irdegh poison"
@@ -109,7 +109,7 @@ msgstr "مباركة تجديد الظل"
 
 #: actorconditions_v0611_2.json:shadowbless_acc
 msgid "Blessing of Shadow accuracy"
-msgstr ""
+msgstr "مباركة دقة الظل"
 
 #: actorconditions_v0611_2.json:shadowbless_guard
 msgid "Shadow guardian blessing"
@@ -129,7 +129,7 @@ msgstr "إرتجاج"
 
 #: actorconditions_v0612_2.json:food
 msgid "Sustenance"
-msgstr ""
+msgstr "قوت"
 
 #: actorconditions_v0612_2.json:foodp
 msgid "Food-poisoning"
@@ -165,7 +165,7 @@ msgstr "تجديد"
 
 #: actorconditions_v070.json:barkskin
 msgid "Bark skin"
-msgstr ""
+msgstr "لحاء الجلد"
 
 #: actorconditions_v070.json:shadow_acc
 msgid "Shadow's accuracy"
@@ -181,23 +181,23 @@ msgstr "قوة الظل"
 
 #: actorconditions_v070.json:haste
 msgid "Haste"
-msgstr ""
+msgstr "استعجال"
 
 #: actorconditions_v070.json:fire
 msgid "Ablaze"
-msgstr ""
+msgstr "مشتعل"
 
 #: actorconditions_v070.json:sting_minor
 msgid "Minor sting"
-msgstr ""
+msgstr "لسعة بسيطة"
 
 #: actorconditions_stoutford.json:confusion
 msgid "Confusion"
-msgstr ""
+msgstr "ارتباك"
 
 #: actorconditions_stoutford.json:clumsiness
 msgid "Clumsiness"
-msgstr ""
+msgstr "حماقة"
 
 #: actorconditions_stoutford.json:curse_undead
 msgid "Curse of the Undead"
@@ -205,15 +205,15 @@ msgstr "لعنة الزومبي"
 
 #: actorconditions_graveyard1.json:contagion2
 msgid "Spore contagion"
-msgstr ""
+msgstr "عدوى الجراثيم"
 
 #: actorconditions_graveyard1.json:petrification
 msgid "Petrification"
-msgstr ""
+msgstr "تحجر"
 
 #: actorconditions_graveyard1.json:vulnerability
 msgid "Vulnerability"
-msgstr ""
+msgstr "ضعف"
 
 #: actorconditions_graveyard1.json:flesh_rot
 msgid "Flesh rot"
@@ -221,11 +221,11 @@ msgstr "تعفن اللحم"
 
 #: actorconditions_graveyard1.json:putrefaction
 msgid "Putrefaction"
-msgstr ""
+msgstr "تعفن"
 
 #: actorconditions_guynmart.json:regenNeg
 msgid "Shadow Degeneration"
-msgstr ""
+msgstr "انحلال الظل"
 
 #: actorconditions_guynmart.json:bone_fracture
 msgid "Bone fracture"
@@ -253,19 +253,19 @@ msgstr "تسمم الدم"
 
 #: actorconditions_stoutford_combined.json:deftness
 msgid "Deftness"
-msgstr ""
+msgstr "براعة"
 
 #: actorconditions_stoutford_combined.json:tight_grip
 msgid "Tight grip"
-msgstr ""
+msgstr "قبضة محكمة"
 
 #: actorconditions_stoutford_combined.json:clairvoyance
 msgid "Clairvoyance"
-msgstr ""
+msgstr "التنبؤ"
 
 #: actorconditions_stoutford_combined.json:mind_fog
 msgid "Mind fog"
-msgstr ""
+msgstr "عقل مشوش"
 
 #: actorconditions_omicronrg9.json:guild03_restingAC
 msgid "Resting"
@@ -273,15 +273,15 @@ msgstr "يستريح"
 
 #: actorconditions_omicronrg9.json:g03_concentration
 msgid "Concentration"
-msgstr ""
+msgstr "تركيز"
 
 #: actorconditions_omicronrg9.json:g03_combo
 msgid "Combo"
-msgstr ""
+msgstr "كومبو"
 
 #: actorconditions_omicronrg9.json:carrying_ambelie
 msgid "Carrying Ambelie"
-msgstr ""
+msgstr "حمل أمبلياي"
 
 #: actorconditions_arulir_mountain.json:crushed
 msgid "Crushed"
@@ -301,11 +301,11 @@ msgstr "زيادة الدفاع"
 
 #: actorconditions_brimhaven.json:drowning
 msgid "Drowning"
-msgstr ""
+msgstr "غرق"
 
 #: actorconditions_brimhaven.json:entanglement
 msgid "Entanglement"
-msgstr ""
+msgstr "تشابك"
 
 #: actorconditions_brimhaven.json:fatigue1
 #: actorconditions_brimhaven.json:fatigue2
@@ -324,7 +324,7 @@ msgstr "جلد حجر"
 
 #: actorconditions_brimhaven.json:overeating
 msgid "Overeating"
-msgstr ""
+msgstr "تخمة"
 
 #: actorconditions_brimhaven.json:venom
 msgid "Venom"
@@ -332,39 +332,39 @@ msgstr "أفعى"
 
 #: actorconditions_fungi_panic.json:spore_poison
 msgid "Spore poisoning"
-msgstr ""
+msgstr "تسمم بوغ"
 
 #: actorconditions_gison.json:reinvigorated
 msgid "Reinvigorated"
-msgstr ""
+msgstr "تنشيط"
 
 #: actorconditions_gison.json:sated
 msgid "Sated"
-msgstr ""
+msgstr "متخم"
 
 #: actorconditions_omi2.json:panic
 msgid "Panic"
-msgstr ""
+msgstr "هلع"
 
 #: actorconditions_omi2.json:satiety
 msgid "Satiety"
-msgstr ""
+msgstr "التخمة"
 
 #: actorconditions_omi2.json:frozen1
 msgid "Minor freeze"
-msgstr ""
+msgstr "تجميد طفيف"
 
 #: actorconditions_omi2.json:frozen2
 msgid "Icy wounds"
-msgstr ""
+msgstr "الجروح الجليدية"
 
 #: actorconditions_omi2.json:relax
 msgid "Requiescence"
-msgstr ""
+msgstr "طلب"
 
 #: actorconditions_omi2.json:kazarite_misery
 msgid "Kazaul possession"
-msgstr ""
+msgstr "إمتلاك كازول"
 
 #: conversationlist_mikhail.json:mikhail_gamestart
 msgid "Oh good, you are awake."
@@ -411,6 +411,10 @@ msgstr "أنا أبحث عن أندور."
 #: conversationlist_mikhail.json:mikhail_default:8
 msgid "What kind of book is it that you have in your hand?"
 msgstr "ما نوع الكتاب الذي في يدك؟"
+
+#: conversationlist_mikhail.json:mikhail_default:9
+msgid "Yes, I'm here to deliver the order for a 'Plush Pillow'. But what for?"
+msgstr ""
 
 #: conversationlist_mikhail.json:mikhail_tasks
 msgid "Oh yes, there were some things I need help with, bread and rats. Which one would you like to talk about?"
@@ -515,6 +519,7 @@ msgstr "شكرا على الخبز مسبقا."
 #: conversationlist_guynmart2_npc.json:guynmart_child_90:0
 #: conversationlist_stoutford_combined.json:stoutford_widow_roots30_2:0
 #: conversationlist_brimhaven_2.json:oromir_basement_help_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:0
 msgid "You're welcome."
 msgstr "على الرحب."
 
@@ -1268,6 +1273,7 @@ msgstr "لا أعتقد ذلك أيضًا. لقد كنت أنت وشقيقك ه�
 #: conversationlist_brimhaven.json:remgard_prison_thief_200:0
 #: conversationlist_omi2.json:prim_guard5_3a:0
 #: conversationlist_omi2.json:ehrenfest_7a:0
+#: conversationlist_delivery.json:brv_wh_delivery_arghes:1
 msgid "Bye."
 msgstr "وداعا."
 
@@ -1317,6 +1323,7 @@ msgstr "شكرا جزيلا على مساعدتك يا فتى! ربما أنت �
 #: conversationlist_brimhaven.json:melona_1:0
 #: conversationlist_brimhaven_2.json:brv_guard_deputy_asd_30:0
 #: conversationlist_gison.json:gison_p1_20_warmup_1:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:0
 msgid "Thanks."
 msgstr "شكرا."
 
@@ -1350,6 +1357,7 @@ msgstr "هل نريد أن نتحدث عن ذلك؟"
 #: conversationlist_omi2.json:moyra_12:1
 #: conversationlist_omi2.json:prim_tavern_guest4_17c:1
 #: conversationlist_omi2.json:capvjern_22:0
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:0
 msgid "OK, bye."
 msgstr "حسنا، وداعا."
 
@@ -1690,6 +1698,10 @@ msgstr "لقد لاحظت تمثال إليثارا في الطابق السفل
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse:1
 msgid "You really seem to like your books."
 msgstr "يبدو أنك تحب كتبك حقًا."
+
+#: conversationlist_fallhaven_arcir.json:arcir_start:2
+msgid "And I'm your delivery kid. Did you order a 'Dusty old book'?"
+msgstr ""
 
 #: conversationlist_fallhaven_arcir.json:arcir_anythingelse
 msgid "Anything else you wanted to ask?"
@@ -3052,6 +3064,13 @@ msgstr "قتلته؟ لك شكري يا صديقي. الآن نحن في مأم�
 #: conversationlist_gison.json:gison_catchsoup_new:0
 #: conversationlist_gorwath.json:gorwath_love_2:0
 #: conversationlist_omi2.json:ehrenfest_31b:0
+#: conversationlist_delivery.json:brv_wh_delivery_arcir:0
+#: conversationlist_delivery.json:brv_wh_delivery_edrin:0
+#: conversationlist_delivery.json:brv_wh_delivery_odirath:0
+#: conversationlist_delivery.json:brv_wh_delivery_venanra:0
+#: conversationlist_delivery.json:brv_wh_delivery_tjure:0
+#: conversationlist_delivery.json:brv_wh_delivery_servant:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge:0
 msgid "Thank you."
 msgstr "شكرا لك."
 
@@ -4059,7 +4078,7 @@ msgstr "مرحبا."
 #: conversationlist_fungi_panic.json:zuul_khan_20:0
 #: conversationlist_fungi_panic.json:fungi_rescued:0
 msgid "Who are you?"
-msgstr ""
+msgstr "من أنت؟"
 
 #: conversationlist_thievesguild_1.json:thievesguild_pickpocket_2
 msgid "My real name is unimportant. People mostly call me Quickfingers."
@@ -4884,661 +4903,661 @@ msgstr "سافر إلى الجنوب الشرقي من فالهافن. عندم�
 
 #: conversationlist_kaori.json:kaori_1
 msgid "You are not welcome here. Please leave now."
-msgstr ""
+msgstr "أنت غير مرحب بك هنا. من فضلك غادر الآن."
 
 #: conversationlist_kaori.json:kaori_1:0
 #: conversationlist_kaori.json:kaori_default_1:1
 #: conversationlist_vilegard_villagers.json:vilegard_villager_2_0:0
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_0:0
 msgid "Why is everyone in Vilegard so afraid of outsiders?"
-msgstr ""
+msgstr "لماذا يخاف الجميع في فيلغارد من الغرباء؟"
 
 #: conversationlist_kaori.json:kaori_1:1
 msgid "Jolnor asked me to talk to you."
-msgstr ""
+msgstr "طلب مني جولنور أن أتحدث معك."
 
 #: conversationlist_kaori.json:kaori_2
 msgid "I don't want to talk to you. Go talk to Jolnor in the chapel if you want to help us."
-msgstr ""
+msgstr "لا اريد التحدث معك. اذهب و تحدث إلى جولنور في الكنيسة إذا كنت تريد مساعدتنا."
 
 #: conversationlist_kaori.json:kaori_2:1
 msgid "Fine. Don't tell me."
-msgstr ""
+msgstr "حسنا. لا تخبرني."
 
 #: conversationlist_kaori.json:kaori_3
 msgid "He did? I guess you are not as bad as I first thought."
-msgstr ""
+msgstr "هل فعل؟ أعتقد أنك لست بهذا السوء كما اعتقدت في البداية."
 
 #: conversationlist_kaori.json:kaori_4
 msgid "I am still not convinced that you are not a spy from Feygard sent to cause mischief."
-msgstr ""
+msgstr "ما زلت غير مقتنع بأنك لست جاسوسا من فايغارد أرسل للتسبب في الأذى."
 
 #: conversationlist_kaori.json:kaori_4:0
 #: conversationlist_kaori.json:kaori_default_1:0
 #: conversationlist_vilegard_erttu.json:erttu_default:1
 msgid "What can you tell me about Vilegard?"
-msgstr ""
+msgstr "ماذا يمكنك أن تخبرني عن فيلغارد؟"
 
 #: conversationlist_kaori.json:kaori_4:1
 msgid "I can assure you that I am not a spy."
-msgstr ""
+msgstr "يمكنني أن أثبت لك أني لست جاسوسا."
 
 #: conversationlist_kaori.json:kaori_4:2
 msgid "Feygard, where or what is that?"
-msgstr ""
+msgstr "فايغارد، أين أو ماذا تكون؟"
 
 #: conversationlist_kaori.json:kaori_5
 msgid "Hmm. Maybe not. But then again, maybe you are. I am still not sure."
-msgstr ""
+msgstr "إمم. ربما لا. لكن مجددا، ربما أنت كذلك. لم أتأكد بعد."
 
 #: conversationlist_kaori.json:kaori_5:0
 #: conversationlist_kaori.json:kaori_trust_1:0
 #: conversationlist_kaori.json:kaori_bribe:0
 #: conversationlist_jolnor.json:jolnor_suspicious_3:0
 msgid "Is there anything I can do to gain your trust?"
-msgstr ""
+msgstr "هل هناك أي شيء يمكنني فعله لكسب ثقتك؟"
 
 #: conversationlist_kaori.json:kaori_5:1
 #: conversationlist_kaori.json:kaori_trust_1:1
 msgid "[Bribe] How would 100 gold sound? Could that help you to trust me?"
-msgstr ""
+msgstr "[رشوة] كيف سيكون صوت 100 ذهب؟ هل يمكن أن يساعدك ذلك على الوثوق بي؟"
 
 #: conversationlist_kaori.json:kaori_trust_1
 msgid "I still don't fully trust you enough to talk about that."
-msgstr ""
+msgstr "مازلت لا أثق بك بما يكفي لأتحدث معك عن ذلك."
 
 #: conversationlist_kaori.json:kaori_bribe
 msgid "Are you trying to bribe me, kid? That won't work on me. What use would I have for gold if you actually were a spy?"
-msgstr ""
+msgstr "هل تحاول رشوتي، أيها الطفل؟ هذا لن يعمل علي. ما فائدة الذهب إذا كنت بالفعل جاسوسًا؟"
 
 #: conversationlist_kaori.json:kaori_10
 msgid "If you really want to prove to me that you are not a spy from Feygard, there actually is something that you can do for me."
-msgstr ""
+msgstr "إذا كنت تريد حقًا أن تثبت لي أنك لست جاسوسًا من فايغارد ، فهناك بالفعل شيء يمكنك القيام به من أجلي."
 
 #: conversationlist_kaori.json:kaori_11
 msgid "Up until recently, we have been using special potions made of ground bones for healing. These were very potent healing potions, and were used for several purposes."
-msgstr ""
+msgstr "حتى وقت قريب ، كنا نستخدم جرعات خاصة مصنوعة من عظام الأرض للشفاء. كانت هذه جرعات شفاء قوية للغاية ، واستخدمت لعدة أغراض."
 
 #: conversationlist_kaori.json:kaori_12
 msgid "But now, they have been banned by Lord Geomyr, and most use of them has stopped."
-msgstr ""
+msgstr "ولكن الآن ، تم حظرها من قبل اللورد غيومير ، وتوقف معظم استخدامها."
 
 #: conversationlist_kaori.json:kaori_13
 msgid "I would really like to have a few more of those. If you can bring me 10 bonemeal potions, I might consider trusting you a bit more."
-msgstr ""
+msgstr "أود حقًا الحصول على المزيد من هؤلاء. إذا كان بإمكانك إحضار 10 جرعات من مسحوق العظام ، فقد أفكر في الوثوق بك أكثر قليلاً."
 
 #: conversationlist_kaori.json:kaori_13:0
 msgid "OK. I will get some potions for you."
-msgstr ""
+msgstr "حسنا. سأحضر لك بعض الجرعات."
 
 #: conversationlist_kaori.json:kaori_13:1
 #: conversationlist_kaori.json:kaori_return_1:2
 msgid "No. If they are banned, there is most likely a good reason behind it. You shouldn't use them."
-msgstr ""
+msgstr "لا. إذا تم حظرها ، فمن المرجح أن يكون هناك سبب وجيه وراء ذلك. لا يجب عليك استخدامها."
 
 #: conversationlist_kaori.json:kaori_13:2
 msgid "I already have some of those potions with me that you can have."
-msgstr ""
+msgstr "لدي بالفعل بعض هذه الجرعات معي يمكنك أخذها."
 
 #: conversationlist_kaori.json:kaori_return_1
 msgid "Hello again. Have you found those 10 bonemeal potions I asked for?"
-msgstr ""
+msgstr "مرحبا مجددا. هل وجدت تلك الجرعات العشر من مسحوق العظام التي طلبتها؟"
 
 #: conversationlist_kaori.json:kaori_return_1:0
 msgid "No, I am still looking for them."
-msgstr ""
+msgstr "لا، مازلت أبحث عنهم."
 
 #: conversationlist_kaori.json:kaori_return_1:1
 msgid "Yes, I brought your potions."
-msgstr ""
+msgstr "أجل، أحضرت جرعاتك."
 
 #: conversationlist_kaori.json:kaori_14
 msgid "Well, hurry up. I really need them soon."
-msgstr ""
+msgstr "إذا، أسرع. أنا حقا أحتاجهم قريبا."
 
 #: conversationlist_kaori.json:kaori_15
 msgid "Fine. Now please leave me."
-msgstr ""
+msgstr "حسنا. الآن رجاءا دعني."
 
 #: conversationlist_kaori.json:kaori_20
 msgid "Good. Give them to me."
-msgstr ""
+msgstr "جيد. أعطني إياهم."
 
 #: conversationlist_kaori.json:kaori_21
 msgid "Yes, these will do fine. Thank you a lot kid. Maybe you are OK after all. May the Shadow watch over you."
-msgstr ""
+msgstr "نعم ، هذه سوف تعمل بشكل جيد. شكرا جزيلا يا فتى. ربما أنت جيد بعد كل شيء. ليرعاك الظل."
 
 #: conversationlist_kaori.json:kaori_default_1
 msgid "Was there something you wanted to talk about?"
-msgstr ""
+msgstr "هل كان هناك شيء أردت التحدث عنه؟"
 
 #: conversationlist_kaori.json:kaori_vilegard_1
 msgid "You should go talk to Erttu if you want the background story about Vilegard. She has been around here far longer than me."
-msgstr ""
+msgstr "يجب أن تذهب للتحدث إلى إرتو إذا كنت تريد خلفية قصة فيلغارد. لقد كانت هنا لفترة أطول مني."
 
 #: conversationlist_kaori.json:kaori_vilegard_1:0
 msgid "OK, I will do that."
-msgstr ""
+msgstr "حسنا، سأفعل ذلك."
 
 #: conversationlist_kaori.json:kaori_vilegard_2
 msgid "We have a history of people coming here and causing mischief. Over time, we have learned that keeping to ourselves works best."
-msgstr ""
+msgstr "لدينا تاريخ مع أشخاص دخلوا هنا و سببوا الأذى. مع الوقت، تعلمنا أن نعيش وحدنا أفضل."
 
 #: conversationlist_kaori.json:kaori_vilegard_2:0
 msgid "That sounds like a good idea."
-msgstr ""
+msgstr "هذه تبدو فكرة رائعة."
 
 #: conversationlist_kaori.json:kaori_vilegard_2:1
 msgid "That sounds wrong."
-msgstr ""
+msgstr "هذا يبدو خطأ."
 
 #: conversationlist_kaori.json:kaori_vilegard_3
 msgid "Anyway, that's why we are so suspicious of outsiders."
-msgstr ""
+msgstr "على أي حال ، هذا هو السبب في أننا نشك في الغرباء."
 
 #: conversationlist_kaori.json:kaori_vilegard_3:0
 #: conversationlist_brimhaven_2.json:oromir_behind_inn_20
 msgid "I see."
-msgstr ""
+msgstr "فهمت."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_1_0
 msgid "Hello. Who are you? You are not welcome here in Vilegard."
-msgstr ""
+msgstr "مرحبا، من أنت؟ غير مرحب بك في فيلغارد."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_1_0:0
 msgid "Have you seen my brother, Andor, around here?"
-msgstr ""
+msgstr "هل رأيت أخي أندور هنا؟"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_1_2
 msgid "No, I have certainly not. Even if I had, why would I tell you?"
-msgstr ""
+msgstr "لا، بالتأكيد لم أره. حتى إن فعلت، لماذا قد أخبرك؟"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_2_0
 msgid "By the Shadow, you are an outsider. We don't like outsiders here."
-msgstr ""
+msgstr "بسم الظل ، أنت دخيل. لا نحب الغرباء هنا."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_3_0
 msgid "This is Vilegard. You will find no comfort here, outsider."
-msgstr ""
+msgstr "هذه فيلغارد. لن تجد أي ترحيب هنا أيها الغريب."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_0
 msgid "You look like that other kid that ran around here. Probably causing trouble, as always with outsiders."
-msgstr ""
+msgstr "تبدو مثل ذلك الطفل الآخر الذي تجول هنا. ربما تسبب مشاكل ، كما هو الحال دائمًا مع الغرباء."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_0:0
 msgid "Did you see my brother Andor?"
-msgstr ""
+msgstr "هل رأيت أخي أندور؟"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_0:1
 msgid "I'm not going to cause trouble."
-msgstr ""
+msgstr "أنا لن أسبب المشاكل."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_0:2
 msgid "Oh yes, I am going to cause trouble all right."
-msgstr ""
+msgstr "أجل، سوف أسبب المشاكل."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_2
 msgid "No, I am sure you are. Outsiders always do."
-msgstr ""
+msgstr "لا، أنا واثق أنك ستفعل. الغرباء دائما يفعلون."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_4_3
 msgid "Yes, I know. That's why we don't want your kind around here. You should leave Vilegard while you still can."
-msgstr ""
+msgstr "نعم، انا اعرف. لهذا السبب نحن لا نريد أمثالك هنا. يجب عليك مغادرة فيلغارد بينما لا يزال بإمكانك ذلك."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_0
 msgid "Hello there outsider. You look lost, that's good. Now leave Vilegard while you can."
-msgstr ""
+msgstr "مرحبا أيها الغريب. تبدو ضائعا، هذا جيد. الآن غادر فيلغارد مادمت قادرا على ذلك."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_5_1
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_2
 msgid "I don't trust you. You should go see Jolnor in the chapel if you want some sympathy."
-msgstr ""
+msgstr "أنا لا أثق بك. يجب أن تذهب لرؤية جولنور في الكنيسة إذا كنت تريد بعض التعاطف."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend
 msgid "Hello there. I heard you helped us common folk here in Vilegard. Please stay for as long as you like friend."
-msgstr ""
+msgstr "مرحبا. سمعت أنك ساعدتنا نحن العامة في فيلغارد. أرجوك إبقى بقدر ما تريد يا صديقي."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:0
 msgid "Thank you. Have you seen my brother Andor around here?"
-msgstr ""
+msgstr "شكرا لك. هل رأيت أخي أندور هنا؟"
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend:1
 msgid "Thank you. See you."
-msgstr ""
+msgstr "شكرا لك. أراك لاحقا."
 
 #: conversationlist_vilegard_villagers.json:vilegard_villager_friend_1
 msgid "Your brother? No, I haven't seen anyone that looks like you. But then again, I never take much notice to outsiders."
-msgstr ""
+msgstr "أخوك؟ لا ، لم أر أحداً يشبهك. لكن بعد ذلك مرة أخرى ، لا أنتبه كثيرًا للغرباء."
 
 #: conversationlist_vilegard_erttu.json:erttu_1
 msgid "Hello there outsider. In general, we dislike outsiders here in Vilegard, but there is something about you that I find familiar."
-msgstr ""
+msgstr "مرحبا أيها الغريب. بشكل عام، نكره الغرباء هنا في فيلغارد، و لكن هناك شيء عنك أجده مألوفا."
 
 #: conversationlist_vilegard_erttu.json:erttu_default
 msgid "What do you want to talk about?"
-msgstr ""
+msgstr "ماذا تريد أن نتحدث عنه؟"
 
 #: conversationlist_vilegard_erttu.json:erttu_default:0
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust:0
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:0
 msgid "Why is everyone in Vilegard so suspicious of outsiders?"
-msgstr ""
+msgstr "لماذا الجميع في فيلغارد مرتابون جدًا من الغرباء؟"
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_1
 msgid "Most of us that live here in Vilegard have a history of trusting people too much. People that have hurt us in the end."
-msgstr ""
+msgstr "معظمنا الذين نعيش هنا في فيلغارد لدينا تاريخ حافل بالثقة في الناس كثيرًا. الأشخاص الذين أساءوا إلينا في النهاية."
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_2
 msgid "Now we start by being suspicious, and ask that outsiders coming here gain our trust by helping us first."
-msgstr ""
+msgstr "نبدأ الآن بالشك ، ونطلب من الغرباء الذين يأتون إلى هنا كسب ثقتنا من خلال مساعدتنا أولاً."
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_3
 msgid "Also, other people generally look down upon us here in Vilegard for some reason. Especially those snobs from Feygard and the northern cities."
-msgstr ""
+msgstr "أيضًا ، ينظر الأشخاص الآخرون إلينا بإحتقار هنا في فيلغارد لسبب ما. خاصة أولئك المتغطرسين من فايغارد و المدن الشمالية."
 
 #: conversationlist_vilegard_erttu.json:erttu_distrust_3:0
 msgid "What else can you tell me about Vilegard?"
-msgstr ""
+msgstr "ماذا يمكنك أن تخبرني أيضًا عن فيلغارد؟"
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_1
 msgid "We have almost everything we need here in Vilegard. Our center of the village is the chapel."
-msgstr ""
+msgstr "لدينا تقريبا كل ما نحتاجه هنا في فيلغارد. مركز قريتنا هو الكنيسة الصغيرة."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_2
 msgid "The chapel serves as our place of worship for the Shadow, and also as our place to gather when discussing larger issues in our village."
-msgstr ""
+msgstr "تعمل الكنيسة كمكان لعبادة الظل ، و أيضًا كمكان لنا للتجمع عند مناقشة القضايا الأكبر في قريتنا."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3
 msgid "Apart from the chapel, we have a tavern, a smith and an armorer."
-msgstr ""
+msgstr "بصرف النظر عن الكنيسة الصغيرة ، لدينا حانة و حداد و صانع أسلحة."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:0
 msgid "Thanks for the information. There was something else I wanted to talk about."
-msgstr ""
+msgstr "اشكرك على المعلومات. كان هناك شيء آخر أردت التحدث عنه."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:1
 msgid "Thanks for the information. Goodbye."
-msgstr ""
+msgstr "اشكرك على المعلومات. وداعا."
 
 #: conversationlist_vilegard_erttu.json:erttu_vilegard_3:2
 msgid "Wow, nothing more? I wonder what I am doing in a puny village such as this one."
-msgstr ""
+msgstr "واو ، فقط؟ أتساءل ماذا أفعل في قرية صغيرة مثل هذه."
 
 #: conversationlist_vilegard_tavern.json:dunla_default
 msgid "You look like a smart fellow. Need any supplies?"
-msgstr ""
+msgstr "أنت تبدو كأنك زميل ذكي. هل تحتاج إلى أي إمدادات؟"
 
 #: conversationlist_vilegard_tavern.json:dunla_default:0
 msgid "Sure, let me see what you have available."
-msgstr ""
+msgstr "بالتأكيد ، دعني أرى ما هو متاح لديك."
 
 #: conversationlist_vilegard_tavern.json:dunla_default:1
 msgid "What can you tell me about yourself?"
-msgstr ""
+msgstr "ماذا يمكنك ان تقول لي عن نفسك؟"
 
 #: conversationlist_vilegard_tavern.json:dunla_1
 msgid "Me? I am no one. You didn't even see me. You certainly did not talk to me."
-msgstr ""
+msgstr "أنا؟ لست شخصا. أنت لم تراني حتى. أنت بالتأكيد لم تتحدث معي."
 
 #: conversationlist_vilegard_tavern.json:dunla_1:0
 msgid "Troublemaker sent me to get your report."
-msgstr ""
+msgstr "أرسلني المشاغب للحصول على تقريرك."
 
 #: conversationlist_vilegard_tavern.json:tharwyn_1
 msgid "Hello there. I heard you helped Jolnor in the chapel. You have my thanks, friend."
-msgstr ""
+msgstr "أهلا بك. سمعت أنك ساعدت جولنور في الكنيسة. لك شكري، يا صديقي."
 
 #: conversationlist_vilegard_tavern.json:tharwyn_2
 msgid "Have a seat anywhere. What can I get you?"
-msgstr ""
+msgstr "اجلس في أي مكان. ماذا يمكن أن أحضر لك؟"
 
 #: conversationlist_vilegard_tavern.json:tharwyn_2:0
 msgid "Show me what food you have available."
-msgstr ""
+msgstr "أرني ما هو الطعام المتاح لديك."
 
 #: conversationlist_vilegard_tavern.json:vilegard_tavern_drunk_1
 msgid "Oh look, a lost kid. Here, have some mead kid."
-msgstr ""
+msgstr "أوه انظر ، طفل ضائع. هنا ، خذ بعض الخمر أيها الطفل."
 
 #: conversationlist_vilegard_tavern.json:vilegard_tavern_drunk_1:1
 msgid "Watch your tongue, drunkard."
-msgstr ""
+msgstr "انتبه لما تقوله أيها السكير."
 
 #: conversationlist_jolnor.json:jolnor_default
 #: conversationlist_jolnor.json:jolnor_default_2
 msgid "Walk with the Shadow my child."
-msgstr ""
+msgstr "إمشي مع الظل يا بني."
 
 #: conversationlist_jolnor.json:jolnor_default:1
 msgid "I was told to talk to you about why everyone in Vilegard is suspicious of outsiders."
-msgstr ""
+msgstr "قيل لي أن أتحدث إليك عن سبب ارتياب الجميع في فيلغارد من الغرباء."
 
 #: conversationlist_jolnor.json:jolnor_default_2:0
 #: conversationlist_jolnor.json:jolnor_default_3:0
 msgid "Can you tell me again what this place is?"
-msgstr ""
+msgstr "هل يمكن أن تخبرني مرة أخرى ما هو هذا المكان؟"
 
 #: conversationlist_jolnor.json:jolnor_default_2:1
 msgid "Let's talk about those missions for gaining trust that you talked about earlier."
-msgstr ""
+msgstr "دعنا نتحدث عن تلك المهام لاكتساب الثقة التي تحدثت عنها سابقًا."
 
 #: conversationlist_jolnor.json:jolnor_default_2:2
 #: conversationlist_jolnor.json:jolnor_default_3:1
 #: conversationlist_jolnor.json:jolnor_chapel_1:1
 msgid "I require healing. Can I see what items you have available?"
-msgstr ""
+msgstr "أحتاج إلى دواء. هل يمكنني رؤية العناصر المتوفرة لديك؟"
 
 #: conversationlist_jolnor.json:jolnor_default_3
 msgid "Walk with the Shadow my friend."
-msgstr ""
+msgstr "سر مع الظل يا بني."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1
 msgid "This is Vilegard's place of worship for the Shadow. We praise the Shadow in all its might and glory."
-msgstr ""
+msgstr "هذا هو مكان عبادة فيلغارد للظل. نحمد الظل بكل قوته و مجده."
 
 #: conversationlist_jolnor.json:jolnor_chapel_1:2
 msgid "Whatever. Just show me your goods."
-msgstr ""
+msgstr "ايا كان. فقط أرني البضائع الخاصة بك."
 
 #: conversationlist_jolnor.json:jolnor_shop_2
 msgid "I don't trust you enough yet to feel comfortable trading with you."
-msgstr ""
+msgstr "أنا لا أثق بك بدرجة كافية حتى الآن لأشعر بالراحة في التداول معك."
 
 #: conversationlist_jolnor.json:jolnor_shop_2:0
 msgid "Why are you that suspicious?"
-msgstr ""
+msgstr "لماذا انت متشكك هكذا؟"
 
 #: conversationlist_jolnor.json:jolnor_shop_2:1
 #: conversationlist_graveyard1.json:graveyardking_2:0
 msgid "Very well."
-msgstr ""
+msgstr "جيد جدا."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_1
 msgid "Suspicious? No, I wouldn't call it suspicion. I would rather call it that we are careful nowadays."
-msgstr ""
+msgstr "متشكك؟ لا ، لن أسميه شكا. أفضل أن أسميه أننا حريصون في الوقت الحاضر."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2
 msgid "In order to gain the trust of the village, an outsider must prove that they are not here to cause trouble."
-msgstr ""
+msgstr "من أجل كسب ثقة القرية ، يجب على الغريب أن يثبت أنه ليس موجودًا هنا للتسبب في المتاعب."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2:0
 msgid "Sounds like a good idea. There are a lot of selfish people out there."
-msgstr ""
+msgstr "تبدو فكرة جيدة يوجد الكثير من الأنانيين في الخارج."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_2:1
 msgid "That sounds really unnecessary. Why not trust people in the first place?"
-msgstr ""
+msgstr "هذا يبدو ضروريًا حقًا. لماذا لا تثق بالناس في المقام الأول؟"
 
 #: conversationlist_jolnor.json:jolnor_suspicious_3
 msgid "Yes, right. You seem to understand us well, I like that."
-msgstr ""
+msgstr "أجل، صحيح. يبدو أنك تفهمنا جيدًا، يعجبني ذلك."
 
 #: conversationlist_jolnor.json:jolnor_suspicious_4
 msgid "We have learned from history not to trust outsiders, and you are an outsider. Why should we trust you?"
-msgstr ""
+msgstr "لقد تعلمنا من التاريخ ألا نثق في الغرباء ، وأنت غريب. لماذا يجب ان نثق بك؟"
 
 #: conversationlist_jolnor.json:jolnor_suspicious_4:0
 msgid "What can I do to gain your trust?"
-msgstr ""
+msgstr "ماذا يمكنني أن أفعل لكسب ثقتك؟"
 
 #: conversationlist_jolnor.json:jolnor_suspicious_4:1
 msgid "You are right. You probably should not trust me."
-msgstr ""
+msgstr "أنت محق. ربما لا يجب أن تثق بي."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_return_2
 msgid "With your help earlier, you have already gained our trust."
-msgstr ""
+msgstr "بمساعدتك في وقت سابق ، لقد اكتسبت ثقتنا بالفعل."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_return
 msgid "As I said before, you have to help some people here in Vilegard to gain our trust."
-msgstr ""
+msgstr "كما قلت من قبل ، عليك مساعدة بعض الأشخاص هنا في فيلغارد لكسب ثقتنا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_1
 msgid "If you do us a favor, we might consider trusting you. There are three people I can think of that are influential here in Vilegard, that you should try to help."
-msgstr ""
+msgstr "إذا قدمت لنا معروفًا ، فقد نفكر في الوثوق بك. هناك ثلاثة أشخاص يمكنني التفكير فيهم مؤثرين هنا في فيليغارد ، و عليك أن تحاول مساعدتهم."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_2
 msgid "First, there is Kaori. She lives up in the northern part of Vilegard. Ask her if she wants help with anything."
-msgstr ""
+msgstr "أولاً ، هناك كاوري. تعيش في الجزء الشمالي من فيليغارد. إسألها عما إذا كانت تريد المساعدة في أي شيء."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_2:0
 msgid "OK. Talk to Kaori. Got it."
-msgstr ""
+msgstr "موافق. أتحدث إلى كاوري. حسنا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_3
 msgid "Then there is Wrye. Wrye also lives up in the northern part of Vilegard. Many people here in Vilegard seek her advice on various things."
-msgstr ""
+msgstr "ثم هناك ووري. تعيش ووري أيضًا في الجزء الشمالي من فيليغارد. يلتمس الكثير من الناس هنا في فيليغارد مشورتها بشأن أشياء مختلفة."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_4
 msgid "She recently lost her son in a tragic way. If you can gain her trust, you will have a strong ally here."
-msgstr ""
+msgstr "لقد فقدت إبنها مؤخرًا بطريقة مأساوية. إذا تمكنت من كسب ثقتها ، فسيكون لديك حليف قوي هنا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_4:0
 msgid "Talk to Wrye. Got it."
-msgstr ""
+msgstr "أتحدث إلى ووري. حسنا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_5
 msgid "And last but not least, I have a favor to ask of you as well."
-msgstr ""
+msgstr "و أخيرًا و ليس آخرًا ، لديّ خدمة أطلبها منك أيضًا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_5:0
 msgid "What favor is that?"
-msgstr ""
+msgstr "أي خدمة هذه؟"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_6
 msgid "North of Vilegard is a tavern called the Foaming Flask. In my opinion, this tavern is a guard station in guise for Feygard."
-msgstr ""
+msgstr "شمال فيليغارد توجد حانة تسمى قنينة الرغوة. في رأيي ، هذه الحانة هي مركز حراسة لفايغارد."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_7
 msgid "The tavern is almost always visited by the Feygard royal guard of Lord Geomyr."
-msgstr ""
+msgstr "تتم زيارة الحانة دائمًا تقريبًا من قبل الحرس الملكي لفايغارد للورد غيومير."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_8
 msgid "They are probably here to spy on us, since we are followers of the Shadow. Lord Geomyr's forces always try to make life difficult for us and the Shadow."
-msgstr ""
+msgstr "ربما يكونون هنا للتجسس علينا ، لأننا أتباع الظل. تحاول قوات اللورد غيوميتر دائمًا أن تجعل الحياة صعبة علينا و على الظل."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_8:0
 msgid "Yes, they seem like troublemakers all around."
-msgstr ""
+msgstr "نعم ، يبدو أنهم مثيري شغب في كل مكان."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_8:1
 msgid "I am sure they have their reasons for doing what they do."
-msgstr ""
+msgstr "أنا متأكد من أن لديهم أسبابهم لفعل ما يفعلونه."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_9
 msgid "Right. Troublemakers indeed."
-msgstr ""
+msgstr "صحيح. مثيرو شغب."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_9:0
 #: conversationlist_jolnor.json:jolnor_gaintrust_10:0
 msgid "What do you want me to do?"
-msgstr ""
+msgstr "ماذا تريدني ان افعل؟"
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_10
 msgid "Yes, their reason is to make life miserable for us, I am sure."
-msgstr ""
+msgstr "نعم ، سببهم هو جعل الحياة بائسة بالنسبة لنا ، أنا متأكد."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_11
 msgid "My reports say that there is a guard stationed outside the tavern, to keep an eye on potential dangers."
-msgstr ""
+msgstr "تقول تقاريري أن هناك حارسًا متمركزًا خارج الحانة ، لمراقبة الأخطار المحتملة."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12
 msgid "I want you to make sure the guard disappears somehow. How you do that is purely up to you."
-msgstr ""
+msgstr "أريدك أن تتأكد من إختفاء الحارس بطريقة ما. كيف تفعل ذلك متروك لك تمامًا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:0
 msgid "I am not sure I should upset the Feygard patrol guards. This could really get me into trouble."
-msgstr ""
+msgstr "لست متأكدًا من أنني يجب أن أزعج حراس دورية فايغارد. هذا يمكن أن يوقعني في مشكلة."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:1
 msgid "For the Shadow, I will do as you ask."
-msgstr ""
+msgstr "من أجل الظل ، سأفعل ما طلبته."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_12:2
 msgid "OK, I hope this leads to some treasure in the end."
-msgstr ""
+msgstr "حسنًا ، آمل أن يوصلني هذا إلى مكافئة ما في النهاية."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_13
 msgid "It's your choice. You can at least go check out the tavern and see if you find anything suspicious."
-msgstr ""
+msgstr "إنه اختيارك. يمكنك على الأقل الذهاب للتحقق من الحانة و معرفة ما إذا كنت تجد أي شيء مريبًا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_13:0
 #: conversationlist_stoutford_combined.json:odirath_3_5:3
 #: conversationlist_stoutford_combined.json:yolgen_flagstone_0:2
 msgid "Maybe."
-msgstr ""
+msgstr "ربما."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_14
 msgid "Good. Report back to me when you are done."
-msgstr ""
+msgstr "حسنا. أبلغني عندما تفعل ذلك."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_15
 msgid "So, in order to gain our trust here in Vilegard, I would suggest you help Kaori, Wrye and me."
-msgstr ""
+msgstr "لذلك ، من أجل كسب ثقتنا هنا في فيليغارد ، أقترح عليك مساعدة كاوري ووري و أنا."
 
 #: conversationlist_jolnor.json:jolnor_gaintrust_15:0
 msgid "Thank you for the information. I will be back when I have something to report."
-msgstr ""
+msgstr "شكرا على المعلومة. سأعود عندما يكون لدي شيء للإبلاغ عنه."
 
 #: conversationlist_jolnor.json:jolnor_quests_1
 msgid "I would suggest you help Kaori, Wrye and me to gain our trust."
-msgstr ""
+msgstr "أود أن أقترح عليك مساعدة كاوري و ووري و أنا لكسب ثقتنا."
 
 #: conversationlist_jolnor.json:jolnor_quests_1:0
 msgid "About that guard outside the Foaming Flask tavern..."
-msgstr ""
+msgstr "بالنسبة لهذا الحارس خارج حانة قوارير الرغوة ..."
 
 #: conversationlist_jolnor.json:jolnor_quests_1:1
 msgid "About those tasks..."
-msgstr ""
+msgstr "بالنسبة لتلك المهمات..."
 
 #: conversationlist_jolnor.json:jolnor_quests_1:2
 #: conversationlist_jolnor.json:jolnor_quests_2:2
 msgid "Never mind, let's get back to those other topics."
-msgstr ""
+msgstr "لا تهتم ، دعنا نعود إلى الأمور الأخرى."
 
 #: conversationlist_jolnor.json:jolnor_quests_2
 #: conversationlist_maevalia.json:maevalia_r3
 msgid "Yes, what about them?"
-msgstr ""
+msgstr "أجل، ماذا عنهم؟"
 
 #: conversationlist_jolnor.json:jolnor_quests_2:1
 msgid "I have done all the tasks you asked me to do."
-msgstr ""
+msgstr "لقد قمت بكل المهام التي طلبت مني القيام بها."
 
 #: conversationlist_jolnor.json:jolnor_guard_1
 msgid "Yes, what about him. Have you removed him yet?"
-msgstr ""
+msgstr "أجل، ماذا عنه. هل أبعدته؟"
 
 #: conversationlist_jolnor.json:jolnor_guard_1:0
 msgid "Yes, he will leave his post as soon as this shift is over."
-msgstr ""
+msgstr "نعم، سيترك موقعه بعد إنتهاء مناوبته."
 
 #: conversationlist_jolnor.json:jolnor_guard_1:1
 msgid "Yes, he is removed."
-msgstr ""
+msgstr "أجل، أبعدته."
 
 #: conversationlist_jolnor.json:jolnor_guard_1:2
 msgid "No, but I am working on it."
-msgstr ""
+msgstr "لا ، لكني أعمل على ذلك."
 
 #: conversationlist_jolnor.json:jolnor_guard_completed
 msgid "Yes, you dealt with him earlier. Thank you for your help."
-msgstr ""
+msgstr "أجل، لقد تعاملت معه. شكرا لك على المساعدة."
 
 #: conversationlist_jolnor.json:jolnor_guard_2
 msgid "Very good. Thank you for your help."
-msgstr ""
+msgstr "جيد جدا. شكرا لك على المساعدة."
 
 #: conversationlist_jolnor.json:jolnor_guard_2:0
 msgid "No problem. Let's get back to those other tasks we talked about."
-msgstr ""
+msgstr "لا مشكلة. دعنا نعود إلى تلك المهام الأخرى التي تحدثنا عنها."
 
 #: conversationlist_jolnor.json:jolnor_quests_kaori_1
 msgid "You still need to help Kaori with her task."
-msgstr ""
+msgstr "ما زلت بحاجة إلى مساعدة كاوري في مهمتها."
 
 #: conversationlist_jolnor.json:jolnor_quests_wrye_1
 msgid "You still need to help Wrye with her task."
-msgstr ""
+msgstr "ما زلت بحاجة إلى مساعدة ووري في مهمتها."
 
 #: conversationlist_jolnor.json:jolnor_quests_completed
 msgid "Good. You helped all three of us."
-msgstr ""
+msgstr "جيد. لقد ساعدتنا نحن الثلاثة."
 
 #: conversationlist_jolnor.json:jolnor_quests_completed_2
 msgid "I suppose that shows some dedication, and that we are ready to trust you now."
-msgstr ""
+msgstr "أفترض أن هذا يظهر بعض التفاني ، و أننا على استعداد للثقة بك الآن."
 
 #: conversationlist_jolnor.json:jolnor_quests_completed_3
 msgid "You have our thanks, friend. You will always find shelter here in Vilegard. We welcome you into our village."
-msgstr ""
+msgstr "لك شكرنا يا صديقي. ستجد دائمًا مأوى هنا في فيليغارد. نرحب بك في قريتنا."
 
 #: conversationlist_alynndir.json:alynndir_1
 msgid "Hello there. Welcome to my cabin."
-msgstr ""
+msgstr "أهلا بك. مرحبا بك في مقصورتي."
 
 #: conversationlist_alynndir.json:alynndir_1:1
 #: conversationlist_alynndir.json:alynndir_2:1
 msgid "What can you tell me about the surroundings here?"
-msgstr ""
+msgstr "ماذا يمكنك أن تخبرني عن المناطق المحيطة هنا؟"
 
 #: conversationlist_alynndir.json:alynndir_2
 msgid "Mostly, I trade with travelers on the main road on the way to Nor City."
-msgstr ""
+msgstr "في الغالب ، أتاجر مع المسافرين على الطريق الرئيسي في الطريق إلى مدينة نور."
 
 #: conversationlist_alynndir.json:alynndir_3
 msgid "Oh, there is not much around here. Vilegard to the west and Brightport to the east."
-msgstr ""
+msgstr "أوه ، ليس هناك الكثير هنا. فيليغارد من الغرب و برايتبورت من الشرق."
 
 #: conversationlist_alynndir.json:alynndir_4
 msgid "Up north is just forest. But there are some strange things happening there."
-msgstr ""
+msgstr "في الشمال مجرد غابة. لكن هناك أشياء غريبة تحدث هناك."
 
 #: conversationlist_alynndir.json:alynndir_5
 msgid "I have heard terrible screams coming from the forest to the northwest."
-msgstr ""
+msgstr "سمعت صرخات مروعة قادمة من الغابة من الشمال الغربي."
 
 #: conversationlist_alynndir.json:alynndir_6
 msgid "I really wonder what is up there."
-msgstr ""
+msgstr "أنا حقا أتساءل ما الذي يوجد هناك."
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1
 msgid "Hello there. Please browse my selection of fine armors and protection."
-msgstr ""
+msgstr "أهلا بك. يرجى تصفح اختياراتي من الدروع الواقية و الحماية."
 
 #: conversationlist_vilegard_shops.json:vilegard_armorer_1:0
 msgid "Let me see your list of wares."
-msgstr ""
+msgstr "دعني أرى قائمة السلع الخاصة بك."
 
 #: conversationlist_vilegard_shops.json:vilegard_smith_1
 msgid "Hello there. I heard you helped us here in Vilegard. What can I help you with?"
-msgstr ""
+msgstr "أهلا بك. سمعت أنك ساعدتنا هنا في فيليغارد. بماذا يمكنني مساعدتك؟"
 
 #: conversationlist_vilegard_shops.json:vilegard_smith_1:0
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust:1
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:1
 msgid "Can I see what items you have for sale?"
-msgstr ""
+msgstr "هل يمكنني رؤية العناصر التي لديك للبيع؟"
 
 #: conversationlist_vilegard_shops.json:vilegard_smith_1:1
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:2
 msgid "I have a shipment of Feygard items for you."
-msgstr ""
+msgstr "لدي شحنة من عناصر فايغارد لك."
 
 #: conversationlist_vilegard_shops.json:vilegard_smith_1:2
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith:3
 msgid "On the body of something called the Hira'zinn, I found this peculiar sword. Do you know anything about it?"
-msgstr ""
+msgstr "على جسد شيء يسمى هيرازين وجدت هذا السيف الغريب. هل تعرف شيئا عنه؟"
 
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust
 #: conversationlist_vilegard_shops.json:vilegard_shop_notrust_smith
 msgid "You are an outsider. We don't like outsiders here in Vilegard. Please leave."
-msgstr ""
+msgstr "أنت من الخارج. لا نحب الغرباء هنا في فيليغارد. من فضلك غادر."
 
 #: conversationlist_ogam.json:ogam_1
 msgid "Belief. Power. Struggle."
-msgstr ""
+msgstr "إيمان. قوة. تعثر."
 
 #: conversationlist_ogam.json:ogam_1:0
 #: conversationlist_ogam.json:ogam_2:0
@@ -5560,32 +5579,32 @@ msgstr ""
 #: conversationlist_gison.json:gael_10:0
 #: conversationlist_omi2.json:ortholion_guard9_1:0
 msgid "What?"
-msgstr ""
+msgstr "ماذا؟"
 
 #: conversationlist_ogam.json:ogam_1:1
 msgid "I was told to see you."
-msgstr ""
+msgstr "قيل لي يجب أن أراك."
 
 #: conversationlist_ogam.json:ogam_2
 msgid "Backwards is the burden high and low."
-msgstr ""
+msgstr "الوراء هو العبء المرتفع و المنخفض."
 
 #: conversationlist_ogam.json:ogam_2:2
 msgid "Hello? Umar in the Fallhaven Thieves' Guild sent me to see you."
-msgstr ""
+msgstr "مرحبا؟ أرسلني عمر من نقابة لصوص فالهافن لرؤيتك."
 
 #: conversationlist_ogam.json:ogam_3
 #: conversationlist_ogam.json:ogam_7
 msgid "Hiding in the Shadow."
-msgstr ""
+msgstr "يختبئ في الظل."
 
 #: conversationlist_ogam.json:ogam_4
 msgid "Two alike in body and mind."
-msgstr ""
+msgstr "إثنان مثل جسد و عقل."
 
 #: conversationlist_ogam.json:ogam_4:0
 msgid "Are you going to make any sense?"
-msgstr ""
+msgstr "هل يمكنك أن تشرح؟"
 
 #: conversationlist_ogam.json:ogam_4:1
 #: conversationlist_blackwater_throdna.json:throdna_9:0
@@ -5596,236 +5615,236 @@ msgstr ""
 #: conversationlist_fungi_panic.json:zuul_khan9_20
 #: conversationlist_omi2.json:prim_tavern_guest4_8a:1
 msgid "What do you mean?"
-msgstr ""
+msgstr "ماذا تقصد؟"
 
 #: conversationlist_ogam.json:ogam_5
 msgid "The lawful and the chaotic."
-msgstr ""
+msgstr "الشرعي والفوضوي."
 
 #: conversationlist_ogam.json:ogam_5:0
 #: conversationlist_ogam.json:ogam_7:2
 msgid "Hello? Do you know how I can reach Lodar's hideaway?"
-msgstr ""
+msgstr "مرحبا؟ هل تعرف كيف يمكنني الوصول إلى مخبأ لودار؟"
 
 #: conversationlist_ogam.json:ogam_5:1
 #: conversationlist_duaina.json:duaina_8:1
 msgid "I don't understand."
-msgstr ""
+msgstr "لم أفهم."
 
 #: conversationlist_ogam.json:ogam_lodar_1
 msgid "Lodar? Clear, tingling, hurt."
-msgstr ""
+msgstr "لودار؟ واضح ، وخز ، جرح."
 
 #: conversationlist_ogam.json:ogam_6
 msgid "Yes. The true form. Behold."
-msgstr ""
+msgstr "نعم. الشكل الحقيقي. معلق."
 
 #: conversationlist_ogam.json:ogam_7:0
 msgid "The Shadow?"
-msgstr ""
+msgstr "الظل؟"
 
 #: conversationlist_ogam.json:ogam_7:1
 msgid "Are you even listening to what I say?"
-msgstr ""
+msgstr "هل تستمع حتى إلى ما أقول؟"
 
 #: conversationlist_ogam.json:ogam_lodar_2
 msgid "Lodar, halfway between the Shadow and the light. Rocky formations."
-msgstr ""
+msgstr "لودار ، في منتصف الطريق بين الظل والنور. التكوينات الصخرية."
 
 #: conversationlist_ogam.json:ogam_lodar_2:0
 msgid "OK, halfway between two places. Some rocks?"
-msgstr ""
+msgstr "حسنًا ، في منتصف الطريق بين مكانين. بعض الصخور؟"
 
 #: conversationlist_ogam.json:ogam_lodar_2:1
 msgid "Uh. Could you repeat that?"
-msgstr ""
+msgstr "أوه. هل يمكنك تكرار هذا؟"
 
 #: conversationlist_ogam.json:ogam_lodar_3
 msgid "Guardian. Glow of the Shadow."
-msgstr ""
+msgstr "وصي. توهج الظل."
 
 #: conversationlist_ogam.json:ogam_lodar_3:0
 msgid "Glow of the Shadow? Are those the words the guardian needs to hear?"
-msgstr ""
+msgstr "وهج الظل؟ هل هذه هي الكلمات التي يجب على الوصي سماعها؟"
 
 #: conversationlist_ogam.json:ogam_lodar_3:1
 msgid "'Glow of the Shadow'? I recognize that from somewhere."
-msgstr ""
+msgstr "'وهج الظل'؟ أنا أدرك ذلك من مكان ما."
 
 #: conversationlist_ogam.json:ogam_lodar_4
 msgid "Turning. Twisting. Clear form."
-msgstr ""
+msgstr "تحول. التواء. شكل واضح."
 
 #: conversationlist_ogam.json:ogam_lodar_4:0
 msgid "What does that mean?"
-msgstr ""
+msgstr "ما معنى ذلك؟"
 
 #: conversationlist_foamingflask.json:ff_cook_1
 msgid "Hello. Do you want something from the kitchen?"
-msgstr ""
+msgstr "مرحبا. هل تريد شيئا من المطبخ؟"
 
 #: conversationlist_foamingflask.json:ff_cook_1:0
 msgid "Sure, let me see what food you have to sell."
-msgstr ""
+msgstr "بالتأكيد ، دعني أرى الطعام الذي تبيعه."
 
 #: conversationlist_foamingflask.json:ff_cook_1:1
 msgid "That smells horrible. What are you cooking?"
-msgstr ""
+msgstr "هذه الرائحة كريهة. ماذا تطبخ؟"
 
 #: conversationlist_foamingflask.json:ff_cook_1:2
 msgid "That smells wonderful. What are you cooking?"
-msgstr ""
+msgstr "هذه الرائحة رائعة. ماذا تطبخ؟"
 
 #: conversationlist_foamingflask.json:ff_cook_2
 msgid "Oh this? This is supposed to be a stew of anklebiter. Needs more seasoning I guess."
-msgstr ""
+msgstr "أوه هذا؟ من المفترض أن يكون هذا يخنة من عظام الكاحل. أعتقد أنه يحتاج إلى المزيد من التوابل."
 
 #: conversationlist_foamingflask.json:ff_cook_2:0
 msgid "I look forward to trying it when it is done. Good luck cooking."
-msgstr ""
+msgstr "إنني أتطلع إلى تجربته عند الانتهاء. حظا سعيدا في الطبخ."
 
 #: conversationlist_foamingflask.json:ff_cook_2:1
 msgid "Yuck, that sounds awful. Can you really eat those things? I'm grossed out, goodbye."
-msgstr ""
+msgstr "يع، هذا يبدو مروعًا. هل يمكنك حقا أن تأكل تلك الأشياء؟ أنا محصورة ، وداعا."
 
 #: conversationlist_foamingflask.json:ff_cook_3
 msgid "No sorry, I don't have any food to sell. Go talk to Torilo over there if you want some drink or ready-made food."
-msgstr ""
+msgstr "لا آسف ، ليس لدي أي طعام أبيعه. اذهب و تحدث إلى توريلو هناك إذا كنت تريد بعض الشراب أو الطعام الجاهز."
 
 #: conversationlist_foamingflask.json:torilo_1
 msgid "Welcome to the Foaming Flask tavern. We welcome all travelers in here."
-msgstr ""
+msgstr "مرحبا بك في حانة قوارير الرغوة. نحن نرحب بكل المسافرين هنا."
 
 #: conversationlist_foamingflask.json:torilo_1:0
 msgid "Thank you. Are you the innkeeper here?"
-msgstr ""
+msgstr "شكرا لك. هل أنت صاحب الحانة هنا؟"
 
 #: conversationlist_foamingflask.json:torilo_1:1
 #: conversationlist_foamingflask.json:torilo_default:2
 #: conversationlist_foamingflask_guards.json:ff_guard_3:2
 #: conversationlist_foamingflask_guards.json:ff_captain_1:3
 msgid "Have you seen a boy called Rincel around here recently?"
-msgstr ""
+msgstr "هل رأيت فتى يسمى رينسل هنا مؤخرًا؟"
 
 #: conversationlist_foamingflask.json:torilo_2
 msgid "I am Torilo, the proprietor of this establishment. Please have a seat anywhere you like."
-msgstr ""
+msgstr "أنا توريلو ، مالك هذه المؤسسة. يرجى الجلوس في أي مكان تريد."
 
 #: conversationlist_foamingflask.json:torilo_2:0
 #: conversationlist_foamingflask.json:torilo_default:0
 msgid "Can I see what you have available for food and drink?"
-msgstr ""
+msgstr "هل يمكنني رؤية ما لديك من طعام وشراب؟"
 
 #: conversationlist_foamingflask.json:torilo_2:1
 msgid "Do you have somewhere I can rest?"
-msgstr ""
+msgstr "هل لديك مكان يمكنني الراحة فيه؟"
 
 #: conversationlist_foamingflask.json:torilo_2:2
 #: conversationlist_foamingflask.json:torilo_default:1
 msgid "Are those guards always shouting and yelling that much?"
-msgstr ""
+msgstr "هل هؤلاء الحراس يصرخون و يثرثرون دائما بهذا القدر؟"
 
 #: conversationlist_foamingflask.json:torilo_default
 #: conversationlist_foamingflask_outsideguard.json:ff_outsideguard_trouble_20
 msgid "Was there anything else you wanted?"
-msgstr ""
+msgstr "هل كان هناك أي شيء آخر تريده؟"
 
 #: conversationlist_foamingflask.json:torilo_shop_1
 msgid "Absolutely. We have a wide selection of food and beverages."
-msgstr ""
+msgstr "طبعا. لدينا تشكيلة واسعة من الأطعمة والمشروبات."
 
 #: conversationlist_foamingflask.json:torilo_rest_1
 msgid "Yes, you already rented the back room."
-msgstr ""
+msgstr "نعم ، لقد استأجرت بالفعل الغرفة الخلفية."
 
 #: conversationlist_foamingflask.json:torilo_rest_2
 msgid "Please feel free to use it in any way you like. I hope you can get some sleep even with these guards yelling their songs."
-msgstr ""
+msgstr "لا تتردد في استخدامها بأي طريقة تريدها. أتمنى أن تنام قليلاً حتى مع صراخ هؤلاء الحراس بأغانيهم."
 
 #: conversationlist_foamingflask.json:torilo_rest_3
 msgid "Oh yes. We have a very comfortable back room here in the Foaming Flask tavern."
-msgstr ""
+msgstr "نعم بالتأكيد. لدينا غرفة خلفية مريحة للغاية هنا في حانة قوارير الرغوة."
 
 #: conversationlist_foamingflask.json:torilo_rest_4
 msgid "Available for only 250 gold. Then you can use it as much as you like."
-msgstr ""
+msgstr "متوفر بـ 250 ذهب فقط. ثم يمكنك استخدامه بقدر ما تريد."
 
 #: conversationlist_foamingflask.json:torilo_rest_4:0
 msgid "250 gold? Sure, that's nothing to me. Here you go."
-msgstr ""
+msgstr "250 ذهب؟ بالتأكيد ، هذا لا شيء بالنسبة لي. تفضل."
 
 #: conversationlist_foamingflask.json:torilo_rest_4:1
 msgid "250 gold is a lot, but I guess it is worth it. Here you go."
-msgstr ""
+msgstr "250 ذهب كثير ، لكن أعتقد أنها تستحق ذلك. تفضل."
 
 #: conversationlist_foamingflask.json:torilo_rest_4:2
 msgid "That sounds a bit too much for me."
-msgstr ""
+msgstr "هذا يبدو قليلا جدا بالنسبة لي."
 
 #: conversationlist_foamingflask.json:torilo_rest_5
 msgid "Oh well, it's your loss."
-msgstr ""
+msgstr "حسنًا ، إنها خسارتك."
 
 #: conversationlist_foamingflask.json:torilo_rest_6
 msgid "Thank you. The room is now rented to you."
-msgstr ""
+msgstr "شكرا لك. الغرفة الآن مستأجرة لك."
 
 #: conversationlist_foamingflask.json:torilo_rincel_1
 msgid "Rincel? No, not that I can recall. Actually, we don't get many children in here. *chuckle*"
-msgstr ""
+msgstr "رينسل؟ لا ، على ما أذكر. في الواقع ، لا ندخل هنا الكثير من الأطفال. *ضحكة مكتومة*"
 
 #: conversationlist_foamingflask.json:torilo_guards_1
 msgid "*Sigh* Yes. Those guards have been here for quite some time now."
-msgstr ""
+msgstr "* تنهد * نعم. هؤلاء الحراس موجودون هنا منذ بعض الوقت."
 
 #: conversationlist_foamingflask.json:torilo_guards_2
 msgid "They seem to be looking for something or someone, but I am not sure who or what."
-msgstr ""
+msgstr "يبدو أنهم يبحثون عن شيء أو شخص ما ، لكني لست متأكدًا من أو ماذا."
 
 #: conversationlist_foamingflask.json:torilo_guards_3
 msgid "I hope the Shadow watches over us so that nothing bad happens to the Foaming Flask tavern because of them."
-msgstr ""
+msgstr "آمل أن يحرسنا الظل حتى لا يحدث شيء سيء لحانة قوارير الرغوة بسببهم."
 
 #: conversationlist_ambelie.json:ambelie_1
 msgid "Oh my, a commoner. Get away from me. I might catch something."
-msgstr ""
+msgstr "أوه، شخص من العامة. إبتعد عن طريقي. قد أمسك بشيء ما."
 
 #: conversationlist_ambelie.json:ambelie_1:1
 #: conversationlist_ambelie.json:ambelie_3:0
 msgid "What is a noble woman such as yourself doing in a place like this?"
-msgstr ""
+msgstr "ما الذي تفعله مرأة نبيلة مثلك في مكان كهذا؟"
 
 #: conversationlist_ambelie.json:ambelie_1:2
 msgid "I would be glad to get away from a snob like you."
-msgstr ""
+msgstr "سأكون سعيدا بالإبتعاد عن متكبرة مثلك."
 
 #: conversationlist_ambelie.json:ambelie_2
 msgid "I am Ambelie of the house of Laumwill in Feygard. I am sure you must have heard of me and my house."
-msgstr ""
+msgstr "أنا أمبلياي من عائلة لومويل من مدينة فايغارد. أنا واثقة أنك سمعت عني و عن عائلتي."
 
 #: conversationlist_ambelie.json:ambelie_2:0
 msgid "Oh yes ... um ... House of Laumwill in Feygard. Of course."
-msgstr ""
+msgstr "آه أجل ... امم ... عائلة لومويل من فايغارد. طبعا."
 
 #: conversationlist_ambelie.json:ambelie_2:1
 msgid "I have never heard of you or your house."
-msgstr ""
+msgstr "لم أسمع أبدا عنك و عن عائلتك."
 
 #: conversationlist_ambelie.json:ambelie_2:2
 msgid "Where is Feygard?"
-msgstr ""
+msgstr "أين هي فايغارد؟"
 
 #: conversationlist_ambelie.json:ambelie_3
 msgid "Feygard, the great city of peace. Surely you must know of it. Northwest in our great land."
-msgstr ""
+msgstr "فايغارد، مدينة السلام العظمية. لا شك أنك تعرفها. في الشمال الغربي من أرضنا العظمية."
 
 #: conversationlist_ambelie.json:ambelie_3:1
 msgid "No, I have never heard of it."
-msgstr ""
+msgstr "لا، لم أسمع بها أبدا."
 
 #: conversationlist_ambelie.json:ambelie_4
 msgid "Pfft. That just proves everything I have heard of you savages here in the southern land. So uneducated."
-msgstr ""
+msgstr "أوف. هذا يثبت ما سمعته عنكم الهمجيون الذين يعيشون في الجنوب. لذلك لست متعلما."
 
 #: conversationlist_ambelie.json:ambelie_5
 msgid "I, Ambelie, of the house of Laumwill in Feygard, am on an excursion to the southern Nor City."
@@ -6224,6 +6243,10 @@ msgstr ""
 msgid "Yes, I have found out the story about what happened to him."
 msgstr ""
 
+#: conversationlist_wrye.json:wrye_return_1:3
+msgid "Not yet, but your order has finally arrived."
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_return_2
 msgid "Welcome back. Thank you for your help in finding out what happened to my son."
 msgstr ""
@@ -6234,6 +6257,10 @@ msgstr ""
 msgid "You are welcome."
 msgstr ""
 
+#: conversationlist_wrye.json:wrye_return_2:2
+msgid "Yes, I came back to deliver your order of a 'Lyre'. You must be good at playing it?"
+msgstr ""
+
 #: conversationlist_wrye.json:wrye_mourn_1
 msgid "Shadow help me."
 msgstr ""
@@ -6242,6 +6269,10 @@ msgstr ""
 #: conversationlist_bwm_agent_1.json:bwm_agent_1_start:0
 #: conversationlist_prim_outside.json:tonis_1:0
 msgid "What is the matter?"
+msgstr ""
+
+#: conversationlist_wrye.json:wrye_mourn_1:1
+msgid "Excuse me, I'm here to deliver your order for a 'Lyre'."
 msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_2
@@ -6256,6 +6287,10 @@ msgstr ""
 #: conversationlist_wrye.json:wrye_mourn_2:1
 #: conversationlist_brimhaven_2.json:leta_oromir_complete2_helped_oromir
 msgid "What about him?"
+msgstr ""
+
+#: conversationlist_wrye.json:wrye_mourn_2:2
+msgid "Maybe your order here will comfort you?"
 msgstr ""
 
 #: conversationlist_wrye.json:wrye_mourn_3
@@ -11476,6 +11511,7 @@ msgstr ""
 #: conversationlist_brimhaven.json:brv_employee_10:0
 #: conversationlist_brimhaven.json:mikhail_news_20:2
 #: conversationlist_gison.json:gison_p2_50:2
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:1
 msgid "Not yet."
 msgstr ""
 
@@ -17030,6 +17066,7 @@ msgstr ""
 
 #: conversationlist_kendelow.json:kendelow_d
 #: conversationlist_ervelyn.json:ervelyn_d
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:0
 msgid "How may I be of service?"
 msgstr ""
 
@@ -17114,11 +17151,15 @@ msgid "How interesting. The child from Fallhaven, here in Remgard?"
 msgstr ""
 
 #: conversationlist_arghes.json:arghes_2:0
-msgid "I'm not from Fallhaven, I am from Crossglen, west of Fallhaven."
+msgid "I'm not from Fallhaven, I'm from Crossglen, west of Fallhaven."
 msgstr ""
 
 #: conversationlist_arghes.json:arghes_2:2
 msgid "How do you know where I am from?"
+msgstr ""
+
+#: conversationlist_arghes.json:arghes_2:3
+msgid "And how interesting that you ordered a pair of 'Yellow boots'. Did you really order this?"
 msgstr ""
 
 #: conversationlist_arghes.json:arghes_3a
@@ -25376,6 +25417,10 @@ msgstr ""
 msgid "You are lying around in bed in broad daylight?"
 msgstr ""
 
+#: conversationlist_guynmart_npc.json:guynmart_servant_10:1
+msgid "I'm here to give you your ordered item. You don't want it?"
+msgstr ""
+
 #: conversationlist_guynmart_npc.json:guynmart_servant_20
 msgid "I am checking that the bed of young Robalyrius is still in order."
 msgstr ""
@@ -28954,6 +28999,10 @@ msgstr ""
 msgid "You look happy again."
 msgstr ""
 
+#: conversationlist_stoutford_combined.json:odirath_0:5
+msgid "Did you really order such an ugly porcelain figure? Oops, sorry I didn't mean to offend you"
+msgstr ""
+
 #: conversationlist_stoutford_combined.json:odirath_1
 msgid "I did see someone that might have been your brother. He was with a rather dubious looking person. They didn't stay around here very long though. Sorry, but that's all I can tell you. You should ask around town. Other townsfolk may know more."
 msgstr ""
@@ -30491,6 +30540,7 @@ msgid "Now to your next opponent."
 msgstr ""
 
 #: conversationlist_stoutford_combined.json:stn_colonel_140:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:1
 msgid "What is it this time?"
 msgstr ""
 
@@ -33537,6 +33587,10 @@ msgstr ""
 msgid "Eh, sorry to disturb you."
 msgstr ""
 
+#: conversationlist_arulir_mountain.json:tjure_0:3
+msgid "I'm surprised to see you here as well. Did you order 'Mysterious green something'?"
+msgstr ""
+
 #: conversationlist_arulir_mountain.json:tjure_0_10
 msgid "I am Tjure of Brimhaven. I am ... was ... a successful merchant. But my luck has run out."
 msgstr ""
@@ -33650,11 +33704,33 @@ msgid "(For a second you feel very dizzy. At least you manage not to faint. As f
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_90
+#: conversationlist_delivery.json:tjure_wh_delivery_90
 msgid "*Sigh* You were my last hope. Leave me now."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:0
+msgid "Hope you learned from it."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_90:1
+msgid "OK. One question before I go: did you order a 'Mysterious green something'?"
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:0
+#: conversationlist_arulir_mountain.json:tjure_200:0
+msgid "It was an interesting experience."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_100:1
+msgid "No problem. By the way, did you order a 'Mysterious green something'?"
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:tjure_200
 msgid "Oh, you look better than the last time we met. Thank you for your help."
+msgstr ""
+
+#: conversationlist_arulir_mountain.json:tjure_200:1
+msgid "Indeed. By the way, did you order a 'Mysterious green something'?"
 msgstr ""
 
 #: conversationlist_arulir_mountain.json:watermark_script_100
@@ -35339,6 +35415,10 @@ msgstr ""
 msgid "Have you ever seen a glove like this? [Shows Venanra the glove.]"
 msgstr ""
 
+#: conversationlist_brimhaven.json:brv_laundry_boss_0:5
+msgid "Did you order an 'Old, worn cape'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_laundry_boss_1
 msgid "We are working on some nice green dresses. We can also repair and improve your clothes."
 msgstr ""
@@ -36223,6 +36303,10 @@ msgstr ""
 msgid "I'm looking for my brother, Andor. Have you seen anyone around town that looks a bit like me?"
 msgstr ""
 
+#: conversationlist_brimhaven.json:edrin_0_0:6
+msgid "Hello, did you order a 'Striped Hammer'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:edrin_5_0
 msgid "Yes, that's the one that matches the dagger! Now that I have both pieces, I can repair the dagger for you if you wish."
 msgstr ""
@@ -36571,6 +36655,10 @@ msgstr ""
 msgid "Maybe I can help you."
 msgstr ""
 
+#: conversationlist_brimhaven.json:brv_fortune_choice:3
+msgid "Are you the one who ordered a 'Crystal Globe'?"
+msgstr ""
+
 #: conversationlist_brimhaven.json:brv_fortune_andor_10
 msgid "I see you talking to your brother, somewhere far from here in a big city. Feygard or Nor City, I think."
 msgstr ""
@@ -36699,11 +36787,17 @@ msgid "What has brought you to me? It looks like you might need my help."
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_10:0
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:0
 msgid "What help can you offer?"
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_10:1
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10:1
 msgid "I am searching..."
+msgstr ""
+
+#: conversationlist_brimhaven.json:brv_fortune_10:2
+msgid "So you are the one who ordered a 'Crystal Globe'?"
 msgstr ""
 
 #: conversationlist_brimhaven.json:brv_fortune_50
@@ -46903,6 +46997,214 @@ msgstr ""
 msgid "That sounds kind of true. You are a very persuasive speaker."
 msgstr ""
 
+#: conversationlist_omi2.json:omi2_fix_ehrenfest_53
+msgid "You are wrong. I'm not here, just an illusion."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10
+msgid "Ah! You have finally returned, my new worker."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10:2
+msgid "Ah! You are still insolent."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_20
+msgid "I need someone to deliver all of the items that are in storage."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30
+msgid "Come back to me when you have delivered all of the items. The order is not important. Here is the list of customers."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:0
+msgid "It will be done."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_30:1
+msgid "You want me to deliver these items to your customers?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40
+msgid "Yes yes, hurry now. I have work to do here."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:0
+msgid "I'm going now."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_40:1
+msgid "Hope I get paid better this time."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arcir
+msgid "Yes, an old but useful book, but you should have wiped it off first. Anyway, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_edrin
+msgid "Ah, yes, a striped hammer. Don't look so impatient. Here's my delivery charge, and now you can leave!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_odirath
+msgid "Yes, indeed. A gift for my beautiful daughter... but why did it take so long? Sigh, here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_venanra
+msgid "Yes I did, kid. Incredibly, it has become the latest fashion to buy new capes with holes. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_tjure
+msgid "What?! My lucky clover...but why now? Anyway, I'll no longer run out of luck. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_servant
+msgid "Finally, I'm no longer afraid of that room every time my lord turns off the lights to scare me. Here's my delivery fee."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_arghes
+msgid "Yes kid, thank you. Here, take this gold for them."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre_negative
+msgid "That's not what I'm waiting for! Go out and find out what happened to my son, please!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre
+msgid "Yes, I'm longing for it just like how I'm longing for my son. But now I can mourn as I play his favorite song until I die."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_wyre:0
+msgid "My sincere condolence for the loss of your beloved son."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail
+msgid "Oh wow! Finally, your brother's gift has arrived and we only have to wait for his arrival."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:0
+msgid "Sigh. I hope so."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail:1
+msgid "What?! Where's my gift?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail3
+msgid "I already gave you his shield."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2
+msgid "Anyway, it's been a very long time so please go look for your brother."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:1
+msgid "I'm still looking for him."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail2:2
+msgid "Eh, you have to pay for it..."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4
+msgid "Ah, yes, I almost forgot. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:0
+msgid "Thanks. I'm on my way again, bye."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_mikhail4:1
+msgid "Hmm... Bye"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune
+msgid ""
+"Ah yes, I need a new one. My current crystal globe has become a bit cloudy - otherwise I would of course have seen that you would bring me a new globe.\n"
+"Here is the gold for it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:0
+msgid "Do you want to try the crystal ball with me to see if it works?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune:1
+msgid "Thanks for choosing Facutloni's delivery."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_brv_fortune_10
+msgid "You say you want me to help you?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10
+msgid "You are back. Did you deliver all of the items?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10:0
+msgid "Yes. I delivered everything."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no
+msgid "Then what are you standing there for?! Get out and deliver everything!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:0
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:0
+msgid "[Run]"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_no:1
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:1
+msgid "Yes boss."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes
+msgid "That's nice to hear. Then you can now give me the... eh...330 gold pieces that you should have received from the sales."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:0
+msgid "Sure. Here you are."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes:1
+msgid "Uh, I had expenses along the way and I don't have all the gold anymore."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1
+msgid "And then you walk into my sight? Go get my gold!"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_1:2
+msgid "Oh, I just found the 330 gold pieces in my pocket. Please take it."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10
+msgid "Good job! I am glad that you work responsibly."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:0
+msgid "And seriously."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_10_10_yes_10:1
+msgid "I travelled far and wide."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward
+msgid "That is serious. And here you have your well-deserved reward: 100 gold."
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_reward:1
+msgid "What the?"
+msgstr ""
+
+#: conversationlist_delivery.json:brv_wh_delivery_boss_scrooge
+msgid "Pardon?"
+msgstr ""
+
+#: conversationlist_delivery.json:tjure_wh_delivery_90:0
+msgid "Not until I have delivered this to you. Are you the one who ordered a 'Mysterious green something'?"
+msgstr ""
+
 #: itemcategories_1.json:dagger
 msgid "Dagger"
 msgstr ""
@@ -48433,7 +48735,7 @@ msgstr ""
 
 #: itemlist_v070.json:xulviir
 msgid "Xul'viir"
-msgstr ""
+msgstr "سيلفاير"
 
 #: itemlist_v070.json:club_bld
 msgid "Spiked club of bleeding"
@@ -50243,7 +50545,7 @@ msgid "Unknown gem (extracted from the Elm mine)"
 msgstr ""
 
 #: itemlist_omi2.json:elm_gem_u:description
-msgid "It is very cold and very sticky to the touch. It gives a feel of dizziness when you stare at it."
+msgid "It is very cold and very sticky to the touch. It gives a feeling of dizziness when you stare at it."
 msgstr ""
 
 #: itemlist_omi2.json:bwm_fish2
@@ -50327,7 +50629,7 @@ msgid "Cave fern"
 msgstr ""
 
 #: itemlist_omi2.json:elm_fern:description
-msgid "A fern inside a cave is something out of normal, not seen everyday."
+msgid "A fern inside a cave is something unusual, not seen every day."
 msgstr ""
 
 #: itemlist_omi2.json:yczorah
@@ -50372,6 +50674,14 @@ msgstr ""
 
 #: itemlist_omi2.json:ortholion_reward:description
 msgid "You feel a warm and comfortable feeling when holding it."
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket
+msgid "Facutloni's Docket"
+msgstr ""
+
+#: itemlist_delivery.json:facutloni_docket:description
+msgid "A document listing the contents of a delivery   Arcir the book-lover from Fallhaven ordered a 'Dusty Old Book'.   Edrin the metalsmith from Brimhaven ordered a 'Striped Hammer'.   Odirath the armorer from Stoutford ordered a 'Pretty Porcelain Figure'.   Venanra the laundress from Brimhaven ordered an 'Old, worn cape'.   Tjure the unlucky merchant ordered a 'Mysterious green something'.   Servant the servant from Guynmart Castle ordered a 'Chandelier'.   Arghes from Remgard tavern ordered 'Yellow Boots'.   Wyre the mournful woman from Vilegard ordered a 'Lyre'.   Mikhail from Crossglen ordered a 'Plush Pillow'.   Pangitain the fortune teller from Brimhaven ordered a 'Crystal Globe'. "
 msgstr ""
 
 #: monsterlist_crossglen_animals.json:tiny_rat
@@ -50493,7 +50803,7 @@ msgstr ""
 
 #: monsterlist_crossglen_npcs.json:leta
 msgid "Leta"
-msgstr ""
+msgstr "ليتا"
 
 #: monsterlist_crossglen_npcs.json:audir
 msgid "Audir"
@@ -50501,7 +50811,7 @@ msgstr "أودير"
 
 #: monsterlist_crossglen_npcs.json:arambold
 msgid "Arambold"
-msgstr ""
+msgstr "آرامبولد"
 
 #: monsterlist_crossglen_npcs.json:tharal
 msgid "Tharal"
@@ -50547,7 +50857,7 @@ msgstr "أورومير"
 
 #: monsterlist_crossglen_npcs.json:odair
 msgid "Odair"
-msgstr ""
+msgstr "أوداير"
 
 #: monsterlist_crossglen_npcs.json:jan
 #: monsterlist_stoutford.json:stoutford_farmer_jan
@@ -50670,7 +50980,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:bucus
 msgid "Bucus"
-msgstr ""
+msgstr "بوكوس"
 
 #: monsterlist_fallhaven_npcs.json:drunkard
 msgid "Drunkard"
@@ -50683,7 +50993,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:nocmar
 msgid "Nocmar"
-msgstr ""
+msgstr "نوكمار"
 
 #: monsterlist_fallhaven_npcs.json:prisoner
 msgid "Prisoner"
@@ -50699,7 +51009,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:athamyr
 msgid "Athamyr"
-msgstr ""
+msgstr "أثامير"
 
 #: monsterlist_fallhaven_npcs.json:thoronir
 msgid "Thoronir"
@@ -50724,7 +51034,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:larcal
 msgid "Larcal"
-msgstr ""
+msgstr "لاركال"
 
 #: monsterlist_fallhaven_npcs.json:gaela
 msgid "Gaela"
@@ -50762,7 +51072,7 @@ msgstr ""
 
 #: monsterlist_fallhaven_npcs.json:vacor
 msgid "Vacor"
-msgstr ""
+msgstr "فايكور"
 
 #: monsterlist_fallhaven_npcs.json:unzel
 msgid "Unzel"
@@ -50903,7 +51213,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:troublemaker
 msgid "Troublemaker"
-msgstr ""
+msgstr "الشقي"
 
 #: monsterlist_v068_npcs.json:farrik
 msgid "Farrik"
@@ -50957,7 +51267,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:jolnor
 msgid "Jolnor"
-msgstr ""
+msgstr "جولنور"
 
 #: monsterlist_v068_npcs.json:alynndir
 msgid "Alynndir"
@@ -50973,7 +51283,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:ogam
 msgid "Ogam"
-msgstr ""
+msgstr "أوغام"
 
 #: monsterlist_v068_npcs.json:foaming_flask_cook
 msgid "Foaming Flask cook"
@@ -51001,7 +51311,7 @@ msgstr ""
 
 #: monsterlist_v068_npcs.json:wrye
 msgid "Wrye"
-msgstr ""
+msgstr "ووري"
 
 #: monsterlist_v068_npcs.json:oluag
 msgid "Oluag"
@@ -51224,7 +51534,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:bjorgur
 msgid "Bjorgur"
-msgstr ""
+msgstr "بجورغور"
 
 #: monsterlist_v069_npcs.json:prim_prisoner
 msgid "Prim prisoner"
@@ -51232,7 +51542,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:fulus
 msgid "Fulus"
-msgstr ""
+msgstr "فوليس"
 
 #: monsterlist_v069_npcs.json:guthbered
 msgid "Guthbered"
@@ -51329,7 +51639,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:herec
 msgid "Herec"
-msgstr ""
+msgstr "هيريك"
 
 #: monsterlist_v069_npcs.json:iducus
 msgid "Iducus"
@@ -51365,7 +51675,7 @@ msgstr ""
 
 #: monsterlist_v069_npcs.json:throdna
 msgid "Throdna"
-msgstr ""
+msgstr "ثرودنا"
 
 #: monsterlist_v069_npcs.json:throdnas_guard
 msgid "Throdna's guard"
@@ -51490,7 +51800,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:benbyr
 msgid "Benbyr"
-msgstr ""
+msgstr "بنبير"
 
 #: monsterlist_v0610_npcs1.json:celdar
 msgid "Celdar"
@@ -51506,7 +51816,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:erinith
 msgid "Erinith"
-msgstr ""
+msgstr "إرينيث"
 
 #: monsterlist_v0610_npcs1.json:fanamor
 msgid "Fanamor"
@@ -51522,7 +51832,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:gandoren
 msgid "Gandoren"
-msgstr ""
+msgstr "غاندورين"
 
 #: monsterlist_v0610_npcs1.json:grimion
 msgid "Grimion"
@@ -51566,7 +51876,7 @@ msgstr ""
 
 #: monsterlist_v0610_npcs1.json:minarra
 msgid "Minarra"
-msgstr ""
+msgstr "مينارا"
 
 #: monsterlist_v0610_npcs1.json:puny_warehouserat
 msgid "Warehouse rat"
@@ -52931,7 +53241,6 @@ msgstr ""
 
 #: monsterlist_graveyard1.json:graveyard_corpse2
 #: monsterlist_graveyard1.json:graveyard_corpse3
-#: monsterlist_graveyard1.json:graveyard_corpse3
 msgid "Angry graveyard corpse"
 msgstr ""
 
@@ -53197,7 +53506,7 @@ msgstr ""
 
 #: monsterlist_stoutford_combined.json:stoutford_armorer
 msgid "Odirath"
-msgstr ""
+msgstr "أوديراث"
 
 #: monsterlist_stoutford_combined.json:cave_troll_1
 #: monsterlist_stoutford_combined.json:cave_troll_7
@@ -53430,7 +53739,7 @@ msgstr ""
 
 #: monsterlist_omicronrg9.json:g03_crackshot
 msgid "Crackshot"
-msgstr ""
+msgstr "النبال"
 
 #: monsterlist_omicronrg9.json:g03_crackshot_dying
 msgid "Dying Crackshot"
@@ -53882,7 +54191,7 @@ msgstr ""
 #: monsterlist_fungi_panic.json:zuul_khan9
 #: monsterlist_gison.json:gison_thiefboss
 msgid "Zuul'khan"
-msgstr ""
+msgstr "زول'خان"
 
 #: monsterlist_fungi_panic.json:weak_fungi
 msgid "Weak fungi"
@@ -53950,7 +54259,7 @@ msgstr ""
 
 #: monsterlist_fungi_panic.json:bogsten_gambler1
 msgid "Bogal"
-msgstr ""
+msgstr "بوغال"
 
 #: monsterlist_fungi_panic.json:bogsten_gambler2
 msgid "Botisto"
@@ -53966,15 +54275,15 @@ msgstr ""
 
 #: monsterlist_gison.json:gison
 msgid "Gison"
-msgstr ""
+msgstr "جيسون"
 
 #: monsterlist_gison.json:nimael
 msgid "Nimael"
-msgstr ""
+msgstr "نيمايل"
 
 #: monsterlist_gison.json:gael
 msgid "Gael"
-msgstr ""
+msgstr "غايل"
 
 #: monsterlist_gison.json:small_stone_worm
 msgid "Small stone worm"
@@ -54004,11 +54313,11 @@ msgstr ""
 
 #: monsterlist_gorwath.json:gorwath
 msgid "Gorwath"
-msgstr ""
+msgstr "غورواث"
 
 #: monsterlist_gorwath.json:arensia
 msgid "Arensia"
-msgstr ""
+msgstr "أرنسيا"
 
 #: monsterlist_omi2.json:mountain_wolf_2
 msgid "Trained mountain wolf"
@@ -54044,7 +54353,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:ehrenfest
 msgid "Ehrenfest"
-msgstr ""
+msgstr "إهرنفست"
 
 #: monsterlist_omi2.json:ortholion
 #: monsterlist_omi2.json:ortholion_hidden
@@ -54151,7 +54460,7 @@ msgstr ""
 
 #: monsterlist_omi2.json:kamelio
 msgid "Kamelio"
-msgstr ""
+msgstr "كاميليو"
 
 #: monsterlist_omi2.json:kamelio2
 msgid "Undead Kamelio"
@@ -56611,7 +56920,7 @@ msgid "Cithurn did not remember if the forest invasion began before the events i
 msgstr ""
 
 #: questlist_graveyard1.json:waterwayacave:35
-msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave northeast of Cithurn's home."
+msgid "I promised Cithurn I would investigate the source of the monster invasion in the forest. I will have to pass through the forest to access an entrance to a cave east of Cithurn's home."
 msgstr ""
 
 #: questlist_graveyard1.json:waterwayacave:40
@@ -58582,6 +58891,62 @@ msgstr ""
 
 #: questlist_omi2.json:Omi2_bwm1:63
 msgid "For my bravery and... ignorance?, General Ortholion gave me a few days to rest and urged me to come back soon after that."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery
+msgid "Delivery"
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:10
+msgid "Facutloni asked me to help him deliver all of the items ordered by his customers a long time ago. He even gave me an old document with the names and items written on it."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:20
+msgid "Arcir the Fallhaven book-lover ordered a 'Dusty Old book'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:30
+msgid "Edrin the Brimhaven metalsmith ordered a 'Striped Hammer'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:40
+msgid "Odirath the Stoutford armorer ordered a 'Pretty Porcelain Figure'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:50
+msgid "Venanra the Brimhaven laundress ordered an 'Old, worn cape'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:60
+msgid "Tjure the unlucky Brimhaven merchant ordered a 'Mysterious green something'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:70
+msgid "Servant the Guynmart servant ordered a 'Chandelier'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:80
+msgid "Arghes at Remgard tavern ordered 'Yellow boots'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:90
+msgid "Wyre the mournful Vilegard woman ordered a 'Lyre'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:100
+msgid "Mikhail ordered a 'Plush Pillow'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:110
+msgid "Pangitain the Brimhaven fortune teller ordered a 'Crystal Globe'."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:120
+msgid "Facutloni wants me to report back after the deliveries are complete."
+msgstr ""
+
+#: questlist_delivery.json:brv_wh_delivery:130
+msgid "I reported back to Facutloni. He is very happy."
 msgstr ""
 
 #: worldmap.xml:world1:crossglen

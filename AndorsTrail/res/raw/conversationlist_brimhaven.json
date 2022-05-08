@@ -3573,6 +3573,27 @@
                         "value":1
                     }
                 ]
+            },
+            {
+                "text":"Did you order an 'Old, worn cape'?",
+                "nextPhraseID":"brv_wh_delivery_venanra",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_06",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":50
+                    }
+                ]
             }
         ]
     },
@@ -6251,6 +6272,27 @@
             {
                 "text":"Do you have anything to trade?",
                 "nextPhraseID":"S"
+            },
+            {
+                "text":"Hello, did you order a 'Striped Hammer'?",
+                "nextPhraseID":"brv_wh_delivery_edrin",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_08",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":30
+                    }
+                ]
             }
         ]
     },
@@ -7694,6 +7736,27 @@
             {
                 "text":"Maybe I can help you.",
                 "nextPhraseID":"brv_fortune_300"
+            },
+            {
+                "text":"Are you the one who ordered a 'Crystal Globe'?",
+                "nextPhraseID":"brv_wh_delivery_brv_fortune",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_00",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":110
+                    }
+                ]
             }
         ]
     },
@@ -7994,6 +8057,27 @@
             {
                 "text":"I am searching...",
                 "nextPhraseID":"brv_fortune_30"
+            },
+            {
+                "text":"So you are the one who ordered a 'Crystal Globe'?",
+                "nextPhraseID":"brv_wh_delivery_brv_fortune",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_00",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":110
+                    }
+                ]
             }
         ]
     },

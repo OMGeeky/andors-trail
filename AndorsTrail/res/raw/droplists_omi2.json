@@ -1636,7 +1636,7 @@
                 }
             },
             {
-               "itemID":"health_major2",
+                "itemID":"health_major2",
                 "chance":"1/8",
                 "quantity":{
                     "min":1,
@@ -1734,13 +1734,13 @@
                 "itemID":"gold",
                 "chance":"100",
                 "quantity":{
-                    "min":12,
-                    "max":62
+                    "min":3,
+                    "max":9
                 }
             },
             {
                 "itemID":"kamelio_drop1",
-                "chance":"1/4",
+                "chance":"100",
                 "quantity":{
                     "min":1,
                     "max":1
@@ -1748,7 +1748,7 @@
             },
             {
                 "itemID":"kamelio_drop2",
-                "chance":"1/4",
+                "chance":"100",
                 "quantity":{
                     "min":1,
                     "max":1
@@ -1756,7 +1756,7 @@
             },
             {
                 "itemID":"kamelio_drop3",
-                "chance":"1/4",
+                "chance":"100",
                 "quantity":{
                     "min":1,
                     "max":1

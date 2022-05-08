@@ -11,7 +11,7 @@
     <string name="loadsave_title_load">Laruin ang niligtas na laro</string>
     <string name="loadsave_title_save">Iligtas ang laro</string>
     <string name="menu_save_failed">Nabigong iligtas ang laro! may space pa ba ang SD Card\?</string>
-    <string name="menu_save_gamesaved">Niligtas ang laro sa ikalawang lagayan</string>
+    <string name="menu_save_gamesaved">Na-save ang laro sa slot %1$d</string>
     <string name="menu_save">Iigtas</string>
     <string name="menu_settings">Mga Gusto</string>
     <string name="exit_to_menu">Umalis sa menu</string>
@@ -53,8 +53,8 @@
     <string name="levelup_description">Welcome sa level %1$d!</string>
     <string name="levelup_title">Bagong Level</string>
     <string name="shop_item_sort">Pag-uriin</string>
-    <string name="shop_item_sold">%1$d nabenta.</string>
-    <string name="shop_item_bought">%1$d Binili.</string>
+    <string name="shop_item_sold">%1$s nabenta.</string>
+    <string name="shop_item_bought">%1$s Binili.</string>
     <string name="shop_yourgold">Mga ginto mo: %1$d</string>
     <string name="shop_sellitem">Magbenta (%1$d gold)</string>
     <string name="shop_buyitem">Bumili (%1$d gold)</string>
@@ -126,7 +126,7 @@
     <string name="dialog_groundloot_title">Mga gamit</string>
     <string name="dialog_loot_pickedupitems">Ikaw ay nagpulot ng %1$d items.</string>
     <string name="dialog_loot_pickedupitem">Pinulot mo ang item.</string>
-    <string name="dialog_loot_foundgold">Ikaw ay nakahanap ng f1$d gold.</string>
+    <string name="dialog_loot_foundgold">Ikaw ay nakahanap ng %1$d gold.</string>
     <string name="dialog_loot_pickall">Pulutin lahat</string>
     <string name="inventory_item_equipped">Ikaw ay nagsuot ng %1$s.</string>
     <string name="inventory_item_dropped">%1$s ay nahulog.</string>
@@ -387,23 +387,23 @@
     <string name="skill_longdescription_fightstyle_2hand">Nagbibigay ng mga benepisyo kapag gumagamit ng sandata na nangangailangan ng magkabilang kamay upang magamit, tulad ng mga dalawang kamay na espada, greataxes o higanteng martilyo.
 \n
 \nAng bawat antas ng kasanayan ay nagdaragdag ng potensyal na pinsala ng dalawang-kamay na sandata na may %1$d %% ng orihinal na potensyal na pinsala.</string>
-    <string name="skill_longdescription_fightstyle_dualwield">Nagbibigay ng mga benepisyo kapag nakikipaglaban sa dalawang sandata nang sabay, isa sa pangunahing kamay at isa sa off-hand.
+    <string name="skill_longdescription_fightstyle_dualwield">Nagbibigay ng mga benepisyo kapag nakikipaglaban kapag gumagamit ng dalawang sandata nang sabay, isa sa main hand at isa sa off-hand.
 \n
-\nKung wala ang kasanayang ito, ang %1$d %% lamang ng mga katangian ng isang sandata ang maaaring magamit kapag may kagamitan sa off-hand. Kasama rito ang pag-atake ng pagkakataon, kritikal na kasanayan, potensyal na makapinsala at pag-block ng pagkakataon. Nang walang kasanayang ito, ang gastos sa pag-atake (AP gastos) ng paggawa ng pag-atake ay ang kabuuan ng gastos sa pag-atake ng pangunahing sandata at ng sandata na ginamit sa off-hand.
+\nKung wala ang skill na ito, ang %1$d %% lamang ng mga katangian ng isang sandata ang maaaring magamit kapag may kagamitan sa off-hand. Kasama rito ang pag-atake ng pagkakataon, kritikal skill, attack chance at block chance. Nang walang kasanayang ito, ang gastos sa pag-atake (AP gastos) ng paggawa ng pag-atake ay ang kabuuan ng gastos sa pag-atake ng pangunahing sandata at ng sandata na ginamit sa off-hand.
 \n
 \nSa isang antas ng kasanayang ito, maaaring magamit ang %2$d %% ng mga katangian ng sandata na off-hand, at ang gastos sa pag-atake ay ang pinakamataas na gastos sa pag-atake ng parehong mga armas plus %3$d %% ng pinakamababang gastos sa pag-atake ng pareho sandata.
 \n
 \nGamit ang dalawang antas ng kasanayang ito, maaaring magamit ang mga katangian ng armas na off-hand, %4$d %% ay maaaring magamit, at ang gastos sa pag-atake ay katumbas ng pinakamataas na gastos sa pag-atake ng dalawang gamit na armas.</string>
-    <string name="skill_longdescription_armor_prof_heavy">Para sa bawat antas ng kasanayan, pinatataas ang block na pagkakataon ng bawat piraso ng mabibigat na nakasuot na nakasuot ng %1$d %% ng kanilang orihinal na mga pagkakataon sa pag-block. Ang mga piraso ng mabibigat na nakasuot ay nabawasan ang mga parusa sa paggalaw ng %2$d %% bawat antas ng kasanayan, at ang kanilang mga parusa sa bilis ng pag-atake ay nabawasan ng %3$d %% bawat antas ng kasanayan. Ang mga mabibigat na armor ay may kasamang mga metal armors, chain mail at plate mail.</string>
-    <string name="skill_longdescription_armor_prof_light">Para sa bawat antas ng kasanayan, pinapataas ang block na pagkakataon ng bawat piraso ng light armor na isinusuot ng %1$d %% ng kanilang orihinal na mga pagkakataon sa block. Ang mga light armor ay may kasamang leather, light metal at mga balat na armor.</string>
+    <string name="skill_longdescription_armor_prof_heavy">Para sa bawat skill level, pinatataas ang block na pagkakataon ng bawat piraso ng mabibigat na nakasuot na nakasuot ng %1$d %% kanilang orihinal na mga pagkakataon sa pag-block. Ang mga piraso ng mabibigat na nakasuot ay nabawasan ang mga parusa sa paggalaw ng %2$d %% bawat antas ng kasanayan, at ang kanilang mga parusa sa bilis ng pag-atake ay nabawasan ng %3$d %% bawat antas ng kasanayan. Ang mga mabibigat na armor ay may kasamang mga metal armors, chain mail at plate mail.</string>
+    <string name="skill_longdescription_armor_prof_light">Para sa bawat skill level, pinapataas ang block na pagkakataon ng bawat piraso ng light armor na isinusuot ng %1$d %% kanilang orihinal na mga pagkakataon sa block. Ang mga light armor ay may kasamang leather, light metal at mga balat na armor.</string>
     <string name="skill_longdescription_armor_prof_unarmored">Habang nakikipaglaban nang walang pagkakaroon ng anumang piece of armor na kagamitan, makakuha ng %1$d na block chance sa bawat skill level. Ang mga item na gawa sa tela ay hindi isinasaalang-alang bilang nakasuot.</string>
     <string name="skill_longdescription_armor_prof_shield">Patataasin ang Damage Resistance (DR) ng %1$d bawat antas ng kasanayan habang mayroong gamit na isang shield o parrying weapon.</string>
     <string name="skill_longdescription_weapon_prof_unarmed">Kapag nakikipaglaban nang walang sandata at kalasag, makakuha ng %1$d na pagkakataon sa pag-atake, %2$d na potensyal na pinsala at %3$d na pag-block ng pagkakataon bawat antas ng kasanayan.</string>
-    <string name="skill_longdescription_weapon_prof_blunt">Para sa bawat antas ng kasanayan, pinapataas ang pagkakataon ng pag-atake ng mga blunt na sandata ng %1$d %% ng pagkakataon sa pag-atake ng item ng item, pinatataas ang pagkakataon ng block ng %2$d %% ng pagkakataon ng base block ng item, at pinatataas ang kritikal na kasanayan sa %3$d %% ng batayang kritikal na kasanayan ng item. Kasama rito ang mga club, quarterstaves, maces, scepters, whips, war hammer at higanteng martilyo.</string>
-    <string name="skill_longdescription_weapon_prof_axe">Para sa bawat antas ng kasanayan, pinatataas ang pagkakataon ng pag-atake ng mga palakol at greataxes ng %1$d %% ng pagkakataon sa pag-atake ng pangunahing item, pinapataas ang block na pagkakataon ng %2$d %% ng base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan sa %3$d %% ng batayang kritikal na kasanayan ng item.</string>
-    <string name="skill_longdescription_weapon_prof_2hsword">Para sa bawat antas ng kasanayan, pinatataas ang pagkakataon ng pag-atake ng dalawang-kamay na mga espada ng %1$d %% ng pagkakataon na pag-atake ng base ng item, pinatataas ang pagkakataon ng pag-block ng %2$d %% ng pagkakataong block ng item ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% ng batayang kasanayan sa kritikal na item.</string>
-    <string name="skill_longdescription_weapon_prof_1hsword">Para sa bawat antas ng kasanayan, pinapataas ang pagkakataon ng pag-atake ng mga rapier, longswords at broadswords ng %1$d %% ng pagkakataon sa pag-atake ng item, pinapataas ang block na pagkakataon ng %2$d %% ng base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% ng pangunahing kasanayan sa kritikal na item.</string>
-    <string name="skill_longdescription_weapon_prof_dagger">Para sa bawat skill level, pinatataas ang attack chance kapag gumagamit ng mga dagger at shortsword ng %1$d %% ng base atake ng pagkakataon ng item, pinapataas ang block na pagkakataon ng %2$d %% ng base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% ng batayang kasanayan sa kritikal na item.</string>
+    <string name="skill_longdescription_weapon_prof_blunt">Para sa bawat skill level, pinapataas ang pagkakataon ng pag-atake ng mga blunt na sandata ng %1$d %% pagkakataon sa pag-atake ng item ng item, pinatataas ang pagkakataon ng block ng %2$d %% pagkakataon ng base block ng item, at pinatataas ang kritikal na kasanayan sa %3$d %% ng batayang kritikal na kasanayan ng item. Kasama rito ang mga club, quarterstaves, maces, scepters, whips, war hammer at higanteng martilyo.</string>
+    <string name="skill_longdescription_weapon_prof_axe">Para sa bawat skill level, pinatataas ang pagkakataon ng pag-atake ng mga palakol at greataxes ng %1$d %% pagkakataon sa pag-atake ng pangunahing item, pinapataas ang block na pagkakataon ng %2$d %% base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan sa %3$d %% ng batayang kritikal na kasanayan ng item.</string>
+    <string name="skill_longdescription_weapon_prof_2hsword">Para sa bawat skill level, pinatataas ang pagkakataon ng pag-atake ng dalawang-kamay na mga espada ng %1$d %% pagkakataon na pag-atake ng base ng item, pinatataas ang pagkakataon ng pag-block ng %2$d %% pagkakataong block ng item ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% batayang kasanayan sa kritikal na item.</string>
+    <string name="skill_longdescription_weapon_prof_1hsword">Para sa bawat antas ng kasanayan, pinapataas ang pagkakataon ng pag-atake ng mga rapiers, longswords at broadswords ng %1$d %% pagkakataon sa pag-atake ng item, pinapataas ang block na pagkakataon ng %2$d %% base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% pangunahing kasanayan sa kritikal na item.</string>
+    <string name="skill_longdescription_weapon_prof_dagger">Para sa bawat skill level, pinatataas ang attack chance kapag gumagamit ng mga dagger at shortsword ng %1$d %% base atake ng pagkakataon ng item, pinapataas ang block na pagkakataon ng %2$d %% base block na pagkakataon ng item, at pinatataas ang kritikal na kasanayan ng %3$d %% batayang kasanayan sa kritikal na item.</string>
     <string name="skill_shortdescription_weapon_prof_pole">Mas magaling sa pakikipaglaban with pole weapons</string>
     <string name="skill_shortdescription_specialization_weapon_shield">Expert sa pakikipaglaban with weapon at shield</string>
     <string name="skill_shortdescription_specialization_2hand">Expert sa two-handed weapons</string>
@@ -580,14 +580,32 @@
     <string name="preferences_quickslots_placements_horizontal_center_bottom">Gitnang Gitna</string>
     <string name="preferences_quickslots_placement_summary">Kung saan ilalagay ang mga quickslots</string>
     <string name="preferences_quickslots_placement">Posisyon ng Quickslot</string>
-    <string name="skill_longdescription_weapon_prof_pole">Kada skill level, pinatataas ang Attack chance kapag nagamit ng pole weapons ng %1$d %% ng base attack chance ng item,pinatataas din ang block chance ng %2$d %% ng base block chance ng item, at pinatataas ang critical skill ng %3$d %% ng item\'s base critical skill.</string>
-    <string name="skill_longdescription_specialization_weapon_shield">Nagdaragdag ng parehong mga pagkakataon sa pag-atake at makapinsala sa mga potensyal ng sandata sa pangunahing kamay. Ang pagkakataon ng pag-atake ay nadagdagan ng %1$d %% ng orihinal na pagkakataon ng pag-atake, at ang potensyal na pinsala ay nadagdagan ng %2$d %% ng orihinal na potensyal na pinsala.</string>
-    <string name="skill_longdescription_specialization_2hand">Nagdaragdag ng potensyal na pinsala ng mga dalwang-kamay na sandata ng isang karagdagang %1$d %% ng orihinal na potensyal na pinsala, bilang karagdagan sa mga benepisyo na ibinigay ng kasanayan sa istilo ng sandata. Ang mga pagkakataon sa pag-atake ng mga dalang-kamay na sandata ay nadagdagan din ng %2$d %% ng kanilang orihinal na mga pagkakataon sa pag-atake.</string>
-    <string name="skill_longdescription_specialization_dualwield">Dinadagdagan ang pagkakataon ng pag-atake ng parehong gamit na sandata ng isang karagdagang %1$d %% ng kanilang orihinal na pagkakataon sa pag-atake, bilang karagdagan sa mga benepisyo na ibinigay ng kasanayan sa istilo ng sandata. Ang mga tsansa ng pag-block ng parehong gamit na sandata ay nadagdagan din ng %2$d %% ng kanilang orihinal na mga pagkakataon sa pag-block.</string>
+    <string name="skill_longdescription_weapon_prof_pole">Kada skill level, pinatataas ang Attack chance kapag nagamit ng pole weapons ng %1$d %% base attack chance ng item,pinatataas din ang block chance ng %2$d %% base block chance ng item, at pinatataas ang critical skill ng %3$d %% item\'s base critical skill.</string>
+    <string name="skill_longdescription_specialization_weapon_shield">Iniincrease ng parehong mga pagkakataon sa pag-atake at makapinsala sa mga potensyal ng sandata sa pangunahing kamay. Ang pagkakataon ng pag-atake ay nadagdagan ng %1$d %% orihinal na pagkakataon ng pag-atake, at ang potensyal na pinsala ay nadagdagan ng %2$d %% orihinal na potensyal na pinsala.</string>
+    <string name="skill_longdescription_specialization_2hand">Iniincrease ang damage potential ng mga dalwang-kamay na sandata ng isang karagdagang %1$d %% ng orihinal na potensyal na pinsala, bilang karagdagan sa mga benepisyo na ibinigay ng kasanayan sa istilo ng sandata. Ang mga pagkakataon sa pag-atake ng mga dalang-kamay na sandata ay nadagdagan din ng %2$d %% kanilang orihinal na mga pagkakataon sa pag-atake.</string>
+    <string name="skill_longdescription_specialization_dualwield">Iniincrease ang chansa ng pag-atake ng parehong gamit na sandata ng isang karagdagang %1$d %% by kanilang orihinal na pagkakataon sa pag-atake, bilang karagdagan sa mga benepisyo na ibinigay ng kasanayan sa istilo ng sandata. Ang mga tsansa ng pag-block ng parehong gamit na sandata ay nadagdagan din ng %2$d %% kanilang orihinal na mga pagkakataon sa pag-block.</string>
     <string name="skill_longdescription_fightstyle_unarmed_unarmored">Habang nakikipaglaban nang walang pagkakaroon ng anumang piraso ng nakasuot na sandata at hindi gumagamit ng sandata o kalasag, makakuha ng %1$d na pagkakataon sa pag-atake,%2$d block na pagkakataon,%3$d na paglaban sa pinsala at dagdagan ang maximum na pinsala ng %4$d bawat kasanayan antas Ang kasanayan ay nagbibigay din ng isang kritikal na multiplier ng 1 plus 0.%5$d bawat antas.
 \n
 \nAng mga item na gawa sa tela ay hindi kinikilala bilang armor.</string>
-    <string name="skill_longdescription_fightstyle_weapon_shield">Nagbibigay ng mga benepisyo kapag nakikipaglaban sa isang sandata sa pangunahing kamay at pagkakaroon ng isang kalasag o parrying na sandata na gamit sa off-hand.
+    <string name="skill_longdescription_fightstyle_weapon_shield">Nagbibigay ng mga benefits kapag nakikipaglaban sa isang sandata sa pangunahing kamay at pagkakaroon ng isang kalasag o parrying weapons na gamit sa off-hand.
 \n
-\nAng bawat antas ng kasanayan ay nagdaragdag ng pag-atake ng pagkakataon ng mga sandata sa pangunahing kamay na may %1$d %% ng kanilang orihinal na mga pagkakataon sa pag-atake, at ang block na pagkakataon ng mga kalasag o pag-parry ng mga armas ng %2$d %% ng kanilang orihinal na mga pagkakataon sa pag-block.</string>
+\nAng bawat antas ng kasanayan ay nagdaragdag ng pag-atake ng pagkakataon ng mga sandata sa pangunahing kamay na may %1$d %% ng kanilang orihinal na mga pagkakataon sa pag-atake, at ang block na pagkakataon ng mga kalasag o pag-parry ng mga armas ng %2$d %% kanilang orihinal na mga pagkakataon sa pag-block.</string>
+    <string name="combat_log_item_single">Nakahanap ka ng item:</string>
+    <string name="combat_log_item_plural">Nakatanggap ka ng %1$d item:</string>
+    <string name="preferences_movement_dpad_transparency_title">Transparency ng D-pad</string>
+    <string name="preferences_movement_dpad_transparency">Kung ang virtual d-pad ay enabled, tinutukoy ng setting na ito kung gaano ito dapat maging transparent.</string>
+    <string name="preferences_movement_dpad_transparency_30_pct">30%</string>
+    <string name="preferences_movement_dpad_transparency_40_pct">40%</string>
+    <string name="startscreen_migration_title">Paglipat ng Data</string>
+    <string name="startscreen_migration_text">Paglilipat ng savegame data.</string>
+    <string name="startscreen_migration_failure">Nabigong i-migrate ang data savegame.</string>
+    <string name="inventory_category_jewelry">Alahas</string>
+    <string name="inventory_category_potion">Posyon</string>
+    <string name="inventory_category_food">Pagkain</string>
+    <string name="skill_title_spore_immunity">Pagka-immune sa Spore poison</string>
+    <string name="skill_shortdescription_spore_immunity">Full kaligtasan sa spore poison</string>
+    <string name="skill_longdescription_spore_immunity">Permanenteng pinipigilan ang mga pag-atake ng monster na magdulot ng epektong Spore Poison.</string>
+    <string name="preferences_movement_dpad_transparency_50_pct">50%</string>
+    <string name="preferences_movement_dpad_transparency_60_pct">60%</string>
+    <string name="preferences_movement_dpad_transparency_70_pct">70%</string>
 </resources>

@@ -2152,6 +2152,56 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery_reward_nondisplay",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_wh_delivery_boss_10_10_yes",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery_reward_nondisplay",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_wh_delivery_boss_10_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_wh_delivery_boss_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_reward_nondisplay",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_wh_boss_10_32",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_reward_nondisplay",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"brv_wh_delivery_boss_10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
                         "requireID":"brv_wh",
                         "value":900
                     }
@@ -2248,6 +2298,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"brv_wh",
                 "value":10
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brv_wh_reward_nondisplay",
+                "value":1
             }
         ]
     },
@@ -2490,6 +2545,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"brv_wh",
                 "value":900
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brv_wh_reward_nondisplay",
+                "value":2
             }
         ]
     },
@@ -2524,6 +2584,11 @@
             }
         ],
         "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brv_wh_reward_nondisplay",
+                "value":3
+            },
             {
                 "rewardType":"giveItem",
                 "rewardID":"gold",

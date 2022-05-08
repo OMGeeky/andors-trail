@@ -625,4 +625,7 @@
     <string name="combat_log_item_single">Vous avez trouvé un objet :</string>
     <string name="preferences_movement_dpad_transparency">Si le d-pad virtuel est activé, ce paramètre détermine son degré de transparence.</string>
     <string name="preferences_movement_dpad_transparency_title">Transparence du D-pad</string>
+    <string name="startscreen_migration_text">Migration des données de sauvegarde.</string>
+    <string name="startscreen_migration_title">Migration de Données</string>
+    <string name="startscreen_migration_failure">La migration des données de sauvegarde a échouée.</string>
 </resources>

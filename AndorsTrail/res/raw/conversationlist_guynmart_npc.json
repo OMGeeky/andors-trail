@@ -2576,6 +2576,27 @@
             {
                 "text":"You are lying around in bed in broad daylight?",
                 "nextPhraseID":"guynmart_servant_20"
+            },
+            {
+                "text":"I'm here to give you your ordered item. You don't want it?",
+                "nextPhraseID":"brv_wh_delivery_servant",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_04",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":70
+                    }
+                ]
             }
         ]
     },

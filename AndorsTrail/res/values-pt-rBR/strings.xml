@@ -346,13 +346,13 @@
     <string name="traitsinfo_criticalhit_effectivechance">Chance efetiva de ataques críticos:</string>
     <string name="skill_title_crit1">Hemorragia interna</string>
     <string name="skill_shortdescription_crit1">Chance de hemorragia interna</string>
-    <string name="skill_longdescription_crit1">Para cada acerto crítico feito, há uma chance de %1$d %% de que o acerto cause hemorragia interna no alvo, causando efetivamente a condição de \"sangramento interno\" no alvo. O sangramento interno reduz drasticamente as habilidades de combate ofensivas, tornando o alvo menos capaz de acertar ataques bem-sucedidos.</string>
+    <string name="skill_longdescription_crit1">Para cada acerto crítico infligido, há uma chance de %1$d %% que o acerto cause hemorragia interna no alvo, causando efetivamente a condição de \"sangramento interno\" no alvo. O sangramento interno reduz drasticamente as habilidades de combate ofensivas, tornando o alvo menos capaz de acertar ataques bem-sucedidos.</string>
     <string name="skill_title_crit2">Fratura</string>
     <string name="skill_shortdescription_crit2">Chance de fratura óssea</string>
-    <string name="skill_longdescription_crit2">Para cada acerto crítico feito, há uma chance de %1$d %% de que o acerto fraturará alguns dos ossos do alvo, causando efetivamente a condição de \'Fratura\' no alvo. Isso reduzirá severamente as habilidades defensivas de combate do alvo, tornando-o menos capaz de se defender em ataques subsequentes.</string>
+    <string name="skill_longdescription_crit2">Para cada acerto crítico infligido, há uma chance de %1$d %% que o acerto fraturará alguns dos ossos do alvo, causando efetivamente a condição de \'Fratura\' no alvo. Isso reduzirá severamente as habilidades defensivas de combate do alvo, tornando-o menos capaz de se defender em ataques subsequentes.</string>
     <string name="skill_title_rejuvenation">Rejuvenescimento</string>
     <string name="skill_shortdescription_rejuvenation">Chance de remoção dos efeitos</string>
-    <string name="skill_longdescription_rejuvenation">A cada rodada (6 segundos), há uma chance de %1$d %% de que uma das condições ativas do ator negativo seja reduzida em uma magnitude. Isso se aplica a todos os tipos de efeitos temporários que afetam o corpo; condições mentais, como Dazed, condições físicas, como fadiga e também doenças do sangue, como envenenamento.</string>
+    <string name="skill_longdescription_rejuvenation">A cada rodada (6 segundos), há uma chance de %1$d %% que uma das condições ativas do ator negativo seja reduzida em uma magnitude. Isso se aplica a todos os tipos de efeitos temporários que afetam o corpo; condições mentais como confusão, condições físicas como fadiga e também doenças do sangue como envenenamento.</string>
     <string name="skill_title_taunt">Provocar</string>
     <string name="skill_shortdescription_taunt">Adversário perde pontos de ação (AP) ao errar</string>
     <string name="skill_longdescription_taunt">Quando um adversário faz um ataque que erra, há uma chance de %1$d %% do adversário perder %2$d pontos de ação (AP). Isso se aplica a todos os tipos de ataques corpo a corpo contra você.</string>

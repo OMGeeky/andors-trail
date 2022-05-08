@@ -12,14 +12,14 @@
 		android:layout_height="wrap_content"
 		/>
 
-		<com.gpl.rpg.AndorsTrail.view.AbilityModifierInfoView
+		<com.gpl.rpg.AndorsTrail_beta1.view.AbilityModifierInfoView
 			android:id="@+id/itemeffect_onequip_abilitymodifierinfo"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginLeft="10sp"
 			/>
 
-		<com.gpl.rpg.AndorsTrail.view.ActorConditionEffectList
+		<com.gpl.rpg.AndorsTrail_beta1.view.ActorConditionEffectList
 			android:id="@+id/itemeffect_onequip_conditions"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		/>
-		<com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnUse
+		<com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView_OnUse
 			android:id="@+id/itemeffect_onuse"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		/>
-		<com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnUse
+		<com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView_OnUse
 			android:id="@+id/itemeffect_onhit"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		/>
-		<com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnUse
+		<com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView_OnUse
 			android:id="@+id/itemeffect_onkill"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		/>
-		<com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnHitReceived
+		<com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView_OnHitReceived
 			android:id="@+id/itemeffect_onhitreceived"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		/>
-		<com.gpl.rpg.AndorsTrail.view.ItemEffectsView_OnDeath
+		<com.gpl.rpg.AndorsTrail_beta1.view.ItemEffectsView_OnDeath
 			android:id="@+id/itemeffect_ondeath"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

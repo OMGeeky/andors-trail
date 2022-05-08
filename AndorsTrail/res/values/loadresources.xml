@@ -89,6 +89,8 @@
         <!--Added by ATCS v0.6.16 for project ATOmiRep-->
         <item>@raw/itemlist_gorwath</item>
         <item>@raw/itemlist_omi2</item>
+        <!--Added by ATCS v0.6.17 for project Delivery-->
+        <item>@raw/itemlist_delivery</item>
     </array>
         
     <array name="loadresource_droplists">
@@ -155,7 +157,10 @@
         <item>@raw/questlist_shortcut_lodar</item>
         <item>@raw/questlist_pathway_fallhaven</item>
         <item>@raw/questlist_halvor_surprise</item>
-                                                                                -		
+                                                                                                        -		
+        
+        
+        
         
         
         
@@ -188,6 +193,8 @@
         <!--Added by ATCS v0.6.16 for project ATOmiRep-->
         <item>@raw/questlist_gorwath</item>
         <item>@raw/questlist_omi2</item>
+        <!--Added by ATCS v0.6.17 for project Delivery-->
+        <item>@raw/questlist_delivery</item>
     </array>
         
     <array name="loadresource_conversationlists">
@@ -381,6 +388,8 @@
         <!--Added by ATCS v0.6.16 for project ATOmiRep-->
         <item>@raw/conversationlist_gorwath</item>
         <item>@raw/conversationlist_omi2</item>
+        <!--Added by ATCS v0.6.17 for project Delivery-->
+        <item>@raw/conversationlist_delivery</item>
     </array>
         
     <array name="loadresource_monsters">

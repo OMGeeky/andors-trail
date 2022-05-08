@@ -95,7 +95,7 @@
     <string name="combat_condition_player_immune">Immune ka na sa %1$s.</string>
     <string name="combat_condition_player_clear">Wala ka na\'ng %1$s.</string>
     <string name="combat_condition_player_apply">Apektado ka ng %1$s.</string>
-    <string name="combat_taunt_monster">Inasar mo si $1$s!</string>
+    <string name="combat_taunt_monster">Inasar mo si %1$s!</string>
     <string name="combat_miss_animation_message">MINTIS</string>
     <string name="combat_hero_dies">Nahimatay ka, pero sa kabutihang palad ay nagising kang buhay, tuliro, at pagod. Nawalan ka ng %1$d (na) experience.</string>
     <string name="combat_not_enough_ap">Kulang ka na ng AP para sa round na ito.</string>
@@ -148,7 +148,7 @@
 \nHirap: %1$s</string>
     <string name="rip_startscreen">(RIP)</string>
     <string name="dialog_game_over_text">Huminga ka sa huling pagkakataon at namatay.</string>
-    <string name="dialog_game_over_title">Game over</string>
+    <string name="dialog_game_over_title">Na Game over</string>
     <string name="dialog_more">Karagdagan</string>
     <string name="dialog_close">Isara</string>
     <string name="dialog_recenter">Isentro muli</string>
@@ -171,7 +171,7 @@
     <string name="menu_settings">Pagsasaayos</string>
     <string name="exit_to_menu">Pumunta sa menu</string>
     <string name="app_description">Quest-driven na fantasy RPG</string>
-    <string name="app_name">Andor\'s Trail</string>
+    <string name="app_name">Ang Andor\'s Trail</string>
     <string name="about_contents3">Libreng software ang program na ito; pwede mo itong ibahagi muli at/o baguhin sa ilalim ng Pangkalahatang Pampublikong Lisensiyang GNU sang-ayon sa nilathala ng Free Software Foundation; bersyon 2 man ng Lisensiya o (depende sa\'yo) mas bago.&lt;br/&gt;&lt;br/&gt; Ibinabahagi ang program na ito upang ito\'y gamitin, pero NANG WALANG WARRANTY; walang kahit implied na warranty ng MERCHANTABILITY o MAGAGAMIT PARA SA ISANG PARTIKULAR NA GAWAIN. Pakitingnan po ang Pangkalahatang Pampublikong Lisensiyang GNU para sa karagdagang detalye.&lt;br/&gt;&lt;br/&gt; Dapat nakakuha ka ng kopya ng Pangkalahatang Pampublikong Lisensiyang GNU kasama ng program na ito; kung sakaling wala, bisitahin ang &lt;a href=http://www.gnu.org/licenses&gt;http://www.gnu.org/licenses&lt;/a&gt;&lt;br /&gt;&lt;br/&gt;Para sa source code at hiling na tampok, bisitahin po ang pahina ng proyekto sa &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;https://github.com/AndorsTrailRelease/andors-trail/&lt;/a&gt;&lt;br /&gt;</string>
     <string name="about_contents1">Welcome sa Andor\'s Trail, isang open source na roguelike RPG sa Android. &lt;br /&gt;&lt;br /&gt;&lt;a href=http://andorstrail.com/&gt;Wiki ng laro para sa impormasyon tungkol sa mundo ng Andor\'s Trail, bukod pa sa iba.&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;Source code ng proyekto sa github.com para sa mga developer.&lt;/a&gt;&lt;br /&gt; &lt;br /&gt;Bisitahin po ang forum para magdiskurso sa laro kasama ng iba pang mga manlalaro. &lt;br /&gt;</string>
     <string name="about_button3">Lisensiya</string>
@@ -187,4 +187,104 @@
     <string name="levelup_add_attackdamage">Mas mapaminsalang atake (+%1$d)</string>
     <string name="levelup_add_attackchance">Pinataas na tyansa sa atake (+%1$d)</string>
     <string name="levelup_add_health">Mas mahabang buhay (+%1$d (na) HP)</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;Game Settings&lt;/b&gt; ay matatagpuan sa pamamagitan ng pagpindot sa Menu Button ng iyong device.&lt;/div&gt; &lt;p&gt;___&gt;&lt;/div&gt; &lt;p&gt;.png&lt;/b&gt;&lt; &lt;h1&gt;&lt;div&gt;&lt;b&gt;&lt;/h1&gt; &lt;/p&gt;_Pindutin nang matagal ang mga pouches sa loob para mag-assign ng mga aytem para sa instant na paggamit]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Ang Hero&lt;/b&gt;&lt;img=bayani src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;Menu [Overview, Quests, Kakayahan at Imbentaryo *]&lt;/p&gt; &lt;p&gt;* (Habang imbentaryo, pindutin ang isang item para sa impormasyon &amp;amp; mahaba para sa karagdagang mga opsyon)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Ang Kaaway&lt;/b&gt;&lt;img=monsters src=monsters.png /&gt;&lt;/div&gt; &lt;p&gt; Impormasyon [Lumilitaw sa panahon ng Labanan]&lt;/p&gt; &lt;p&gt; &gt; &lt;p&gt;.png &lt;/div&gt; &lt;&lt;/b&gt; &lt;/p&gt; &lt;div&gt;&lt;b&gt; &lt;h1&gt;&lt;p&gt;&lt;/h1&gt; &lt;/p&gt;_* (Equipping Gear &amp;amp; Paggamit ng mga Item ay maaaring baguhin ang AP &amp;amp; paggamit ng gastos)&lt;/p&gt; &lt;div&gt;&lt;b&gt;Using Item&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;Fleeing&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt; &lt;/p&gt;_&lt;div&gt;_mahaba pindutin ang isang tile katabi ng bayani ... &lt;/div&gt; &lt;div&gt;&lt;b&gt;To Flee&lt;/b&gt; &lt;h1&gt;&lt;/h1&gt; &lt;/div&gt; &lt;p&gt; (napiling tile ay naka-highlight - Atake Button pagbabago sa Ilipat)&lt;/p&gt; &lt;img alt=flee src=flee_example.png / &gt; &lt;p&gt;[flee mode activated - Long pindutin ang kaaway upang muling ipasok ang labanan]&lt;/p&gt; &lt;div&gt;&lt;b&gt;Sa Pagbabago ng target&lt;/b&gt;&lt;/div&gt; &lt;p&gt; (ang pulang target na highlight shifts sa pagitan ng mga kaaway)&lt;/p&gt; &lt;p&gt;[ang target]&lt;/p&gt;</string>
+    <string name="preferences_combat_speed_title">Bilis ng labanan</string>
+    <string name="preferences_combat_speed">Tinutukoy kung gaano kabilis umatake ang mga monster.</string>
+    <string name="dialog_permission_information">Ang Andor\'s Trail ay nagra write ng saved games sa accessible storage ng gumagamit sa iyong device. Ito ay nagpapahintulot sa iyo na madaling i-back up ang iyong nai-save na mga laro o ilipat ang mga ito sa isang bagong device. Mangyaring bisitahin ang aming mga forum para sa karagdagang impormasyon.
+\n
+\nAng Andor\'s Trail ay hindi gumagamit ng access sa iyong device para sa anumang iba pang layunin at hindi ma-access ang internet. Bukas ang pinagmumulan ng Andor\'s Trail; ang mga mapagkukunan ay matatagpuan sa github.</string>
+    <string name="questlog_includecompleted_prompt">Pumili ng mga quests na ipapakita</string>
+    <string name="questlog_includecompleted_hidecompleted">Mga aktibong quests</string>
+    <string name="questlog_includecompleted_includecompleted">Lahat ng quests</string>
+    <string name="questlog_includecompleted_onlycompleted">Nakumpletong mga quests</string>
+    <string name="questlog_queststatus">Katayuan: %1$s</string>
+    <string name="questlog_queststatus_inprogress">Nasa progreso</string>
+    <string name="questlog_queststatus_completed">Nakumpleto</string>
+    <string name="preferences_display_category">Ipakita</string>
+    <string name="preferences_display_fullscreen_title">Buong Screen</string>
+    <string name="preferences_display_fullscreen">Ipinapakita ang laro sa fullscreen mode. (Nangangailangan ng pag-restart)</string>
+    <string name="preferences_dialog_category">Pagkumpirma ng dialog</string>
+    <string name="preferences_dialog_confirmrest_title">Kumpirmahin ang rest</string>
+    <string name="preferences_dialog_confirmrest">Nagbibigay ng tanong kung gusto mong magpahinga kapag lalapit sa kama. Kung hindi, awtomatiko kang magpapahinga.</string>
+    <string name="preferences_dialog_confirmattack_title">Kumpirmahin ang pag-atake</string>
+    <string name="preferences_dialog_confirmattack">Pinapagana ang \'Gusto mo bang atakehin..\?\' dialog box kapag umaatake sa isang monster.</string>
+    <string name="preferences_dialog_monsterloot_title">Idispley ang loot ng monster</string>
+    <string name="preferences_dialog_monsterloot">Piliin kung paano mo gustong ipakita ang mga resulta ng isang laban na ipapakita (ginto, experience, mga item).</string>
+    <string name="preferences_combat_category">Uri ng Labanan</string>
+    <string name="preferences_display_loot_dialog">Palaging ipakita ang loot dialog box</string>
+    <string name="preferences_display_loot_dialog_on_items">Ipakita ang loot dialog box kapag naghahanap ng mga items</string>
+    <string name="preferences_display_loot_dialog_on_items_or_toast">Dialog para sa mga item, notif. kung hindi</string>
+    <string name="preferences_display_loot_toast">Magpakita ng maikling notification</string>
+    <string name="preferences_display_loot_toast_on_items">Ipakita lamang ang notification kapag naghahanap ng mga item</string>
+    <string name="preferences_display_loot_never">Huwag idispley</string>
+    <string name="preferences_attackspeed_instant">Instant (walang animations)</string>
+    <string name="preferences_attackspeed_fast">Mabilis</string>
+    <string name="preferences_attackspeed_normal">Katamtaman</string>
+    <string name="preferences_attackspeed_slow">Mabagal</string>
+    <string name="preferences_movement_category">Paggalaw</string>
+    <string name="preferences_movementmethod_title">Paraan ng paggalaw</string>
+    <string name="preferences_movementmethod">Uri ng paraan ng paggalaw at pag-iwas sa mga obstacles.</string>
+    <string name="preferences_movementmethods_straight">Tuwid (orihinal)</string>
+    <string name="preferences_movementmethods_avoid">Pag-iwas sa mga obstacles</string>
+    <string name="actorinfo_currentconditions">Aktibong kondisyon</string>
+    <string name="actorcondition_info_removes_all">Tinatanggal ang lahat ng %1$s</string>
+    <string name="actorcondition_info_immunity">Immune sa %1$s</string>
+    <string name="iteminfo_effect_chance_of">%1$s chansa ng %2$s</string>
+    <string name="iteminfo_effect_duration">(%1$d round)</string>
+    <string name="iteminfo_effect_works_on_source">Sa pinagmulan</string>
+    <string name="iteminfo_effect_works_on_target">Sa target</string>
+    <string name="iteminfo_effect_works_on_attacker">Sa attacker</string>
+    <string name="iteminfo_effect_works_when_hitting_target">Kapag tumama sa target</string>
+    <string name="iteminfo_effect_works_when_killing_target">Sa bawat pagpatay</string>
+    <string name="iteminfo_effect_works_when_used">Kapag ginamit</string>
+    <string name="iteminfo_effect_works_when_equipped">Kapag inequip</string>
+    <string name="iteminfo_effect_works_when_hit_by_attacker">Kapag tinamaan ng attacker</string>
+    <string name="iteminfo_effect_works_when_killed_by_attacker">Kapag napatay ng attacker</string>
+    <string name="iteminfo_effect_decrease_current_hp">Drains %1$s ng HP</string>
+    <string name="iteminfo_effect_increase_current_hp">Nagbabalik %1$s ng HP</string>
+    <string name="iteminfo_effect_decrease_current_ap">Drains %1$s ng AP</string>
+    <string name="iteminfo_effect_increase_current_ap">Ibinabalik ang %1$s ng AP</string>
+    <string name="iteminfo_effect_increase_max_hp">Tinataas ang max HP ng +%1$d</string>
+    <string name="iteminfo_effect_decrease_max_hp">Ibinababa ang max HP ng %1$d</string>
+    <string name="iteminfo_effect_increase_max_ap">Itinataas ang max AP ng +%1$d</string>
+    <string name="iteminfo_effect_decrease_max_ap">Ibinababa ang max AP ng %1$d</string>
+    <string name="iteminfo_effect_increase_movecost">Penalty sa Move Cost +%1$d AP</string>
+    <string name="iteminfo_effect_decrease_movecost">Ibinababa ang Penalty sa Move Cost %1$d AP</string>
+    <string name="preferences_display_scaling_factor_title">Salik ng factor</string>
+    <string name="preferences_display_scaling_factor">Ginagawang mas malaki o mas maliit ang view ng laro.</string>
+    <string name="preferences_display_scaling_factor_50_percent">Kalahating sukat</string>
+    <string name="preferences_display_scaling_factor_75_percent">0.75x laki</string>
+    <string name="preferences_display_scaling_factor_normal">Tamang sukat</string>
+    <string name="preferences_display_scaling_factor_50_percent_larger">1.5x laki</string>
+    <string name="preferences_display_scaling_factor_double">Doubleng laki</string>
+    <string name="preferences_language_default">Language ng sistem</string>
+    <string name="preferences_language">Wika</string>
+    <string name="preferences_language_description">Piliin ang wika. Ginagamit ang Ingles kung hindi available ang wika ng system o hindi naitranslate ang nilalaman. (Nangangailangan ng pag-restart)</string>
+    <string name="inventory_assign">Mag-assign ng quick slot</string>
+    <string name="inventory_selectitem">Pumili ng item na iaassign</string>
+    <string name="inventory_assign_slot1">Unang Slot</string>
+    <string name="inventory_assign_slot2">Pangalawang Slot</string>
+    <string name="inventory_assign_slot3">Pangatlong Slot</string>
+    <string name="inventory_unassign">Wag mag assign ng quick slot</string>
+    <string name="preferences_movement_dpad_position_title">Birtual d-pad</string>
+    <string name="preferences_movement_dpad_position">Nag eenable ng birtual on-screen na d-pad para sa movement guide.</string>
+    <string name="preferences_movement_dpad_minimizeable_title">Napapaliit na d-pad</string>
+    <string name="preferences_movement_dpad_minimizeable">Kapag naka on ang d-pad liliit ito kapag pinindot ang gitna.</string>
+    <string name="preferences_movement_dpad_positions_disabled">Hindi pinagana</string>
+    <string name="preferences_movement_dpad_positions_lower_right">Mas mababang kanang sulok</string>
+    <string name="preferences_movement_dpad_positions_lower_left">Mas mababang kaliwang sulok</string>
+    <string name="startscreen_migration_title">Data migration</string>
+    <string name="startscreen_migration_text">Migrating Savegame Data.</string>
+    <string name="startscreen_migration_failure">Bigo sa pag Migrate ng Savegame Data.</string>
+    <string name="dialog_newversion_title">welcome</string>
+    <string name="dialog_newversion_message">Salamat sa pag-download ng Andor\'s Trail
+\n
+\nTandaan lamang na ang bersyong ito ni Andor\'s Trail ay isang work in progress, na nangangahulugan na ang lahat ng mapa ay hindi pa kumpleto.
+\nMangyaring bisitahin ang mga forum ng proyekto upang talakayin ang laro sa iba pang mga manlalaro o upang makatulong na gawing mas mahusay na ang laro (tingnan ang tungkol sa).
+\n
+\nSalamat sa lahat ng feedback!</string>
+    <string name="dialog_newversion_permission_information">"
+\n
+\nUpang i-save at i-load ang iyong mga laro (at para lamang sa layuning ito) Andor\'s Trail ay hihilingin sa iyo na ma-access ang iyong storage."</string>
+    <string name="dialog_permission_information_title">Loading and Saving games</string>
 </resources>

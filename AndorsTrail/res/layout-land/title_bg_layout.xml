@@ -6,7 +6,7 @@
 
     <include layout="@layout/title_bg_sky_layout"/>
 
-	<com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
+	<com.gpl.rpg.AndorsTrail_beta1.view.CloudsAnimatorView
         android:id="@+id/ts_clouds_animator_back"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -19,7 +19,7 @@
         android:scaleType="fitEnd"
         android:src="@drawable/ts_background"/>
     
-    <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
+    <com.gpl.rpg.AndorsTrail_beta1.view.CloudsAnimatorView
         android:id="@+id/ts_clouds_animator_mid"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
@@ -32,7 +32,7 @@
         android:scaleType="fitEnd"
         android:src="@drawable/ts_midground"/>
      
-    <com.gpl.rpg.AndorsTrail.view.CloudsAnimatorView 
+    <com.gpl.rpg.AndorsTrail_beta1.view.CloudsAnimatorView
         android:id="@+id/ts_clouds_animator_front"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"

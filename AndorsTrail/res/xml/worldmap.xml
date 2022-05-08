@@ -333,9 +333,9 @@
     <map area="charwoodh" id="waytolostmine2" x="426" y="301"/>
     <map area="charwoodh" id="waytolostmine3" x="426" y="330"/>
     <map id="waytominingtown0" x="314" y="404"/>
-    <map id="waytominingtown1" x="344" y="389"/>
-    <map id="waytominingtown1a" x="375" y="407"/>
-    <map id="waytominingtown2" x="375" y="386"/>
+    <map id="waytominingtown1" x="343" y="389"/>
+    <map id="waytominingtown1a" x="374" y="407"/>
+    <map id="waytominingtown2" x="374" y="386"/>
     <map id="waytominingtown3" x="395" y="378"/>
     <map id="waytomountaincave0" x="627" y="255"/>
     <map id="waytomountaincave1" x="621" y="285"/>

@@ -1,0 +1,53 @@
+package com.gpl.rpg.AndorsTrail_beta1.activity;
+
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.support.v4.app.FragmentTabHost;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.gpl.rpg.AndorsTrail_beta1.AndorsTrailApplication;
+import com.gpl.rpg.AndorsTrail_beta1.R;
+import com.gpl.rpg.AndorsTrail_beta1.activity.fragment.ShopActivity_Buy;
+import com.gpl.rpg.AndorsTrail_beta1.activity.fragment.ShopActivity_Sell;
+import com.gpl.rpg.AndorsTrail_beta1.util.ThemeHelper;
+
+public final class ShopActivity extends AndorsTrailBaseFragmentActivity {
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		setTheme(ThemeHelper.getBaseTheme());
+		super.onCreate(savedInstanceState);
+
+		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(this);
+		if (!app.isInitialized()) { finish(); return; }
+		app.setWindowParameters(this);
+
+		setContentView(R.layout.tabbedlayout);
+
+		final Resources res = getResources();
+
+		FragmentTabHost tabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
+		tabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+
+		LayoutInflater inflater = getLayoutInflater();
+		
+		ViewGroup v;
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.shop_buy));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageResource(R.drawable.ui_icon_equipment);
+		tabHost.addTab(tabHost.newTabSpec("buy")
+				.setIndicator(v)
+				,ShopActivity_Buy.class, null);
+		
+		v = (ViewGroup) inflater.inflate(R.layout.tabindicator, null);
+		((TextView)v.findViewById(R.id.tabindicator_text)).setText(res.getString(R.string.shop_sell));
+		((ImageView)v.findViewById(R.id.tabindicator_icon)).setImageResource(R.drawable.ui_icon_coins);
+		tabHost.addTab(tabHost.newTabSpec("sell")
+				.setIndicator(v)
+				,ShopActivity_Sell.class, null);
+	}
+}

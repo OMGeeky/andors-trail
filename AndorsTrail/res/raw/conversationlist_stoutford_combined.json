@@ -3017,6 +3017,27 @@
                         "value":60
                     }
                 ]
+            },
+            {
+                "text":"Did you really order such an ugly porcelain figure? Oops, sorry I didn't mean to offend you",
+                "nextPhraseID":"brv_wh_delivery_odirath",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_07",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":40
+                    }
+                ]
             }
         ]
     },

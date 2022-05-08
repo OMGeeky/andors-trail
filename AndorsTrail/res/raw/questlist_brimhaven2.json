@@ -206,5 +206,24 @@
                 "logText":"60=banned fromtower"
             }
         ]
+    },
+    {
+        "id":"brv_wh_reward_nondisplay",
+        "name":"Gold and Exp reward for Inventory quest completed - nondisplay",
+        "showInLog":0,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Not yet done."
+            },
+            {
+                "progress":2,
+                "logText":"Done. But haven't received gold and exp reward yet."
+            },
+            {
+                "progress":3,
+                "logText":"Done. I received gold and exp reward. Old scrooge."
+            }
+        ]
     }
 ]

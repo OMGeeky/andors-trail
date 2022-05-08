@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/actorconditioninfo_constant_effect" />
 
-            <com.gpl.rpg.AndorsTrail.view.AbilityModifierInfoView
+            <com.gpl.rpg.AndorsTrail_beta1.view.AbilityModifierInfoView
                 android:id="@+id/actorconditioninfo_constant_effect_abilitymodifierinfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -454,7 +454,7 @@
         "name":"Unknown gem (extracted from the Elm mine)",
         "displaytype":"quest",
         "category":"gem",
-        "description":"It is very cold and very sticky to the touch. It gives a feel of dizziness when you stare at it."
+        "description":"It is very cold and very sticky to the touch. It gives a feeling of dizziness when you stare at it."
     },
     {
         "id":"bwm_fish2",
@@ -708,7 +708,7 @@
         "hasManualPrice":1,
         "baseMarketCost":132,
         "category":"food",
-        "description":"A fern inside a cave is something out of normal, not seen everyday.",
+        "description":"A fern inside a cave is something unusual, not seen every day.",
         "useEffect":{
             "increaseCurrentHP":{
                 "min":3,
@@ -748,6 +748,8 @@
         "iconID":"items_misc_6:1",
         "name":"Yczorah nucleus",
         "displaytype":"legendary",
+        "hasManualPrice":1,
+        "baseMarketCost":0,
         "category":"scepter",
         "description":"The spherical, polished stone on its tip drags your glance unavoidably towards it.",
         "equipEffect":{

@@ -283,7 +283,7 @@
         "category":"hnd_lthr",
         "equipEffect":{
             "increaseAttackChance":-3,
-            "increaseBlockChance":7,
+            "increaseBlockChance":8,
             "increaseDamageResistance":1
         }
     },

@@ -2555,7 +2555,7 @@
     },
     {
         "id":"ehrenfest_23",
-        "message":"Lorn lay next to me, just a few meters away. His armor was entirely covered in blood, flowing slowly to the ground out of his body.",
+        "message":"Lorn lay next to me, just a few steps away. His armor was entirely covered in blood, flowing slowly to the ground out of his body.",
         "replies":[
             {
                 "text":"What about the campfire?",
@@ -2856,7 +2856,7 @@
         "message":"I'm afraid not.",
         "replies":[
             {
-                "text":"Ok, we'll talk later.",
+                "text":"OK, we'll talk later.",
                 "nextPhraseID":"X"
             }
         ]
@@ -4327,7 +4327,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"Ok, I will help you. Let's solve this once for all.",
+                "text":"OK, I will help you. Let's solve this once for all.",
                 "nextPhraseID":"ehrenfest_39b",
                 "requires":[
                     {
@@ -5427,7 +5427,7 @@
     },
     {
         "id":"ortholion_subdued_2",
-        "message":"The scout stares at you with an inconmensurable anger. Before you can react, she swings her dagger, opening a wound in your arm.",
+        "message":"The scout stares at you with an immeasurable anger. Before you can react, she swings her dagger, opening a wound in your arm.",
         "switchToNPC":"none",
         "replies":[
             {
@@ -6610,7 +6610,7 @@
     },
     {
         "id":"elm3_corpse_3a",
-        "message":"Everything seems too old and stinky to be worth a penny, but after half a minute of searching you see a strange pendant behind the miner's shirt.",
+        "message":"Everything seems too old and stinky to be worth anything much, but after half a minute of searching you see a strange pendant behind the miner's shirt.",
         "replies":[
             {
                 "text":"I need to take a bath.",
@@ -8723,6 +8723,22 @@
         "id":"elm5f_kamelio_entrance",
         "replies":[
             {
+                "nextPhraseID":"ortholion_c3_fix1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bwm72_beginning",
+                        "value":39
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Omi2_bwm1",
+                        "value":54,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"elm5f_kamelio_e1",
                 "requires":[
                     {
@@ -9114,7 +9130,7 @@
     },
     {
         "id":"ortholion_16a",
-        "message":"A reward? This does not work that way...What would Feygard would think of my assassination? Who would be blamed for that?\n\nThe reward is I'm alive and no army will chase you.",
+        "message":"A reward? This does not work that way...What would Feygard think of my assassination? Who would be blamed for that?\n\nThe reward is I'm alive and no army will chase you.",
         "replies":[
             {
                 "text":"*laughing* Do you think a few drunkards could beat me?",
@@ -9631,6 +9647,26 @@
                 "rewardType":"removeSpawnArea",
                 "rewardID":"ehrenfest",
                 "mapName":"blackwater_mountain43"
+            }
+        ]
+    },
+    {
+        "id":"ortholion_c3_fix1",
+        "rewards":[
+            {
+                "rewardType":"deactivateMapObjectGroup",
+                "rewardID":"Keys",
+                "mapName":"elm5f_2"
+            }
+        ]
+    },
+    {
+        "id":"ortholion_c3_fix2",
+        "rewards":[
+            {
+                "rewardType":"activateMapObjectGroup",
+                "rewardID":"Keys",
+                "mapName":"elm5f_2"
             }
         ]
     }

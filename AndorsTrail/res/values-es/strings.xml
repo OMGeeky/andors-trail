@@ -602,4 +602,5 @@
     <string name="inventory_category_jewelry">Joyas</string>
     <string name="combat_log_item_plural">Has econtrado %1$d Objetos:</string>
     <string name="combat_log_item_single">Has encontrado un objeto:</string>
+    <string name="startscreen_migration_title">Migración de datos</string>
 </resources>

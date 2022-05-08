@@ -58,7 +58,7 @@
     <string name="combat_result_herohitcritical">あなたの攻撃は%1$sにクリティカルヒット! %2$dのダメージ!</string>
     <string name="combat_result_herokillsmonster">%1$sは死んだ!</string>
     <string name="combat_not_enough_ap">APが不足しています。</string>
-    <string name="combat_hero_dies">あなたは倒れたが、幸運にも生きていた。あなたは%1$dの経験値を失った。</string>
+    <string name="combat_hero_dies">あなたは倒れたが、幸運にも生きていた。%1$dの経験値を失った。</string>
     <string name="inventory_info">情報</string>
     <string name="inventory_equip">装備</string>
     <string name="inventory_unequip">はずす</string>
@@ -72,7 +72,7 @@
     <string name="dialog_loot_pickedupitem">あなたはアイテムを拾った。 </string>
     <string name="dialog_loot_pickedupitems">%1$d個のアイテムを拾った。</string>
     <string name="dialog_groundloot_title">アイテム</string>
-    <string name="dialog_groundloot_message">アイテムが落ちている。</string>
+    <string name="dialog_groundloot_message">アイテムを見つけた。</string>
     <string name="dialog_monsterloot_title">勝利</string>
     <string name="dialog_monsterloot_message">あなたは戦闘に勝った。</string>
     <string name="dialog_monsterloot_gainedexp">%1$dの経験値を獲得。</string>
@@ -93,7 +93,7 @@
     <string name="traitsinfo_attack_cost">攻撃コスト（AP）:</string>
     <string name="traitsinfo_attack_chance">命中:</string>
     <string name="traitsinfo_attack_damage">ダメージ:</string>
-    <string name="traitsinfo_criticalhit_skill">クリティカルスキル:</string>
+    <string name="traitsinfo_criticalhit_skill">クリティカルヒット:</string>
     <string name="traitsinfo_criticalhit_multiplier">クリティカル倍率:</string>
     <string name="traitsinfo_defense_chance">回避:</string>
     <string name="traitsinfo_defense_damageresist">ダメージ軽減:</string>
@@ -144,7 +144,7 @@
     <string name="about_button1">ヘルプ</string>
     <string name="about_button2">製作者</string>
     <string name="about_button3">ライセンス</string>
-    <string name="about_contents1">AndroidのオープンソースローグライクRPG、Andor\'s Trailへようこそ。&lt;br /&gt;他のプレイヤーとゲームについて話し合うには、フォーラムにアクセスしてください。&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;ゲームに関する質問やディスカッションについては、andorstrail.comにあるゲームフォーラム（英語）を参照してください。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;Andor\'s Trailの世界についての情報などをまとめるゲームwiki。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;github.comの開発者向けプロジェクトソースコード。&lt;/a&gt;&lt;br /&gt;</string>
+    <string name="about_contents1">AndroidのオープンソースローグライクRPG、Andor\'s Trailへようこそ。&lt;br /&gt;他のプレイヤーとゲームについて話し合うには、フォーラムにアクセスしてください。&lt;br /&gt; &lt;br /&gt; &lt;a href=http://andorstrail.com/&gt;ゲームに関する質問やディスカッションについては、andorstrail.comにあるゲームフォーラム（英語）を参照してください。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=http://docs.andorstrail.com/&gt;Andor\'s Trailの世界についての情報などをまとめるゲームwiki（英語）。&lt;/a&gt;&lt;br /&gt; &lt;br /&gt; &lt;a href=https://github.com/AndorsTrailRelease/andors-trail/&gt;github.comの開発者向けプロジェクトソースコード。&lt;/a&gt;&lt;br /&gt;</string>
     <!--
 		This is the GNU GPL v2 text, originally from
 			http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -158,7 +158,7 @@
 \n現在のAndor\'s Trailはまだ製作中であり、マップの全てが完成しているわけではありません。
 \nフォーラムに参加して、他のプレイヤーと議論したり、より改善していく手助けをお願いします。（概要をご覧下さい）
 \n
-\nあらゆるフィードバックに感謝します!</string>
+\nたくさんのフィードバックありがとうございます!</string>
     <string name="questlog_includecompleted_prompt">表示するクエスト</string>
     <string name="questlog_includecompleted_hidecompleted">進行中クエスト</string>
     <string name="questlog_includecompleted_includecompleted">全てのクエスト</string>
@@ -195,7 +195,7 @@
     <!-- Added in v0.6.9 -->
     <string name="actorinfo_currentconditions">一時的効果</string>
     <!-- Translated as: affliction / statuseffect / temporary effect -->
-    <string name="actorcondition_info_removes_all">%1$sをすべて取り除く</string>
+    <string name="actorcondition_info_removes_all">%1$sを完全に取り除く</string>
     <string name="iteminfo_effect_chance_of">%1$sの確率で%2$sを生じる</string>
     <string name="iteminfo_effect_duration">（%1$dラウンド）</string>
     <string name="iteminfo_effect_works_on_source">使用者に</string>
@@ -215,11 +215,11 @@
     <string name="iteminfo_effect_increase_movecost">移動コスト増加 +%1$dAP</string>
     <string name="iteminfo_effect_decrease_movecost">移動コスト減少 -%1$dAP</string>
     <string name="preferences_display_scaling_factor_title">拡大率</string>
-    <string name="preferences_display_scaling_factor">ゲームのあらゆる部分の表示を拡大もしくは縮小します。</string>
+    <string name="preferences_display_scaling_factor">ゲームのあらゆる表示を拡大もしくは縮小します。</string>
     <string name="preferences_display_scaling_factor_normal">通常</string>
-    <string name="preferences_display_scaling_factor_50_percent_larger">1.5x</string>
-    <string name="preferences_display_scaling_factor_double">2.0x</string>
-    <string name="inventory_assign">クイックスロットに入れる</string>
+    <string name="preferences_display_scaling_factor_50_percent_larger">1.5倍</string>
+    <string name="preferences_display_scaling_factor_double">2.0倍</string>
+    <string name="inventory_assign">クイックスロット割り当て</string>
     <string name="inventory_assign_slot1">スロット1</string>
     <string name="inventory_assign_slot2">スロット2</string>
     <string name="inventory_assign_slot3">スロット3</string>
@@ -275,7 +275,7 @@
     <string name="skill_shortdescription_barter">店での有利な取引</string>
     <string name="skill_shortdescription_dodge">回避の向上</string>
     <string name="skill_shortdescription_barkskin">ダメージ軽減</string>
-    <string name="skill_shortdescription_more_criticals">クリティカルスキルの向上</string>
+    <string name="skill_shortdescription_more_criticals">クリティカルヒットの向上</string>
     <string name="skill_shortdescription_better_criticals">クリティカル時ダメージの増加</string>
     <string name="skill_shortdescription_speed">最大行動値（AP）を増加</string>
     <string name="skill_shortdescription_coinfinder">ゴールドを発見する確率を高める</string>
@@ -295,7 +295,7 @@
     <string name="skill_longdescription_barter">スキル1レベルごとに、店でアイテムを売り買いするときの比率を%1$d%%ずつ有利にします。</string>
     <string name="skill_longdescription_dodge">スキル1レベルにつき、回避を%1$d向上させます。</string>
     <string name="skill_longdescription_barkskin">スキル1レベルにつき、ダメージを%1$dずつ軽減します。</string>
-    <string name="skill_longdescription_more_criticals">スキル1レベルにつき、装備によるクリティカルスキルを%1$d%%増加させます。</string>
+    <string name="skill_longdescription_more_criticals">スキル1レベルにつき、装備によるクリティカルヒットを%1$d%%増加させます。</string>
     <string name="skill_longdescription_better_criticals">スキル1レベルにつき、装備によるクリティカル倍率を%1$d%%増加させます。</string>
     <string name="skill_longdescription_speed">スキル1レベルにつき、行動値（AP）の最大値を%1$dずつ増加させます。</string>
     <string name="skill_longdescription_coinfinder">スキル1レベルにつき、モンスターがゴールドを落とす確率を%1$d%%、モンスターが落とすゴールドの量を%2$d%%増加させます（そのモンスターが落とすゴールドの上限額は増加しません）。</string>
@@ -303,13 +303,13 @@
     <string name="skill_longdescription_cleave">敵を殺すたび、スキル1レベルにつき+%1$dポイントの行動値（AP）が回復します。</string>
     <string name="skill_longdescription_eater">敵を殺すたび、スキル1レベルにつき+%1$dポイントの体力（HP）が回復します。</string>
     <string name="skill_longdescription_fortitude">これ以降のレベルアップのたび、体力（HP）の最大値がスキル1レベルにつき%1$dポイント増加します。過去のレベルアップにさかのぼって適用されることはなく、将来のレベルアップにのみ影響します。</string>
-    <string name="skill_longdescription_evasion">スキル1レベルにつき、逃走に失敗する確率を%1$d%%、隣接するモンスターから攻撃される確率を%2$d%%ずつ下げる。</string>
+    <string name="skill_longdescription_evasion">スキル1レベルにつき、逃走に失敗する確率を%1$d%%、隣接するモンスターから攻撃される確率を%2$d%%ずつ下げます。</string>
     <string name="skill_longdescription_regeneration">毎ラウンド、スキル1レベルにつきHPを%1$dずつ回復します。</string>
     <string name="skill_longdescription_lower_exploss">スキル1レベルにつき、死亡時に失う経験値の量を%1$d%%減少させます（現在失う量に対する割合で、パーセンテージ・ポイントではありません）。%2$dレベルに達すると、死亡時に経験値を失わなくなります。</string>
     <string name="skill_longdescription_magicfinder">スキル1レベルにつき、特別なアイテムを発見する確率が%1$d%%づつ増加します。</string>
-    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、めまい（Dazed）や武器弱体（Weapon Feebleness）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、疲労（Fatigue）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
-    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、ポイズン（Poison）や出血（bleeding wounds）といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_mental">スキル1レベルにつき、精神に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、めまいや武器弱体といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_physical_capacity">スキル1レベルにつき、身体能力に対する状態変化にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、疲労といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
+    <string name="skill_longdescription_resistance_blood_disorder">スキル1レベルにつき、血液異常にかかる確率を%1$d%%低下させます。最大で%2$d%%の低下までです。これには、ポイズンや出血といった、モンスターの攻撃が引き起こす状態変化が含まれます。</string>
     <string name="skillinfo_action_levelup">レベルアップ</string>
     <string name="skill_current_level">現在のレベル: %1$d</string>
     <string name="skill_current_level_with_maximum">現在のレベル: %1$d / %2$d</string>
@@ -327,7 +327,7 @@
     <string name="iteminfo_displaytypes_legendary">伝説のアイテム</string>
     <string name="iteminfo_displaytypes_extraordinary">特別なアイテム</string>
     <string name="iteminfo_displaytypes_rare">レアアイテム</string>
-    <string name="actorconditioninfo_category">状態変化カテゴリ: %1$s</string>
+    <string name="actorconditioninfo_category">状態変化カテゴリー: %1$s</string>
     <string name="actorcondition_categories_spiritual">霊魂</string>
     <string name="actorcondition_categories_mental">精神</string>
     <string name="actorcondition_categories_physical">身体能力</string>
@@ -341,26 +341,26 @@
     <!-- Added in v0.6.11 -->
     <string name="skill_title_shadow_bless">シャドウの闇の祝福</string>
     <string name="skill_shortdescription_shadow_bless">すべての種類の状態変化に対する抵抗力</string>
-    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を%1$d%%低下させます。これには、ポイズン（Poison）、めまい（Dazed）、疲労（Fatigue）といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
+    <string name="skill_longdescription_shadow_bless">スキル1レベルにつき、あらゆる状態変化にかかる確率を%1$d%%低下させます。これには、ポイズン、めまい、疲労といった、モンスターの攻撃が引き起こすあらゆる状態変化が含まれます。</string>
     <string name="inventory_movetop">一番上へ</string>
     <string name="inventory_movebottom">一番下へ</string>
     <string name="actorinfo_immune_criticals">クリティカルヒット無効</string>
     <string name="traitsinfo_criticalhit_effectivechance">クリティカル率:</string>
     <string name="skill_title_crit1">内部からの出血</string>
     <string name="skill_shortdescription_crit1">内出血攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象に内出血を引き起こし、内出血（Internal bleeding）の状態変化を対象に与えます。内出血は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_crit1">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象に内出血を引き起こし、内出血の状態変化を対象に与えます。内出血は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="skill_title_crit2">骨の粉砕</string>
     <string name="skill_shortdescription_crit2">骨折攻撃の機会を得る</string>
-    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象の骨を砕き、破壊（Fracture）の状態変化を対象に与えます。破壊は防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
+    <string name="skill_longdescription_crit2">クリティカルヒットを発生させるたび、その攻撃は%1$d%%の確率で対象の骨を砕き、破壊の状態変化を対象に与えます。破壊は防御に関する戦闘能力を劇的に下げ、対象は次なる攻撃を防ぐことが難しくなります。</string>
     <string name="skill_title_rejuvenation">復元</string>
     <string name="skill_shortdescription_rejuvenation">悪い効果を取り除く</string>
-    <string name="skill_longdescription_rejuvenation">1ラウンド（6秒）毎に、%1$d%%の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。めまい（Dazed）、疲労（Fatigue）、ポイズン（Poison）といった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
+    <string name="skill_longdescription_rejuvenation">1ラウンド（6秒）毎に、%1$d%%の確率で、現在受けている悪い効果の状態変化のうち1つを1段階だけ弱めます。めまい、疲労、ポイズンといった、身体能力・精神・血液異常のいずれの状態変化にも効果があります。</string>
     <string name="skill_title_taunt">挑発</string>
     <string name="skill_shortdescription_taunt">攻撃を外した敵のAPを失わせる</string>
     <string name="skill_longdescription_taunt">敵の攻撃が外れたとき、%1$d%%の確率でその敵は行動値（AP）を%2$d失います。あなたに対するあらゆる近接攻撃に効果があります。</string>
     <string name="skill_title_concussion">頭部への衝撃</string>
     <string name="skill_shortdescription_concussion">脳震盪攻撃の機会を得る</string>
-    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪（concussion）を起こします。脳震盪は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
+    <string name="skill_longdescription_concussion">あなたの命中より%1$d以上回避が低い敵に攻撃するたび、その攻撃は%2$d%%の確率で対象に脳震盪を起こします。脳震盪は攻撃に関する戦闘能力を劇的に下げ、対象は有効な攻撃を当てることが難しくなります。</string>
     <string name="about_button4">概要</string>
     <!-- =========================================== -->
     <!-- Added in v0.7.0 -->
@@ -371,7 +371,7 @@
     <string name="preferences_display_loot_toast_on_items">アイテムを見つけたときにのみ通知を表示</string>
     <string name="preferences_ui_category">インターフェイス</string>
     <string name="preferences_ui_enable_animations_title">アニメーションを有効にします</string>
-    <string name="preferences_ui_enable_animations">戦闘のバーなどの各種のインターフェイス要素のアニメーションを表示します。</string>
+    <string name="preferences_ui_enable_animations">戦闘バーなどの各種インターフェイス要素のアニメーションを表示します。</string>
     <string name="menu_button_worldmap">地図</string>
     <string name="menu_button_worldmap_failed">地図を表示できません。</string>
     <string name="display_worldmap_not_available">この場所からは、地図を表示できません。</string>
@@ -389,8 +389,8 @@
     <string name="iteminfo_effect_increase_attack_damage_minmax">攻撃ダメージを%1$d-%2$d上げる</string>
     <string name="iteminfo_effect_decrease_attack_damage">攻撃ダメージを%1$d下げる</string>
     <string name="iteminfo_effect_decrease_attack_damage_minmax">攻撃ダメージを%1$d-%2$d下げる</string>
-    <string name="iteminfo_effect_increase_critical_skill">%1$dクリティカルスキルを上げる</string>
-    <string name="iteminfo_effect_decrease_critical_skill">%1$dクリティカルスキルを下げる</string>
+    <string name="iteminfo_effect_increase_critical_skill">%1$dクリティカルヒットを上げる</string>
+    <string name="iteminfo_effect_decrease_critical_skill">%1$dクリティカルヒットを下げる</string>
     <string name="iteminfo_effect_critical_multiplier">x%1$.1fの倍率でクリティカルヒットを有効にする</string>
     <string name="iteminfo_effect_increase_block_chance">回避が%1$d増加</string>
     <string name="heroinfo_experiencepoints">経験値（XP）:</string>
@@ -406,22 +406,22 @@
     <string name="iteminfo_effect_decrease_damage_resistance">ダメージ軽減を%1$d減少</string>
     <string name="iteminfo_effect_increase_damage_resistance">ダメージ軽減を%1$d増加</string>
     <string name="iteminfo_effect_decrease_block_chance">回避が%1$d減少</string>
-    <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が生じる場合、無効にしてください。このオプションを有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
+    <string name="preferences_high_quality_filters">フィルタされたマップ（暗い洞窟など）でパフォーマンスの問題が生じる場合、無効にしてください。有効にすると、単色のオーバーレイではなく高度なカラーフィルタが使用されます。</string>
     <string name="preferences_high_quality_filters_title">高品質フィルタ</string>
     <string name="inventory_selectitem">割り当てるアイテムを選択する</string>
-    <string name="preferences_language_description">言語を選択します。システム言語が使用できない場合、またはコンテンツが翻訳されていない場合は英語が使用されます。（再起動が必要）</string>
+    <string name="preferences_language_description">言語を選択します。システム言語が使用できない、またはコンテンツが翻訳されていない場合は英語が使用されます。（再起動が必要）</string>
     <string name="preferences_language">言語</string>
     <string name="preferences_language_default">システム言語</string>
-    <string name="preferences_display_scaling_factor_75_percent">0.75x</string>
-    <string name="preferences_display_scaling_factor_50_percent">0.5x</string>
-    <string name="about_interface">&lt;div&gt;&lt;b&gt;ゲーム設定&lt;/b&gt;はデバイスのメニューボタンを押すと表示されます。&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;インターフェイスアイコン&lt;/h1&gt; &lt;div&gt;&lt;b&gt;チェスト&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;クイックスロット[中のポーチを長押しして、すぐ使えるアイテムを割り当てます]&lt;/p&gt; &lt;div&gt;&lt;b&gt;主人公&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;メニュー[概要、クエスト、スキル、インベントリ*]&lt;/p&gt; &lt;p&gt;*（インベントリでアイテムを押すと情報が表示され、長押しするとオプションが表示されます）&lt;/p&gt; &lt;div&gt;&lt;b&gt;敵&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;情報[戦闘中に出現]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;戦闘指南&lt;/h1&gt; &lt;p&gt;戦闘中の行動にはAPを消費します...&lt;/p&gt; &lt;div&gt;&lt;b&gt;攻撃&lt;/b&gt; - [3AP]*&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;*（装備変更やアイテムの使用により、APや消費コストが変化する場合があります）&lt;/p&gt; &lt;div&gt;&lt;b&gt;アイテムの使用&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;更なる戦闘指南&lt;/h1&gt; &lt;div&gt;戦闘中、主人公に隣接するタイルを長押しします…&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走するには&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（選択したタイルがハイライト表示されます - 攻撃ボタンは移動に変わります）&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[逃走モードが有効 - 敵を長押しして再度戦闘に戻ります]&lt;/p&gt; &lt;div&gt;&lt;b&gt;ターゲットを変更するには&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（赤色のターゲットハイライトが敵の間で移動します）&lt;/p&gt; &lt;p&gt;[ターゲットが変更されます]&lt;/p&gt;</string>
-    <string name="dialog_permission_information">Andor\'s Trailは、保存したゲームをデバイス上のユーザーアクセス可能なストレージに書き込みます。これにより、保存したゲームを簡単にバックアップしたり、新しいデバイスに転送できます。詳細についてはフォーラムをご覧ください。
+    <string name="preferences_display_scaling_factor_75_percent">0.75倍</string>
+    <string name="preferences_display_scaling_factor_50_percent">0.5倍</string>
+    <string name="about_interface">&lt;div&gt;&lt;b&gt;ゲーム設定&lt;/b&gt;はデバイスのメニューボタンを押すと表示されます。&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;インターフェイスアイコン&lt;/h1&gt; &lt;div&gt;&lt;b&gt;チェスト&lt;/b&gt;&lt;img alt=chest src=chest.png /&gt;&lt;/div&gt; &lt;p&gt;クイックスロット[中のポーチを長押しして、すぐに使えるようにアイテムを割り当てることができます]&lt;/p&gt; &lt;div&gt;&lt;b&gt;主人公&lt;/b&gt;&lt;img alt=hero src=char_hero.png /&gt;&lt;/div&gt; &lt;p&gt;メニュー[概要、クエスト、スキル、インベントリ*]&lt;/p&gt; &lt;p&gt;*（インベントリでアイテムを押すと情報が表示され、長押しするとオプションが表示されます）&lt;/p&gt; &lt;div&gt;&lt;b&gt;敵&lt;/b&gt;&lt;img alt=monster src=monster.png /&gt;&lt;/div&gt; &lt;p&gt;情報[戦闘中に表示される]&lt;/p&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;戦闘指南&lt;/h1&gt; &lt;p&gt;戦闘中に消費するAP...&lt;/p&gt; &lt;div&gt;&lt;b&gt;攻撃&lt;/b&gt; - [3AP]*&lt;/div&gt; &lt;img alt=attacking src=doubleattackexample.png /&gt; &lt;p&gt;*（装備変更やアイテムの使用によって、APや消費コストが変化する場合があります）&lt;/p&gt; &lt;div&gt;&lt;b&gt;アイテムの使用&lt;/b&gt; - [5AP]&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走&lt;/b&gt; - [6AP]&lt;/div&gt; &lt;p&gt;________________&lt;/p&gt; &lt;h1&gt;さらなる戦闘指南&lt;/h1&gt; &lt;div&gt;戦闘中、主人公のとなりのタイルを長押しすると…&lt;/div&gt; &lt;div&gt;&lt;b&gt;逃走する&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（選択したタイルがハイライト表示されます - 攻撃ボタンが移動に切り替わります）&lt;/p&gt; &lt;img alt=flee src=flee_example.png /&gt; &lt;p&gt;[逃走モード時 - 敵を長押しすると再度戦闘に戻ります]&lt;/p&gt; &lt;div&gt;&lt;b&gt;ターゲットを変更する&lt;/b&gt;&lt;/div&gt; &lt;p&gt;（赤いターゲットハイライトが敵の間で切り替わります）&lt;/p&gt; &lt;p&gt;[ターゲットが変更されます]&lt;/p&gt;</string>
+    <string name="dialog_permission_information">Andor\'s Trailは、セーブしたゲームをデバイス上のユーザーアクセス可能なストレージに書き込みます。これにより、セーブしたゲームを簡単にバックアップしたり、新しいデバイスに転送したりできます。詳しくはフォーラムをご覧ください。
 \n
-\nAndor\'s Trailは他の目的でデバイスへのアクセスを使用しません、インターネットにもアクセスしません。Andor\'s Trailはオープンソースです。ソースはgithubにあります。</string>
+\nAndor\'s Trailは他の目的でデバイスへのアクセスを使用しません。インターネットにアクセスすることもありません。Andor\'s Trailはオープンソースです。ソースはgithubにあります。</string>
     <string name="dialog_permission_information_title">ゲームのロードとセーブ</string>
     <string name="dialog_newversion_permission_information">"
 \n
-\nゲームをセーブしてロードするために（この目的のみのため）Andor\'s Trailはストレージへのアクセス許可を求めます。"</string>
+\nゲームのセーブとロードを行うために（この目的にのみ）Andor\'s Trailはストレージへのアクセス許可を求めます。"</string>
     <string name="shop_item_sort">並び替え</string>
     <string name="startscreen_mode_1_life">パーマデス（ライフ1、セーブ1）</string>
     <string name="startscreen_mode_3_lives">エクストリーム（ライフ3、セーブ1）</string>
@@ -452,13 +452,13 @@
     <string name="dialog_game_over_title">ゲームオーバー</string>
     <string name="dialog_recenter">現在地</string>
     <string name="dialog_more">その他</string>
-    <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブファイルをロードできませんでした。このセーブファイルは既に使用中です。</string>
+    <string name="dialog_loading_failed_cheat">Andor\'s Trailはセーブファイルを読み込めませんでした。このセーブファイルは既に使用中です。</string>
     <string name="skill_longdescription_fightstyle_2hand">ツーハンドソードやグレートアックス、ジャイアントハンマーなど、両手を必要とする武器を使用する際に効果を発揮します。
 \n
 \nスキルレベルが上がるごとに、両手武器のダメージ性能が元の%1$d%%増加します。</string>
     <string name="skill_longdescription_fightstyle_dualwield">メインハンドとオフハンドの2つの武器を同時に装備して戦う時に効果を発揮します。
 \n
-\nこのスキルがない場合、オフハンドで装備している武器はその性能の%1$d%%しか発揮できません。これには命中、クリティカルスキル、ダメージ性能、回避などが含まれます。このスキルがない場合、攻撃を行う際の攻撃コスト（APコスト）は、メイン武器の攻撃コストとオフハンドで使用する武器の攻撃コストの合計となります。ダメージ修正は両方のうち低いほうが適応されます。
+\nこのスキルがない場合、オフハンドで装備している武器はその性能の%1$d%%しか発揮できません。これには命中、クリティカルヒット、ダメージ性能、回避などが含まれます。このスキルがない場合、攻撃を行う際の攻撃コスト（APコスト）は、メイン武器の攻撃コストとオフハンドで使用する武器の攻撃コストの合計となります。ダメージ修正は両方のうち低いほうが適応されます。
 \n
 \nスキルレベル1では、オフハンドの武器性能の%2$d%%を発揮できます。攻撃コストは両方の武器の攻撃コストの高い側に、低い側の攻撃コストの%3$d%%を加えた値となります。ダメージ修正は両方の平均が適応されます。
 \n
@@ -481,12 +481,12 @@
     <string name="skill_longdescription_armor_prof_unarmored">防具を装備せずに戦っている時、スキルレベルごとに%1$dの回避を獲得します。布製のアイテムは防具には含まれません。</string>
     <string name="skill_longdescription_armor_prof_shield">盾やパリィ武器を装備している時、スキルレベルごとにダメージ軽減を%1$d増やします。</string>
     <string name="skill_longdescription_weapon_prof_unarmed">武器と盾を持たずに戦っている時、スキルレベルごとに命中%1$d、基礎ダメージ%2$d、回避%3$dを獲得します。</string>
-    <string name="skill_longdescription_weapon_prof_axe">スキルレベルごとに、アックスとグレートアックスを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_weapon_prof_blunt">スキルレベルごとに、鈍器を使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。これには、クラブ、六尺棒、メイス、王笏、鞭、ウォーハンマー、ジャイアントハンマーが含まれます。</string>
-    <string name="skill_longdescription_weapon_prof_2hsword">スキルレベルごとに、両手剣を使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_weapon_prof_1hsword">スキルレベルごとに、レイピア、ロングソード、ブロードソードを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_weapon_prof_dagger">スキルレベルごとに、ダガーとショートソードを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_shortdescription_weapon_prof_pole">槍での戦いが得意</string>
+    <string name="skill_longdescription_weapon_prof_axe">スキルレベルごとに、アックスとグレートアックスを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_blunt">スキルレベルごとに、鈍器を使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。これには、クラブ、六尺棒、メイス、王笏、鞭、ウォーハンマー、ジャイアントハンマーが含まれます。</string>
+    <string name="skill_longdescription_weapon_prof_2hsword">スキルレベルごとに、両手剣を使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_1hsword">スキルレベルごとに、レイピア、ロングソード、ブロードソードを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。</string>
+    <string name="skill_longdescription_weapon_prof_dagger">スキルレベルごとに、ダガーとショートソードを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。</string>
+    <string name="skill_shortdescription_weapon_prof_pole">長柄武器での戦いが得意</string>
     <string name="skill_shortdescription_specialization_weapon_shield">武器と盾での戦いの達人</string>
     <string name="skill_shortdescription_specialization_2hand">両手武器の達人</string>
     <string name="skill_shortdescription_specialization_dualwield">二刀流の達人</string>
@@ -503,7 +503,7 @@
     <string name="skill_shortdescription_weapon_prof_axe">斧での戦いが得意</string>
     <string name="skill_shortdescription_weapon_prof_2hsword">両手剣での戦いが得意</string>
     <string name="skill_shortdescription_weapon_prof_1hsword">片手剣での戦いが得意</string>
-    <string name="skill_title_weapon_prof_pole">槍習熟</string>
+    <string name="skill_title_weapon_prof_pole">長柄武器習熟</string>
     <string name="combat_result_monstermoved">%1$sは移動。</string>
     <string name="skill_title_armor_prof_unarmored">非装甲戦闘</string>
     <string name="skill_shortdescription_weapon_prof_dagger">短剣での戦いが得意</string>
@@ -520,7 +520,7 @@
     <string name="startscreen_load_game">ロード</string>
     <string name="startscreen_game_mode">モード</string>
     <string name="startscreen_newgame_start">始める</string>
-    <string name="heroinfo_gamestats_top_boss">最も強い討伐モンスター</string>
+    <string name="heroinfo_gamestats_top_boss">最強の討伐モンスター</string>
     <string name="skill_longdescription_armor_prof_heavy">スキルレベルごとに、装備しているすべての重装備の回避を元の回避の%1$d%%増やします。重装備はスキルレベルごとに移動のペナルティが%2$d%%減少し、攻撃速度のペナルティがスキルレベルごとに%3$d%%減少します。重装備にはメタルアーマー、チェインメイル、プレートメイルがあります。</string>
     <string name="skill_longdescription_fightstyle_unarmed_unarmored">防具を装備していない状態で、武器や盾を使用せずに戦っている時、命中%1$d、回避%2$d、ダメージ軽減%3$dを獲得し、スキルレベルごとに最大ダメージを%4$d増加します。また、レベル毎にクリティカル倍率が1+0.%5$dとなります。
 \n
@@ -544,7 +544,7 @@
     <string name="heroinfo_mode">モード</string>
     <string name="rip_startscreen">(死亡)</string>
     <string name="change_locale_requires_restart">ロケールの変更には再起動が必要です。Andor\'s Trailを終了しました。</string>
-    <string name="storage_permissions_mandatory">セーブしたゲームやワールドマップを処理するには、Andor\'s Trailにストレージへのアクセスが必須です。Andor\'s Trailを閉じる。</string>
+    <string name="storage_permissions_mandatory">セーブしたゲームやワールドマップの処理にはAndor\'s Trailにストレージへのアクセスが必須です。Andor\'s Trailを閉じる。</string>
     <string name="change_theme_requires_restart">UIテーマの変更には再起動が必要です。Andor\'s Trailを終了しました。</string>
     <string name="preferences_display_theme_charcoal">オブシディアン</string>
     <string name="preferences_display_theme_green">マラカイト</string>
@@ -584,18 +584,18 @@
     <string name="preferences_ui_use_localized_resources">可能な場合は、インターフェイスとコンテンツの翻訳を使用します。（再起動が必要）</string>
     <string name="preferences_ui_use_localized_resources_title">ローカライズされたリソースを使用する</string>
     <string name="heroinfo_gamestats_name_and_qty">%1$s (%2$d)</string>
-    <string name="heroinfo_gamestats_fav_monsters">最もよく討伐しているモンスター</string>
+    <string name="heroinfo_gamestats_fav_monsters">最も討伐しているモンスター</string>
     <string name="heroinfo_gamestats_bonemeals">使った骨粉ポーション</string>
     <string name="heroinfo_gamestats_num_used_items">使用アイテム</string>
     <string name="heroinfo_gamestats_num_killed_monsters">討伐モンスター</string>
-    <string name="heroinfo_gamestats_fav_item">最もよく使われているアイテム</string>
+    <string name="heroinfo_gamestats_fav_item">最も使われているアイテム</string>
     <string name="heroinfo_gamestats_visited_maps">訪れた場所</string>
     <string name="heroinfo_gamestats_spent_gold">店で使ったゴールド</string>
     <string name="heroinfo_gamestats_deaths">戦闘不能回数</string>
     <string name="heroinfo_gamestats_quests">完了したクエスト</string>
     <string name="heroinfo_gamestats">ゲームの統計</string>
     <string name="preferences_ui_show_quickslots_when_toolbox_is_visible">ツールボックスを開くとすぐにクイックスロットボタンが表示されるようにします</string>
-    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">ツールボックスを開いたときにクイックスロットを表示する</string>
+    <string name="preferences_ui_show_quickslots_when_toolbox_is_visible_title">ツールボックスを開いてクイックスロット表示</string>
     <string name="preferences_quickslots_placements_vertical_bottom_right">右下、右の境界に沿って</string>
     <string name="preferences_quickslots_placements_horizontal_bottom_right">右下、下の境界に沿って</string>
     <string name="preferences_quickslots_placements_vertical_bottom_left">左下、左の境界に沿って</string>
@@ -605,9 +605,9 @@
     <string name="preferences_quickslots_placements_horizontal_center_bottom">中央下</string>
     <string name="preferences_quickslots_placement_summary">クイックスロットの配置場所</string>
     <string name="preferences_quickslots_placement">クイックスロットの位置</string>
-    <string name="skill_longdescription_weapon_prof_pole">スキルレベルごとに、ポールウェポンを使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルスキルをアイテムの基礎クリティカルスキルの%3$d%%それぞれ増やします。</string>
-    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージポテンシャルの両方が増加します。命中は元の命中の%1$d%%、ダメージポテンシャルは元のダメージポテンシャルの%2$d%%増加します。</string>
-    <string name="skill_longdescription_specialization_2hand">武器スタイルのスキル効果に加えて、両手武器のダメージポテンシャルが元のダメージポテンシャルの%1$d%%増加します。両手武器の命中も元の命中の%2$d%%増加します。</string>
+    <string name="skill_longdescription_weapon_prof_pole">スキルレベルごとに、長柄武器を使用した時の命中をアイテムの基礎命中の%1$d%%、回避をアイテムの基礎回避の%2$d%%、クリティカルヒットをアイテムの基礎クリティカルヒットの%3$d%%それぞれ増やします。</string>
+    <string name="skill_longdescription_specialization_weapon_shield">メインハンドの武器の命中とダメージ性能の両方が増加します。命中は元の命中の%1$d%%、ダメージ性能は元のダメージ性能の%2$d%%増加します。</string>
+    <string name="skill_longdescription_specialization_2hand">武器スタイルのスキル効果に加えて、両手武器のダメージ性能が元のダメージ性能の%1$d%%増加します。両手武器の命中も元の命中の%2$d%%増加します。</string>
     <string name="skill_longdescription_specialization_dualwield">武器スタイルのスキル効果に加えて、両方の装備武器の命中が元の命中の%1$d%%増加します。両方の装備武器の回避も元の回避の%2$d%%増加します。</string>
     <string name="skill_longdescription_fightstyle_weapon_shield">メインハンドに武器を装備し、オフハンドに盾やパリィ武器を装備して戦っている時に効果を発揮します。
 \n

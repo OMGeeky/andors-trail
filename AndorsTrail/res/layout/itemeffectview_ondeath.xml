@@ -21,7 +21,7 @@
 		>
 	</LinearLayout>
 	    
-		<com.gpl.rpg.AndorsTrail.view.ActorConditionEffectList
+		<com.gpl.rpg.AndorsTrail_beta1.view.ActorConditionEffectList
 			android:id="@+id/itemeffect_ondeath_conditions_source"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"

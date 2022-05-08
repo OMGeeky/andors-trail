@@ -49,6 +49,27 @@
                         "value":80
                     }
                 ]
+            },
+            {
+                "text":"Not yet, but your order has finally arrived.",
+                "nextPhraseID":"brv_wh_delivery_wyre_negative",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brv_wh_item_02",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":90
+                    }
+                ]
             }
         ]
     },
@@ -63,6 +84,27 @@
             {
                 "text":"You are welcome.",
                 "nextPhraseID":"wrye_story_15"
+            },
+            {
+                "text":"Yes, I came back to deliver your order of a 'Lyre'. You must be good at playing it?",
+                "nextPhraseID":"brv_wh_delivery_wyre",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_02",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":90
+                    }
+                ]
             }
         ]
     },
@@ -73,6 +115,27 @@
             {
                 "text":"What is the matter?",
                 "nextPhraseID":"wrye_mourn_2"
+            },
+            {
+                "text":"Excuse me, I'm here to deliver your order for a 'Lyre'.",
+                "nextPhraseID":"wrye_mourn_3",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brv_wh_item_02",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":90
+                    }
+                ]
             }
         ]
     },
@@ -94,6 +157,27 @@
             {
                 "text":"What about him?",
                 "nextPhraseID":"wrye_mourn_3"
+            },
+            {
+                "text":"Maybe your order here will comfort you?",
+                "nextPhraseID":"wrye_mourn_3",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brv_wh_item_02",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":90
+                    }
+                ]
             }
         ]
     },

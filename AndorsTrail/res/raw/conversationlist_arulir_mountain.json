@@ -1577,6 +1577,26 @@
                 ]
             },
             {
+                "nextPhraseID":"tjure_wh_delivery_90",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"mermaid_scale",
+                        "value":90
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":60
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"tjure_30",
                 "requires":[
                     {
@@ -1626,6 +1646,27 @@
             {
                 "text":"Eh, sorry to disturb you.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"I'm surprised to see you here as well. Did you order 'Mysterious green something'?",
+                "nextPhraseID":"brv_wh_delivery_tjure",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_05",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":60
+                    }
+                ]
             }
         ]
     },
@@ -1877,6 +1918,33 @@
     {
         "id":"tjure_90",
         "message":"*Sigh* You were my last hope. Leave me now.",
+        "replies":[
+            {
+                "text":"Hope you learned from it.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"OK. One question before I go: did you order a 'Mysterious green something'?",
+                "nextPhraseID":"brv_wh_delivery_tjure",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_05",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":60
+                    }
+                ]
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -1888,11 +1956,65 @@
     {
         "id":"tjure_100",
         "message":"Thank you for your help.",
-        "switchToNPC":"tjure"
+        "switchToNPC":"tjure",
+        "replies":[
+            {
+                "text":"It was an interesting experience.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"No problem. By the way, did you order a 'Mysterious green something'?",
+                "nextPhraseID":"brv_wh_delivery_tjure",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_05",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":60
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"tjure_200",
-        "message":"Oh, you look better than the last time we met. Thank you for your help."
+        "message":"Oh, you look better than the last time we met. Thank you for your help.",
+        "replies":[
+            {
+                "text":"It was an interesting experience.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Indeed. By the way, did you order a 'Mysterious green something'?",
+                "nextPhraseID":"brv_wh_delivery_tjure",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_05",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":60
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"watermark_script",

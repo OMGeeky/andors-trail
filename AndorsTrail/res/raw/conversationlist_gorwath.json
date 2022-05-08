@@ -28,6 +28,16 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"postman",
+                        "value":15
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"gorwath_letter_20",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"postman",
                         "value":10
                     }
                 ]

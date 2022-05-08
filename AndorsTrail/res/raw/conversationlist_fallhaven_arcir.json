@@ -17,6 +17,27 @@
             {
                 "text":"You really seem to like your books.",
                 "nextPhraseID":"arcir_books_1"
+            },
+            {
+                "text":"And I'm your delivery kid. Did you order a 'Dusty old book'?",
+                "nextPhraseID":"brv_wh_delivery_arcir",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"brv_wh_item_09",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brv_wh_delivery",
+                        "value":20
+                    }
+                ]
             }
         ]
     },

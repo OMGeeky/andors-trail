@@ -23,8 +23,8 @@ public final class Constants {
 	public static final long MINIMUM_INPUT_INTERVAL_STD = 200;
 	//TODO restore final modifier before release
 	public static long MINIMUM_INPUT_INTERVAL = AndorsTrailApplication.DEVELOPMENT_FASTSPEED ? MINIMUM_INPUT_INTERVAL_FAST : MINIMUM_INPUT_INTERVAL_STD;
-	public static final int MAX_MAP_WIDTH = 33;
-	public static final int MAX_MAP_HEIGHT = 33;
+	public static final int MAX_MAP_WIDTH = 46;
+	public static final int MAX_MAP_HEIGHT = 46;
 
 	public static final int MONSTER_MOVEMENT_TURN_DURATION_MS = 1200;
 	public static final int MONSTER_IMMOBILE_MOVE_COST = 999;

@@ -44,7 +44,7 @@ public final class CombatController implements VisualEffectCompletedCallback {
 		this.world = world;
 	}
 
-	public static enum BeginTurnAs {
+	public enum BeginTurnAs {
 		player, monsters, continueLastTurn
 	}
 
@@ -119,12 +119,10 @@ public final class CombatController implements VisualEffectCompletedCallback {
 			if (!selectedMonster.isAgressive(world.model.player)) return;
 		}
 		Coord previousSelection = world.model.uiSelections.selectedPosition;
-		if (previousSelection != null) {
-			world.model.uiSelections.selectedPosition = null;
-			if (selectedPosition == null || !selectedPosition.equals(previousSelection)) {
-			} else {
-				previousSelection = null;
-			}
+		if (previousSelection != null
+				&& selectedPosition != null
+				&& selectedPosition.equals(previousSelection)) {
+			previousSelection = null;
 		}
 		world.model.uiSelections.selectedMonster = selectedMonster;
 		if (selectedPosition != null) {

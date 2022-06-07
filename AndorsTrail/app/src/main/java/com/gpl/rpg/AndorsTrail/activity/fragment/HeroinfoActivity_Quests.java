@@ -18,6 +18,7 @@ import android.widget.SimpleExpandableListAdapter;
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
+import com.gpl.rpg.AndorsTrail.model.QuestFilters;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestLogEntry;
@@ -75,7 +76,7 @@ public final class HeroinfoActivity_Quests extends Fragment {
 			}
 		};
 		
-		ExpandableListView questlog_contents = (ExpandableListView) v.findViewById(R.id.questlog_contents);
+		ExpandableListView questlog_contents = v.findViewById(R.id.questlog_contents);
 		questlog_contents_adapter = new SimpleExpandableListAdapter(
 				ctx
 				, groupList
@@ -123,12 +124,16 @@ public final class HeroinfoActivity_Quests extends Fragment {
 			boolean isCompleted = q.isCompleted(player);
 
 			int v = world.model.uiSelections.selectedQuestFilter;
-			if (v == 0) { // Active quests
-				if (isCompleted) continue;
-			} else if (v == 1) { // All quests
-				// Always show.
-			} else if (v == 2) { // Completed quests
-				if (!isCompleted) continue;
+			switch (v) {
+				case QuestFilters.Active:  // Active quests
+					if (isCompleted) continue;
+					break;
+				case QuestFilters.All:  // All quests
+					// Always show.
+					break;
+				case QuestFilters.Completed:  // Completed quests
+					if (!isCompleted) continue;
+					break;
 			}
 
 			int statusResId;
@@ -146,14 +151,15 @@ public final class HeroinfoActivity_Quests extends Fragment {
 			List<Map<String, ?>> logItemList = new ArrayList<Map<String, ?>>();
 			for(Integer progress : player.getQuestProgress(q.questID)) {
 				for(QuestLogEntry e : q.stages) {
-					if (e.progress == progress.intValue()) {
-						if (e.logtext.length() > 0) {
-							item = new HashMap<String, Object>();
-							item.put(mn_logText, e.logtext);
-							logItemList.add(item);
-						}
+					if (e.progress != progress)
 						continue;
-					}
+
+					if (e.logtext.length() <= 0)
+						continue;
+
+					item = new HashMap<String, Object>();
+					item.put(mn_logText, e.logtext);
+					logItemList.add(item);
 				}
 			}
 			childList.add(logItemList);

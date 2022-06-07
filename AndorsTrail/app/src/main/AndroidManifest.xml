@@ -29,6 +29,7 @@
         android:theme="@style/AndorsTrailTheme_Blue"
 		android:requestLegacyExternalStorage="true"
 		android:hasFragileUserData="true"
+		android:preserveLegacyExternalStorage="true"
 		>
 		<activity 
 		    android:name="com.gpl.rpg.AndorsTrail.activity.StartScreenActivity"

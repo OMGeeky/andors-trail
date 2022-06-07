@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AndorsTrail_Style_ListView" parent="android:style/Widget.ListView">
+        <item name="android:background">?attr/ui_theme_stdframe_bitmap</item>
+        <item name="android:divider">?attr/ui_theme_listseparator_drawable</item>
+    </style>
+
+    <style name="AndorsTrail_Style_ListView_Frameless" parent="android:style/Widget.ListView">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:divider">?attr/ui_theme_listseparator_drawable</item>
+    </style>
+
+    <style name="AndorsTrail_Style_TextButton_Base" parent="android:style/Widget.Button">
+        <item name="android:background">?attr/ui_theme_textbutton_drawable</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    
+    <style name="AndorsTrail_Style_TextButton_Quickslots" parent="android:style/Widget.Button">
+        <item name="android:background">?attr/ui_theme_textbutton_drawable</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    
+    <style name="AndorsTrail_Style_TextButton" parent="AndorsTrail_Style_TextButton_Base" />
+
+    <style name="AndorsTrail_Style_ImageButton" parent="android:style/Widget.ImageButton">
+        <item name="android:background">?attr/ui_theme_textbutton_drawable</item>
+    </style>
+
+    <style name="AndorsTrail_Style_ToggleButton" parent="android:style/Widget.Button.Toggle">
+        <item name="android:background">?attr/ui_theme_togglebutton_drawable</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+    </style>
+
+    <style name="AndorsTrail_Style_RadioButton" parent="android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">?attr/ui_theme_radiobutton_drawable</item>
+        <item name="android:paddingLeft">22dp</item>
+    </style>
+
+    <style name="AndorsTrail_Style_Checkbox" parent="android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">?attr/ui_theme_radiobutton_drawable</item>
+    </style>
+
+    <style name="AndorsTrail_Style_SpinnerEmulator" parent="android:style/Widget.Button">
+        <item name="android:background">?attr/ui_theme_spinner_drawable</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="AndorsTrail_Style_ExpandableListView" parent="android:style/Widget.ExpandableListView">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:textAppearanceLarge">@style/AndorsTrail_Style_TextAppearance_ListItemTitle</item>
+        <item name="android:textAppearanceSmall">@style/AndorsTrail_Style_TextAppearance.ListItemSubtitle</item>
+        <item name="android:groupIndicator">?attr/ui_theme_groupindicator_drawable</item>
+        <item name="android:divider">?attr/ui_theme_listseparator_drawable</item>
+        <item name="android:childDivider">?attr/ui_theme_listseparator_drawable</item>
+    </style>
+
+    <style name="AndorsTrail_Style_PreferencesListHeader_Base">
+        <item name="android:background">?attr/ui_theme_lightframe_bitmap</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/ui_theme_palette_text_gray_mid_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    
+    <style name="AndorsTrail_Style_PreferencesListHeader" parent="AndorsTrail_Style_PreferencesListHeader_Base" />
+
+    <style name="AndorsTrail_Style_TextAppearance_ListItemTitle" parent="android:style/TextAppearance.Large.Inverse">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="AndorsTrail_Style_TextAppearance.ListItemSubtitle" parent="android:style/TextAppearance.Small">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AndorsTrail_Style_RichFrame">
+        <item name="android:background">?attr/ui_theme_richframe_bitmap</item>
+    </style>
+
+    <style name="AndorsTrail_Style_StdFrame">
+        <item name="android:background">?attr/ui_theme_stdframe_bitmap</item>
+    </style>
+
+    <style name="AndorsTrail_Style_LightFrame">
+        <item name="android:background">?attr/ui_theme_lightframe_bitmap</item>
+    </style>
+    
+    <style name="AndorsTrail_Style_TabFrame">
+        <item name="android:background">?attr/ui_theme_tabframe_bitmap</item>
+    </style>
+
+    <style name="textView" parent="android:Widget.TextView">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="autoScrollingText" parent="android:Widget.TextView">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="textWithIcon" parent="android:Widget.TextView">
+        <item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="textWithIconInList" parent="android:Widget.TextView">
+        <item name="android:drawablePadding">@dimen/dialog_iconpadding_right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="contextMenuText" parent="android:Widget.TextView">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:textSize">@dimen/titletext</item>
+    </style>
+
+    <style name="titleWithIcon" parent="@style/textWithIcon">
+        <item name="android:textSize">@dimen/titletext</item>
+        <item name="android:paddingBottom">@dimen/dialog_iconpadding_bottom</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="checkedListItem" parent="android:style/Widget.TextView">
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+        <item name="android:textSize">@dimen/titletext</item>
+    </style>
+
+    <style name="statsBoxStyle" parent="android:Widget.TextView">
+        <item name="android:background">?attr/ui_theme_richframe_bitmap</item>
+        <item name="android:drawablePadding">@dimen/boxshape_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/boxshape_margin</item>
+        <item name="android:padding">@dimen/boxshape_margin</item>
+        <item name="android:textSize">@dimen/smalltext</item>
+        <item name="android:textColor">?attr/ui_theme_textbutton_textcolor_color</item>
+    </style>
+
+    <style name="quickButton" parent="@style/AndorsTrail_Style_TextButton">
+        <item name="android:longClickable">true</item>
+        <item name="android:textSize">@dimen/actionbar_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/smalltext_buttonheight</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="toolboxButtonTile" parent="@style/AndorsTrail_Style_TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="toolboxButtonDrawable" parent="@style/AndorsTrail_Style_TextButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="traitsinfo_label" parent="android:Widget.TextView">
+        <item name="android:layout_marginRight">10sp</item>
+    </style>
+
+    <style name="traitsinfo_2linelabel" parent="android:Widget.TextView"></style>
+
+    <style name="traitsinfo_2linevalue" parent="android:Widget.TextView">
+        <item name="android:layout_marginLeft">30sp</item>
+    </style>
+
+</resources>

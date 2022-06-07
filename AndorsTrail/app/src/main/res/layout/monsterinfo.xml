@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/monsterinfo_title"
+        style="@style/titleWithIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/ui_theme_richframe_bitmap"
+        android:drawableLeft="@drawable/char_hero"
+        android:gravity="left"
+        android:text="@string/dialog_monsterencounter_info" />
+
+    <ScrollView
+        style="@style/AndorsTrail_Style_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/monsterinfo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_margin" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/section_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/actorinfo_difficulty" />
+
+                <TextView
+                    android:id="@+id/monsterinfo_difficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monster_difficulty_normal" />
+            </LinearLayout>
+
+            <com.gpl.rpg.AndorsTrail.view.RangeBar
+                android:id="@+id/monsterinfo_healthbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/section_margin" />
+
+            <TableLayout
+                android:id="@+id/actorinfo_stats_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/traitsinfo_label"
+                        android:text="@string/traitsinfo_base_max_ap" />
+
+                    <TextView android:id="@+id/monsterinfo_max_ap" />
+                </TableRow>
+
+                <include layout="@layout/traitsinfoview" />
+            </TableLayout>
+
+            <com.gpl.rpg.AndorsTrail.view.ItemEffectsView
+                android:id="@+id/actorinfo_onhiteffects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/actorinfo_currentconditions_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_margin"
+                android:text="@string/actorinfo_currentconditions" />
+
+            <com.gpl.rpg.AndorsTrail.view.ActorConditionList
+                android:id="@+id/actorinfo_currentconditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        style="@style/AndorsTrail_Style_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/monsterinfo_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_close" />
+    </LinearLayout>
+
+</LinearLayout>

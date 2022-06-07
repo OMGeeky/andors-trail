@@ -1,0 +1,108 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* AndorsTrail.iml
+* play\
+* play\contact-email.txt
+* play\contact-phone.txt
+* play\contact-website.txt
+* play\default-language.txt
+* play\listings\
+* play\listings\en-UK\
+* play\listings\en-UK\graphics\
+* play\listings\en-UK\graphics\icon\
+* play\listings\en-UK\graphics\icon\icon.png
+* play\listings\en-UK\graphics\phone-screenshots\
+* play\listings\en-UK\graphics\phone-screenshots\1.png
+* play\listings\en-UK\graphics\phone-screenshots\2.png
+* play\listings\en-UK\graphics\phone-screenshots\3.png
+* play\listings\en-UK\graphics\phone-screenshots\4.png
+* play\listings\en-UK\graphics\phone-screenshots\5.png
+* play\listings\en-UK\graphics\phone-screenshots\6.png
+* play\listings\en-UK\graphics\phone-screenshots\7.png
+* play\listings\en-UK\graphics\phone-screenshots\8.png
+* play\listings\en-UK\graphics\tablet-screenshots\
+* play\listings\en-UK\graphics\tablet-screenshots\1.png
+* play\listings\en-UK\graphics\tablet-screenshots\2.png
+* play\listings\en-UK\graphics\tablet-screenshots\3.png
+* play\listings\en-UK\graphics\tablet-screenshots\4.png
+* play\listings\en-UK\graphics\tablet-screenshots\5.png
+* play\listings\en-UK\graphics\tablet-screenshots\6.png
+* play\listings\en-UK\graphics\tablet-screenshots\7.png
+* play\listings\en-UK\graphics\tablet-screenshots\8.png
+* play\listings\en-UK\short-description.txt
+* play\listings\en-UK\title.txt
+* play\listings\en-UK\video-url.txt
+* play\listings\en-US\
+* play\listings\en-US\full-description.txt
+* play\listings\en-US\graphics\
+* play\listings\en-US\graphics\icon\
+* play\listings\en-US\graphics\icon\icon.png
+* play\listings\en-US\graphics\phone-screenshots\
+* play\listings\en-US\graphics\phone-screenshots\1.png
+* play\listings\en-US\graphics\phone-screenshots\2.png
+* play\listings\en-US\graphics\phone-screenshots\3.png
+* play\listings\en-US\graphics\phone-screenshots\4.png
+* play\listings\en-US\graphics\phone-screenshots\5.png
+* play\listings\en-US\graphics\phone-screenshots\6.png
+* play\listings\en-US\graphics\phone-screenshots\7.png
+* play\listings\en-US\graphics\phone-screenshots\8.png
+* play\listings\en-US\graphics\tablet-screenshots\
+* play\listings\en-US\graphics\tablet-screenshots\1.png
+* play\listings\en-US\graphics\tablet-screenshots\2.png
+* play\listings\en-US\graphics\tablet-screenshots\3.png
+* play\listings\en-US\graphics\tablet-screenshots\4.png
+* play\listings\en-US\graphics\tablet-screenshots\5.png
+* play\listings\en-US\graphics\tablet-screenshots\6.png
+* play\listings\en-US\graphics\tablet-screenshots\7.png
+* play\listings\en-US\graphics\tablet-screenshots\8.png
+* play\listings\en-US\short-description.txt
+* play\listings\en-US\title.txt
+* play\listings\en-US\video-url.txt
+* play\listings\en-US\whatsnew.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:29.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* lint.xml => app\lint.xml
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+* src\com\gpl\rpg\AndorsTrail\controller\CombatControllerTest.java.txt => app\src\main\resources\com\gpl\rpg\AndorsTrail\controller\CombatControllerTest.java.txt
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

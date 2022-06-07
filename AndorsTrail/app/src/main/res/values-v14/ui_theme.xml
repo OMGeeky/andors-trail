@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AndorsTrailTheme_Blue_v14" parent="AndorsTrailTheme_Base">
+	    <item name="android:buttonBarStyle">@style/AndorsTrail_Style_StdFrame</item>
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Blue</item>
+	</style>
+	
+	<style name="AndorsTrailDialogTheme_Blue_v14" parent="AndorsTrailDialogTheme_Base">
+	    <item name="android:buttonBarButtonStyle">@style/AndorsTrail_Style_TextButton</item>
+	    <item name="android:buttonBarStyle">@style/AndorsTrail_Style_StdFrame</item>
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Blue</item>
+	</style>
+	
+    <style name="AndorsTrailTheme_Green_v14" parent="AndorsTrailTheme_Green_Base">
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Green</item>
+	</style>
+	
+	<style name="AndorsTrailDialogTheme_Green_v14" parent="AndorsTrailDialogTheme_Green_Base">
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Green</item>
+	</style>
+	
+    <style name="AndorsTrailTheme_Charcoal_v14" parent="AndorsTrailTheme_Charcoal_Base">
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Charcoal</item>
+	</style>
+	
+	<style name="AndorsTrailDialogTheme_Charcoal_v14" parent="AndorsTrailDialogTheme_Charcoal_Base">
+	    <item name="android:dialogTheme">@style/AndorsTrailDialogTheme_Charcoal</item>
+	</style>
+</resources>

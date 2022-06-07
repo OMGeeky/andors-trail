@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/combatview_fixedarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/combatview_actionbar"
+            style="@style/AndorsTrail_Style_StdFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/combatview_moveattack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:minHeight="0dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/combat_attack"
+                android:textSize="@dimen/actionbar_text" />
+
+            <com.gpl.rpg.AndorsTrail.view.RangeBar
+                android:id="@+id/combatview_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/combatview_endturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:minHeight="0dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/combat_endturn"
+                android:textSize="@dimen/actionbar_text" />
+
+            <Button
+                android:id="@+id/combatview_flee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:minHeight="0dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/combat_flee"
+                android:textSize="@dimen/actionbar_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/combatview_monsterismoving"
+            style="@style/AndorsTrail_Style_StdFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/combatview_actionbar"
+            android:layout_alignTop="@id/combatview_actionbar"
+            android:gravity="center"
+            android:paddingBottom="4sp"
+            android:shadowColor="#000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@string/combat_monsteraction"
+            android:textSize="@dimen/actionbar_text" />
+
+        <RelativeLayout
+            android:id="@+id/combatview_monsterbar"
+            style="@style/AndorsTrail_Style_StdFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/combatview_actionbar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- android:animateLayoutChanges="true" -->
+
+            <ImageButton
+                android:id="@+id/combatview_monsterinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="0sp"
+                android:contentDescription="@string/dialog_monsterencounter_info"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/combatview_monsterconditions_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="0sp"
+                android:contentDescription="@string/dialog_monsterencounter_conditions"
+                android:padding="8dp"
+                android:scaleType="fitCenter" />
+
+            <com.gpl.rpg.AndorsTrail.view.RangeBar
+                android:id="@+id/combatview_monsterhealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/combatview_monsterconditions_button"
+                android:layout_toRightOf="@id/combatview_monsterinfo" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/combatview_activeconditions_cliparea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/combatview_fixedarea"
+        android:gravity="right" >
+
+        <RelativeLayout
+            android:id="@+id/combatview_activeconditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" />
+    </RelativeLayout>
+
+</merge>

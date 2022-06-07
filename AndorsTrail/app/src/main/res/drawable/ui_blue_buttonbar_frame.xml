@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gpl.rpg.AndorsTrail" >
+    
+    <item app:single="true" android:drawable="@drawable/ui_blue_buttonbar_frame_solo" />
+    
+    <item app:vertical="true" app:first="true" app:reverse="false" android:drawable="@drawable/ui_blue_buttonbar_frame_vtop" />
+    <item app:vertical="true" app:first="true" app:reverse="true" android:drawable="@drawable/ui_blue_buttonbar_frame_vbottom" />
+    <item app:vertical="true" app:first="true" android:drawable="@drawable/ui_blue_buttonbar_frame_vtop" />
+
+	<item app:vertical="true" app:last="true" app:reverse="false" android:drawable="@drawable/ui_blue_buttonbar_frame_vbottom" />
+    <item app:vertical="true" app:last="true" app:reverse="true" android:drawable="@drawable/ui_blue_buttonbar_frame_vtop" />
+    <item app:vertical="true" app:last="true" android:drawable="@drawable/ui_blue_buttonbar_frame_vbottom" />
+    
+    <item app:vertical="true" android:drawable="@drawable/ui_blue_buttonbar_frame_vmid" />
+    
+    <item app:horizontal="true" app:first="true" app:reverse="false" android:drawable="@drawable/ui_blue_buttonbar_frame_hleft" />
+    <item app:horizontal="true" app:first="true" app:reverse="true" android:drawable="@drawable/ui_blue_buttonbar_frame_hright" />
+    <item app:horizontal="true" app:first="true" android:drawable="@drawable/ui_blue_buttonbar_frame_hleft" />
+
+	<item app:horizontal="true" app:last="true" app:reverse="false" android:drawable="@drawable/ui_blue_buttonbar_frame_hright" />
+    <item app:horizontal="true" app:last="true" app:reverse="true" android:drawable="@drawable/ui_blue_buttonbar_frame_hleft" />
+    <item app:horizontal="true" app:last="true" android:drawable="@drawable/ui_blue_buttonbar_frame_hright" />
+    
+    <item app:horizontal="true" android:drawable="@drawable/ui_blue_buttonbar_frame_hmid" />
+    
+    <item android:drawable="@drawable/ui_blue_buttonbar_frame_solo" />
+    
+</selector>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/iteminfo_title"
+        style="@style/titleWithIcon"
+        android:background="?attr/ui_theme_richframe_bitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/equip_weapon"
+        android:text="@string/inventory_info" />
+
+    <ScrollView
+        style="@style/AndorsTrail_Style_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_margin" >
+
+            <TextView
+                android:id="@+id/iteminfo_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/section_margin"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/iteminfo_displaytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/section_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/iteminfo_category" />
+
+                <TextView
+                    android:id="@+id/iteminfo_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.gpl.rpg.AndorsTrail.view.ItemEffectsView
+                android:id="@+id/iteminfo_effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Workaround http://code.google.com/p/andors-trail/issues/detail?id=242 -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        style="@style/AndorsTrail_Style_StdFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/iteminfo_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/iteminfo_action_use" />
+
+        <Button
+            android:id="@+id/iteminfo_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_close" />
+        
+        <Button
+            android:id="@+id/iteminfo_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_more" />
+    </LinearLayout>
+
+</LinearLayout>

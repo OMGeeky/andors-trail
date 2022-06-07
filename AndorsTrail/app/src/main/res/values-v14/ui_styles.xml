@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	
+	<style name="AndorsTrail_Style_TextButton" parent="AndorsTrail_Style_TextButton_Base">
+	    <item name="android:textAllCaps">false</item>
+	</style>
+	
+    <style name="AndorsTrail_Style_PreferencesListHeader" parent="AndorsTrail_Style_PreferencesListHeader_Base">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+	
+</resources>

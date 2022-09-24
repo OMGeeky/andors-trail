@@ -19,4 +19,5 @@ out/test/
 /AndorsTrail/gradle/wrapper
 /AndorsTrail/app/build/
 /AndorsTrail/app/debug/
-/AndorsTrail/app/release/
+/AndorsTrail/app/src/main/res/xml/
+AndorsTrail/app/src/main/res/xml/

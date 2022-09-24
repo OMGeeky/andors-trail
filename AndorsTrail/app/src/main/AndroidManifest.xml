@@ -37,8 +37,7 @@
 		>
 		<activity 
 		    android:name=".activity.StartScreenActivity"
-		    android:clearTaskOnLaunch="true"
-		    >
+		    android:clearTaskOnLaunch="true">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />

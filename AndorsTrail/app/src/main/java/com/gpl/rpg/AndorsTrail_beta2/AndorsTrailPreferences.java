@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail_beta2;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 
 public final class AndorsTrailPreferences {
@@ -60,6 +61,8 @@ public final class AndorsTrailPreferences {
 	public int quickslotsPosition = QUICKSLOTS_POSITION_HORIZONTAL_CENTER_BOTTOM;
 	public boolean showQuickslotsWhenToolboxIsVisible = false;
 	public String language = "default";
+
+	public Uri exportImportFolderPath;
 
 	public int selectedTheme = 0;
 

@@ -10,6 +10,10 @@
 	<string name="menu_save_gamesaved">Game was saved to slot %1$d</string>
 	<string name="menu_save_failed">Failed to save game! Is the SD card mounted and writable?</string>
 
+	<string name="im_export_title">Import/Export</string>
+	<string name="im_export_import">Import Save game</string>
+	<string name="im_export_export">Export Save game</string>
+
 	<string name="loadsave_title_save">Save game</string>
 	<string name="loadsave_title_load">Load saved game</string>
 	<string name="loadsave_selectslot">Select slot</string>
@@ -488,6 +492,9 @@
 	<string name="loadsave_save_to_new_slot">Create new savegame slot</string>
 	<string name="loadsave_save_overwrite_confirmation_title">Overwrite savegame?</string>
 	<string name="loadsave_save_overwrite_confirmation">This savegame contains a different player name (%1$s) than your current player name (%2$s). Are you sure you want to overwrite this savegame?</string>
+	<string name="loadsave_export_save">Export savegames</string>
+	<string name="loadsave_import_save">Import savegames</string>
+	<string name="loadsave_import_worldmap">Import worldmap</string>
 
 	<string name="iteminfo_displaytypes_ordinary">Ordinary</string>
 	<string name="iteminfo_displaytypes_quest">Quest item</string>

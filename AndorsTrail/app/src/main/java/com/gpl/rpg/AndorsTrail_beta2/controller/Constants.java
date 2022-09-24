@@ -51,6 +51,10 @@ public final class Constants {
 	public static final String CHEAT_DETECTION_FOLDER = "dEAGyGE3YojqXjI3x4x7";
 	public static final String PASSIVE_ACHIEVEMENT_CHECK_PHRASE = "passive_achievement_check";
 
+	public static final String SAVEGAME_FILE_MIME_TYPE = "application/octet-stream";
+	public static final String WORLDMAP_FILE_MIME_TYPE = "image/png";
+	public static final String NO_FILE_EXTENSION_MIME_TYPE = "application/no_file_extension_mime_type";
+
 	public static final Random rnd = new Random();
 	public static int rollValue(final ConstRange r) { return rollValue(r.max, r.current); }
 	public static int rollValue(final ConstRange r, int bias) { return rollValue((r.max + 1) * 100 -1, r.current * 100 + bias)/100; }

@@ -193,14 +193,12 @@ public class StartScreenActivity_MainMenu extends Fragment {
                     setCurrentVersionForVersionCheck();
                     checkAndRequestPermissions(getActivity());
                     migrateDataOnDemand(getActivity());
-                    boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
-                    startscreen_load.setEnabled(hasSavegames);
+                    startscreen_load.setEnabled(true);
                 }
             });
         }
 
-        boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
-        startscreen_load.setEnabled(hasSavegames);
+        startscreen_load.setEnabled(true);
     }
 
     @TargetApi(29)
@@ -218,8 +216,7 @@ public class StartScreenActivity_MainMenu extends Fragment {
                     d.setOnDismissListener(new DialogInterface.OnDismissListener() {
                         @Override
                         public void onDismiss(DialogInterface arg0) {
-                            boolean hasSavegames = !Savegames.getUsedSavegameSlots(getActivity()).isEmpty();
-                            startscreen_load.setEnabled(hasSavegames);
+                            startscreen_load.setEnabled(true);
                         }
                     });
                     CustomDialogFactory.show(d);

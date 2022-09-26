@@ -387,6 +387,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         String confirmOverwriteQuestion = getConfirmOverwriteQuestionSub(slot);
         if (confirmOverwriteQuestion == null ) {
             importSaveGameFile(resolver, appSavegameFolder, itemFile, slot);
+            completeSavegameImportAndCheckIfDone(importsNeedingConfirmation, slot);
         } else {
             importsNeedingConfirmation.add(slot);
             showConfirmOverwriteByImportQuestion(resolver, appSavegameFolder, itemFile, slot, confirmOverwriteQuestion, importsNeedingConfirmation);

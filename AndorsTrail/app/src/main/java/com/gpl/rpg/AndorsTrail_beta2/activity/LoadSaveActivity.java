@@ -198,15 +198,17 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
 
     private String getConfirmOverwriteQuestion(int slot) {
         if (isLoading)
-            return null; //if we're creating a new slot
-        return getConfirmOverwriteQuestionSub(slot);
+            return null;
+
+        return getConfirmOverwriteQuestionIgnoringLoading(slot);
     }
 
-    private String getConfirmOverwriteQuestionSub(int slot) {
+    private String getConfirmOverwriteQuestionIgnoringLoading(int slot) {
         if (slot == SLOT_NUMBER_CREATE_NEW_SLOT)
-            return null;
+            return null;//creating a new savegame
+
         if (!Savegames.getSlotFile(slot, this).exists())
-            return null;
+            return null;//nothing in slot to overwrite
 
         if (preferences.displayOverwriteSavegame == AndorsTrailPreferences.CONFIRM_OVERWRITE_SAVEGAME_ALWAYS) {
             return getString(R.string.loadsave_save_overwrite_confirmation_all);
@@ -267,13 +269,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
     private boolean isOverwriteTargetInIncompatibleVersion(int slot) {
         final FileHeader header = Savegames.quickload(this, slot);
         if (header != null && header.fileversion != AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION) {
-            final Dialog d = CustomDialogFactory.createDialog(this,
-                    "Overwriting not allowed",
-                    getResources().getDrawable(android.R.drawable.ic_dialog_alert),
-                    "You are currently using a development version of Andor's trail. Overwriting a regular savegame is not allowed in development mode.",
-                    null,
-                    true);
-            CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+            final Dialog d = CustomDialogFactory.createErrorDialog(this, "Overwriting not allowed", "You are currently using a development version of Andor's trail. Overwriting a regular savegame is not allowed in development mode.");
             CustomDialogFactory.show(d);
             return true;
         }
@@ -302,7 +298,12 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         DocumentFile[] files = source.listFiles();
         for (DocumentFile file : files) {
             if (file.isFile()) {
-                copySavegame(target, file, resolver);
+
+                try {
+                    AndroidStorage.copyDocumentFileToNew(file, resolver, target);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else if (file.isDirectory()) {
                 DocumentFile targetWorlmap = target.createDirectory(Constants.FILENAME_WORLDMAP_DIRECTORY);
                 if (targetWorlmap == null)
@@ -311,7 +312,11 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
 
                 DocumentFile[] worldmapFiles = file.listFiles();
                 for (DocumentFile f : worldmapFiles) {
-                    copyWorldmapFile(targetWorlmap, f, resolver);
+                    try {
+                        AndroidStorage.copyDocumentFileToNew(f, resolver, targetWorlmap);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
@@ -353,8 +358,6 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
                 importSaveGameFromUri(context, resolver, appSavegameFolder, itemUri, ints);
             }
         }
-
-        //TODO: Notify user of successful import
     }
 
     private void completeSavegameImportAndCheckIfDone(List<Integer> importsNeedingConfirmation, int slot) {
@@ -384,8 +387,8 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
             return;
         }
 
-        String confirmOverwriteQuestion = getConfirmOverwriteQuestionSub(slot);
-        if (confirmOverwriteQuestion == null ) {
+        String confirmOverwriteQuestion = getConfirmOverwriteQuestionIgnoringLoading(slot);
+        if (confirmOverwriteQuestion == null) {
             importSaveGameFile(resolver, appSavegameFolder, itemFile, slot);
             completeSavegameImportAndCheckIfDone(importsNeedingConfirmation, slot);
         } else {
@@ -396,7 +399,8 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
 
     private void importSaveGameFile(ContentResolver resolver, DocumentFile appSavegameFolder, DocumentFile itemFile, int slot) {
         String targetName = Savegames.getSlotFileName(slot);
-        DocumentFile targetFile = appSavegameFolder.createFile(Constants.NO_FILE_EXTENSION_MIME_TYPE, targetName);
+        DocumentFile targetFile = getOrCreateDocumentFile(appSavegameFolder, targetName);
+
         if (targetFile == null) {
             return;
         }
@@ -411,13 +415,60 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
             AndroidStorage.copyDocumentFile(itemFile, resolver, targetFile);
         } catch (IOException e) {
             //TODO: output error message to user
+            showErrorImportingSaveGame();
             e.printStackTrace();
         }
+    }
+
+    private DocumentFile getOrCreateDocumentFile(DocumentFile folder, String targetName) {
+        DocumentFile targetFile = folder.findFile(targetName);//try finding the file
+        if (targetFile == null)//no file found, creating new one
+            targetFile = folder.createFile(Constants.NO_FILE_EXTENSION_MIME_TYPE, targetName);
+        return targetFile;
     }
 
     private void importWorldmap(Intent data) {
         Uri uri = data.getData();
 
+        Context context = getApplicationContext();
+        ContentResolver resolver = AndorsTrailApplication.getApplicationFromActivity(this).getContentResolver();
+
+        File storageDir = AndroidStorage.getStorageDirectory(context, Constants.FILENAME_SAVEGAME_DIRECTORY);
+        DocumentFile storageFolder = DocumentFile.fromFile(storageDir);
+        DocumentFile ownWorldmapFolder = storageFolder.findFile(Constants.FILENAME_WORLDMAP_DIRECTORY);
+        if (ownWorldmapFolder == null) {
+            ownWorldmapFolder = storageFolder.createDirectory(Constants.FILENAME_WORLDMAP_DIRECTORY);
+        }
+
+        DocumentFile chosenFolder = DocumentFile.fromTreeUri(context, uri);
+        if (chosenFolder == null || !chosenFolder.isDirectory()) {
+            return;
+        }
+
+        if (!Constants.FILENAME_WORLDMAP_DIRECTORY.equals(chosenFolder.getName())) {
+            //user did not select the worldmap folder directly
+            DocumentFile file = chosenFolder.findFile(Constants.FILENAME_WORLDMAP_DIRECTORY);
+            if (file == null || !file.isDirectory() || !Constants.FILENAME_WORLDMAP_DIRECTORY.equals(file.getName())) {
+                //could not find a worldmap folder in the users selection
+                showErrorImportingWorldmapWrongDirectory();
+                return;
+            }
+
+            chosenFolder = file;
+        }
+
+        DocumentFile[] files = chosenFolder.listFiles();
+        for (DocumentFile file : files) {
+            if (file.isFile()) {
+                try {
+                    AndroidStorage.copyDocumentFileToNew(file, resolver, ownWorldmapFolder);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        completeLoadSaveActivity(SLOT_NUMBER_IMPORT_WORLDMAP);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -435,24 +486,6 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
     private void clickImportWorldmap() {
         startActivityForResult(AndroidStorage.getNewOpenDirectoryIntent(), -SLOT_NUMBER_IMPORT_WORLDMAP);
 
-    }
-
-    public void copySavegame(DocumentFile targetFolder, DocumentFile sourceFile, ContentResolver resolver) {
-        try {
-            AndroidStorage.copyDocumentFileToNew(sourceFile, resolver, targetFolder, Constants.NO_FILE_EXTENSION_MIME_TYPE);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-    public void copyWorldmapFile(DocumentFile targetFolder, DocumentFile sourceFile, ContentResolver resolver) {
-        try {
-            String mimeType = AndroidStorage.getMimeType(resolver, sourceFile.getUri());
-            AndroidStorage.copyDocumentFileToNew(sourceFile, resolver, targetFolder, mimeType);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 
@@ -520,14 +553,26 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         }
     }
 
+    //region show Dialogs
+
+    private void showErrorImportingWorldmapWrongDirectory() {
+        final Dialog d = CustomDialogFactory.createErrorDialog(this,
+                getString(R.string.startscreen_error_loading_game), //TODO: change the text here
+                getString(R.string.startscreen_error_loading_empty_slot));//TODO: change the text here
+        CustomDialogFactory.show(d);
+    }
+
+    private void showErrorImportingSaveGame() {
+        final Dialog d = CustomDialogFactory.createErrorDialog(this,
+                getString(R.string.startscreen_error_loading_game), //TODO: change the text here
+                getString(R.string.startscreen_error_loading_empty_slot));//TODO: change the text here
+        CustomDialogFactory.show(d);
+    }
+
     private void showErrorLoadingEmptySlot() {
-        final Dialog d = CustomDialogFactory.createDialog(this,
+        final Dialog d = CustomDialogFactory.createErrorDialog(this,
                 getString(R.string.startscreen_error_loading_game),
-                getResources().getDrawable(android.R.drawable.ic_dialog_alert),
-                getString(R.string.startscreen_error_loading_empty_slot),
-                null,
-                true);
-        CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+                getString(R.string.startscreen_error_loading_empty_slot));
         CustomDialogFactory.show(d);
     }
 
@@ -557,5 +602,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         CustomDialogFactory.addDismissButton(d, android.R.string.no);
         CustomDialogFactory.show(d);
     }
+
+    //endregion
 
 }

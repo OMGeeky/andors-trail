@@ -28,6 +28,7 @@ import com.gpl.rpg.AndorsTrail_beta2.Dialogs;
 import com.gpl.rpg.AndorsTrail_beta2.R;
 import com.gpl.rpg.AndorsTrail_beta2.WorldSetup;
 import com.gpl.rpg.AndorsTrail_beta2.activity.AboutActivity;
+import com.gpl.rpg.AndorsTrail_beta2.activity.LoadSaveActivity;
 import com.gpl.rpg.AndorsTrail_beta2.activity.LoadingActivity;
 import com.gpl.rpg.AndorsTrail_beta2.activity.Preferences;
 import com.gpl.rpg.AndorsTrail_beta2.activity.StartScreenActivity;
@@ -348,8 +349,17 @@ public class StartScreenActivity_MainMenu extends Fragment {
             case INTENTREQUEST_LOADGAME:
                 if (resultCode != Activity.RESULT_OK) break;
                 final boolean wasImportOrExport = data.getBooleanExtra("import_export", false);
-                if (wasImportOrExport) break;
                 final int slot = data.getIntExtra("slot", 1);
+                if (wasImportOrExport) {
+                    if(slot == LoadSaveActivity.SLOT_NUMBER_EXPORT_SAVEGAMES)
+                        Toast.makeText(getActivity(),R.string.loadsave_export_save_successfull, Toast.LENGTH_LONG).show();
+                    else if(slot == LoadSaveActivity.SLOT_NUMBER_IMPORT_SAVEGAMES)
+                        Toast.makeText(getActivity(),R.string.loadsave_import_save_successfull, Toast.LENGTH_LONG).show();
+                    else if(slot == LoadSaveActivity.SLOT_NUMBER_IMPORT_WORLDMAP)
+                        Toast.makeText(getActivity(),R.string.loadsave_import_worldmap_successfull, Toast.LENGTH_LONG).show();
+
+                    break;
+                }
                 continueGame(false, slot, null);
                 break;
             case INTENTREQUEST_PREFERENCES:

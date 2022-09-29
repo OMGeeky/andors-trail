@@ -97,12 +97,15 @@ public final class AndroidStorage {
     }
 
 
-    public static void copyDocumentFileToNew(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder) throws IOException {
-        copyDocumentFileToNew(sourceFile, resolver, targetFolder, Constants.NO_FILE_EXTENSION_MIME_TYPE);
+    public static void copyDocumentFileToNewOrExistingFile(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder) throws IOException {
+        copyDocumentFileToNewOrExistingFile(sourceFile, resolver, targetFolder, Constants.NO_FILE_EXTENSION_MIME_TYPE);
     }
-    public static void copyDocumentFileToNew(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder, String mimeType) throws IOException {
+
+    public static void copyDocumentFileToNewOrExistingFile(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder, String mimeType) throws IOException {
         String fileName = sourceFile.getName();
-        DocumentFile file = targetFolder.createFile(mimeType, fileName);
+        DocumentFile file = targetFolder.findFile(fileName);
+        if (file == null)
+            file = targetFolder.createFile(mimeType, fileName);
         if (file == null)
             return;
 

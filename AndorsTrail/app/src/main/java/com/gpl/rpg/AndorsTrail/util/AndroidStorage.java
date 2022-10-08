@@ -1,10 +1,16 @@
 package com.gpl.rpg.AndorsTrail.util;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v4.content.FileProvider;
+import android.support.v4.provider.DocumentFile;
+import android.webkit.MimeTypeMap;
 
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 
@@ -17,7 +23,7 @@ import java.io.OutputStream;
 
 public final class AndroidStorage {
     public static File getStorageDirectory(Context context, String name) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             return context.getExternalFilesDir(name);
         }
         else {
@@ -25,6 +31,7 @@ public final class AndroidStorage {
             return new File(root, name);
         }
     }
+
     public static boolean shouldMigrateToInternalStorage(Context context) {
         boolean ret = false;
         File externalSaveGameDirectory = new File(Environment.getExternalStorageDirectory(), Constants.FILENAME_SAVEGAME_DIRECTORY);
@@ -76,33 +83,90 @@ public final class AndroidStorage {
         }
     }
 
-    private static void copyFile(File source, File target) throws IOException {
-        InputStream in = null;
-        OutputStream out = null;
-        try {
-            in = new FileInputStream(source);
-            out = new FileOutputStream(target);
-            byte[] buf = new byte[1024];
-            int length;
-            while ((length = in.read(buf)) > 0) {
-                out.write(buf, 0, length);
-            }
-        } finally {
-            if (in != null) {
-                in.close();
-            }
-            if (out != null) {
-                out.close();
-            }
+    public static void copyFile(File source, File target) throws IOException {
+        try (InputStream in = new FileInputStream(source); OutputStream out = new FileOutputStream(target)) {
+            copyStream(in, out);
         }
     }
 
+    public static void copyStream(InputStream in, OutputStream out) throws IOException {
+        byte[] buf = new byte[1024];
+        int length;
+        while ((length = in.read(buf)) > 0) {
+            out.write(buf, 0, length);
+        }
+    }
+
+
+    public static void copyDocumentFileToNewOrExistingFile(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder) throws IOException {
+        copyDocumentFileToNewOrExistingFile(sourceFile, resolver, targetFolder, Constants.NO_FILE_EXTENSION_MIME_TYPE);
+    }
+
+
+    public static void copyDocumentFileToNewOrExistingFile(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFolder, String mimeType) throws IOException {
+        String fileName = sourceFile.getName();
+        DocumentFile file = targetFolder.findFile(fileName);
+        if (file == null)
+            file = targetFolder.createFile(mimeType, fileName);
+        if (file == null)
+            return;
+
+        AndroidStorage.copyDocumentFile(sourceFile, resolver, file);
+    }
+
+    public static void copyDocumentFile(DocumentFile sourceFile, ContentResolver resolver, DocumentFile targetFile) throws IOException {
+        try (OutputStream outputStream = resolver.openOutputStream(targetFile.getUri());
+             InputStream inputStream = resolver.openInputStream(sourceFile.getUri())) {
+            copyStream(inputStream, outputStream);
+        }
+    }
+
+
+    /**
+     * Gets the MIME-Type for a file.<p/>
+     * Fallback value is '* / *' (without spaces) <p/>
+     * Mostly copied together from: <a href="https://stackoverflow.com/q/8589645/17292289">StackOverflow</a>
+     */
+    @NonNull
+    public static String getMimeType(ContentResolver resolver, Uri uri) {
+        String type = null;
+        if (ContentResolver.SCHEME_CONTENT.equals(uri.getScheme())) {
+            type = resolver.getType(uri);
+            return type;
+        }
+
+        final String extension = MimeTypeMap.getFileExtensionFromUrl(uri.getPath());
+        if (extension != null) {
+            type = MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension.toLowerCase());
+        }
+        if (type == null) {
+            type = "*/*"; // fallback type.
+        }
+        return type;
+    }
+
     public static String getUrlForFile(Context context, File worldmap) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO && Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            Uri uri = FileProvider.getUriForFile(context, "com.gpl.rpg.AndorsTrail.fileprovider", worldmap);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            Uri uri = FileProvider.getUriForFile(context, "com.gpl.rpg.AndorsTrail.fileprovider", worldmap);//TODO: remove fixed fileprovider
             return uri.toString();
         } else {
             return "file://" + worldmap.getAbsolutePath();
         }
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public static Intent getNewOpenDirectoryIntent() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
+        return intent;
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public static Intent getNewSelectMultipleSavegameFilesIntent() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+        intent.setType(Constants.SAVEGAME_FILE_MIME_TYPE);
+        return intent;
     }
 }

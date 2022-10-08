@@ -88,6 +88,17 @@ public class CustomDialogFactory {
 		
 		return dialog;
 	}
+
+	public static CustomDialog createErrorDialog(final Context context, String title, String description) {
+		final CustomDialog d = createDialog(context,
+				title,
+				context.getResources().getDrawable(android.R.drawable.ic_dialog_alert),
+				description,
+				null,
+				true);
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+		return d;
+	}
 	
 	public static CustomDialog setTitle(final CustomDialog dialog, String title, Drawable icon) {
 		TextView titleView = (TextView) dialog.findViewById(R.id.dialog_title);

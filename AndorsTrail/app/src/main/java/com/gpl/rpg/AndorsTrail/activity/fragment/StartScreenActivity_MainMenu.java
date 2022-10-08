@@ -41,22 +41,22 @@ import com.gpl.rpg.AndorsTrail.view.CustomDialogFactory;
 
 public class StartScreenActivity_MainMenu extends Fragment {
 
-	private static final int INTENTREQUEST_PREFERENCES = 7;
-	public static final int INTENTREQUEST_LOADGAME = 9;
+    private static final int INTENTREQUEST_PREFERENCES = 7;
+    public static final int INTENTREQUEST_LOADGAME = 9;
 
-	private boolean hasExistingGame = false;
-	private Button startscreen_continue;
-	private Button startscreen_newgame;
-	private Button startscreen_load;
-	private ViewGroup save_preview_holder;
-	private ImageView save_preview_hero_icon;
-	private TextView save_preview_hero_desc;
-	
-	
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		updatePreferences(false);
-		super.onCreateView(inflater, container, savedInstanceState);
+    private boolean hasExistingGame = false;
+    private Button startscreen_continue;
+    private Button startscreen_newgame;
+    private Button startscreen_load;
+    private ViewGroup save_preview_holder;
+    private ImageView save_preview_hero_icon;
+    private TextView save_preview_hero_desc;
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        updatePreferences(false);
+        super.onCreateView(inflater, container, savedInstanceState);
 
 
 		if (container != null) {
@@ -339,49 +339,51 @@ public class StartScreenActivity_MainMenu extends Fragment {
 	}
 	
 
-	@Override
-	public void onActivityResult(int requestCode, int resultCode, Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
-		switch (requestCode) {
-		case INTENTREQUEST_LOADGAME:
-			if (resultCode != Activity.RESULT_OK) break;
-			final int slot = data.getIntExtra("slot", 1);
-			continueGame(false, slot, null);
-			break;
-		case INTENTREQUEST_PREFERENCES:
-			updatePreferences(true);
-			break;
-		}
-	}
-	
-	private void updatePreferences(boolean alreadyStartedLoadingResources) {
-		AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(getActivity());
-		AndorsTrailPreferences preferences = app.getPreferences();
-		preferences.read(getActivity());
-		if (app.setLocale(getActivity())) {
-			if (alreadyStartedLoadingResources) {
-				// Changing the locale after having loaded the game requires resources to
-				// be re-loaded. Therefore, we just exit here.
-				Toast.makeText(getActivity(), R.string.change_locale_requires_restart, Toast.LENGTH_LONG).show();
-				doFinish();
-				return;
-			}
-		} 
-		if (ThemeHelper.changeTheme(preferences.selectedTheme)) {
-			// Changing the theme requires a restart to re-create all activities.
-			Toast.makeText(getActivity(), R.string.change_theme_requires_restart, Toast.LENGTH_LONG).show();
-			doFinish();
-			return;
-		}
-		app.getWorld().tileManager.updatePreferences(preferences);
-	}
-	
-	@SuppressLint("NewApi")
-	private void doFinish() {
-		//For Lollipop and above
-		((AndorsTrailApplication)getActivity().getApplication()).discardWorld();
-		getActivity().finish();
-	}
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case INTENTREQUEST_LOADGAME:
+                if (resultCode != Activity.RESULT_OK) break;
+                final boolean wasImportOrExport = data.getBooleanExtra("import_export", false);
+                if (wasImportOrExport) break;
+                final int slot = data.getIntExtra("slot", 1);
+                continueGame(false, slot, null);
+                break;
+            case INTENTREQUEST_PREFERENCES:
+                updatePreferences(true);
+                break;
+        }
+    }
+
+    private void updatePreferences(boolean alreadyStartedLoadingResources) {
+        AndorsTrailApplication app = AndorsTrailApplication.getApplicationFromActivity(getActivity());
+        AndorsTrailPreferences preferences = app.getPreferences();
+        preferences.read(getActivity());
+        if (app.setLocale(getActivity())) {
+            if (alreadyStartedLoadingResources) {
+                // Changing the locale after having loaded the game requires resources to
+                // be re-loaded. Therefore, we just exit here.
+                Toast.makeText(getActivity(), R.string.change_locale_requires_restart, Toast.LENGTH_LONG).show();
+                doFinish();
+                return;
+            }
+        }
+        if (ThemeHelper.changeTheme(preferences.selectedTheme)) {
+            // Changing the theme requires a restart to re-create all activities.
+            Toast.makeText(getActivity(), R.string.change_theme_requires_restart, Toast.LENGTH_LONG).show();
+            doFinish();
+            return;
+        }
+        app.getWorld().tileManager.updatePreferences(preferences);
+    }
+
+    @SuppressLint("NewApi")
+    private void doFinish() {
+        //For Lollipop and above
+        ((AndorsTrailApplication) getActivity().getApplication()).discardWorld();
+        getActivity().finish();
+    }
 
 	
 	public interface OnNewGameRequestedListener {

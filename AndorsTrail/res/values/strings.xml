@@ -489,6 +489,22 @@
 	<string name="loadsave_save_overwrite_confirmation_title">Overwrite savegame?</string>
 	<string name="loadsave_save_overwrite_confirmation">This savegame contains a different player name (%1$s) than your current player name (%2$s). Are you sure you want to overwrite this savegame?</string>
 
+	<string name="loadsave_export_save">Export savegames</string>
+	<string name="loadsave_export_save_successfull">Export successful</string>
+	<string name="loadsave_export_overwrite_confirmation_title">Overwrite Existing Files?</string>
+	<string name="loadsave_export_overwrite_confirmation">The target Folder contains existing files with the same name of some Files that should be exported. Are you sure you want to overwrite those files?</string>
+	<string name="loadsave_import_overwrite_confirmation_title">Overwrite Existing Files?</string>
+	<string name="loadsave_import_overwrite_confirmation">The target Folder contains existing files with the same name. Are you sure you want to overwrite these files:</string>
+	<string name="loadsave_import_overwrite_confirmation_file_pattern">(%1$s) - (%2$s)</string>
+	<string name="loadsave_import_save">Import savegames</string>
+	<string name="loadsave_import_save_successfull">Import successful</string>
+	<string name="loadsave_import_save_unsuccessfull">Import unsuccessful</string>
+	<string name="loadsave_import_save_unsuccessfull_unknown">An unknown error occurred.</string>
+	<string name="loadsave_import_worldmap">Import worldmap</string>
+	<string name="loadsave_import_worldmap_successfull">Import of Worldmap successful</string>
+	<string name="loadsave_import_worldmap_unsuccessfull">Import of Worldmap unsuccessful</string>
+	<string name="loadsave_import_worldmap_unsuccessfull_wrong_directory">Are you sure there is a worldmap in this folder? Please select the folder called worldmap inside your export location.</string>
+
 	<string name="iteminfo_displaytypes_ordinary">Ordinary</string>
 	<string name="iteminfo_displaytypes_quest">Quest item</string>
 	<string name="iteminfo_displaytypes_legendary">Legendary</string>

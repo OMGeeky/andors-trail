@@ -2,6 +2,7 @@ package com.gpl.rpg.AndorsTrail.controller;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.util.SparseIntArray;
 import android.view.KeyEvent;
 import android.view.View;
@@ -98,28 +99,36 @@ public final class InputController implements OnClickListener, OnLongClickListen
 
 		// Keys mapping to UP_LEFT
 		key = KEY_MOVE_UP_LEFT;
-		keyMap.put(KeyEvent.KEYCODE_DPAD_UP_LEFT, key);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+			keyMap.put(KeyEvent.KEYCODE_DPAD_UP_LEFT, key);
+		}
 		keyMap.put(KeyEvent.KEYCODE_NUMPAD_7, key);
 		keyMap.put(KeyEvent.KEYCODE_7, key);
 		keyMap.put(KeyEvent.KEYCODE_MOVE_HOME, key);
 
 		// Keys mapping to UP_RIGHT		
 		key = KEY_MOVE_UP_RIGHT;
-		keyMap.put(KeyEvent.KEYCODE_DPAD_UP_RIGHT, key);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+			keyMap.put(KeyEvent.KEYCODE_DPAD_UP_RIGHT, key);
+		}
 		keyMap.put(KeyEvent.KEYCODE_NUMPAD_9, key);
 		keyMap.put(KeyEvent.KEYCODE_9, key);
 		keyMap.put(KeyEvent.KEYCODE_PAGE_UP, key);
 
 		// Keys mapping to DOWN_LEFT
 		key = KEY_MOVE_DOWN_LEFT;
-		keyMap.put(KeyEvent.KEYCODE_DPAD_DOWN_LEFT, key);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+			keyMap.put(KeyEvent.KEYCODE_DPAD_DOWN_LEFT, key);
+		}
 		keyMap.put(KeyEvent.KEYCODE_NUMPAD_1, key);
 		keyMap.put(KeyEvent.KEYCODE_1, key);
 		keyMap.put(KeyEvent.KEYCODE_MOVE_END, key);
 
 		// Keys mapping to DOWN_RIGHT		
 		key = KEY_MOVE_DOWN_RIGHT;
-		keyMap.put(KeyEvent.KEYCODE_DPAD_DOWN_RIGHT, key);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+			keyMap.put(KeyEvent.KEYCODE_DPAD_DOWN_RIGHT, key);
+		}
 		keyMap.put(KeyEvent.KEYCODE_NUMPAD_3, key);
 		keyMap.put(KeyEvent.KEYCODE_3, key);
 		keyMap.put(KeyEvent.KEYCODE_PAGE_DOWN, key);

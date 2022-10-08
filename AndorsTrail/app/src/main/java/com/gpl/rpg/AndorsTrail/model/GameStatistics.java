@@ -19,6 +19,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
+import com.gpl.rpg.AndorsTrail.util.HashMapHelper;
 
 public final class GameStatistics {
 	private int deaths = 0;
@@ -36,10 +37,10 @@ public final class GameStatistics {
 
 	public void addMonsterKill(MonsterType monsterType) {
 		// Track monster kills by type ID, for savegame file
-		killedMonstersByTypeID.put(monsterType.id, killedMonstersByTypeID.getOrDefault((monsterType.id), 0) + 1);
+		killedMonstersByTypeID.put(monsterType.id, getNumberOfKillsForMonsterType(monsterType.id) + 1);
 
 		// Also track by name, for statistics display (multiple IDs w/same name don't matter to player)
-		killedMonstersByName.put(monsterType.name, killedMonstersByName.getOrDefault(monsterType.name, 0) + 1);
+		killedMonstersByName.put(monsterType.name, getNumberOfKillsForMonsterName(monsterType.name) + 1);
 	}
 
 	public void addPlayerDeath(int lostExp) {
@@ -50,8 +51,7 @@ public final class GameStatistics {
 	}
 	public void addItemUsage(ItemType type) {
 		final String n = type.id;
-		if (!usedItems.containsKey(n)) usedItems.put(n, 1);
-		else usedItems.put(n, usedItems.get(n) + 1);
+		usedItems.put(n, HashMapHelper.getOrDefault(usedItems, n,0) + 1);
 	}
 
 	public int getDeaths() {
@@ -73,15 +73,11 @@ public final class GameStatistics {
 	public boolean isDead() { return !hasUnlimitedLives() && getLivesLeft() < 1; }
 
 	public int getNumberOfKillsForMonsterType(String monsterTypeID) {
-		Integer v = killedMonstersByTypeID.get(monsterTypeID);
-		if (v == null) return 0;
-		return v;
+		return HashMapHelper.getOrDefault(killedMonstersByTypeID, monsterTypeID, 0);
 	}
 
 	public int getNumberOfKillsForMonsterName(String monsterName) {
-		Integer v = killedMonstersByName.get(monsterName);
-		if (v == null) return 0;
-		return v;
+		return HashMapHelper.getOrDefault(killedMonstersByName, monsterName, 0);
 	}
 
 	public String getTop5MostCommonlyKilledMonsters(WorldContext world, Resources res) {
@@ -144,20 +140,15 @@ public final class GameStatistics {
 	}
 
 	public int getNumberOfUsedItems() {
-		int result = 0;
-		for (int v : usedItems.values()) result += v;
-		return result;
+		return HashMapHelper.sumIntegerValues(usedItems);
 	}
 
 	public int getNumberOfTimesItemHasBeenUsed(String itemId) {
-		if (!usedItems.containsKey(itemId)) return 0;
-		return usedItems.get(itemId);
+		return HashMapHelper.getOrDefault(usedItems, itemId, 0);
 	}
 
 	public int getNumberOfKilledMonsters() {
-		int result = 0;
-		for (int v : killedMonstersByTypeID.values()) result += v;
-		return result;
+		return HashMapHelper.sumIntegerValues(killedMonstersByTypeID);
 	}
 
 	private static final Comparator<Entry<String, Integer>> descendingValueComparator = new Comparator<Entry<String, Integer>>() {
@@ -186,7 +177,7 @@ public final class GameStatistics {
 			// Also track by name, for statistics display (multiple IDs w/same name don't matter to player)
 			MonsterType t = world.monsterTypes.getMonsterType(id);
 
-			if (t != null) 	killedMonstersByName.put(t.name, killedMonstersByName.getOrDefault(t.name, 0) + value);
+			if (t != null) 	killedMonstersByName.put(t.name, getNumberOfKillsForMonsterName(t.name) + value);
 		}
 
 		if (fileversion <= 17) return;

@@ -9,9 +9,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "master", "gradle_auto_copy" ]
+    branches: ["gradle_auto_copy" ]
   pull_request:
-    branches: [ "master", "gradle_auto_copy"  ]
+    branches: ["gradle_auto_copy"  ]
 
 permissions:
   contents: read

@@ -33,6 +33,8 @@ jobs:
         distribution: 'temurin'
     - name: Validate Gradle wrapper
       uses: gradle/wrapper-validation-action@v1.0.4
+    - name: Make gradle wrapper executable
+      run: chmod +x ./AndorsTrail/gradlew
     - name: Build with Gradle
       uses: gradle/gradle-build-action@v2.3.2
       with:

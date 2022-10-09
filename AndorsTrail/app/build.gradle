@@ -21,3 +21,27 @@ android {
 dependencies {
     implementation 'com.android.support:support-v4:28.0.0'
 }
+
+task copyRes(type: Copy) {
+    description "Copies the res folder to the modules res folder (& renames .tmx to .xml)"
+    from "${rootDir}/res"
+    into "${projectDir}/src/main/res"
+    rename "(.*)\\.tmx", "\$1.xml"
+}
+
+task copyTranslation(type: Copy) {
+    description("Copies the translation files to the modules translations folder")
+    from "${rootDir}/assets/translation"
+    into "${projectDir}/src/main/assets/translation"
+}
+
+task cleanup(type: Delete) {
+    description("Deletes the assets/translation and the res folder from the modules folder")
+    delete "${projectDir}/src/main/res", "${projectDir}/src/main/assets/translation"
+}
+
+afterEvaluate {
+    preBuild.dependsOn project.tasks.copyRes
+    preBuild.dependsOn project.tasks.copyTranslation
+    clean.dependsOn project.tasks.cleanup
+}

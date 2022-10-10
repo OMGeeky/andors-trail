@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
+    lintOptions{
+        baseline file("lint.xml")
+        abortOnError true
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 

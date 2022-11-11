@@ -1,0 +1,48 @@
+{
+    "maps": [
+        {
+            "fileName": "../elm_4f_1.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 64,
+            "y": -224
+        },
+        {
+            "fileName": "../elm_4f_2.tmx",
+            "height": 992,
+            "width": 320,
+            "x": -448,
+            "y": 448
+        },
+        {
+            "fileName": "../elm_4f_3.tmx",
+            "height": 480,
+            "width": 640,
+            "x": -448,
+            "y": -224
+        },
+        {
+            "fileName": "../elm_4f_4.tmx",
+            "height": 992,
+            "width": 320,
+            "x": -448,
+            "y": -576
+        },
+        {
+            "fileName": "../elm_4f_6.tmx",
+            "height": 480,
+            "width": 448,
+            "x": 64,
+            "y": -1056
+        },
+        {
+            "fileName": "../elm_4f_5.tmx",
+            "height": 640,
+            "width": 672,
+            "x": -1120,
+            "y": 96
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

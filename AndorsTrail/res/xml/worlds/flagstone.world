@@ -1,0 +1,27 @@
+{
+    "maps": [
+        {
+            "fileName": "../flagstone2.tmx",
+            "height": 352,
+            "width": 960,
+            "x": 3968,
+            "y": 15456
+        },
+        {
+            "fileName": "../flagstone3.tmx",
+            "height": 640,
+            "width": 416,
+            "x": 4160,
+            "y": 16448
+        },
+        {
+            "fileName": "../flagstone4.tmx",
+            "height": 800,
+            "width": 416,
+            "x": 4832,
+            "y": 16320
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

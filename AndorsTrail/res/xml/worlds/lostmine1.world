@@ -1,0 +1,41 @@
+{
+    "maps": [
+        {
+            "fileName": "../lostmine1.tmx",
+            "height": 928,
+            "width": 960,
+            "x": 2272,
+            "y": 1984
+        },
+        {
+            "fileName": "../lostmine1a.tmx",
+            "height": 736,
+            "width": 544,
+            "x": 1504,
+            "y": 1824
+        },
+        {
+            "fileName": "../lostmine2.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 3008,
+            "y": 992
+        },
+        {
+            "fileName": "../lostmine2a.tmx",
+            "height": 608,
+            "width": 672,
+            "x": 4000,
+            "y": 1376
+        },
+        {
+            "fileName": "../lostmine3.tmx",
+            "height": 608,
+            "width": 960,
+            "x": 3424,
+            "y": 0
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

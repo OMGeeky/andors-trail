@@ -1,0 +1,62 @@
+{
+    "maps": [
+        {
+            "fileName": "../lodarcave1.tmx",
+            "height": 576,
+            "width": 960,
+            "x": 9888,
+            "y": 8800
+        },
+        {
+            "fileName": "../lodarcave2.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 10208,
+            "y": 9792
+        },
+        {
+            "fileName": "../lodarcave3.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 10336,
+            "y": 10464
+        },
+        {
+            "fileName": "../lodarcave4.tmx",
+            "height": 800,
+            "width": 640,
+            "x": 10720,
+            "y": 11456
+        },
+        {
+            "fileName": "../lodarcave4a.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 11552,
+            "y": 11456
+        },
+        {
+            "fileName": "../lodarcave5.tmx",
+            "height": 800,
+            "width": 640,
+            "x": 11136,
+            "y": 12128
+        },
+        {
+            "fileName": "../lodarcave6.tmx",
+            "height": 640,
+            "width": 736,
+            "x": 11264,
+            "y": 12800
+        },
+        {
+            "fileName": "../lodarcave7.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 11936,
+            "y": 13184
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

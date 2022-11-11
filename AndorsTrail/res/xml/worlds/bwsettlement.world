@@ -1,0 +1,48 @@
+{
+    "maps": [
+        {
+            "fileName": "../blackwater_mountain43.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 1184,
+            "y": 13248
+        },
+        {
+            "fileName": "../blackwater_mountain44.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 512,
+            "y": 13600
+        },
+        {
+            "fileName": "../blackwater_mountain45.tmx",
+            "height": 480,
+            "width": 480,
+            "x": 0,
+            "y": 13568
+        },
+        {
+            "fileName": "../blackwater_mountain46.tmx",
+            "height": 288,
+            "width": 224,
+            "x": 96,
+            "y": 13312
+        },
+        {
+            "fileName": "../blackwater_mountain51.tmx",
+            "height": 448,
+            "width": 320,
+            "x": 3168,
+            "y": 13568
+        },
+        {
+            "fileName": "../blackwater_mountain52.tmx",
+            "height": 960,
+            "width": 320,
+            "x": 2176,
+            "y": 13600
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

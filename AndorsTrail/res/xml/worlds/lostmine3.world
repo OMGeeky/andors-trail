@@ -1,0 +1,20 @@
+{
+    "maps": [
+        {
+            "fileName": "../lostmine7.tmx",
+            "height": 928,
+            "width": 960,
+            "x": 512,
+            "y": 256
+        },
+        {
+            "fileName": "../lostmine8.tmx",
+            "height": 416,
+            "width": 608,
+            "x": 800,
+            "y": 1248
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

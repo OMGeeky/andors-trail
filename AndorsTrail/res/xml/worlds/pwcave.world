@@ -1,0 +1,48 @@
+{
+    "maps": [
+        {
+            "fileName": "../pwcave0.tmx",
+            "height": 352,
+            "width": 960,
+            "x": 9824,
+            "y": 3904
+        },
+        {
+            "fileName": "../pwcave1.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 9184,
+            "y": 2912
+        },
+        {
+            "fileName": "../pwcave2.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 9184,
+            "y": 1920
+        },
+        {
+            "fileName": "../pwcave2a.tmx",
+            "height": 640,
+            "width": 800,
+            "x": 9312,
+            "y": 1088
+        },
+        {
+            "fileName": "../pwcave3.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 10176,
+            "y": 1920
+        },
+        {
+            "fileName": "../pwcave4.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 10176,
+            "y": 2912
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

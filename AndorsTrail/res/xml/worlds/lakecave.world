@@ -1,0 +1,27 @@
+{
+    "maps": [
+        {
+            "fileName": "../lakecave0.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 11168,
+            "y": 14016
+        },
+        {
+            "fileName": "../lakecave1.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 11168,
+            "y": 13024
+        },
+        {
+            "fileName": "../lakecave2.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 12160,
+            "y": 13216
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

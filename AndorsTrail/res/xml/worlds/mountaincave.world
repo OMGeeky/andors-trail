@@ -1,0 +1,34 @@
+{
+    "maps": [
+        {
+            "fileName": "../mountaincave0.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 20320,
+            "y": 9504
+        },
+        {
+            "fileName": "../mountaincave1.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 19648,
+            "y": 9504
+        },
+        {
+            "fileName": "../mountaincave2.tmx",
+            "height": 800,
+            "width": 960,
+            "x": 19264,
+            "y": 8512
+        },
+        {
+            "fileName": "../mountaincave3.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 19168,
+            "y": 7840
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

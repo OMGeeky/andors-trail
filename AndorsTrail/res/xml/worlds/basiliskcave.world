@@ -1,0 +1,41 @@
+{
+    "maps": [
+        {
+            "fileName": "../basiliskcave1_1_1.tmx",
+            "height": 512,
+            "width": 1024,
+            "x": -192,
+            "y": -384
+        },
+        {
+            "fileName": "../basiliskcave1_1_2.tmx",
+            "height": 960,
+            "width": 800,
+            "x": 352,
+            "y": -160
+        },
+        {
+            "fileName": "../basiliskcave1_1_3.tmx",
+            "height": 928,
+            "width": 704,
+            "x": 384,
+            "y": -896
+        },
+        {
+            "fileName": "../basiliskcave1_1_4.tmx",
+            "height": 416,
+            "width": 768,
+            "x": -64,
+            "y": -1216
+        },
+        {
+            "fileName": "../basiliskcave1_1_5.tmx",
+            "height": 864,
+            "width": 416,
+            "x": 384,
+            "y": -1344
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

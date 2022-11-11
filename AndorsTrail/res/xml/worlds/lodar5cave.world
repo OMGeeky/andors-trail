@@ -1,0 +1,27 @@
+{
+    "maps": [
+        {
+            "fileName": "../lodar5cave0.tmx",
+            "height": 960,
+            "width": 928,
+            "x": 9504,
+            "y": 10048
+        },
+        {
+            "fileName": "../lodar5cave1.tmx",
+            "height": 640,
+            "width": 960,
+            "x": 9760,
+            "y": 11008
+        },
+        {
+            "fileName": "../lodar5cave2.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 9088,
+            "y": 11776
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

@@ -1,0 +1,27 @@
+{
+    "maps": [
+        {
+            "fileName": "../snakecave1.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 4608,
+            "y": 12032
+        },
+        {
+            "fileName": "../snakecave2.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 3936,
+            "y": 12032
+        },
+        {
+            "fileName": "../snakecave3.tmx",
+            "height": 480,
+            "width": 960,
+            "x": 3680,
+            "y": 11040
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

@@ -1,0 +1,41 @@
+{
+    "maps": [
+        {
+            "fileName": "../waterwayacave1.tmx",
+            "height": 960,
+            "width": 928,
+            "x": 6624,
+            "y": 6016
+        },
+        {
+            "fileName": "../waterwayacave2.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 6624,
+            "y": 6976
+        },
+        {
+            "fileName": "../waterwayacave3.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 6880,
+            "y": 7968
+        },
+        {
+            "fileName": "../waterwayacave4.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 6240,
+            "y": 8960
+        },
+        {
+            "fileName": "../waterwayacavex.tmx",
+            "height": 320,
+            "width": 320,
+            "x": 7872,
+            "y": 8608
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

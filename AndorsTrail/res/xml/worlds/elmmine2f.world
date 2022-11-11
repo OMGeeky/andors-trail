@@ -1,0 +1,20 @@
+{
+    "maps": [
+        {
+            "fileName": "../elm_2f_1.tmx",
+            "height": 768,
+            "width": 1152,
+            "x": 256,
+            "y": -384
+        },
+        {
+            "fileName": "../elm_2f_2.tmx",
+            "height": 256,
+            "width": 288,
+            "x": 1056,
+            "y": 480
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

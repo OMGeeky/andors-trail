@@ -1,0 +1,48 @@
+{
+    "maps": [
+        {
+            "fileName": "../waytobrimhavencave0.tmx",
+            "height": 960,
+            "width": 768,
+            "x": 11168,
+            "y": 8384
+        },
+        {
+            "fileName": "../waytobrimhavencave1.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 12160,
+            "y": 8640
+        },
+        {
+            "fileName": "../waytobrimhavencave1a.tmx",
+            "height": 960,
+            "width": 480,
+            "x": 11168,
+            "y": 9312
+        },
+        {
+            "fileName": "../waytobrimhavencave2.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 13152,
+            "y": 8640
+        },
+        {
+            "fileName": "../waytobrimhavencave3.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 14144,
+            "y": 8640
+        },
+        {
+            "fileName": "../waytobrimhavencave4.tmx",
+            "height": 960,
+            "width": 960,
+            "x": 10176,
+            "y": 8640
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

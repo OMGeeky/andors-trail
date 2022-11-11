@@ -1,0 +1,41 @@
+{
+    "maps": [
+        {
+            "fileName": "../haunted_underground_1.tmx",
+            "height": 800,
+            "width": 480,
+            "x": 24384,
+            "y": 22560
+        },
+        {
+            "fileName": "../haunted_underground_2.tmx",
+            "height": 704,
+            "width": 384,
+            "x": 25216,
+            "y": 22560
+        },
+        {
+            "fileName": "../haunted_underground_3.tmx",
+            "height": 576,
+            "width": 640,
+            "x": 25952,
+            "y": 22080
+        },
+        {
+            "fileName": "../haunted_underground_4.tmx",
+            "height": 608,
+            "width": 480,
+            "x": 26560,
+            "y": 22080
+        },
+        {
+            "fileName": "../haunted_underground_5.tmx",
+            "height": 448,
+            "width": 480,
+            "x": 27200,
+            "y": 21792
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

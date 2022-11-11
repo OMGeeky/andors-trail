@@ -1,0 +1,48 @@
+{
+    "maps": [
+        {
+            "fileName": "../arulircave1.tmx",
+            "height": 800,
+            "width": 960,
+            "x": 64,
+            "y": 1440
+        },
+        {
+            "fileName": "../arulircave2.tmx",
+            "height": 480,
+            "width": 480,
+            "x": 480,
+            "y": 928
+        },
+        {
+            "fileName": "../arulircave3.tmx",
+            "height": 480,
+            "width": 480,
+            "x": 896,
+            "y": 1440
+        },
+        {
+            "fileName": "../arulircave4.tmx",
+            "height": 320,
+            "width": 320,
+            "x": 1024,
+            "y": 1952
+        },
+        {
+            "fileName": "../arulircave5.tmx",
+            "height": 320,
+            "width": 320,
+            "x": 928,
+            "y": 2304
+        },
+        {
+            "fileName": "../arulircave6.tmx",
+            "height": 480,
+            "width": 480,
+            "x": 1088,
+            "y": 2656
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

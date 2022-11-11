@@ -1,0 +1,34 @@
+{
+    "maps": [
+        {
+            "fileName": "../gargoylecave1.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 13440,
+            "y": 13568
+        },
+        {
+            "fileName": "../gargoylecave2.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 12768,
+            "y": 13568
+        },
+        {
+            "fileName": "../gargoylecave3.tmx",
+            "height": 352,
+            "width": 640,
+            "x": 12640,
+            "y": 12896
+        },
+        {
+            "fileName": "../gargoylecave4.tmx",
+            "height": 384,
+            "width": 256,
+            "x": 13152,
+            "y": 13280
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

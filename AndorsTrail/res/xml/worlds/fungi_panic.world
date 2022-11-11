@@ -1,0 +1,139 @@
+{
+    "maps": [
+        {
+            "fileName": "../mywildcave1.tmx",
+            "height": 512,
+            "width": 384,
+            "x": 5920,
+            "y": 16576
+        },
+        {
+            "fileName": "../mywildcave2.tmx",
+            "height": 480,
+            "width": 800,
+            "x": 6080,
+            "y": 15744
+        },
+        {
+            "fileName": "../mywildcave3.tmx",
+            "height": 800,
+            "width": 640,
+            "x": 6048,
+            "y": 15072
+        },
+        {
+            "fileName": "../mywildcave4.tmx",
+            "height": 576,
+            "width": 512,
+            "x": 6336,
+            "y": 14528
+        },
+        {
+            "fileName": "../bogsten2.tmx",
+            "height": 512,
+            "width": 672,
+            "x": 9536,
+            "y": 14464
+        },
+        {
+            "fileName": "../bogsten3.tmx",
+            "height": 800,
+            "width": 576,
+            "x": 9824,
+            "y": 15168
+        },
+        {
+            "fileName": "../bogsten4.tmx",
+            "height": 800,
+            "width": 640,
+            "x": 10656,
+            "y": 15264
+        },
+        {
+            "fileName": "../mushroom_m2_1.tmx",
+            "height": 800,
+            "width": 416,
+            "x": 10656,
+            "y": 14816
+        },
+        {
+            "fileName": "../mushroom_m2_2.tmx",
+            "height": 576,
+            "width": 640,
+            "x": 10336,
+            "y": 14144
+        },
+        {
+            "fileName": "../mushroom_m2_3.tmx",
+            "height": 704,
+            "width": 672,
+            "x": 9792,
+            "y": 13440
+        },
+        {
+            "fileName": "../mushroom_m2_4.tmx",
+            "height": 480,
+            "width": 672,
+            "x": 10528,
+            "y": 13440
+        },
+        {
+            "fileName": "../mushroom_m2_5.tmx",
+            "height": 512,
+            "width": 512,
+            "x": 10400,
+            "y": 12896
+        },
+        {
+            "fileName": "../mushroom_m2_6.tmx",
+            "height": 576,
+            "width": 512,
+            "x": 9792,
+            "y": 12896
+        },
+        {
+            "fileName": "../mushroom_m2_7.tmx",
+            "height": 224,
+            "width": 512,
+            "x": 9536,
+            "y": 12896
+        },
+        {
+            "fileName": "../mushroom_m2_8.tmx",
+            "height": 320,
+            "width": 928,
+            "x": 9184,
+            "y": 12896
+        },
+        {
+            "fileName": "../mushroom_m2_9.tmx",
+            "height": 960,
+            "width": 288,
+            "x": 8192,
+            "y": 13536
+        },
+        {
+            "fileName": "../mushroom_m2_10.tmx",
+            "height": 320,
+            "width": 288,
+            "x": 7840,
+            "y": 13536
+        },
+        {
+            "fileName": "../mushroom_m3_1.tmx",
+            "height": 672,
+            "width": 512,
+            "x": 7136,
+            "y": 13632
+        },
+        {
+            "fileName": "../mushroom_m3_2.tmx",
+            "height": 640,
+            "width": 736,
+            "x": 6944,
+            "y": 14176
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

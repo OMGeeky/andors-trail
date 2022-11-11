@@ -1,0 +1,55 @@
+{
+    "maps": [
+        {
+            "fileName": "../blackwater_mountain13.tmx",
+            "height": 608,
+            "width": 960,
+            "x": -416,
+            "y": -608
+        },
+        {
+            "fileName": "../elm_mine0.tmx",
+            "height": 800,
+            "width": 832,
+            "x": -1248,
+            "y": -704
+        },
+        {
+            "fileName": "../elm_mine1.tmx",
+            "height": 384,
+            "width": 608,
+            "x": 224,
+            "y": -608
+        },
+        {
+            "fileName": "../elm_mine2.tmx",
+            "height": 608,
+            "width": 960,
+            "x": -416,
+            "y": -1600
+        },
+        {
+            "fileName": "../elm_mine3.tmx",
+            "height": 608,
+            "width": 864,
+            "x": -1056,
+            "y": -1600
+        },
+        {
+            "fileName": "../elm_mine4.tmx",
+            "height": 416,
+            "width": 960,
+            "x": 224,
+            "y": -1600
+        },
+        {
+            "fileName": "../elm_mine5.tmx",
+            "height": 608,
+            "width": 800,
+            "x": -416,
+            "y": -2432
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

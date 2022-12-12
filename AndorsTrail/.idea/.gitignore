@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+workspace.xml
+
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+.editorconfig

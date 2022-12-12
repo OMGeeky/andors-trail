@@ -1,55 +1,23 @@
-# Android ignores
+# Android Module ignores (we would overwrite them in the build script anyway)
 app/src/main/res
 app/src/main/assets
-gen/
-bin/
-target/
-local.properties
-app/build/intermediates/
-build/
-debug/
-release/
+
+# Gradle files
 .gradle/
+build/
 
-#IntelliJ
-.idea/
-out/production/
-out/test/
-*.iws
-*.ipr
+# Local configuration file (sdk path, etc)
+local.properties
 
-# Other
-.metadata
-.svn/
+# Log/OS Files
+*.log
 
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+output.json
 
-#copied from  https://github.com/github/gitignore/blob/main/Gradle.gitignore
-.gradle
-**/build/
-!src/**/build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Avoid ignore Gradle wrappper properties
-!gradle-wrapper.properties
-
-# Cache of project
-.gradletasknamecache
-
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
-#copied from  https://github.com/github/gitignore/blob/main/Gradle.gitignore
-
-
-/AndorsTrail/.gradle
-/AndorsTrail/gradle/wrapper
-/AndorsTrail/app/build/
-/AndorsTrail/app/debug/
-/AndorsTrail/app/release/
+*.jks
+*.keystore

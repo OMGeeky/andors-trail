@@ -31,9 +31,9 @@
 		android:hasFragileUserData="true"
 		android:preserveLegacyExternalStorage="true"
 		>
-		<activity 
-		    android:name="com.gpl.rpg.AndorsTrail.activity.StartScreenActivity"
+		<activity
 			android:exported="true"
+		    android:name="com.gpl.rpg.AndorsTrail.activity.StartScreenActivity"
 		    android:clearTaskOnLaunch="true"
 		    >
 			<intent-filter>

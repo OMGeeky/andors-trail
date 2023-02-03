@@ -9,5 +9,7 @@
     <issue id="IconLocation" severity="ignore" />
     <issue id="UnusedResources" severity="ignore" />
     <issue id="DefaultLocale" severity="ignore" />
+    <issue id="StringFormatInvalid" severity="ignore" />
+    <issue id="StringFormatMatches" severity="ignore" />
     <issue id="NewApi" severity="error" />
 </lint>

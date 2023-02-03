@@ -1,13 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.gpl.rpg.AndorsTrail"
         minSdkVersion 14
-        targetSdkVersion 31
+        targetSdkVersion 33
+    }
+
+    lintOptions{
+        baseline file("lint.xml")
+        abortOnError true
     }
 
     buildTypes {
@@ -21,10 +26,11 @@ android {
             applicationIdSuffix 'beta2'
         }
     }
+    namespace 'com.gpl.rpg.AndorsTrail'
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
 
 task copyRes(type: Copy) {

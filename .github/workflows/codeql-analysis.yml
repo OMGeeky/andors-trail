@@ -18,7 +18,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "master" ]
   schedule:
-    - cron: '32 9 * * 1,15' # This cron job will run at 9:32 AM on the 1st and 15th day of every month.
+    - cron: '32 9 * * 1' # This cron job will run at 9:32 AM every week on Monday
 
 jobs:
   analyze:

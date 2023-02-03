@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.FileProvider;
-import android.support.v4.provider.DocumentFile;
+import androidx.annotation.RequiresApi;
+import androidx.core.content.FileProvider;
+import androidx.documentfile.provider.DocumentFile;
 
 import android.os.Handler;
 import android.os.Looper;

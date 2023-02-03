@@ -1,7 +1,7 @@
 I put both (release notes + forum announcement) into this source, so it will be easier to maintain them parallel:
 
 
-APK 68 (0.8.4)  Mostly harmless
+APK 69 (0.8.4.1)  //Mostly harmless
 
 Release notes
 =============
@@ -13,7 +13,7 @@ Forum announcement  //2023-01-29
 ==================
 Hello fellow adventurers,
 
-Here is the actual release v0.8.4 with bugfixes, translations and little enhancements:
+Here is the actual release v0.8.4.1 with bugfixes, translations and little enhancements:
 
 [list]The export/import is enhanced: The worldmap, which consists of many small png files, is handled now as a zip file. This is more convenient and much quicker.[/list]
 
@@ -23,12 +23,15 @@ Here is the actual release v0.8.4 with bugfixes, translations and little enhance
 
 [list]And as always we actualized the translations[/list]
 
-Here is is the link on our server: [url]https://andorstrail.com/static/AndorsTrail_v0.8.4.apk[/url]
+Here is is the link on our server: [url]https://andorstrail.com/static/AndorsTrail_v0.8.4.1.apk[/url]
 Google Play, F-Droid and Itch will follow soon.
 
 Have fun!
 
 
+
+
+APK 68 (0.8.4)  //Mostly harmless (unneeded files - immediatly replaced by 69)
 
 
 APK 67 (0.8.3)  //Haunted Forest  2022-11-04

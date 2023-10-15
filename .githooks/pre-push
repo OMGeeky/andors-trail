@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+#
+# @author: OMGeeky
+# @created: 2023-10-15
+# @description: A script to check if a tileset is duplicated in a Tiled map.
+
+echo "Checking for duplicate tilesets..."
+
+# The folder to scan
+folder="AndorsTrail/res/xml/*.tmx"
+# The regex pattern to look for
+regex='(?s)(map_\w*").*\1'
+found=0
+# Iterate over the files in the folder
+for file in $folder; do
+    # If the file matches the regex pattern, print a warning and exit with a nonzero status
+#    echo "Checking file $file"
+    if grep -Pzq "$regex" "$file"; then
+        echo "Warning: File $file contains the regex pattern!"
+        found=$((found + 1))
+        # Print each location where the pattern is found
+        grep -Pzao  '(?s)(map_\w*").*\1' "$file" | awk -F "\"" '{print $1; exit}'
+        echo ""
+    fi
+done
+if [ $found -gt 0 ]; then
+  echo "Duplicate tilesets found in $found files."
+    exit 1
+else
+  echo "No duplicate tilesets found."
+fi
+
+# If no files matched the regex pattern, exit with a zero status
+exit 0

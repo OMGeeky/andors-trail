@@ -47,7 +47,7 @@ public final class Savegames {
 		, cheatingDetected
 	}
 
-	public static boolean saveWorld(WorldContext world, Context androidContext, int slot) {
+	public static boolean saveWorld(WorldContext world, Context androidContext, int slot, String saveName) {
 		try {
 			final String displayInfo = androidContext.getString(R.string.savegame_currenthero_displayinfo, world.model.player.getLevel(), world.model.player.getTotalExperience(), world.model.player.getGold());
 			if (slot != SLOT_QUICKSAVE && !world.model.statistics.hasUnlimitedSaves()) {
@@ -59,7 +59,7 @@ public final class Savegames {
 			// Create the savegame in a temporary memorystream first to ensure that the savegame can
 			// be created correctly. We don't want to trash the user's file unneccessarily if there is an error.
 			ByteArrayOutputStream bos = new ByteArrayOutputStream();
-			saveWorld(world, bos, displayInfo);
+			saveWorld(world, bos, displayInfo, saveName);
 			byte[] savegame = bos.toByteArray();
 			bos.close();
 
@@ -108,7 +108,7 @@ public final class Savegames {
 			fos.close();
 			if (result == LoadSavegameResult.success && slot != SLOT_QUICKSAVE && !world.model.statistics.hasUnlimitedSaves()) {
                 // save to the quicksave slot before deleting the file
-                if (!saveWorld(world, androidContext, SLOT_QUICKSAVE)) {
+                if (!saveWorld(world, androidContext, SLOT_QUICKSAVE, fh.saveName)) {
 					return LoadSavegameResult.unknownError;
 				}
 				getSlotFile(slot, androidContext).delete();
@@ -210,14 +210,16 @@ public final class Savegames {
     }
 
 
-	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException {
+	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo, String saveName) throws IOException {
 		DataOutputStream dest = new DataOutputStream(outStream);
+		final String savegameName = saveName == null ? "" : saveName;
 		FileHeader.writeToParcel(dest, world.model.player.getName(),
 				displayInfo, world.model.player.iconID,
 				world.model.statistics.isDead(),
 				world.model.statistics.hasUnlimitedSaves(),
 				world.model.player.id,
-				world.model.player.savedVersion);
+				world.model.player.savedVersion,
+				savegameName);
 		world.maps.writeToParcel(dest, world);
 		world.model.writeToParcel(dest);
 		dest.close();
@@ -334,9 +336,10 @@ public final class Savegames {
         public final boolean hasUnlimitedSaves;
         public final String playerId;
         public final long savedVersion;
+		public final String saveName;
 
 		public String describe() {
-			return (fileversion == AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION ? "(D) " : "") + playerName + ", " + displayInfo;
+			return (fileversion == AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION ? "(D) " : "") + (saveName == null || saveName.equals("") ? "" : "[" + saveName + "] ") + playerName + ", " + displayInfo;
 		}
 
 
@@ -378,9 +381,14 @@ public final class Savegames {
 				this.playerId = "";
 				this.savedVersion = 0;
 			}
+			if(fileversion >= 75) {
+				this.saveName = src.readUTF();
+			} else {
+				this.saveName = "";
+			}
 		}
 
-		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo, int iconID, boolean isDead, boolean hasUnlimitedSaves, String playerId, long savedVersion) throws IOException {
+		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo, int iconID, boolean isDead, boolean hasUnlimitedSaves, String playerId, long savedVersion, String saveName) throws IOException {
 			dest.writeInt(AndorsTrailApplication.CURRENT_VERSION);
 			dest.writeUTF(playerName);
 			dest.writeUTF(displayInfo);
@@ -389,6 +397,7 @@ public final class Savegames {
 			dest.writeBoolean(hasUnlimitedSaves);
 			dest.writeUTF(playerId);
 			dest.writeLong(savedVersion);
+			dest.writeUTF(saveName);
 		}
 	}
 }

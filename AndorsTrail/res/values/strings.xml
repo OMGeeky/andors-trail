@@ -13,6 +13,9 @@
 	<string name="loadsave_title_save">Save game</string>
 	<string name="loadsave_title_load">Load saved game</string>
 	<string name="loadsave_selectslot">Select slot</string>
+	<string name="loadsave_save_name_empty">The entered name was empty</string>
+	<string name="loadsave_save_name_filled">Saving under name: \'%1$s\'</string>
+	<string name="loadsave_save_name_question">Input save name (or leave empty)</string>
 	<string name="savegame_currenthero_displayinfo">level %1$d, %2$d exp, %3$d gold</string>
 
 	<string name="dialog_loading_message">Loading resources…</string>

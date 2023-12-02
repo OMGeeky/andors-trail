@@ -22,11 +22,15 @@ import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.RequiresApi;
 import androidx.documentfile.provider.DocumentFile;
+
+import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,6 +59,8 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
     private ModelContainer model;
     private TileManager tileManager;
     private AndorsTrailPreferences preferences;
+    private String newSaveName;
+    private LayoutParams save_name_inputParams;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,6 +91,9 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         Button slotTemplateButton = (Button) findViewById(R.id.loadsave_slot_n);
         LayoutParams params = slotTemplateButton.getLayoutParams();
         slotList.removeView(slotTemplateButton);
+        EditText save_name_inputTemplateEditText = (EditText) findViewById(R.id.save_name_input);
+        save_name_inputParams = slotTemplateButton.getLayoutParams();
+        slotList.removeView(save_name_inputTemplateEditText);
 
         ViewGroup newSlotContainer = (ViewGroup) findViewById(R.id.loadsave_save_to_new_slot_container);
         Button createNewSlot = (Button) findViewById(R.id.loadsave_save_to_new_slot);
@@ -216,9 +225,9 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         } else if (slot < SLOT_NUMBER_FIRST_SLOT) {
             slot = SLOT_NUMBER_FIRST_SLOT;
         }
-
         i.putExtra("slot", slot);
         if (success) {
+            i.putExtra(Constants.SAVEGAME_NAME_INTENT_EXTRA, newSaveName);
             setResult(Activity.RESULT_OK, i);
         } else {
             setResult(Activity.RESULT_CANCELED, i);
@@ -312,7 +321,7 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
         if (message != null) {
             showConfirmOverwriteQuestion(slot, message);
         } else {
-            completeLoadSaveActivity(slot);
+            showNameSaveQuestion(slot);
         }
     }
 
@@ -866,7 +875,33 @@ public final class LoadSaveActivity extends AndorsTrailBaseActivity implements O
                                                                 null,
                                                                 true);
 
-        CustomDialogFactory.addButton(d, android.R.string.yes, v -> completeLoadSaveActivity(slot));
+        CustomDialogFactory.addButton(d, android.R.string.ok, v -> showNameSaveQuestion(slot));
+        CustomDialogFactory.addDismissButton(d, android.R.string.no);
+        CustomDialogFactory.show(d);
+    }
+
+    private void showNameSaveQuestion(final int slot) {
+		final String title = getString(R.string.loadsave_save_name_question);
+        final EditText input = new EditText(this);
+        input.setLayoutParams(save_name_inputParams);
+        input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
+        final CustomDialog d = CustomDialogFactory.createDialog(this,
+                                                                title,
+                                                                getResources().getDrawable(android.R.drawable.ic_menu_save),
+                                                                null,
+                                                                input,
+                                                                true);
+
+        CustomDialogFactory.addButton(d, android.R.string.ok, v -> {
+            final String name = input.getText().toString();
+            Log.d("com.gpl.rpg.AndorsTrail.beta2", "showNameSaveQuestion: ");
+            if (name.length() == 0) {
+                Toast.makeText(this, getString(R.string.loadsave_save_name_empty), Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(this, getString(R.string.loadsave_save_name_filled, name), Toast.LENGTH_SHORT).show();
+            }
+            newSaveName = name;
+            completeLoadSaveActivity(slot);});
         CustomDialogFactory.addDismissButton(d, android.R.string.no);
         CustomDialogFactory.show(d);
     }

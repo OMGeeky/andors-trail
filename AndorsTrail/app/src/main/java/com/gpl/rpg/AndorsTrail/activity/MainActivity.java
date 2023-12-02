@@ -148,7 +148,8 @@ public final class MainActivity
 		case INTENTREQUEST_SAVEGAME:
 			if (resultCode != Activity.RESULT_OK) break;
 			final int slot = data.getIntExtra("slot", 1);
-			if (save(slot)) {
+			final String saveName = data.getStringExtra(Constants.SAVEGAME_NAME_INTENT_EXTRA);
+			if (save(slot, saveName)) {
 				Toast.makeText(this, getResources().getString(R.string.menu_save_gamesaved, slot), Toast.LENGTH_SHORT).show();
 				if (!world.model.statistics.hasUnlimitedSaves()) {
 					finish();
@@ -161,7 +162,10 @@ public final class MainActivity
 	}
 
 	private boolean save(int slot) {
-		return Savegames.saveWorld(world, this, slot);
+		return save(slot, null);
+	}
+	private boolean save(int slot, String saveName) {
+		return Savegames.saveWorld(world, this, slot, saveName);
 	}
 
 	@Override

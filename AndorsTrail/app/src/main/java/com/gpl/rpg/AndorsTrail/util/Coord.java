@@ -3,6 +3,7 @@ package com.gpl.rpg.AndorsTrail.util;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 public final class Coord {
 	public int x;
@@ -46,5 +47,10 @@ public final class Coord {
 	public void writeToParcel(DataOutputStream dest) throws IOException {
 		dest.writeInt(x);
 		dest.writeInt(y);
+	}
+
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(x));
+		digest.update(ByteUtils.toBytes(y));
 	}
 }

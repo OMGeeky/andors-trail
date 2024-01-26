@@ -141,13 +141,18 @@ public final class LoadingActivity extends AndorsTrailBaseActivity implements On
 	
 	
 	@Override
-	public void onSceneLoaded() {
+	public void onSceneLoaded(Savegames.LoadSavegameResult loadResult) {
 		synchronized (semaphore) {
 			if (progressDialog != null) progressDialog.dismiss();
 			loaded =true;
 		}
-		startActivity(new Intent(this, MainActivity.class));
-		this.finish();
+
+		if (loadResult == Savegames.LoadSavegameResult.editDetected) {
+			showLoadingWarnDialog(R.string.dialog_loading_warning_edit);
+		}else{
+			startActivity(new Intent(this, MainActivity.class));
+			this.finish();
+		}
 	}
 
 	@Override
@@ -165,6 +170,19 @@ public final class LoadingActivity extends AndorsTrailBaseActivity implements On
 		}
 	}
 
+	private void showLoadingWarnDialog(int messageResourceID) {
+		final CustomDialog d = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_warning_title), null, getResources().getString(messageResourceID), null, true);
+		CustomDialogFactory.addDismissButton(d, android.R.string.ok);
+		CustomDialogFactory.setDismissListener(d, new OnDismissListener() {
+			@Override
+			public void onDismiss(DialogInterface dialog) {
+
+				startActivity(new Intent(LoadingActivity.this, MainActivity.class));
+				LoadingActivity.this.finish();
+			}
+		});
+		CustomDialogFactory.show(d);
+	}
 	private void showLoadingFailedDialog(int messageResourceID) {
 		final CustomDialog d = CustomDialogFactory.createDialog(this, getResources().getString(R.string.dialog_loading_failed_title), null, getResources().getString(messageResourceID), null, true);
 		CustomDialogFactory.addDismissButton(d, android.R.string.ok);

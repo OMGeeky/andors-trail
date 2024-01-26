@@ -1,8 +1,12 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -16,6 +20,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MapObject.MapObjectType;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.L;
@@ -340,6 +345,7 @@ public final class PredefinedMap {
 				}
 			}
 		} else {
+			currentColorFilter = null;
 			activeMapObjectGroups.clear();
 			activeMapObjectGroups.addAll(initiallyActiveMapObjectGroups);
 			activateMapObjects();
@@ -360,16 +366,20 @@ public final class PredefinedMap {
 	}
 
 	public boolean shouldSaveMapData(WorldContext world) {
-		if (!hasResetTemporaryData()) return true;
 		if (this == world.model.currentMaps.map) return true;
+		return mapDataNeedsToBeSaved();
+	}
+
+	private boolean mapDataNeedsToBeSaved() {
+		if (!hasResetTemporaryData()) return true;
 		if (!groundBags.isEmpty()) return true;
 		for (MonsterSpawnArea a : spawnAreas) {
 			if (this.visited && a.isUnique) return true;
 			if (a.isSpawning != a.isSpawningForNewGame) return true;
 		}
-		if (!activeMapObjectGroups.containsAll(initiallyActiveMapObjectGroups) 
-				|| !initiallyActiveMapObjectGroups.containsAll(activeMapObjectGroups)) return true;
-		if (currentColorFilter != null) return true;
+		if (!activeMapObjectGroups.containsAll(initiallyActiveMapObjectGroups)
+		 || !initiallyActiveMapObjectGroups.containsAll(activeMapObjectGroups)) return true;
+		if (currentColorFilter != null && !currentColorFilter.equals(initialColorFilter)) return true;
 		return false;
 	}
 
@@ -397,5 +407,24 @@ public final class PredefinedMap {
 		}
 		dest.writeBoolean(visited);
 		dest.writeUTF(lastSeenLayoutHash);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		if (mapDataNeedsToBeSaved()) {
+			for (MonsterSpawnArea a : spawnAreas) {
+				a.createHash(digest);
+			}
+			for (String g : activeMapObjectGroups) {
+				digest.update(ByteUtils.toBytes(g));
+			}
+			for (Loot l : groundBags) {
+				l.createHash(digest);
+			}
+			digest.update(ByteUtils.toBytes(currentColorFilter));
+			//skip lastVisitTime since it is too volatile
+		}
+		digest.update( ByteUtils.toBytes(visited));
+		digest.update( ByteUtils.toBytes(lastSeenLayoutHash));
 	}
 }

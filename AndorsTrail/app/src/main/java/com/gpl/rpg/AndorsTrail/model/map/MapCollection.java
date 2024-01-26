@@ -1,8 +1,12 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -88,15 +92,27 @@ public final class MapCollection {
 		return false;
 	}
 
-	public void writeToParcel(DataOutputStream dest, WorldContext world) throws IOException {
+	private List<PredefinedMap> getAllSavedMaps(WorldContext world) {
 		List<PredefinedMap> mapsToExport = new ArrayList<PredefinedMap>();
 		for(PredefinedMap map : getAllMaps()) {
 			if (shouldSaveMap(world, map)) mapsToExport.add(map);
 		}
+		return mapsToExport;
+	}
+
+	public void writeToParcel(DataOutputStream dest, WorldContext world) throws IOException {
+		List<PredefinedMap> mapsToExport = getAllSavedMaps(world);
 		dest.writeInt(mapsToExport.size());
 		for(PredefinedMap map : mapsToExport) {
 			dest.writeUTF(map.name);
 			map.writeToParcel(dest, world);
+		}
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		for (PredefinedMap map : getAllMaps()) {
+			map.createHash(digest);
 		}
 	}
 }

@@ -1,11 +1,16 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForItemContainer;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class Loot {
@@ -87,5 +92,14 @@ public final class Loot {
 		items.writeToParcel(dest);
 		position.writeToParcel(dest);
 		dest.writeBoolean(isVisible);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(exp));
+		digest.update(ByteUtils.toBytes(exp));
+		items.createHash(digest);
+		position.createHash(digest);
+		digest.update(ByteUtils.toBytes(isVisible));
 	}
 }

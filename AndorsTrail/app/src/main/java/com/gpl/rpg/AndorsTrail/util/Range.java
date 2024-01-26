@@ -1,8 +1,11 @@
 package com.gpl.rpg.AndorsTrail.util;
 
+import com.gpl.rpg.AndorsTrail.context.WorldContext;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 public final class Range {
 	public int max;
@@ -98,5 +101,10 @@ public final class Range {
 	public void writeToParcel(DataOutputStream dest) throws IOException {
 		dest.writeInt(max);
 		dest.writeInt(current);
+	}
+
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(max));
+		digest.update(ByteUtils.toBytes(current));
 	}
 }

@@ -12,6 +12,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,6 +21,7 @@ import java.util.regex.Pattern;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.os.Build;
 import android.os.SystemClock;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -42,6 +44,7 @@ public final class Savegames {
 
 	public static enum LoadSavegameResult {
 		success
+		, editDetected
 		, unknownError
 		, savegameIsFromAFutureVersion
 		, cheatingDetected
@@ -78,7 +81,7 @@ public final class Savegames {
 			}
 
 			return true;
-		} catch (IOException e) {
+		} catch (IOException | NoSuchAlgorithmException e) {
 			L.log("Error saving world: " + e.toString());
 			return false;
 		}
@@ -210,14 +213,18 @@ public final class Savegames {
     }
 
 
-	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException {
+	public static void saveWorld(WorldContext world, OutputStream outStream, String displayInfo) throws IOException, NoSuchAlgorithmException {
 		DataOutputStream dest = new DataOutputStream(outStream);
+		if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+			world.model.player.hash = world.createHash();
+		}
 		FileHeader.writeToParcel(dest, world.model.player.getName(),
 				displayInfo, world.model.player.iconID,
 				world.model.statistics.isDead(),
 				world.model.statistics.hasUnlimitedSaves(),
 				world.model.player.id,
-				world.model.player.savedVersion);
+				world.model.player.savedVersion,
+				world.model.player.wasEditingDetected);
 		world.maps.writeToParcel(dest, world);
 		world.model.writeToParcel(dest);
 		dest.close();
@@ -239,6 +246,15 @@ public final class Savegames {
 		
 		onWorldLoaded(res, world, controllers);
 
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+			try {
+				String worldHash = world.createHash();
+				if(!worldHash.equals(world.model.player.hash)){
+					world.model.player.wasEditingDetected = true;
+					return LoadSavegameResult.editDetected;
+				}
+			} catch (NoSuchAlgorithmException ignored) { }
+		}
 		return LoadSavegameResult.success;
 	}
 
@@ -334,6 +350,7 @@ public final class Savegames {
         public final boolean hasUnlimitedSaves;
         public final String playerId;
         public final long savedVersion;
+		public final boolean wasEditingDetected;
 
 		public String describe() {
 			return (fileversion == AndorsTrailApplication.DEVELOPMENT_INCOMPATIBLE_SAVEGAME_VERSION ? "(D) " : "") + playerName + ", " + displayInfo;
@@ -378,9 +395,14 @@ public final class Savegames {
 				this.playerId = "";
 				this.savedVersion = 0;
 			}
+			if (fileversion >= 70){
+				this.wasEditingDetected = src.readBoolean();
+			}else{
+				this.wasEditingDetected = false;
+			}
 		}
 
-		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo, int iconID, boolean isDead, boolean hasUnlimitedSaves, String playerId, long savedVersion) throws IOException {
+		public static void writeToParcel(DataOutputStream dest, String playerName, String displayInfo, int iconID, boolean isDead, boolean hasUnlimitedSaves, String playerId, long savedVersion, boolean wasEditingDetected) throws IOException {
 			dest.writeInt(AndorsTrailApplication.CURRENT_VERSION);
 			dest.writeUTF(playerName);
 			dest.writeUTF(displayInfo);
@@ -389,6 +411,7 @@ public final class Savegames {
 			dest.writeBoolean(hasUnlimitedSaves);
 			dest.writeUTF(playerId);
 			dest.writeLong(savedVersion);
+			dest.writeBoolean(wasEditingDetected);
 		}
 	}
 }

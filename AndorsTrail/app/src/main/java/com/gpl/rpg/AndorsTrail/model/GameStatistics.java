@@ -3,6 +3,7 @@ package com.gpl.rpg.AndorsTrail.model;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,6 +13,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import android.content.res.Resources;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 
 import com.gpl.rpg.AndorsTrail.R;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
@@ -19,6 +22,7 @@ import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
 import com.gpl.rpg.AndorsTrail.model.item.ItemType;
 import com.gpl.rpg.AndorsTrail.model.map.PredefinedMap;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.HashMapHelper;
 
 public final class GameStatistics {
@@ -213,5 +217,22 @@ public final class GameStatistics {
 		dest.writeInt(spentGold);
 		dest.writeInt(startLives);
 		dest.writeBoolean(unlimitedSaves);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(deaths));
+
+		for (Entry<String, Integer> e : killedMonstersByTypeID.entrySet()) {
+			digest.update(ByteUtils.toBytes(e.getKey()));
+			digest.update(ByteUtils.toBytes(e.getValue()));
+		}
+		for (Entry<String, Integer> e : usedItems.entrySet()) {
+			digest.update(ByteUtils.toBytes(e.getKey()));
+			digest.update(ByteUtils.toBytes(e.getValue()));
+		}
+		digest.update(ByteUtils.toBytes(spentGold));
+		digest.update(ByteUtils.toBytes(startLives));
+		digest.update(ByteUtils.toBytes(unlimitedSaves));
 	}
 }

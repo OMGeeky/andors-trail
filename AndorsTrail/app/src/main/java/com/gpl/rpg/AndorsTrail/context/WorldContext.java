@@ -1,5 +1,8 @@
 package com.gpl.rpg.AndorsTrail.context;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import com.gpl.rpg.AndorsTrail.model.ModelContainer;
 import com.gpl.rpg.AndorsTrail.model.ability.ActorConditionTypeCollection;
 import com.gpl.rpg.AndorsTrail.model.ability.SkillCollection;
@@ -12,6 +15,10 @@ import com.gpl.rpg.AndorsTrail.model.quest.QuestCollection;
 import com.gpl.rpg.AndorsTrail.resource.ConversationLoader;
 import com.gpl.rpg.AndorsTrail.resource.VisualEffectCollection;
 import com.gpl.rpg.AndorsTrail.resource.tiles.TileManager;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public final class WorldContext {
 	//Objectcollections
@@ -62,4 +69,13 @@ public final class WorldContext {
 	public void resetForNewGame() {
 		maps.resetForNewGame();
 	}
+
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public String createHash() throws NoSuchAlgorithmException {
+		MessageDigest digest = MessageDigest.getInstance("MD5");
+		this.maps.createHash(digest);
+		this.model.createHash(digest);
+		byte[] hash = digest.digest();
+		return ByteUtils.toHexString(hash);
+    }
 }

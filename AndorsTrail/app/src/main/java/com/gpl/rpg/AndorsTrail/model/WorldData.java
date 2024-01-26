@@ -1,8 +1,14 @@
 package com.gpl.rpg.AndorsTrail.model;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -54,6 +60,15 @@ public final class WorldData {
 		for(Map.Entry<String, Long> e : timers.entrySet()) {
 			dest.writeUTF(e.getKey());
 			dest.writeLong(e.getValue());
+		}
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(worldTime));
+		for (Map.Entry<String, Long> e: timers.entrySet() ) {
+			digest.update(ByteUtils.toBytes(e.getKey()));
+			digest.update(ByteUtils.toBytes(e.getValue()));
 		}
 	}
 }

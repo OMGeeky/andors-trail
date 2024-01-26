@@ -3,8 +3,10 @@ package com.gpl.rpg.AndorsTrail.model;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 
 public final class InterfaceData {
@@ -51,4 +53,12 @@ public final class InterfaceData {
 		}
 		dest.writeUTF(selectedTabHeroInfo);
 	}
+
+    public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(isMainActivityVisible));
+		digest.update(ByteUtils.toBytes(isInCombat));
+		if(selectedPosition != null){
+			selectedPosition.createHash(digest);
+		}
+    }
 }

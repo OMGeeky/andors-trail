@@ -1,8 +1,12 @@
 package com.gpl.rpg.AndorsTrail.model.map;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -10,6 +14,7 @@ import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
 import com.gpl.rpg.AndorsTrail.model.actor.Monster;
 import com.gpl.rpg.AndorsTrail.model.actor.MonsterType;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.Range;
@@ -138,6 +143,15 @@ public final class MonsterSpawnArea {
 		dest.writeInt(monsters.size());
 		for (Monster m : monsters) {
 			m.writeToParcel(dest);
+		}
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(isSpawning));
+		for (Monster m :
+				monsters) {
+			m.createHash(digest);
 		}
 	}
 }

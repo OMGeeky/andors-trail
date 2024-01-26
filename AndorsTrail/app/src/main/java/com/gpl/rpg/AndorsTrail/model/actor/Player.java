@@ -3,6 +3,7 @@ package com.gpl.rpg.AndorsTrail.model.actor;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -13,6 +14,8 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.UUID;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.SparseIntArray;
 
 import com.gpl.rpg.AndorsTrail.AndorsTrailApplication;
@@ -27,6 +30,7 @@ import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.quest.Quest;
 import com.gpl.rpg.AndorsTrail.model.quest.QuestProgress;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForPlayer;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.Range;
 import com.gpl.rpg.AndorsTrail.util.Size;
@@ -55,9 +59,11 @@ public final class Player extends Actor {
 	public String id = UUID.randomUUID().toString();
 	public long savedVersion = 1; // the version get's increased for cheat detection everytime a player with limited saves is saved
 
+	public boolean wasEditingDetected;
+	public String hash;
 
 
-	// Unequipped stats
+    // Unequipped stats
 	public static final class PlayerBaseTraits {
 		public int iconID;
 		public int maxAP;
@@ -416,6 +422,13 @@ public final class Player extends Actor {
 			this.id = src.readUTF();
 			this.savedVersion = src.readLong();
 		}
+		if (fileversion >= 71){
+			this.hash = src.readUTF();
+			this.wasEditingDetected = src.readBoolean();
+		}else{
+			this.hash = "";
+			this.wasEditingDetected = false;
+		}
 	}
 
 	public void writeToParcel(DataOutputStream dest) throws IOException {
@@ -474,6 +487,58 @@ public final class Player extends Actor {
 		}
 		dest.writeUTF(id);
 		dest.writeLong(savedVersion);
+		dest.writeUTF(hash);
+		dest.writeBoolean(wasEditingDetected);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		//skipping icon ID so that it can be changed without hash difference
+		digest.update(ByteUtils.toBytes(baseTraits.maxAP));
+		digest.update(ByteUtils.toBytes(baseTraits.maxHP));
+		//skipping name so that it can be changed without hash difference
+		digest.update(ByteUtils.toBytes(moveCost));
+		digest.update(ByteUtils.toBytes(baseTraits.attackCost));
+		digest.update(ByteUtils.toBytes(baseTraits.attackChance));
+		digest.update(ByteUtils.toBytes(baseTraits.criticalSkill));
+		digest.update(ByteUtils.toBytes(baseTraits.criticalMultiplier));
+		baseTraits.damagePotential.createHash(digest);
+		digest.update(ByteUtils.toBytes(baseTraits.blockChance));
+		digest.update(ByteUtils.toBytes(baseTraits.damageResistance));
+		digest.update(ByteUtils.toBytes(baseTraits.moveCost));
+		ap.createHash(digest);
+		health.createHash(digest);
+		position.createHash(digest);
+		for(ActorCondition c :  conditions){
+			c.createHash(digest);
+		}
+		lastPosition.createHash(digest);
+		nextPosition.createHash(digest);
+		digest.update(ByteUtils.toBytes(level));
+		digest.update(ByteUtils.toBytes(totalExperience));
+		inventory.createHash(digest);
+		digest.update(ByteUtils.toBytes(baseTraits.useItemCost));
+		digest.update(ByteUtils.toBytes(baseTraits.reequipCost));
+		for (int i = 0; i<skillLevels.size(); i++){
+			digest.update(ByteUtils.toBytes(skillLevels.keyAt(i)));
+			digest.update(ByteUtils.toBytes(skillLevels.valueAt(i)));
+		}
+		digest.update(ByteUtils.toBytes(spawnMap));
+		digest.update(ByteUtils.toBytes(spawnPlace));
+		for (Entry<String, LinkedHashSet<Integer> > e:questProgress.entrySet()		 ) {
+			digest.update(ByteUtils.toBytes(e.getKey()));
+			for(int progress: e.getValue()){
+				digest.update(ByteUtils.toBytes(progress));
+			}
+		}
+		digest.update(ByteUtils.toBytes(availableSkillIncreases));
+		for (Entry<String, Integer> e:alignments.entrySet()			 ) {
+			digest.update(ByteUtils.toBytes(e.getKey()));
+			digest.update(ByteUtils.toBytes(e.getValue()));
+		}
+		digest.update(ByteUtils.toBytes(id));
+//		digest.update(ByteUtils.toBytes(savedVersion));
+//		digest.update(ByteUtils.toBytes(wasEditingDetected));
 	}
 }
 

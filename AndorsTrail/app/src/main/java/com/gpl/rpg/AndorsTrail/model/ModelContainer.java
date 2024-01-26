@@ -1,12 +1,17 @@
 package com.gpl.rpg.AndorsTrail.model;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 import com.gpl.rpg.AndorsTrail.context.ControllerContext;
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 
 public final class ModelContainer {
 
@@ -48,5 +53,15 @@ public final class ModelContainer {
 		uiSelections.writeToParcel(dest);
 		statistics.writeToParcel(dest);
 		worldData.writeToParcel(dest);
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		player.createHash(digest);
+		digest.update(ByteUtils.toBytes(currentMaps.map.name));
+		uiSelections.createHash(digest);
+		statistics.createHash(digest);
+		worldData.createHash(digest);
+
 	}
 }

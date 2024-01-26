@@ -134,8 +134,9 @@ public final class WorldSetup {
 					onSceneLoadedListener = null;
 					if (o == null) return;
 
-					if (loadResult == Savegames.LoadSavegameResult.success) {
-						o.onSceneLoaded();
+					if (loadResult == Savegames.LoadSavegameResult.success
+					 || loadResult == Savegames.LoadSavegameResult.editDetected) {
+						o.onSceneLoaded(loadResult);
 					} else {
 						o.onSceneLoadFailed(loadResult);
 					}
@@ -161,7 +162,7 @@ public final class WorldSetup {
 
 
 	public static interface OnSceneLoadedListener {
-		void onSceneLoaded();
+		void onSceneLoaded(Savegames.LoadSavegameResult loadResult);
 		void onSceneLoadFailed(Savegames.LoadSavegameResult loadResult);
 	}
 	public interface OnResourcesLoadedListener {

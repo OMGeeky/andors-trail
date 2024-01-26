@@ -1,8 +1,12 @@
 package com.gpl.rpg.AndorsTrail.model.actor;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.controller.Constants;
@@ -13,6 +17,7 @@ import com.gpl.rpg.AndorsTrail.model.item.ItemContainer;
 import com.gpl.rpg.AndorsTrail.model.item.Loot;
 import com.gpl.rpg.AndorsTrail.model.map.MonsterSpawnArea;
 import com.gpl.rpg.AndorsTrail.savegames.LegacySavegameFormatReaderForMonster;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 import com.gpl.rpg.AndorsTrail.util.Coord;
 import com.gpl.rpg.AndorsTrail.util.CoordRect;
 import com.gpl.rpg.AndorsTrail.util.Range;
@@ -191,6 +196,30 @@ public final class Monster extends Actor {
 			shopItems.writeToParcel(dest);
 		} else {
 			dest.writeBoolean(false);
+		}
+	}
+
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		digest.update(ByteUtils.toBytes(getMonsterTypeID()));
+		digest.update(ByteUtils.toBytes(attackCost));
+		digest.update(ByteUtils.toBytes(attackChance));
+		digest.update(ByteUtils.toBytes(criticalSkill));
+		digest.update(ByteUtils.toBytes(criticalMultiplier));
+		damagePotential.createHash(digest);
+		digest.update(ByteUtils.toBytes(blockChance));
+		digest.update(ByteUtils.toBytes(damageResistance));
+		ap.createHash(digest);
+		health.createHash(digest);
+		position.createHash(digest);
+		for (ActorCondition c: conditions){
+			c.createHash(digest);
+		}
+
+		digest.update(ByteUtils.toBytes(moveCost));
+		digest.update(ByteUtils.toBytes(forceAggressive));
+		if (shopItems != null) {
+			shopItems.createHash(digest);
 		}
 	}
 }

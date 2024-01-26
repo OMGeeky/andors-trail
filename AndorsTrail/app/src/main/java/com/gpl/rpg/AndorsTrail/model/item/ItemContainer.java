@@ -1,14 +1,19 @@
 package com.gpl.rpg.AndorsTrail.model.item;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
 import com.gpl.rpg.AndorsTrail.context.WorldContext;
 import com.gpl.rpg.AndorsTrail.model.actor.Player;
+import com.gpl.rpg.AndorsTrail.util.ByteUtils;
 
 public class ItemContainer {
 	public final ArrayList<ItemEntry> items = new ArrayList<ItemEntry>();
@@ -23,7 +28,8 @@ public class ItemContainer {
 		return result;
 	}
 
-	public static final class ItemEntry {
+
+    public static final class ItemEntry {
 		public final ItemType itemType;
 		public int quantity;
 		public ItemEntry(ItemType itemType, int initialQuantity) {
@@ -41,6 +47,12 @@ public class ItemContainer {
 		public void writeToParcel(DataOutputStream dest) throws IOException {
 			dest.writeUTF(itemType.id);
 			dest.writeInt(quantity);
+		}
+
+		@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+		public void createHash(MessageDigest digest) {
+			digest.update(ByteUtils.toBytes(itemType.id));
+			digest.update(ByteUtils.toBytes(quantity));
 		}
 	}
 
@@ -279,5 +291,13 @@ public class ItemContainer {
 		for (ItemEntry e : items) {
 			e.writeToParcel(dest);
 		}
+	}
+	@RequiresApi(api = Build.VERSION_CODES.KITKAT)
+	public void createHash(MessageDigest digest) {
+		for (ItemEntry e :
+				items) {
+			e.createHash(digest);
+		}
+
 	}
 }

@@ -199,24 +199,16 @@
   </data>
  </layer>
  <layer name="Objects" width="14" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYBg4wIRH7pQsA8NJWQgNA0JoNDJYxgahbwHV35SF0DCghEYfZ0fVqyWPnW0EpU1x6LMCqvWVR7BhwAlKu0Lp62j62JDUcsgzUAQAtTkMEw==
-  </data>
+  <data encoding="base64" compression="zlib">eJxjYBg4wIRH7hE/A8NDfggNA0JoNDJYxgahPwHVf+SH0DCghEYfZ0fVe4gFO9sISpvi0HcJqPYpC4INA05Q2hVKX0fTNw9J7QIWBooAAKPsD7o=</data>
  </layer>
  <layer name="Above" width="14" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYCAfaMtBaAVZCP2Wj4HhHR+aIjmEPLo+bGAaGyp/I5JefPrwAWz6rIkwC5s+ZLHlSOzjSGwrLPqwiVEDAABbcwhj
-  </data>
+  <data encoding="base64" compression="zlib">eJxjYCAfHBaD0AqyEPotHwPDOz5UNRICCHl0fdjANDZU/kl+4vQR405kcJkIs7DpQxazZ0Gw45HYl7DowyZGDQAALU8Mgw==</data>
  </layer>
  <layer name="Top" width="14" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYBicYKvsQLtgaAAA9HMA0w==
-  </data>
+  <data encoding="base64" compression="zlib">eJxjYBic4Cz/QLtgaAAAACAA3Q==</data>
  </layer>
  <layer name="Walkable" width="14" height="8" visible="0">
-  <data encoding="base64" compression="zlib">
-   eJyTlGNgkBwiGB+AyROjjxizkPWi09jMoZZ92NyOTx4A/8EP5w==
-  </data>
+  <data encoding="base64" compression="zlib">eJwzFGBgMBwiGB+AyROjjxizkPWi09jMoZZ92NyOTx4A7cISyw==</data>
  </layer>
  <objectgroup name="Mapevents">
   <object name="door" type="mapchange" x="192" y="224" width="32" height="32">

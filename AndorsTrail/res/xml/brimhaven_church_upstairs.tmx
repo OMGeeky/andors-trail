@@ -193,9 +193,7 @@
   </data>
  </layer>
  <layer name="Objects" width="8" height="8">
-  <data encoding="base64" compression="zlib">
-   eJxjYECA17IMWMFdVoT8H0kIOxWL2t9AMR4p7GaAALccgv0ESd0XNLMMpVHlsQFC8l8IyMMAANnIC1Y=
-  </data>
+  <data encoding="base64" compression="zlib">eJxjYECAZmEGrOAuK0L+jySEnSqLqW4yUJ5HCrsZILAYyfwnSOp60Ow1lEaVxwYIyX8hIA8DANkAChs=</data>
  </layer>
  <layer name="Above" width="8" height="8">
   <data encoding="base64" compression="zlib">

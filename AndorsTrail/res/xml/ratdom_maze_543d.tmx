@@ -193,9 +193,7 @@
   <image source="../drawable/map_ratdom.png" width="576" height="192"/>
  </tileset>
  <layer id="1" name="Ground" width="15" height="30">
-  <data encoding="base64" compression="zlib">
-   eJzjkWdgkAfidUykY3L1UYrd5BAYxI+Qw41B8sgAWW8kEGcBsREbJgaJh0PNQNcL0pcNxDV4cCaafmR9Pzgh+BwWDJND1u+Opo+QXph+V6jeH5yk6QVhXHqJwa5Qv5Ki5z8QM3BB9KL7lRS9pLqVH6hPgEy9ILx4gPTCwnk9E3a5SjEGhiogrhYjXW8nUE8XEHeToXcmUM8sIJ5Nhl5K/EuM3nVk6kUue8jVR4p+fGXfHDx4IMri4YIB4fJcxQ==
-  </data>
+  <data encoding="base64" compression="zlib">eJxTkGNgMAbidUykY3L1UYrd5BAYxI+Qw41B8sgAWW8kEGcBsREbJgaJh0PNQNcL0pcNxDV4cCaafmR9Pzgh+BwWDJND1u+Opo+QXph+V6jeH5yk6QVhXHqJwa5Qv5Ki5z8QM3BB9KL7lRS9pLqVH6hPgEy9ILx4gPTCwnk9E3a5SjEGhiogrhYjXW8nUE8XEHeToXcmUM8sIJ5Nhl5K/EuM3nVk6kUue8jVR4p+fGXfHDx4IMri4YIBbhtc/g==</data>
  </layer>
  <layer id="2" name="Objects" width="15" height="30">
   <data encoding="base64" compression="zlib">

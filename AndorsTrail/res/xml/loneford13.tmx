@@ -203,24 +203,16 @@
   <image source="../drawable/map_sign_ladder_1.png" width="512" height="256"/>
  </tileset>
  <layer name="Ground" width="27" height="12">
-  <data encoding="base64" compression="zlib">
-   eJybKcvAMJMAZhSBYCYkGln+ozAEf4JiQubhw9ulMDEut6C7g1R8XAoT43MLJXYh49lQjM0tIIDujoHCbHIMDKwkYmQ/ovuZVnbR01+D2S5ROtpFbrqn1Axa+wsAYYS4kA==
-  </data>
+  <data encoding="base64" compression="zlib">eJzbyMnAsJEAZhSBYCYkGln+ozAEf4JiQubhw9ulMDEut6C7g1R8XAoT43MLJXYh481QjM0tIIDujoHCclwMDLIkYmQ/ovuZVnbR01+D2S5dOtpFbrqn1Axa+wsAPo29JA==</data>
  </layer>
  <layer name="Objects" width="27" height="12">
-  <data encoding="base64" compression="zlib">
-   eJzbL8fA8FGegeGBPIIGYRCQl2MgGyQLINiTgewpQLwfaF4G0Gw9eYScIZJdMPGZMhD6MxuEPgmUewnEp7G4ByR3C4hvAvFtqBqQ++cD6ZOSDAw2ChB1kUD7owQw/bUKahczO6p7YADkFpg70IEeNMzk5HDj2bL45ZWB+LM8wi0wd2BzSxDQ/fPkSMOgcAD5dz+URjYTFg4f5THDKAlIx8pjYkcgzsaDYXYZofnTGM3PD5Dc8QCLPbEE7EG2C0TPxeN3ECgF+qdMAEITskuQCbddhlDzlAQZGFQFITQIw9yB7K+nFPoLng7kIG4yhNq/H8lfsDzzlUK70NMazFxku5DDEV+axoWdoHapCKKGnwoUY0s3cmjxmSUPwblQDAoXRyidiySOHF+w8IOFIYiGlUVvgGXEW0mE/wCJ/3/m
-  </data>
+  <data encoding="base64" compression="zlib">eJylVD1LA0EQHRJWz+72wINAqpD8BJP/YXNop/kFSVDSWFgGsTKNf8E2oIW9cNra6G/QSuydx+64k/sSk4HHW27v9r03N2wWES0M0dwEBlAPKW1c4zisb3i9ZGSsRQnRkw17uQ1a8vy26/hrx/EJf3fJGEdlHexNGRPGzL8D/yPmvEP0uu/eO2L947ic685rtXfX/UjBi/goFvyiZ/dpPVZ7zfuPjCsTvIiPKi+H7H8Y/Q/oA/JmnvWZ0oeFKffolPnblvHGaCf1EK3nQs6XQmaZMRTWVVpNOloLfNCQHXXGec5jx39p2Va9Vu7P6/E3A+sYEB8618WWuX7nIHWewLnKLDOIut5Sqzhrcq7W0n1smuk6vHutvl3vX9+jam4A/T9biYPxQF8wk2Cjnuv/Jf2THoLlLvrgO+KzE/L9AGmkhk4=</data>
  </layer>
  <layer name="Above" width="27" height="12">
-  <data encoding="base64" compression="zlib">
-   eJxjYEAFlgIMDFYCCD4jBwNWwAQVf8iOKfcIixgM7JREsD2B9ngJ4FYLA9pyuN3ChMN95AIrOcLuQA8jWgCYO4gNo6EIUoH+ShOA0MggnYB/M6gYHuXDIGxToOE4XMAdYBlxVxJB0wO8AdrzDogBpR0QOg==
-  </data>
+  <data encoding="base64" compression="zlib">eJxjYEAFlgIMDFYCCD4jBwNWwAQVf8iOKfcIixgM7JREsD2B9ngJ4FYLA4fFcLuFCYf7yAWXxAi7Az2MaAFg7iA2jIYiSAX6K00AQiODdAL+zaBieJQPg7BNgYbjcAF3gGXEXUkETQ/wBmjPOyAGAIZEEno=</data>
  </layer>
  <layer name="Walkable" width="27" height="12">
-  <data encoding="base64" compression="zlib">
-   eJyTlGNgkMSCkQE2eUowPkAruwj5C8bH5xZc7qUUEHIHLveQEgb43Imshhg3EOMfUtSQGobY9BIb/9jiGJ/5+OwlFM6UpA187iTFzeTYRcgdlNpFatmAT55YOWIxAJIiHhU=
-  </data>
+  <data encoding="base64" compression="zlib">eJwz5GJgMMSCkQE2eUowPkAruwj5C8bH5xZc7qUUEHIHLveQEgb43Imshhg3EOMfUtSQGobY9BIb/9jiGJ/5+OwlFM6UpA187iTFzeTYRcgdlNpFatmAT55YOWIxAOmsIEU=</data>
  </layer>
  <layer name="Above_replace" width="27" height="12" visible="0">
   <data encoding="base64" compression="zlib">
